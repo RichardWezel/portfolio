@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* fira-code-300 - latin */
@@ -9,7 +10,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 300;
-    src: url('assets/fira-code-v22-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/fonts/fira-code-v22-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* fira-code-regular - latin */
   @font-face {
@@ -17,7 +18,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-    src: url('assets/fira-code-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/fonts/fira-code-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* fira-code-500 - latin */
   @font-face {
@@ -25,7 +26,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 500;
-    src: url('assets/fira-code-v22-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/fonts/fira-code-v22-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* fira-code-600 - latin */
   @font-face {
@@ -33,7 +34,7 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 600;
-    src: url('assets/fira-code-v22-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/fonts/fira-code-v22-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* fira-code-700 - latin */
   @font-face {
@@ -41,5 +42,201 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 700;
-    src: url('assets/fira-code-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/fonts/fira-code-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
+  /* karla-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  src: url('assets/fonts/karla-v31-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 200;
+  src: url('assets/fonts/karla-v31-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/karla-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 300;
+  src: url('assets/fonts/karla-v31-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/karla-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 400;
+  src: url('assets/fonts/karla-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/karla-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 500;
+  src: url('assets/fonts/karla-v31-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/karla-v31-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 600;
+  src: url('assets/fonts/karla-v31-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/karla-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 700;
+  src: url('assets/fonts/karla-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  src: url('assets/fonts/karla-v31-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* karla-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 800;
+  src: url('assets/fonts/karla-v31-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+  $base-color: #3DCFB6;
+  $base-color-dark: #08463B;
+  $base-font: 'Fira Code';
+  
+  @mixin base-font() {
+    font-family: 'Fira Code';
+}
+
+@mixin dja(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visible-btn-white {
+  height: 48px;
+  padding: 0px 24px 0px 24px;
+  border-radius: 100px;
+  border: white solid 1px;
+  opacity: 0px;
+  @include dja();
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Karla';
+  font-weight: 400;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.box-size {
+  width: 568px;
+  height: 568px;
+}
+
+.box-theme {
+  display: flex;
+  @include base-font();
+  flex-direction: column;
+}
+
+.box-label {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24;
+  font-family: 'Karla';
+  color: #3DCFB6;
+}
+
+.article-box {
+padding: 32px;
+gap: 40px;
+border-radius: 30px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background-color: #3DCFB61A;
+border: 1px solid $base-color;
+height: fit-content;
+}
+
+.box-header {
+  margin-bottom: 40px;
+  @include base-font();
+  color: $base-color;
+  font-family: Fira Code;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.box-article {
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: justify;
+  margin-bottom: 32px;
+}

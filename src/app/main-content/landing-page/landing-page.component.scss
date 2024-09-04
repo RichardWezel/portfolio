@@ -1,20 +1,20 @@
+@import './../../../styles.scss';
+
 main {
     height: 100vh;
-    background: linear-gradient(90deg, #1C1C1C ,#08463B );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
-    font-family: 'Fira Code';
+    background: linear-gradient(90deg, #1C1C1C ,$base-color-dark );
+    @include dja();
+    flex-direction: column;
+    font-family: $base-font;;
     color: white;
+    overflow: hidden
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
+    @include dja();
     flex-direction: column;
-    align-items: center;
+  
     h3{
         font-weight: 400;
         font-size: 40px;
@@ -28,25 +28,108 @@ main {
         margin-bottom: 40px;
         letter-spacing: -2%;
     }
-
-    
 }
 
 .link-work-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dja();
     gap: 48px;
-    div {
-        height: 48px;
-        padding: 0px 24px 0px 24px;
+    a {
         gap: 10px;
-        border-radius: 100px;
-        border: white solid 1px;
-        opacity: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
+}
+
+.arrowToContent {
+    position: absolute;
+    left: 96px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.arrow {
+    border: solid 1px $base-color;
+    width: 30px;
+    height: 48px;
+    @include dja();
+   border-radius: 32px;
    
 }
+
+.line {
+    display: flex;
+    justify-content: center;
+
+    div{
+        height: 240px;
+        border: 0.1px solid $base-color;
+    }
+}
+
+
+.social-media-mail {
+    position: absolute;
+    right: 96px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.mailadress {
+    rotate: 270deg;
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-white {
+    height: 186px;
+    border: 1px solid;
+}
+
+.scroll {
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    bottom: 42px;
+    left: 0px;
+    
+    div {
+        background-color: rgba(255, 255, 255, 0.122);
+        color: $base-color;
+        font-size: 32px;
+        font-family: 'Karla';
+        font-weight: 400;
+        white-space: nowrap;
+        animation: animate 20s linear infinite;  // Geschwindigkeit anpassen, falls nötig
+        padding: 12px 32px;
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: translateX(0);  // Startet an der linken Seite
+        }
+        100% {
+            transform: translateX(-100%);  // Läuft nach links aus dem Bild
+        }
+    }
+
+    .dot {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.text {
+    transform: rotate(-3deg);
+}
+
