@@ -1,0 +1,56 @@
+@import './../../../styles.scss';
+
+main {
+    height: 100%;
+    background-color: #1C1C1C;
+    font-family: $base-font;
+    color: white;
+    padding: 0 96px 144px 96px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    p {
+        width: 50%;
+    }
+}
+
+.project-list {
+    max-width: 880px;
+    border-top: $base-color 1px solid;
+    border-bottom: $base-color 1px solid;
+}
+
+.project-list-row {
+    width: 880px;
+    height: 109px;
+    padding: 40px 32px 40px 32px;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.project-name {
+    font-family: $base-font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+
+}
+
+.used-skills {
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+
+}
+
+.separator {
+    color: $base-color;
+}
+
+.project-list-line {
+    border-color: $base-color !important;
+}
