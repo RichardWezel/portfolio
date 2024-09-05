@@ -1,0 +1,12 @@
+@import './../../../styles.scss';
+
+main {
+    height: 100%;
+    background-color: #1C1C1C;
+    font-family: $base-font;
+    color: white;
+    @include dja();
+    flex-direction: column;
+   
+   
+}

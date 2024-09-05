@@ -13,7 +13,7 @@ import { FooterComponent } from "./footer/footer.component";
   standalone: true,
   imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss'
+  styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent {
 
