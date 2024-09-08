@@ -37,7 +37,49 @@ main {
 }
 
 .striped-list {
-        a:hover {
-            background-color: $base-color-dark;
+    display: flex;
+    gap: 72px;
+    a {
+        cursor: pointer;
+    }
+    a:hover {
+        background-color: $base-color-dark;
+    }
+}
+
+#join-row:hover  {
+    #join {
+        display: flex;
+    }
+}
+
+.project-show {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        img {
+            display: block;
+            width: 100%;  // Damit das Bild vollständig sichtbar ist
+            height: auto; // Das Verhältnis des Bildes bleibt erhalten
+            position: relative;
+            z-index: 1;   // Das Bild wird über dem SVG liegen
+            width: 296px;
+            height: 192px;
         }
+    
+        svg {
+            width: 296px;
+            height: 192px;
+            z-index: 0;   // SVG liegt unter dem Bild
+            pointer-events: none;  // Das SVG ist nicht interaktiv 
+            position: absolute;
+        top: 20px !important;
+        left: -20px;
+        }
+    }
 }

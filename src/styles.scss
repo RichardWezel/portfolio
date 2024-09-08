@@ -180,20 +180,50 @@ html, body {
   align-items: center;
 }
 
-.visible-btn-white {
-  height: 48px;
-  padding: 0px 24px 0px 24px;
-  border-radius: 100px;
+.button {
+  display: inline-block;
+  position: relative;
+  color: white;
+  padding: 12px 24px 12px;
   border: white solid 1px;
-  opacity: 0px;
-  @include dja();
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
+  border-radius: 100px;
   font-family: 'Karla';
   font-weight: 400;
   font-size: 18px;
-  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:hover{
+    color: $base-color;
+    border: $base-color solid 1px;
+  }
+
+.button span::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 230%;
+  width: 100%;
+  text-align: center;
+}
+
+.button:hover .button_inner {
+  animation: marqueeAnim 1.5s linear infinite;
+  animation-play-state: running;
+}
+
+/* Let's create animation */
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-230%);
+  }
 }
 
 .box-size {
@@ -260,7 +290,7 @@ height: fit-content;
 }
 
 .striped-list-row {
-  width: 880px;
+  max-width: 880px;
   height: 109px;
   padding: 40px 32px 40px 32px;
   justify-content: space-between;

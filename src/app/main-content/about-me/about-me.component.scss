@@ -1,27 +1,40 @@
 @import './../../../styles.scss';
 
 main {
-    height: 100%;
+       height: 100%;
     background-color: #1C1C1C;
-    font-family: $base-font;
+    font-family: "Fira Code";
     color: white;
     padding: 0 112px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-   
+    gap: 96px;
 }
 
 .picture {
-    display: flex;
+    position: relative;
     
     img {
-        display: flex;
-        z-index: 1;
+        display: block;
+        width: 100%;  // Damit das Bild vollständig sichtbar ist
+        height: auto; // Das Verhältnis des Bildes bleibt erhalten
+        position: relative;
+        z-index: 1;   // Das Bild wird über dem SVG liegen
+        
     }
-    div {
-        z-index: 0;
+
+    svg {
+        position: absolute;
+        top: 46px;
+        left: -46px;
+        width: 100%;
+        height: 100%;
+        z-index: 0;   // SVG liegt unter dem Bild
+        pointer-events: none;  // Das SVG ist nicht interaktiv
+        
     }
+    
 }
 
 
