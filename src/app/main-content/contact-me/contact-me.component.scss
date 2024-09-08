@@ -6,7 +6,36 @@ main {
     font-family: $base-font;
     color: white;
     @include dja();
-    flex-direction: column;
-   
-   
+    padding: 0 112px 0;
+    gap: 98px;
+    section {
+        max-width: 50%;
+        width: 100%;
+    }
 }
+
+.request-to-call {
+    p, h3 {
+        margin-bottom: 20px;
+    }
+}
+
+.header {
+    color: $base-color;
+    width: fit-content;
+}
+
+.formular-row {
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+    width: fit-content;
+}
+
+input {
+    background-color: unset;
+    border: unset;
+    color: white;
+    width: fit-content;
+}
+

@@ -5,28 +5,13 @@ main {
     background-color: #1C1C1C;
     font-family: $base-font;
     color: white;
-    padding: 0 96px 144px 96px;
+    padding: 0 96px 0 96px;
     display: flex;
     justify-content: start;
     flex-direction: column;
     p {
         width: 50%;
     }
-}
-
-.project-list {
-    max-width: 880px;
-    border-top: $base-color 1px solid;
-    border-bottom: $base-color 1px solid;
-}
-
-.project-list-row {
-    width: 880px;
-    height: 109px;
-    padding: 40px 32px 40px 32px;
-    justify-content: space-between;
-    display: flex;
-
 }
 
 .project-name {
@@ -51,6 +36,8 @@ main {
     color: $base-color;
 }
 
-.project-list-line {
-    border-color: $base-color !important;
+.striped-list {
+        a:hover {
+            background-color: $base-color-dark;
+        }
 }

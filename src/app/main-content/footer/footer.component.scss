@@ -1,0 +1,29 @@
+@import './../../../styles.scss';
+
+main {
+    height: 100%;
+    background-color: #1C1C1C;
+    font-family: 'Karla';
+    color: white;
+    padding: 0 96px 0 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-family: $base-font;
+    font-size: 24px;
+    color: $base-color;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    a {
+        text-decoration: none;
+        color:white;
+        font-family: 'Karla';
+    }
+}
