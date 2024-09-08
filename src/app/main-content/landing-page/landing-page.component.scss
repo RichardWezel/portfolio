@@ -53,8 +53,24 @@ main {
     height: 48px;
     @include dja();
    border-radius: 32px;
+   position: relative;
+   svg {
+    animation: MoveUpDown 1.4s linear infinite;
+    position: absolute;
+    left: 10;
+    top: 15px;
+   }
    
 }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      top: 15;
+    }
+    50% {
+      top: 22px;
+    }
+  }
 
 .line {
     display: flex;

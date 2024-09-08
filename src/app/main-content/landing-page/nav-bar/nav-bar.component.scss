@@ -1,3 +1,5 @@
+@import './../../../../styles.scss';
+
 nav {
     position: absolute;
     top: 48px;
@@ -9,17 +11,51 @@ nav {
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
+   
 }
 
 .menu {
+  height: 50px;
     display: flex;
     gap: 24px;
     align-items: center;
-    a {
-        text-decoration: none;
-        color: white;
+    position: relative;
+}
+
+.nav-links {
+  position: absolute;
+  left: 108px;
+  top: 12px;
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+      circle {
+        fill:none;
+      }
     }
-   
+  }
+
+  a:hover svg {
+    circle {
+      fill: $base-color;
+      transition: all .4s ease-in-out;
+    }
+  }
+  
+  a svg {
+    display: flex; /* Versteckt das SVG standardmäßig */
+  }
+  
 }
 
 input[type="checkbox"].toggle {
@@ -33,6 +69,7 @@ input[type="checkbox"].toggle {
     position: relative;
     display: flex;
     align-items: center;
+    height: 28px;
     cursor: pointer;
   }
   
@@ -42,8 +79,23 @@ input[type="checkbox"].toggle {
     height: 28px;
     border-radius: 1em;
     border: #3DCFB6 solid 1px;
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
   }
+  
+  input[type="checkbox"].toggle + label:hover::before {
+    border-color: white;
+  }
+  
+  input[type="checkbox"].toggle + label:hover ~ .EN,
+  input[type="checkbox"].toggle + label:hover ~ .DE {
+  color: $base-color; 
+  }
+
+  /* Neu: Ändert die Farbe von .EN und .DE direkt mit der Klasse 'language-switch-btn' */
+.language-switch-btn:hover .EN,
+.language-switch-btn:hover .DE {
+  color: $base-color; 
+}
   
   input[type="checkbox"].toggle + label::after {
     display: flex;
@@ -54,7 +106,7 @@ input[type="checkbox"].toggle {
     font-size: 16px;
     font-weight: 700;
     height: 28px;
-    background-color: #3DCFB6;
+    background-color: $base-color;
     color: white;
     border-radius: 2em;
     transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
@@ -73,11 +125,11 @@ input[type="checkbox"].toggle {
   }
 
   .EN {
-    color: #3DCFB6;
+    color: #3DCFB680;
     position: absolute;
     left: 12px;
     top: 5px;
-    font-family: Fira Code;
+    font-family: 'Fira Code';
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -85,7 +137,7 @@ input[type="checkbox"].toggle {
   }
 
   .DE {
-    color: #3DCFB6;
+    color:  #3DCFB680;
     position: absolute;
     right: 12px;
     top: 5px;
