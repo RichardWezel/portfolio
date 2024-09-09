@@ -14,6 +14,20 @@ main {
     }
 }
 
+.list-section {
+    display: flex;
+    gap: 72px;
+    
+}
+
+.striped-list {
+    width: 100%;
+    flex-direction: column;
+    gap: unset !important;
+    height: fit-content;
+}
+
+
 .project-name {
     font-family: $base-font;
     font-size: 24px;
@@ -47,39 +61,50 @@ main {
     }
 }
 
-#join-row:hover  {
-    #join {
-        display: flex;
-    }
-}
-
 .project-show {
     min-width: 320px;
     display: flex;
     flex-direction: column;
     position: relative;
-    div{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        img {
-            display: block;
-            width: 100%;  // Damit das Bild vollständig sichtbar ist
-            height: auto; // Das Verhältnis des Bildes bleibt erhalten
-            position: relative;
-            z-index: 1;   // Das Bild wird über dem SVG liegen
-            width: 296px;
-            height: 192px;
-        }
-    
-        svg {
-            width: 296px;
-            height: 192px;
-            z-index: 0;   // SVG liegt unter dem Bild
-            pointer-events: none;  // Das SVG ist nicht interaktiv 
-            position: absolute;
+}
+
+.project {
+    display: flex;
+
+    img {
+        width: 100%;  
+        height: auto; 
+        z-index: 1;   
+        width: 296px;
+        height: 192px;
+        position: absolute;
+    }
+
+    svg {
+        width: 296px;
+        height: 192px;
+        z-index: 0;    
+        position: absolute;
         top: 20px !important;
         left: -20px;
-        }
+        border-radius: 20px;
     }
+}
+
+#join {
+    top: -40px;
+    display: none;
+    position: absolute;
+}
+
+#el-pollo-loco {
+    top: 70px;
+    display: none;
+    position: absolute;
+}
+
+#da-bubble {
+    top: 180px;
+    display: none;
+    position: absolute;
 }
