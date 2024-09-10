@@ -1,4 +1,5 @@
 <main>
+    <app-projects></app-projects>
     <div class="box-label">Portfolio</div>
     <h2 class="box-header">Featured Projects</h2>
     <p class="box-article">
@@ -6,7 +7,10 @@
     </p>
     <div class="list-section">
         <section class="striped-list">
-            <a class="striped-list-row" id="join-row" (mouseenter)="hoverIn(join)" (mouseleave)="hoverOut(join)">
+            <a class="striped-list-row" id="join-row" 
+            (mouseenter)="hoverIn(join)" 
+            (mouseleave)="hoverOut(join)"
+            (click)="projectComponent?.showProject(0)">
                 <div class="project-name">Join</div>
                 <div class="used-skills">
                     Angular <span class="separator"> | </span> Javascript <span class="separator"> | </span> HTML <span class="separator"> | </span> CSS
@@ -15,14 +19,14 @@
 
             <hr class="striped-list-line" >
 
-            <a class="striped-list-row" id="elPolloLoco-row" (mouseenter)="hoverIn(elPolloLoco)" (mouseleave)="hoverOut(elPolloLoco)">
+            <a class="striped-list-row" id="elPolloLoco-row" (mouseenter)="hoverIn(elPolloLoco)" (mouseleave)="hoverOut(elPolloLoco)" (click)="projectComponent?.showProject(1)">
                 <div class="project-name">El Pollo Loco</div>
                 <div class="used-skills">HTML <span class="separator"> | </span> CSS <span class="separator"> | </span> Javascript</div>
             </a>
 
             <hr class="striped-list-line" >
                 
-            <a class="striped-list-row" id="daBubble-row" (mouseenter)="hoverIn(daBubble)" (mouseleave)="hoverOut(daBubble)">
+            <a class="striped-list-row" id="daBubble-row" (mouseenter)="hoverIn(daBubble)" (mouseleave)="hoverOut(daBubble)" (click)="projectComponent?.showProject(2)">
                 <div class="project-name">Da Bubble</div>
                 <div class="used-skills">Angular <span class="separator"> | </span> Firebase <span class="separator"> | </span> TypeScript</div>
             </a>

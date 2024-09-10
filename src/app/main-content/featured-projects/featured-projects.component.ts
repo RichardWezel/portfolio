@@ -1,14 +1,19 @@
 import { NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, inject, ViewChild } from '@angular/core';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-featured-projects',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, ProjectsComponent],
   templateUrl: './featured-projects.component.html',
   styleUrl: './featured-projects.component.scss'
 })
 export class FeaturedProjectsComponent {
+
+  @ViewChild(ProjectsComponent) projectComponent?: ProjectsComponent;
+  
+  
 
  join = {
     display: 'none',
