@@ -89,11 +89,12 @@ main {
     display: flex;
     align-items: center;
     gap: 88px;
-    img {
-        width: 520px;
-        height: 369.78px;
-        border-radius: 30px;
-    }
+}
+
+.project-screenshot {
+    width: 520px;
+    height: 369.78px;
+    border-radius: 30px;
 }
 
 .project-details {
@@ -156,18 +157,26 @@ main {
     line-height: 19.2px;
     text-align: left;
     margin-bottom: 40px;
-
 }
 
 .skills{
     display: flex;
     align-items: center;
     height: 24px;
+    gap: 16px;
+}
+
+.skill-section {
+    display: flex;
+    align-items: center;
     gap: 4px;
-    svg {
-        path {
-            fill: $base-color;
-        }
+    img {
+        width: 24px;
+        height: 24px;
+        display: flex;
+    }
+    div{
+        display: flex;
     }
 }
 

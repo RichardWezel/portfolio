@@ -2,10 +2,12 @@ import { Component, OnInit, inject } from '@angular/core';
 import projectsData from './projects.json'; 
 
 interface Project {
-  number: String,
-  title: String, 
-  description: String,
-  skills: any
+  number: String;
+  title: String;
+  description: String;
+  skills: any;
+  next: number;
+  img: String
 }
 
 
@@ -30,6 +32,10 @@ export class ProjectsComponent {
 
   hideProject() {
     this.projectVisible = false;
+  }
+
+  nextProject(projectId: any) {
+    this.projectId = projectId;
   }
 
 }
