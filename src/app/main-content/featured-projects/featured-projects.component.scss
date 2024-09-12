@@ -58,6 +58,13 @@ main {
     }
     a:hover {
         background-color: $base-color-dark;
+        transition: background-color 150ms ease-in;
+    }
+}
+
+@keyframes getColor{
+    0%{
+
     }
 }
 
