@@ -1,12 +1,16 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import Flickity from 'flickity';
+import { FlickityModule } from 'ngx-flickity';
+import { CarouselComponent } from "./carousel/carousel.component";
+import { CarouselNavigationComponent } from "./carousel-navigation/carousel-navigation.component";
 
 @Component({
   selector: 'app-colleagues-voices',
   standalone: true,
   templateUrl: './colleagues-voices.component.html',
   styleUrls: ['./colleagues-voices.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, CarouselComponent, CarouselNavigationComponent]
 })
 export class ColleaguesVoicesComponent implements AfterViewInit {
   items = [
@@ -15,10 +19,19 @@ export class ColleaguesVoicesComponent implements AfterViewInit {
     { text: 'jsdjohf osdjoif ijsd fjskd jfkj sdyjf djs gfjdrkj gkfjd kpjgkp dfk  jgkvjstr kpdfjgkv dsfkj gkjdfk jgskvlj fdkljg kvjfdkls gkjdf kjg ', author: 'Z. Wezel - Developer' },
   ];
 
-  displayedItems = [...this.items]; // Initiale Anzeige
+  flickityOptions = {
+    cellAlign: 'left',
+    contain: true
+  };
+
+  @ViewChild('carousel') carousel?: ElementRef;
 
   ngAfterViewInit() {
-    this.updateClasses();
+    new Flickity(this.carousel?.nativeElement, {
+      // Flickity-Optionen hier
+      cellAlign: 'left',
+      contain: true
+    });
   }
 
   // Aktualisiere die Position der Items anhand ihrer Position im Array
@@ -38,20 +51,5 @@ export class ColleaguesVoicesComponent implements AfterViewInit {
 }
 
 
-  handleClick(direction: 'previous' | 'next') {
-    if (direction === 'previous') {
-      const lastItem = this.displayedItems.pop();
-      if (lastItem) {
-        this.displayedItems.unshift(lastItem);
-      }
-    } else {
-      const firstItem = this.displayedItems.shift();
-      if (firstItem) {
-        this.displayedItems.push(firstItem);
-      }
-    }
-
-    // Aktualisiere die Klassen nach dem Klick
-    this.updateClasses();
-  }
+  
 }

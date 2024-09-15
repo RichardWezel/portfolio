@@ -1,0 +1,67 @@
+@import './../../../../styles.scss';
+
+.carousel-navigation {
+    @include dja();
+    margin-top: 48px;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+}
+
+.arrow-button {
+    background-color: unset;
+    height: 40px;
+    width: 40px;
+    border: unset;
+    @include dja();
+    cursor: pointer;
+    position: relative;
+    div{
+        width: 32px;
+        height: 32px;
+        @include dja();
+        position: absolute;
+        top: 4px;
+        right: 4px;
+    }
+}
+
+.arrow-button:hover {
+    div{
+        right: 8px;
+        svg{
+            width: 19.5px;
+            height: 19.18px;
+            path{
+                fill: $base-color
+            }
+        }
+    }
+}
+
+.button--next {
+    div{
+        left: 4px;
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.button--next:hover {
+    div{
+        left: 8px;
+        svg{
+            width: 19.5px;
+            height: 19.18px;
+            path{
+                fill: $base-color
+            }
+        }
+    }
+}
+
+.indicators {
+    @include dja();
+    gap: 20px;
+}
