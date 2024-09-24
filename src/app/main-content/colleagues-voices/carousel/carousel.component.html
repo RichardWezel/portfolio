@@ -1,8 +1,5 @@
-<main class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <!-- <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div> -->
+<main #flickityRef class="gallery">
+  <div class="carousel-cell" *ngFor="let card of cards">
+    <app-card [card]="card"></app-card>
+  </div>
 </main>

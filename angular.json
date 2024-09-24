@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/flickity/dist/flickity.css"
+              "node_modules/flickity/dist/flickity.min.css"
             ],
             "scripts": [
               "node_modules/flickity/dist/flickity.pkgd.min.js"

@@ -1,23 +1,47 @@
 @import './../../../../styles.scss';
 
-main{
-    display: flex;
+.gallery {
+  width: 100%;
+  position: relative;
 }
 
-  .gallery-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-  }
-  
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
+.carousel-cell {
+  width: 300px; /* Anpassen nach Bedarf */
+  margin: 0 10px;
+  transition: transform 0.5s, filter 0.5s;
+  z-index: 1; /* Basis-Z-Index */
+}
+
+.flickity-slider {
+  display: flex;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.carousel-cell.is-selected {
+  z-index: 10; /* Höherer Z-Index für ausgewählte Karten */
+}
+
+
+/* Zentrale Karte */
+.carousel-cell.is-selected {
+  transform: scale(1);
+  filter: blur(0);
+  z-index: 2;
+}
+
+/* Seitliche Karten */
+.carousel-cell:not(.is-selected) {
+  transform: scale(0.85);
+  filter: blur(2px);
+  z-index: 1;
+}
+
+.carousel-cell.is-selected {
+  transform: scale(1);
+  filter: blur(0);
+  z-index: 2;
+}
+

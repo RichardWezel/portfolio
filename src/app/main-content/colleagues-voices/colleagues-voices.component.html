@@ -1,7 +1,11 @@
 <main>
   <h3 class="header">What my colleagues say about me</h3>
-  <app-carousel></app-carousel>
-  <app-carousel-navigation></app-carousel-navigation>
-
+  <app-carousel [cards]="cards" (indexChange)="onIndexChange($event)"></app-carousel>
+  <app-carousel-navigation
+    [total]="cards.length"
+    [currentIndex]="currentIndex"
+    (next)="onNext()"
+    (previous)="onPrevious()"
+    (selectDot)="onSelectDot($event)"
+  ></app-carousel-navigation>
 </main>
-
