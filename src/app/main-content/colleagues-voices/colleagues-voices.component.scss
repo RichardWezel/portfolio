@@ -1,19 +1,30 @@
 @import './../../../styles.scss';
 
 main {
-    height: 100%;
-    background-color: #1C1C1C;
-    font-family: $base-font;
-    color: white;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    font-family: $base-font;
     .header {
         color: $base-color;
         margin-bottom: 48px;
         text-align: center;
+        font-family: $base-font;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.98px;
+        text-align: left;
+        position: relative;
+        span{
+            position: absolute;
+            top: 80px;
+            left: -61px;
+            z-index: 10;
+        }
     }
+}
+
+app-carousel {
+    width: 100vw;
 }

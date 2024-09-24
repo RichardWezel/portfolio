@@ -1,47 +1,183 @@
 @import './../../../../styles.scss';
 
-.gallery {
-  width: 100%;
-  position: relative;
-}
-
-.carousel-cell {
-  width: 300px; /* Anpassen nach Bedarf */
-  margin: 0 10px;
-  transition: transform 0.5s, filter 0.5s;
-  z-index: 1; /* Basis-Z-Index */
-}
-
-.flickity-slider {
+main{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: unset;
 }
 
-.flickity-page-dots {
+.container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=radio]{
   display: none;
 }
 
-.carousel-cell.is-selected {
-  z-index: 10; /* Höherer Z-Index für ausgewählte Karten */
+.cards {
+  position: relative;
+  width: 100%;
+  height: 274px;
+  margin-bottom: 20px;
 }
 
-
-/* Zentrale Karte */
-.carousel-cell.is-selected {
-  transform: scale(1);
-  filter: blur(0);
-  z-index: 2;
+.card {
+  position: absolute;
+  width: 632px;
+  height: 274px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  background-color: rgba(61, 207, 182, 0.3);
+  border-radius: 32px;
+  border: 1px solid $base-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 48px 32px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Seitliche Karten */
-.carousel-cell:not(.is-selected) {
-  transform: scale(0.85);
-  filter: blur(2px);
+.content {
+  color: white;
+  font-family: 'Karla';
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left;
+}
+
+.author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  hr {
+      flex: 1;
+      border: none;
+      height: 1px;
+      background-color: white;
+  }
+
+  div {
+      min-width: fit-content;
+      font-family: 'Karla', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: left;
+      color: white;
+  }
+}
+
+#item-1:checked ~ .cards #card-3, #item-2:checked ~ .cards #card-1, #item-3:checked ~ .cards #card-2 {
+  transform: translatex(-100%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #card-2, #item-2:checked ~ .cards #card-3, #item-3:checked ~ .cards #card-1 {
+  transform: translatex(100%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #card-1, #item-2:checked ~ .cards #card-2, #item-3:checked ~ .cards #card-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
   z-index: 1;
 }
 
-.carousel-cell.is-selected {
-  transform: scale(1);
-  filter: blur(0);
-  z-index: 2;
+#item-1:checked ~ .navigation #dot-1{
+ background-color: $base-color;
 }
 
+#item-2:checked ~ .navigation #dot-2 {
+  background-color: $base-color;
+}
+
+#item-3:checked ~ .navigation #dot-3  {
+  background-color: $base-color;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.arrow-button {
+  background-color: unset;
+  height: 40px;
+  width: 40px;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  div{
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+  }
+}
+
+.arrow-button:hover {
+  div{
+      right: 8px;
+      svg{
+          width: 19.5px;
+          height: 19.18px;
+          path{
+              fill: $base-color;
+          }
+      }
+  }
+}
+
+.button--next {
+  div{
+      left: 4px;
+      right: unset;
+      svg {
+          transform: rotate(180deg);
+      }
+  }
+}
+
+.button--next:hover {
+  div{
+      left: 8px;
+      svg{
+          width: 19.5px;
+          height: 19.18px;
+          path{
+              fill: $base-color;
+          }
+      }
+  }
+}

@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from "./carousel/carousel.component";
-import { CarouselNavigationComponent } from "./carousel-navigation/carousel-navigation.component";
 
 interface Card {
   content: string;
@@ -13,7 +12,7 @@ interface Card {
   standalone: true,
   templateUrl: './colleagues-voices.component.html',
   styleUrls: ['./colleagues-voices.component.scss'],
-  imports: [CommonModule, CarouselComponent, CarouselNavigationComponent]
+  imports: [CommonModule, CarouselComponent]
 })
 export class ColleaguesVoicesComponent {
   @ViewChild(CarouselComponent) carousel!: CarouselComponent;
@@ -42,17 +41,7 @@ export class ColleaguesVoicesComponent {
   currentIndex: number = 0;
 
   // Methoden zur Steuerung des Karussells
-  onNext(): void {
-    this.carousel.next();
-  }
 
-  onPrevious(): void {
-    this.carousel.previous();
-  }
-
-  onSelectDot(index: number): void {
-    this.carousel.select(index);
-  }
 
   onIndexChange(index: number): void {
     this.currentIndex = index;
