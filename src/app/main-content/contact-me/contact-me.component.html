@@ -6,51 +6,42 @@
      <p>Contact me through this formular, I am interessted in hearing from you, knowing your Ideas and contributing to your projects with my work.</p>
      <p>Need a Frontend developer? <span>Let's talk!</span></p>
     </section>
-    <div>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <section class="striped-list" [class.striped-list-hovered]="isTextHovered">
-            <div class="striped-list-row formular-row" id="name">
-                <h3 class="header">What's your name?</h3>
-                <input type="text" placeholder="Your name goes here">
+            <!-- Name -->
+            <div class="striped-list-row formular-row" id="row-1">
+                <label class="formular-label" for="name">What's your name?</label>
+                <input [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name goes here" required>
             </div>
     
             <hr class="striped-list-line" #underName id="under-name" [style.opacity]="isEmailHovered ? '1' : '0.5'">
-    
-            <div class="striped-list-row formular-row" id="email"
+            <!--E-Mail -->
+            <div class="striped-list-row formular-row" id="row-2"
                  (mouseover)="isEmailHovered = true"
                  (mouseout)="isEmailHovered = false">
-                <h3 class="header">What's your email?</h3>
-                <input type="text" placeholder="youremail@email.com">
+                <label class="formular-label" for="email">What's your email?</label>
+                <input [(ngModel)]="contactData.email" type="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
     
             <hr class="striped-list-line" #underEmail id="under-email" [style.opacity]="isEmailHovered ? '1' : '0.5'">
-    
-            <div class="striped-list-row formular-row" id="text" (mouseover)="isTextHovered = true"
+            <!--Message -->
+            <div class="striped-list-row formular-row" id="row-3" (mouseover)="isTextHovered = true"
             (mouseout)="isTextHovered = false">
-                <h3 class="header">How can I help you?</h3>
-                <input type="text" placeholder="Hallo Richard, I am interested in...">
+                <label class="formular-label" for="message">How can I help you?</label>
+                <input [(ngModel)]="contactData.message" minlength="4" #message="ngModel" type="text" id="message" name="message" placeholder="Hallo Richard, I am interested in..." required>
             </div>
         </section>
         <section class="confirmation-privacy">
             <div class="btn-text">
-                <button (click)="toggleCheckbox()" [attr.aria-pressed]="isChecked" class="checkbox-button">
-                    <ng-container *ngIf="!isChecked; else checkedSvg">
-                        <!-- Unchecked SVG -->
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM2 16H16V2H2V16Z" fill="#3DCFB6"/>
-                        </svg>
-                      </ng-container>
-                      <ng-template #checkedSvg>
-                        <!-- Checked SVG -->
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.6 10.4L5.45 8.25C5.26667 8.06667 5.03333 7.975 4.75 7.975C4.46667 7.975 4.23333 8.06667 4.05 8.25C3.86667 8.43333 3.775 8.66667 3.775 8.95C3.775 9.23333 3.86667 9.46667 4.05 9.65L6.9 12.5C7.1 12.7 7.33333 12.8 7.6 12.8C7.86667 12.8 8.1 12.7 8.3 12.5L13.95 6.85C14.1333 6.66667 14.225 6.43333 14.225 6.15C14.225 5.86667 14.1333 5.63333 13.95 5.45C13.7667 5.26667 13.5333 5.175 13.25 5.175C12.9667 5.175 12.7333 5.26667 12.55 5.45L7.6 10.4ZM2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM2 16H16V2H2V16Z" fill="#3DCFB6"/>
-                        </svg>
-                    </ng-template>
-                </button>
+                <label class="custom-checkbox">
+                    <input type="checkbox" required [(ngModel)]="contactData.privacyPolicyAccepted">
+                    <span class="checkmark"></span>
+                </label>
                 <div class="request-to-check">I've read the <a>privacy policy</a> and agree to the processing of my data as outlined.</div>
             </div>
             <div class="error-checkbox">Please accept the privacy policy.</div>
             <div class="btn-send-hello-section">
-                <button href="#" class="btn-send-hello button">
+                <button href="#" class="btn-send-hello">
                     <div class="button_inner">
                       <span data-text="Say hello ;&#41;">Say hello ;&#41;</span>
                     </div>
@@ -58,7 +49,7 @@
             </div>
             
         </section>
-    </div>
+    </form>
    
 
 </main>

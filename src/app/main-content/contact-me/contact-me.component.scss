@@ -5,10 +5,12 @@ main {
     background-color: #1C1C1C;
     font-family: $base-font;
     color: white;
-    @include dja();
+    display: flex;
+    justify-content: center;
+    align-items: start;
     padding: 0 112px 0;
     gap: 98px;
-    div{
+    form{
     width: 100%;
     }
 }
@@ -21,11 +23,18 @@ main {
     }
 }
 
-
-
 .header {
     color: $base-color;
     width: fit-content;
+}
+
+.formular-label {
+    font-family: $base-font;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    color: $base-color;
 }
 
 .formular-row {
@@ -36,19 +45,20 @@ main {
     width: fit-content;
 }
 
-input {
+input[type=text], 
+input[type=email]{
     background-color: unset;
     border: unset;
     color: white;
-    width: fit-content;
-    &::placeholder {
+    width: 100%;
+    &::placeholder{
         color: rgba(255, 255, 255, 0.8);
     }
 }
 
-#name:hover, 
-#email:hover,
-#text:hover {
+#row-1:hover, 
+#row-2:hover,
+#row-3:hover {
     input {
         &::placeholder{
             color: white;
@@ -56,7 +66,7 @@ input {
     }
 }
 
-#name:hover + #under-name {
+#row-1:hover + #under-name {
     opacity: 1 !important;
 }
 
@@ -73,20 +83,66 @@ input {
     margin-bottom: 40px;
 }
 
-.striped-list-hovered {
+.striped-list-hovered{
     border-bottom: rgba(61, 207, 182, 1) solid 2px; // Helleres Border
 }
 
-.checkbox-button {
-    width: 24px;
-    height: 24px;
+
+// Checkbox
+
+.custom-checkbox {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: none;
-    border: none;
-    padding: 0;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
     cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    width: 24px;
+    height: 22px;
+    &:hover{
+      background-color: rgba(61, 207, 182, 0.3);
+      border-radius: 10px;
+    }
+    
+  }
+  
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  
+  }
+  
+  .custom-checkbox .checkmark {
+    height: 18px;
+    width: 18px;
+    border: 2px solid $base-color;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+  }
+  
+  
+  
+  .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 9px;
+    border: solid $base-color;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
   }
   
   .confirmation-privacy {
@@ -111,6 +167,7 @@ input {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
+    
     a{
         color: $base-color;
         &:hover{
@@ -129,6 +186,7 @@ input {
     line-height: 16.8px;
     text-align: left;
     margin-bottom: 16px;
+    margin-left: 10px;
   }
 
   .btn-send-hello{
@@ -136,10 +194,29 @@ input {
     height: 48px;
     gap: 10px;
     background-color: unset;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 24px 12px;
+    border-radius: 100px;
+    font-family: 'Karla';
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+    }
 }
+
 
 .btn-send-hello-section {
     display: flex;
     justify-content: center;
     width: 100%;
+   
 }

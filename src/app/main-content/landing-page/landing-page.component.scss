@@ -1,6 +1,7 @@
 @import './../../../styles.scss';
 
 main {
+    position: relative;
     height: 100vh;
     width: 100%;
     background: linear-gradient(90deg, #1C1C1C ,$base-color-dark );
@@ -8,7 +9,7 @@ main {
     flex-direction: column;
     font-family: $base-font;;
     color: white;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .hero {
@@ -45,6 +46,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    z-index: 1 !important;
 }
 
 .arrow {
@@ -57,20 +59,20 @@ main {
    svg {
     animation: MoveUpDown 1.4s linear infinite;
     position: absolute;
-    left: 10;
+    left: 10px;
     top: 15px;
    }
    
 }
   
-  @keyframes MoveUpDown {
-    0%, 100% {
-      top: 15;
-    }
-    50% {
-      top: 22px;
-    }
+@keyframes MoveUpDown{
+  0%, 100%{
+    top: 15px;
   }
+  50%{
+    top: 22px;
+  }
+}
 
 .line {
     display: flex;
@@ -82,7 +84,6 @@ main {
     }
 }
 
-
 .social-media-mail {
     position: absolute;
     right: 96px;
@@ -92,10 +93,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 24px;
+
 }
 
 .mailadress {
-    rotate: 270deg;
+    transform: rotate(270deg); 
     display: flex;
     height: 200px;
     align-items: center;
@@ -110,57 +112,6 @@ main {
     height: 186px;
     border: 1px solid;
 }
-
-.scroll {
-    display: flex;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    bottom: 42px;
-    left: 0px;
-    overflow: hidden;
-    
-    div {
-        background-color: rgba(255, 255, 255, 0.122);
-        color: $base-color;
-        font-size: 32px;
-        font-family: 'Karla';
-        font-weight: 400;
-        white-space: nowrap;
-        animation: animate 20s linear infinite;  // Geschwindigkeit anpassen, falls nötig
-        padding: 12px 32px;
-    }
-    
-    @keyframes animate {
-        0% {
-            transform: translateX(0);  // Startet an der linken Seite
-        }
-        100% {
-            transform: translateX(-100%);  // Läuft nach links aus dem Bild
-        }
-    }
-
-    .dot {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-.text {
-    transform: rotate(-3deg);
-}
-
-.arrowToContent, .social-media-mail {
-    max-width: 100vw;  // Sicherstellen, dass die Elemente nicht über den Viewport hinausreichen
-}
-
-
-
-
-
-
-
-
 
 
 

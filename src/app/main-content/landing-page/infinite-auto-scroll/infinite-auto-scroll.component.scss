@@ -1,0 +1,48 @@
+@import './../../../../styles.scss';
+
+.scroll {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 10 !important;
+    backdrop-filter: blur(5.300000190734863px);
+    div {
+        background-color: rgba(255, 255, 255, 0.122);
+        color: $base-color;
+        font-size: 32px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-family: Karla;
+        line-height: 38.4px;
+        text-align: left;
+        white-space: nowrap;
+        animation: animate 20s linear infinite;
+        padding: 12px 0;
+    }
+}
+
+.dot {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(0);  
+    }
+    100%{
+        transform: translateX(-100%); 
+    }
+}
+
+.text {
+    transform: rotate(-3deg);
+}
+
+.arrowToContent, .social-media-mail {
+    max-width: 100vw;
+    z-index: 1 !important;
+}
