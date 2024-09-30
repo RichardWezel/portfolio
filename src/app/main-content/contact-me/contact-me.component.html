@@ -1,17 +1,17 @@
 <main>
     <section class="request-to-call">
-     <div class="box-label">Contact me</div>
-     <h2 class="box-header">Let's work together!</h2>
-     <h3 class="header">Got a problem to solve?</h3>
-     <p>Contact me through this formular, I am interessted in hearing from you, knowing your Ideas and contributing to your projects with my work.</p>
-     <p>Need a Frontend developer? <span>Let's talk!</span></p>
+     <div class="box-label">{{'CONTACT-ME.invitation-to-contact-me.topic' | translate}}</div>
+     <h2 class="box-header">{{'CONTACT-ME.invitation-to-contact-me.header' | translate}}</h2>
+     <h3 class="header">{{'CONTACT-ME.invitation-to-contact-me.question-1' | translate}}</h3>
+     <p>{{'CONTACT-ME.invitation-to-contact-me.text' | translate}}</p>
+     <p>{{'CONTACT-ME.invitation-to-contact-me.question-2' | translate}} <span>{{'CONTACT-ME.invitation-to-contact-me.letsTalk' | translate}}</span></p>
     </section>
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <section class="striped-list" [class.striped-list-hovered]="isTextHovered">
             <!-- Name -->
             <div class="striped-list-row formular-row" id="row-1">
-                <label class="formular-label" for="name">What's your name?</label>
-                <input [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name goes here" required>
+                <label class="formular-label" for="name">{{'CONTACT-ME.formular.name.label' | translate}}</label>
+                <input [(ngModel)]="contactData.name" type="text" name="name" id="name" [placeholder]="'CONTACT-ME.formular.name.placeholder' | translate" required>
             </div>
     
             <hr class="striped-list-line" #underName id="under-name" [style.opacity]="isEmailHovered ? '1' : '0.5'">
@@ -19,16 +19,16 @@
             <div class="striped-list-row formular-row" id="row-2"
                  (mouseover)="isEmailHovered = true"
                  (mouseout)="isEmailHovered = false">
-                <label class="formular-label" for="email">What's your email?</label>
-                <input [(ngModel)]="contactData.email" type="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <label class="formular-label" for="email">{{'CONTACT-ME.formular.email.label' | translate}}</label>
+                <input [(ngModel)]="contactData.email" type="email" name="email" [placeholder]="'CONTACT-ME.formular.email.placeholder' | translate" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
     
             <hr class="striped-list-line" #underEmail id="under-email" [style.opacity]="isEmailHovered ? '1' : '0.5'">
             <!--Message -->
             <div class="striped-list-row formular-row" id="row-3" (mouseover)="isTextHovered = true"
             (mouseout)="isTextHovered = false">
-                <label class="formular-label" for="message">How can I help you?</label>
-                <input [(ngModel)]="contactData.message" minlength="4" #message="ngModel" type="text" id="message" name="message" placeholder="Hallo Richard, I am interested in..." required>
+                <label class="formular-label" for="message">{{'CONTACT-ME.formular.message.label' | translate}}</label>
+                <input [(ngModel)]="contactData.message" minlength="4" #message="ngModel" type="text" id="message" name="message" [placeholder]="'CONTACT-ME.formular.message.placeholder' | translate" required>
             </div>
         </section>
         <section class="confirmation-privacy">
@@ -37,13 +37,13 @@
                     <input type="checkbox" required [(ngModel)]="contactData.privacyPolicyAccepted">
                     <span class="checkmark"></span>
                 </label>
-                <div class="request-to-check">I've read the <a>privacy policy</a> and agree to the processing of my data as outlined.</div>
+                <div class="request-to-check"> {{'CONTACT-ME.formular.privacy-policy.text-1' | translate}} <a>{{'CONTACT-ME.formular.privacy-policy.text-2' | translate}}</a> {{'CONTACT-ME.formular.privacy-policy.text-3' | translate}}</div>
             </div>
-            <div class="error-checkbox">Please accept the privacy policy.</div>
+            <div class="error-checkbox">{{'CONTACT-ME.formular.privacy-policy.error' | translate}}</div>
             <div class="btn-send-hello-section">
                 <button href="#" class="btn-send-hello">
                     <div class="button_inner">
-                      <span data-text="Say hello ;&#41;">Say hello ;&#41;</span>
+                      <span data-text="Say hello ;&#41;">{{'CONTACT-ME.formular.button' | translate}} ;&#41;</span>
                     </div>
                 </button>
             </div>

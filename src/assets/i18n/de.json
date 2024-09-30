@@ -1,0 +1,103 @@
+{
+    "NAV": {
+      "ABOUT_ME": "Über mich",
+      "SKILLS": "Fähigkeiten",
+      "PROJECTS": "Projekte",
+      "CONTACT": "Kontaktiere mich",
+      "CHECK_WORK": "Meine Projekte ansehen"
+    },
+    "INFINITE-AUTO-SCROLL": {
+      "based": "Sitz in Freiburg im Breisgau",
+      "profession": "Frontend Entwickler",
+      "learning": "Zur Zeit Weiterbildung in Backend",
+      "available": "Verfügbar für Mobiles Arbeiten"
+    },
+    "ABOUT-ME": {
+      "whoIAm": "Wer ich bin",
+      "header": "Über mich",
+      "intro": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Freiburg. Motiviert durch die grenzenlosen Möglichkeiten in der IT, bin ich begeistert davon, visuell fesselnde und intuitive Webseiten und Anwendungen zu entwickeln.",
+      "location": "Ich bin flexibel, was das Arbeitsumfeld angeht, und kann sowohl vor Ort in München als auch aus der Ferne effektiv arbeiten.",
+      "mind": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um meine Kenntnisse und Fähigkeiten ständig zu verbessern.",
+      "profession": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz auf meine Fähigkeit, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    },
+    "SKILL-SET": {
+      "topic": "Technologien",
+      "header": "Fähigkeiten",
+      "intro": "Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung vorne zu bleiben.",
+      "question-1": "Sie interessieren sich für",
+      "question-2": "weitere Fähigkeiten?",
+      "answer": "Fühlen Sie sich frei mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+      "btn": "Schreiben Sie mir"
+    },
+    "PROJECTS": {
+      "header": "Ausgewählte Projekte",
+      "text": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+      "Project": {
+        "about": "Worum geht es in diesem Projekt?",
+        "next-btn": "Nächstes Projekt",
+        "description-project-1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "description-project-2": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "description-project-3": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation."
+      }
+    },
+    "COLLEAGUES-VOICES": {
+      "header": "Was meine Kolleg*innen über mich sagen",
+      "card-1": {
+        "text": "Richard ist ein unverzichtbares Teammitglied. Seine technische Expertise und seine lösungsorientierte Denkweise haben unser Projekt maßgeblich vorangebracht.",
+        "autor": "Kerstin"
+      },
+      "card-2": {
+        "text": "Herr Wezel schätzt besonders seine Zuverlässigkeit und die Fähigkeit, komplexe Probleme schnell zu lösen. Er fördert eine positive Arbeitsatmosphäre und motiviert das gesamte Team.",
+        "autor": "Stefan"
+      },
+      "card-3": {
+        "text": "Durch seine hervorragenden Kommunikationsfähigkeiten und sein Engagement trägt er wesentlich zum Erfolg unserer Abteilung bei. Max ist stets bereit, sein Wissen zu teilen und unterstützt Kollegen proaktiv.",
+        "autor": "Thomas"
+      }
+    },
+    "CONTACT-ME": {
+      "invitation-to-contact-me": {
+        "topic": "Kontaktiere mich",
+        "header": "Lass uns zusammenarbeiten!",
+        "question-1": "Sie haben ein Problem zu lösen?",
+        "text": "Kontaktieren Sie mich über das Formular, Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "question-2": "Brauchen Sie einen Frontend-Entwickler?",
+        "letsTalk": "Lassen Sie uns reden!"
+      },
+      "formular":{
+        "name": {
+          "label": "Wie ist Ihr Name?",
+          "placeholder": "Hier tragen Sie Ihren Namen ein",
+          "error": "Oops! Es scheint, als ob Ihr Name fehlt"
+        },
+        "email": {
+          "label": "Ihre E-Mail Adresse?",
+          "placeholder": "IhreE-Mail@e-mail.com",
+          "error": "Hoppla! Ihre E-Mail Adresse fehlt"
+        },
+        "message": {
+          "label": "Wie kann ich Ihnen helfen?",
+          "placeholder": "Hallo Richard, Ich interessiere mich für ...",
+          "error": "Was möchten Sie vom Entwickler?"
+        },
+        "privacy-policy": {
+          "text-1": "Ich habe die",
+          "text-2": "Datenschutzerklärung",
+          "text-3": "gelesen und bin mit dem Umgang meiner Daten wie dargelegt einverstanden",
+          "error": "Bitte akzeptieren Sie die Datenschutzerklärung."
+        },
+        "button": "Sag Hallo"
+      }
+    },
+    "FOOTER": {
+      "left": {
+        "profession": "Web-Entwickler",
+        "local": "Freiburg im Breisgau | Deutschland"
+      },
+      "right": {
+        "imprint": "Impressum"
+      }
+    }
+  }
+  
+

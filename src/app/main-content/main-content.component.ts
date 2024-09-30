@@ -7,11 +7,13 @@ import { FeaturedProjectsComponent } from "./featured-projects/featured-projects
 import { ColleaguesVoicesComponent } from "./colleagues-voices/colleagues-voices.component";
 import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from "./footer/footer.component";
+import { SharedModule } from '../../shared/shared.module';
+
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent],
+  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })

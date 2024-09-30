@@ -1,20 +1,21 @@
-import { Component, OnInit, inject } from '@angular/core';
-import projectsData from './projects.json'; 
+import { Component} from '@angular/core';
+import projectsData  from './projects.json'; 
+import { SharedModule } from '../../../../shared/shared.module';
 
 interface Project {
-  number: String;
-  title: String;
-  description: String;
+  number: string;
+  title: string;
+  description: string;
   skills: any;
   next: number;
-  img: String
+  img: string
 }
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [SharedModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

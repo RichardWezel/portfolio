@@ -6,15 +6,15 @@
         <h1>Richard Wezel</h1>
         <div class="link-work-contact">
 
-            <a href="#" class="button">
+            <a routerLink="/projects" class="button">
                 <div class="button_inner">
-                  <span data-text="Check my work">Check my work</span>
+                    <span [attr.data-text]="'NAV.CHECK_WORK' | translate">{{ 'NAV.CHECK_WORK' | translate }}</span>
                 </div>
             </a>
 
-            <a href="#" class="button">
+            <a routerLink="/contact-me" class="button">
                 <div class="button_inner">
-                  <span data-text="Contact me">Contact me</span>
+                    <span [attr.data-text]="'NAV.CONTACT' | translate">{{ 'NAV.CONTACT' | translate }}</span>
                 </div>
             </a>
             

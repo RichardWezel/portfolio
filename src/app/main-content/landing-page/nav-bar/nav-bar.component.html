@@ -2,26 +2,26 @@
     <div class="menu">
         <div class="language-switch-btn">
             <div class="EN">EN</div>
-            <input type="checkbox" id="check1" class="toggle">
+            <input type="checkbox" id="check1" class="toggle" (change)="toggleLanguage($event)" [checked]="isGerman">
             <label for="check1"></label>
             <div class="DE">DE</div>
         </div>
 
         <div class="nav-links">
-            <a href="">
-                <div>About me</div>
+            <a routerLink="/about-me">
+                <div>{{ 'NAV.ABOUT_ME' | translate }}</div>
                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="white"/>
                 </svg>  
              </a>
-             <a href="">
-                <div>Skills</div>
+             <a routerLink="/skills">
+                <div>{{ 'NAV.SKILLS' | translate }}</div>
                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="white"/>
                 </svg>  
              </a>
-             <a href="">
-                <div>Projects</div>
+             <a routerLink="/projects">
+                <div>{{ 'NAV.PROJECTS' | translate }}</div>
                 <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="white"/>
                 </svg>  

@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from "./carousel/carousel.component";
+import { SharedModule } from '../../../shared/shared.module';
 
 interface Card {
   content: string;
@@ -12,7 +13,7 @@ interface Card {
   standalone: true,
   templateUrl: './colleagues-voices.component.html',
   styleUrls: ['./colleagues-voices.component.scss'],
-  imports: [CommonModule, CarouselComponent]
+  imports: [CommonModule, CarouselComponent, SharedModule]
 })
 export class ColleaguesVoicesComponent {
   @ViewChild(CarouselComponent) carousel!: CarouselComponent;

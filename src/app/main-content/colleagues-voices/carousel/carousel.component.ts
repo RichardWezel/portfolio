@@ -1,10 +1,11 @@
 import { Component} from '@angular/core';
+import { SharedModule } from '../../../../shared/shared.module';
 
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [],
+  imports: [SharedModule],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })

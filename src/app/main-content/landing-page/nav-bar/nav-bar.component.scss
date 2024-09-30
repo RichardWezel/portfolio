@@ -72,8 +72,13 @@ input[type="checkbox"].toggle {
     height: 28px;
     cursor: pointer;
   }
+
+  #check1{
+    border-radius: 1em;
+    border: #3DCFB6 solid 1px;
+  }
   
-  input[type="checkbox"].toggle + label::before {
+  input[type="checkbox"].toggle + label::before{
     content: "";
     width: 84px;
     height: 28px;
@@ -82,7 +87,7 @@ input[type="checkbox"].toggle {
     transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
   }
   
-  input[type="checkbox"].toggle + label:hover::before {
+  input[type="checkbox"].toggle + label:hover::before{
     border-color: white;
   }
   
