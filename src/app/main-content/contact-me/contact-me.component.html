@@ -11,7 +11,15 @@
             <!-- Name -->
             <div class="striped-list-row formular-row" id="row-1">
                 <label class="formular-label" for="name">{{'CONTACT-ME.formular.name.label' | translate}}</label>
-                <input [(ngModel)]="contactData.name" type="text" name="name" id="name" [placeholder]="'CONTACT-ME.formular.name.placeholder' | translate" required>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    [(ngModel)]="contactData.name" 
+                    [placeholder]="'CONTACT-ME.formular.name.placeholder' | translate" 
+                    autocomplete="name"
+                    required
+                >
             </div>
     
             <hr class="striped-list-line" #underName id="under-name" [style.opacity]="isEmailHovered ? '1' : '0.5'">
@@ -20,7 +28,16 @@
                  (mouseover)="isEmailHovered = true"
                  (mouseout)="isEmailHovered = false">
                 <label class="formular-label" for="email">{{'CONTACT-ME.formular.email.label' | translate}}</label>
-                <input [(ngModel)]="contactData.email" type="email" name="email" [placeholder]="'CONTACT-ME.formular.email.placeholder' | translate" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    [(ngModel)]="contactData.email" 
+                    [placeholder]="'CONTACT-ME.formular.email.placeholder' | translate" 
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    autocomplete="email"
+                    required
+                >
             </div>
     
             <hr class="striped-list-line" #underEmail id="under-email" [style.opacity]="isEmailHovered ? '1' : '0.5'">
@@ -28,13 +45,29 @@
             <div class="striped-list-row formular-row" id="row-3" (mouseover)="isTextHovered = true"
             (mouseout)="isTextHovered = false">
                 <label class="formular-label" for="message">{{'CONTACT-ME.formular.message.label' | translate}}</label>
-                <input [(ngModel)]="contactData.message" minlength="4" #message="ngModel" type="text" id="message" name="message" [placeholder]="'CONTACT-ME.formular.message.placeholder' | translate" required>
+                <input 
+                    type="text" 
+                    name="message" 
+                    id="message" 
+                    [(ngModel)]="contactData.message" 
+                    minlength="4" 
+                    #message="ngModel" 
+                    [placeholder]="'CONTACT-ME.formular.message.placeholder' | translate" 
+                    autocomplete="off"
+                    required>
             </div>
         </section>
         <section class="confirmation-privacy">
             <div class="btn-text">
                 <label class="custom-checkbox">
-                    <input type="checkbox" required [(ngModel)]="contactData.privacyPolicyAccepted">
+                    <input 
+                        type="checkbox" 
+                        name="privacyPolicyAccepted" 
+                        id="checkbox"
+                        [(ngModel)]="contactData.privacyPolicyAccepted"
+                        autocomplete="off"
+                        required 
+                    >
                     <span class="checkmark"></span>
                 </label>
                 <div class="request-to-check"> {{'CONTACT-ME.formular.privacy-policy.text-1' | translate}} <a>{{'CONTACT-ME.formular.privacy-policy.text-2' | translate}}</a> {{'CONTACT-ME.formular.privacy-policy.text-3' | translate}}</div>

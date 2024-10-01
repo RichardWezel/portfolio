@@ -97,10 +97,16 @@ main {
 }
 
 .mailadress {
-    transform: rotate(270deg); 
+    transform: rotate(270deg);
     display: flex;
-    height: 200px;
+    height: 30px;
     align-items: center;
+    margin-bottom: 95px;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover{
+        color: $base-color;
+    }
 }
 
 .social-media {
@@ -113,5 +119,24 @@ main {
     border: 1px solid;
 }
 
+#github {
+    &:hover{
+        svg{
+            path{
+                fill: #ffffff;
+            }
+        }
+    }
+}
+
+#linkedIn {
+    &:hover{
+        svg{
+            path{
+                fill: #ffffff;
+            }
+        }
+    }
+}
 
 

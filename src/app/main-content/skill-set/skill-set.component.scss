@@ -47,11 +47,15 @@ main {
         justify-content: center;
         width: 104px;
         svg{
-           height: 64px;
-           width: 64px;
-           padding: 0 20px 8px 20px;
-           display: flex;
-           box-sizing: content-box;
+            height: 64px;
+            width: 64px;
+            padding: 0 20px 8px 20px;
+            display: flex;
+            box-sizing: content-box;        
+            &:hover{
+                transform: scale(1.1);
+                transition-duration: 150ms;
+            }
         }
         div {
            text-align: center;
@@ -62,8 +66,10 @@ main {
             line-height: 21.6px;
             letter-spacing: -0.03em;
             text-align: center;
-            
             display: flex
+        }
+        &:hover{
+            color: $base-color;
         }
     }
 }

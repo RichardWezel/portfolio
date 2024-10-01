@@ -46,6 +46,11 @@ main {
 .box-row {
     display: flex;
     margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    &:hover{
+        color: rgb(255, 255, 255);
+    }
+
 }
 
 .box-icon {

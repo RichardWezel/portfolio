@@ -1,9 +1,9 @@
 <main translate="no" class="blue">
   <div class="container">
   
-    <input type="radio" name="slider" id="item-1" checked>
-    <input type="radio" name="slider" id="item-2">
-    <input type="radio" name="slider" id="item-3">
+    <input type="radio" name="slider1" id="item-1" checked>
+    <input type="radio" name="slider2" id="item-2">
+    <input type="radio" name="slider3" id="item-3">
     <div class="cards">
       <label class="card" for="item-1" id="card-1">
         <section class="content">
@@ -43,9 +43,9 @@
         </div>
       </button>
       
-      <label class="dot" id="dot-1"></label>
-      <label class="dot" id="dot-2"></label>
-      <label class="dot" id="dot-3"></label>
+      <label class="dot" id="dot-1" for="item-1"></label>
+      <label class="dot" id="dot-2" for="item-2"></label>
+      <label class="dot" id="dot-3" for="item-3"></label>
 
       <button class="arrow-button button--next" (click)="nextCard()">
         <div>
