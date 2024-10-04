@@ -8,7 +8,8 @@ interface Project {
   description: string;
   skills: any;
   next: number;
-  img: string
+  img: string;
+  link: string
 }
 
 

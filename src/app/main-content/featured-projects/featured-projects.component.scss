@@ -55,10 +55,20 @@ main {
     gap: 72px;
     a {
         cursor: pointer;
+        div{
+            svg{
+                display: none;
+            }
+        }
     }
     a:hover {
         background-color: $base-color-dark;
-        transition: background-color 150ms ease-in;
+        transition: background-color 250ms ease-in;
+        div{
+            svg{
+                display: inline-block;
+            }
+        }
     }
 }
 

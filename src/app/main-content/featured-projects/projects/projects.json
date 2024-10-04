@@ -18,7 +18,8 @@
       }
     ],
     "next": 1,
-    "img": "assets/img/Join.png"
+    "img": "assets/img/Join.png",
+    "link": "https://github.com/RichardWezel/Join"
   },  
   {  
     "number": "02",
@@ -39,7 +40,8 @@
       }
     ],
     "next": 2,
-    "img": "assets/../../../../../assets/img/ElPolloLoco.png"
+    "img": "assets/../../../../../assets/img/ElPolloLoco.png",
+    "link": "https://github.com/RichardWezel/El_Pollo_Loco"
   },  
   {  
     "number": "03",
@@ -60,7 +62,8 @@
       }
     ],
     "next": 0,
-    "img": "assets/../../../../../assets/img/DaBubble.png"
+    "img": "assets/../../../../../assets/img/DaBubble.png",
+    "link": ""
   }
   
 ]  
