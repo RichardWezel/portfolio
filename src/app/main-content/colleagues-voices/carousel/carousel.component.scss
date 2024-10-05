@@ -128,7 +128,7 @@ input[type=radio]{
   border-radius: 10px;
 }
 
-.arrow-button {
+.arrow-button{
   background-color: unset;
   height: 40px;
   width: 40px;
@@ -172,17 +172,45 @@ input[type=radio]{
           transform: rotate(180deg);
       }
   }
-}
 
-.button--next:hover {
-  div{
+  &:hover{
+    div{
       left: 8px;
       svg{
           width: 19.5px;
           height: 19.18px;
           path{
               fill: $base-color;
+              
           }
       }
+    }
   }
+}
+
+.previous-arrow-btn {
+  --arrow_rotation: 0deg;
+  --arrow_fill: white;
+
+  &:hover{
+    --arrow_left: -4px;
+    --arrow_stroke-width: 1;
+    cursor: pointer;
+  }
+}
+
+.next-arrow-btn {
+  --arrow_fill: white;
+
+  &:hover{
+    --arrow_left: 4px;
+    --arrow_stroke-width: 1;
+    cursor: pointer;
+  }
+}
+
+.previous-arrow-btn, .next-arrow-btn {
+  position: relative;
+  z-index: 10; 
+  pointer-events: auto; 
 }

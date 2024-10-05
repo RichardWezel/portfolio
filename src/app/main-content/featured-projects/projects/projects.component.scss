@@ -189,6 +189,8 @@ main {
     height: 40px;
     display: flex;
     align-items: center;
+    --arrow-left: 0; // Initialer Wert der CSS-Variable
+
     .nextP-text{
         padding: 9px 8px 9px 0;
         font-family: 'Karla';
@@ -198,51 +200,16 @@ main {
         text-align: left;
         color: $base-color;
     }
-    .nextP-arrow-section {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        transition: transform 150ms ease; /* Langsame Bewegung über 2 Sekunden */
-        position: relative;
-        .nextP-arrow-box{
-            width: 32px;
-            height: 32px;
-            top: 4px;
-            position: absolute;
-            @include dja();
-            svg {
-                rotate: 180deg;
-                width: 18.23px;
-                height: 18.14px;
-                top: 10.92px;
-                left: 6.67px;
-                path {
-                    fill: $base-color;
-                }
-            }
-        }
-    }
-}
 
-.next-project:hover{
-    .nextP-text{
-        color: white;
-        cursor: pointer;
-        transition: transform 150ms ease; /* Langsame Bewegung über 2 Sekunden */
-    }
-    .nextP-arrow-box{
-        left: 4px;
-        svg {
-            rotate: 180deg;
-            width: 12.5px;
-            height: 12.18px;
-            top: 10.4px;
-            left: 10px;
-            path{
-                stroke: #3DCFB6;
-                stroke-width: 1;
-            }
+    &:hover{
+        .nextP-text {
+          color: white;
+          cursor: pointer;
+          transition: color 150ms ease;
         }
+    
+        --arrow_left: 4px;
+        --arrow_stroke-width: 1;
     }
+
 }

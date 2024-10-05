@@ -6,21 +6,21 @@
     "skills": [
       {
         "name": "HTML",
-        "iconPath": "./../../../../assets/icons/icon-html_green.svg"
+        "iconPath": "/assets/icons/icon-html_green.svg"
       },
       {
         "name": "Javascript",
-        "iconPath": "./../../../../assets/icons/icon-javascript_green.svg"
+        "iconPath": "/assets/icons/icon-javascript_green.svg"
       },
       {
         "name": "CSS",
-        "iconPath": "./../../../../assets/icons/icon-css_green.svg"
+        "iconPath": "/assets/icons/icon-css_green.svg"
       }
     ],
     "next": 1,
     "img": "assets/img/Join.png",
     "links": {
-      "github": "",
+      "github": "https://github.com/RichardWezel/JOIN",
       "live": "https://join.richard-wezel.de/"
     }
   },  
@@ -31,22 +31,22 @@
     "skills": [
       {
         "name": "HTML",
-        "iconPath": "./../../../../assets/icons/icon-html_green.svg"
+        "iconPath": "/assets/icons/icon-html_green.svg"
       },
       {
         "name": "CSS",
-        "iconPath": "./../../../../assets/icons/icon-css_green.svg"
+        "iconPath": "/assets/icons/icon-css_green.svg"
       },
       {
         "name": "Javascript",
-        "iconPath": "./../../../../assets/icons/icon-javascript_green.svg"
+        "iconPath": "/assets/icons/icon-javascript_green.svg"
       }
     ],
     "next": 2,
-    "img": "assets/../../../../../assets/img/ElPolloLoco.png",
+    "img": "/assets/img/ElPolloLoco.png",
     "links": {
       "github": "https://github.com/RichardWezel/El_Pollo_Loco",
-      "live": "https://join.richard-wezel.de/"
+      "live": "https://elpolloloco.richard-wezel.de/"
     }
   },  
   {  
@@ -56,19 +56,19 @@
     "skills": [
       {
         "name": "Angular",
-        "iconPath": "./../../../../assets/icons/icon-angular_green.svg"
+        "iconPath": "/assets/icons/icon-angular_green.svg"
       },
       {
         "name": "Firebase",
-        "iconPath": "./../../../../assets/icons/icon-firebase_green.svg"
+        "iconPath": "/assets/icons/icon-firebase_green.svg"
       },
       {
         "name": "TypeScript",
-        "iconPath": "./../../../../assets/icons/icon-typescript_green.svg"
+        "iconPath": "/assets/icons/icon-typescript_green.svg"
       }
     ],
     "next": 0,
-    "img": "assets/../../../../../assets/img/DaBubble.png",
+    "img": "/assets/img/DaBubble.png",
     "links": {
       "github": "",
       "live": ""

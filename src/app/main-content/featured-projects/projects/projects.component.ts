@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import projectsData  from './projects.json'; 
-import { SharedModule } from '../../../../shared/shared.module';
+import { SharedModule } from '../../../shared/shared.module';
 
 interface Skill {
   name: string;

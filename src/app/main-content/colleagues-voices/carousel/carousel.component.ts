@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { SharedModule } from '../../../../shared/shared.module';
+import { SharedModule } from '../../../shared/shared.module';
 
 
 @Component({
@@ -14,11 +14,13 @@ export class CarouselComponent {
   cards: number = 3; // Anzahl der Karten
 
   previousCard() {
+    console.log('previousCard clicked');
     this.currentIndex = (this.currentIndex - 1 + this.cards) % this.cards;
     this.updateRadioInput();
   }
 
   nextCard() {
+    console.log('nextCard clicked');
     this.currentIndex = (this.currentIndex + 1) % this.cards;
     this.updateRadioInput();
   }

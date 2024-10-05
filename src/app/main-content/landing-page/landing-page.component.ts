@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { InfiniteAutoScrollComponent } from "./infinite-auto-scroll/infinite-auto-scroll.component";
-import { SharedModule } from '../../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @Component({

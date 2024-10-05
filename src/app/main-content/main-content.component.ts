@@ -7,7 +7,7 @@ import { FeaturedProjectsComponent } from "./featured-projects/featured-projects
 import { ColleaguesVoicesComponent } from "./colleagues-voices/colleagues-voices.component";
 import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from "./footer/footer.component";
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @Component({
