@@ -2,16 +2,25 @@ import { Component} from '@angular/core';
 import projectsData  from './projects.json'; 
 import { SharedModule } from '../../../../shared/shared.module';
 
+interface Skill {
+  name: string;
+  iconPath: string;
+}
+
+interface Links {
+  github: string;
+  live: string;
+}
+
 interface Project {
   number: string;
   title: string;
   description: string;
-  skills: any;
+  skills: Skill[];
   next: number;
   img: string;
-  link: string
+  links: Links;
 }
-
 
 @Component({
   selector: 'app-projects',
