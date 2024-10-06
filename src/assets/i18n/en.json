@@ -68,17 +68,25 @@
         "name": {
           "label": "What's your name?",
           "placeholder": "Your name goes here",
-          "error": "Oops! it seems your name is missing"
+          "error": {
+            "required": "Oops! it seems your name is missing"
+          }
         },
         "email": {
           "label": "What's your email?",
           "placeholder": "youremail@email.com",
-          "error": "Hoppla! your email is required"
+          "error": {
+            "required": "Hoppla! your email is required",
+            "pattern": "Please enter a valid e-mail address."
+          }
         },
         "message": {
           "label": "How can I help you?",
           "placeholder": "Hallo Richard, I am interested in ...",
-          "error": "What do you need to develop?"
+          "error": {
+            "required": "What do you need to develop?",
+            "pattern": "The message must be at least 4 characters long."
+          }
         },
         "privacy-policy": {
           "text-1": "I've read the",

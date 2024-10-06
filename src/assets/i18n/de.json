@@ -68,23 +68,32 @@
         "name": {
           "label": "Wie ist Ihr Name?",
           "placeholder": "Hier tragen Sie Ihren Namen ein",
-          "error": "Oops! Es scheint, als ob Ihr Name fehlt"
+          "error": {
+            "required": "Oops! Es scheint, als ob Ihr Name fehlt",
+            "pattern": ""
+          }
         },
         "email": {
           "label": "Ihre E-Mail Adresse?",
           "placeholder": "IhreE-Mail@e-mail.com",
-          "error": "Hoppla! Ihre E-Mail Adresse fehlt"
+          "error": {
+            "required": "Hoppla! Ihre E-Mail Adresse fehlt",
+            "pattern": "Bitte eine gültige E-Mail-Adresse eingeben."
+          }
         },
         "message": {
           "label": "Wie kann ich Ihnen helfen?",
           "placeholder": "Hallo Richard, Ich interessiere mich für ...",
-          "error": "Was möchten Sie vom Entwickler?"
+          "error": {
+            "required": "Was möchten Sie vom Entwickler?",
+            "pattern": "Die Nachricht muss mindestens 4 Zeichen lang sein."
+          }
         },
         "privacy-policy": {
           "text-1": "Ich habe die",
           "text-2": "Datenschutzerklärung",
           "text-3": "gelesen und bin mit dem Umgang meiner Daten wie dargelegt einverstanden",
-          "error": "Bitte akzeptieren Sie die Datenschutzerklärung."
+          "error": "Bitte akzeptieren Sie die Datenschutzrichtlinien."
         },
         "button": "Sag Hallo"
       }

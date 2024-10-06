@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -7,7 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [NgIf, FormsModule, SharedModule],
+  imports: [NgIf, FormsModule, SharedModule, NgClass],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
@@ -28,7 +28,7 @@ export class ContactMeComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://richard-wezel.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -43,7 +43,6 @@ export class ContactMeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -52,8 +51,8 @@ export class ContactMeComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }
 }
+

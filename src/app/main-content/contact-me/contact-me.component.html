@@ -11,52 +11,79 @@
             <!-- Name -->
             <div class="striped-list-row formular-row" id="row-1">
                 <label class="formular-label" for="name">{{'CONTACT-ME.formular.name.label' | translate}}</label>
-                <input 
+                <div class="input-container">
+                    <input 
                     type="text" 
                     name="name" 
                     id="name" 
                     [(ngModel)]="contactData.name" 
+                    #name="ngModel"
                     [placeholder]="'CONTACT-ME.formular.name.placeholder' | translate" 
                     autocomplete="name"
                     required
-                >
+                    [ngClass]="{'input-error': name.invalid && (name.touched || contactForm.submitted)}"
+                    >
+                    <div *ngIf="name.invalid && (name.touched || contactForm.submitted)" class="error-message">
+                        <span *ngIf="name.errors?.['required']">{{ 'CONTACT-ME.formular.name.error.required' | translate }}</span>
+                    </div>
+                </div> 
             </div>
-    
+
             <hr class="striped-list-line" #underName id="under-name" [style.opacity]="isEmailHovered ? '1' : '0.5'">
+
             <!--E-Mail -->
             <div class="striped-list-row formular-row" id="row-2"
                  (mouseover)="isEmailHovered = true"
                  (mouseout)="isEmailHovered = false">
                 <label class="formular-label" for="email">{{'CONTACT-ME.formular.email.label' | translate}}</label>
-                <input 
+                <div class="input-container">
+                    <input 
                     type="email" 
                     name="email" 
                     id="email" 
                     [(ngModel)]="contactData.email" 
+                    #email="ngModel"
                     [placeholder]="'CONTACT-ME.formular.email.placeholder' | translate" 
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                     autocomplete="email"
                     required
-                >
+                    [ngClass]="{'input-error': email.invalid && (email.touched || contactForm.submitted)}"
+                    >
+                    <!-- Error message for E-Mail -->
+                    <div *ngIf="email.invalid && (email.touched || contactForm.submitted)" class="error-message">
+                        <span *ngIf="email.errors?.['required']">{{ 'CONTACT-ME.formular.email.error.required' | translate }}</span>
+                        <span *ngIf="email.errors?.['pattern']">{{ 'CONTACT-ME.formular.email.error.pattern' | translate }}</span>
+                    </div>
+                </div>
             </div>
-    
+
             <hr class="striped-list-line" #underEmail id="under-email" [style.opacity]="isEmailHovered ? '1' : '0.5'">
             <!--Message -->
             <div class="striped-list-row formular-row" id="row-3" (mouseover)="isTextHovered = true"
             (mouseout)="isTextHovered = false">
                 <label class="formular-label" for="message">{{'CONTACT-ME.formular.message.label' | translate}}</label>
-                <input 
+                <div class="input-container">
+                    <input 
                     type="text" 
                     name="message" 
                     id="message" 
                     [(ngModel)]="contactData.message" 
-                    minlength="4" 
                     #message="ngModel" 
+                    minlength="4" 
                     [placeholder]="'CONTACT-ME.formular.message.placeholder' | translate" 
                     autocomplete="off"
-                    required>
+                    required
+                    [ngClass]="{'input-error': message.invalid && (message.touched || contactForm.submitted)}"
+                    >
+                    <!-- Fehlermeldung für Nachricht -->
+                    <div *ngIf="message.invalid && (message.touched || contactForm.submitted)" class="error-message">
+                        <span *ngIf="message.errors?.['required']">{{ 'CONTACT-ME.formular.message.error.required' | translate }}</span>
+                        <!-- <span *ngIf="message.errors['minlength']">{{ 'CONTACT-ME.formular.message.error.minlength' | translate }}</span> -->
+                    </div>
+                </div>
             </div>
         </section>
+
         <section class="confirmation-privacy">
             <div class="btn-text">
                 <label class="custom-checkbox">
@@ -65,6 +92,7 @@
                         name="privacyPolicyAccepted" 
                         id="checkbox"
                         [(ngModel)]="contactData.privacyPolicyAccepted"
+                        #privacyPolicy="ngModel"
                         autocomplete="off"
                         required 
                     >
@@ -72,7 +100,11 @@
                 </label>
                 <div class="request-to-check"> {{'CONTACT-ME.formular.privacy-policy.text-1' | translate}} <a>{{'CONTACT-ME.formular.privacy-policy.text-2' | translate}}</a> {{'CONTACT-ME.formular.privacy-policy.text-3' | translate}}</div>
             </div>
-            <div class="error-checkbox">{{'CONTACT-ME.formular.privacy-policy.error' | translate}}</div>
+            <!-- Fehlermeldung für Checkbox -->
+            <div *ngIf="privacyPolicy.invalid && (privacyPolicy.touched || contactForm.submitted)" class="error-checkbox">
+                {{'CONTACT-ME.formular.privacy-policy.error' | translate}}
+            </div>
+
             <div class="btn-send-hello-section">
                 <button href="#" class="btn-send-hello">
                     <div class="button_inner">
@@ -80,9 +112,6 @@
                     </div>
                 </button>
             </div>
-            
         </section>
     </form>
-   
-
 </main>

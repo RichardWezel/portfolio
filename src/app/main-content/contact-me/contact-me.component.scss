@@ -45,6 +45,14 @@ main {
     width: fit-content;
 }
 
+input{
+  &:focus{
+    outline: none !important;
+  
+    border: unset
+  }
+}
+
 input[type=text], 
 input[type=email]{
     background-color: unset;
@@ -219,4 +227,54 @@ input[type=email]{
     justify-content: center;
     width: 100%;
    
+}
+
+// Fehlernachrichten
+.error-message {
+  position: absolute;
+    top: 0; 
+    left: 220px;
+    width: 300px;
+    height: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    color: rgba(236, 123, 123, 1); // Rote Farbe für den Text
+    display: flex;
+    align-items: center;
+    pointer-events: none; // Damit die Fehlermeldung keine Interaktion mit dem Input blockiert
+    z-index: 2;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+// Fehlerzustand für Eingabefelder
+.input-error{
+  border: 1px solid rgba(236, 123, 123, 1);
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+// Optional: Übergang für sanfte Änderungen
+input {
+  transition: border 0.3s, background-color 0.3s;
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border 0.3s, background-color 0.3s;
+  position: relative;
+  z-index: 1; // Damit das Input über der Fehlermeldung liegt, wenn keine Fehlermeldung angezeigt wird
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: unset !important;
+  color: white !important;
 }
