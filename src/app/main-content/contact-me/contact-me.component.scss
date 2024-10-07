@@ -41,7 +41,6 @@ main {
     display: flex; 
     flex-direction: column;
     padding: 32px;
-    gap: 16px;
     width: fit-content;
 }
 
@@ -144,10 +143,10 @@ input[type=email]{
   
   .custom-checkbox input:checked ~ .checkmark::after {
     display: block;
-    left: 7px;
-    top: 4px;
-    width: 4px;
-    height: 9px;
+    left: 9px;
+    top: 5px;
+    width: 2px;
+    height: 7px;
     border: solid $base-color;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -221,7 +220,6 @@ input[type=email]{
     }
 }
 
-
 .btn-send-hello-section {
     display: flex;
     justify-content: center;
@@ -258,13 +256,20 @@ input[type=email]{
 input {
   transition: border 0.3s, background-color 0.3s;
   width: 100%;
-  padding: 12px 16px;
+  padding: 12px 16px 12px 0;
   box-sizing: border-box;
   border: 1px solid transparent;
   border-radius: 4px;
   transition: border 0.3s, background-color 0.3s;
   position: relative;
   z-index: 1; // Damit das Input über der Fehlermeldung liegt, wenn keine Fehlermeldung angezeigt wird
+  background-color: unset;
+  border: unset;
+  color: white;
+  width: 100%;
+  &::placeholder{
+      color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 .input-container {
@@ -272,9 +277,10 @@ input {
   width: 100%;
 }
 
-input:-internal-autofill-selected {
-  appearance: menulist-button;
-  background-image: none !important;
-  background-color: unset !important;
-  color: white !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  transition: background-color 5000000s;
+  -webkit-text-fill-color: #fff !important;
 }

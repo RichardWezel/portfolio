@@ -25,28 +25,29 @@ export class ContactMeComponent {
 
   http = inject(HttpClient);
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://richard-wezel.de/sendMail.php',
+    endPoint: 'https://richard-wezel.de/api/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
+        'Content-Type': 'application/json', // Korrigierter Content-Type
       },
+      responseType: 'text' as const, // Richtig positioniert
     },
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            console.info('E-Mail erfolgreich gesendet:', response);
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error(error);
+            console.error('Fehler beim Senden der E-Mail:', error);
           },
           complete: () => console.info('send post complete'),
         });
