@@ -1,9 +1,21 @@
 @import './../../../../styles.scss';
 
-main {
-    width: 85px;
-    height: 28px;
-    position: relative;
+.language-switch-btn {
+  width: 85px;
+  height: 28px;
+  position: relative;
+
+  .EN, .DE {
+      position: absolute;
+      top: 5px;
+      font-family: 'Fira Code';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+      color: #3DCFB680;
+      transition: color 200ms ease-in-out;
+  }
 }
   
   .EN {
@@ -57,7 +69,6 @@ main {
   color: $base-color; 
   }
   
-  /* Neu: Ändert die Farbe von .EN und .DE direkt mit der Klasse 'language-switch-btn' */
   .language-switch-btn:hover .EN,
   .language-switch-btn:hover .DE {
   color: $base-color; 
@@ -79,7 +90,7 @@ main {
     padding: 0px 12px 0px 12px;
     gap: 10px;    
     opacity: 0px;
-    rotate: -0deg;
+    transform: rotate(0deg); // Korrigiert
     z-index: 1;
   }
   
@@ -102,7 +113,7 @@ main {
   
   input[type="checkbox"].toggle:checked + label::after{
     content: "DE";
-    transform: translateX(100%);
+    transform: translateX(100%) rotate(0deg); // Falls Rotation benötigt wird
   }
   
   input[type="checkbox"].toggle:disabled + label {

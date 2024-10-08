@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { SharedModule } from '../../../shared/shared.module';
-
 
 @Component({
   selector: 'app-language-switch-btn',
@@ -23,5 +21,7 @@ export class LanguageSwitchBtnComponent implements OnInit{
     const newLang = input.checked ? 'de' : 'en';
     this.translate.use(newLang);
     localStorage.setItem('lang', newLang);
+    this.isGerman = input.checked; // Aktualisiert den Zustand
+    window.location.reload(); // Seite neu laden
   }
 }
