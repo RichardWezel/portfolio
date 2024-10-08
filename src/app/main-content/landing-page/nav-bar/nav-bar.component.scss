@@ -1,6 +1,6 @@
 @import './../../../../styles.scss';
 
-nav {
+main {
     position: relative;
     padding: 48px 96px;
     height: 50px;
@@ -20,125 +20,6 @@ nav {
   display: flex;
   align-items: center;
 }
-
-.language-switch-btn{
-  width: 85px;
-  height: 28px;
-  position: relative;
-}
-
-.EN {
-  color: #3DCFB680;
-  position: absolute;
-  left: 12px;
-  top: 5px;
-  font-family: 'Fira Code';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-}
-
-input[type="checkbox"].toggle{
-  opacity: 0;
-  position: absolute;
-  left: -9000px;
-  top: -9000px;
-}
-
-input[type="checkbox"].toggle + label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 28px;
-  cursor: pointer;
-}
-
-#check1{
-  border-radius: 1em;
-  border: #3DCFB6 solid 1px;
-}
-
-input[type="checkbox"].toggle + label::before{
-  content: "";
-  width: 85px;
-  height: 28px;
-  border-radius: 1em;
-  border: #3DCFB6 solid 2px;
-  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
-  z-index: 100;
-}
-
-input[type="checkbox"].toggle + label:hover::before{
-  border-color: white;
-}
-
-input[type="checkbox"].toggle + label:hover ~ .EN,
-input[type="checkbox"].toggle + label:hover ~ .DE {
-color: $base-color; 
-}
-
-/* Neu: Ändert die Farbe von .EN und .DE direkt mit der Klasse 'language-switch-btn' */
-.language-switch-btn:hover .EN,
-.language-switch-btn:hover .DE {
-color: $base-color; 
-}
-
-input[type="checkbox"].toggle + label::after{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  content: "EN";
-  font-size: 16px;
-  font-weight: 700;
-  height: 28px;
-  background-color: $base-color;
-  color: white;
-  border-radius: 2em;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
-  width: Hug (44px)px;
-  padding: 0px 12px 0px 12px;
-  gap: 10px;    
-  opacity: 0px;
-  rotate: -0 deg;
-  z-index: 1;
-}
-
-.DE {
-  color:  #3DCFB680;
-  position: absolute;
-  right: 12px;
-  top: 5px;
-  font-family: Fira Code;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  
-}
-
-input[type="checkbox"].toggle:focus + label::before{
-  outline: 1px solid black;
-}
-
-input[type="checkbox"].toggle:checked + label::after{
-  content: "DE";
-  transform: translateX(100%);
-}
-
-input[type="checkbox"].toggle:disabled + label {
-  color: #777;
-}
-
-input[type="checkbox"].toggle:disabled + label::before{
-  background-color: #CCC;
-}
-
-input[type="checkbox"].toggle:disabled + label::after{
-  background-color: #777;
-}
-
 
 // links
 .nav-links {
@@ -182,8 +63,12 @@ input[type="checkbox"].toggle:disabled + label::after{
 .logo {
   z-index: 1;
   display: none;
+  position: absolute;
+  top: 32px;
+  left: 16px;
 }
 
 .menu {
   display: none;
 }
+

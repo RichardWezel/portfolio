@@ -3,15 +3,7 @@
 app-nav-bar{
     width: 100%;
     position: absolute;
-    top: 48px;
-}
-
-@media(max-width: 840px) {
-    app-nav-bar{
-        width: 100%;
-        position: absolute;
-        top: 32px;
-    }
+    top: 0;
 }
 
 main {
@@ -37,11 +29,12 @@ main {
         margin-bottom: 12px;
     }
     h1 {
+        font-family: 'Karla';
+        font-size: 128px;
         font-weight: 700;
-        font-size: 100px;
-        line-height: 100px;
-        margin-bottom: 40px;
-        letter-spacing: -2%;
+        line-height: 128px;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 }
 

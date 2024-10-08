@@ -9,7 +9,7 @@ import { SharedModule } from '../../shared/shared.module';
   standalone: true,
   imports: [NavBarComponent, InfiniteAutoScrollComponent, SharedModule],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+  styleUrls: ['./landing-page.component.scss', './landing-page.mobile.scss']
 })
 export class LandingPageComponent {
 
