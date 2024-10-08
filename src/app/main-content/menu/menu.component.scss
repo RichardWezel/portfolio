@@ -1,0 +1,40 @@
+@import './../../../styles.scss';
+
+main{
+    width: 238px;
+    height: 252px;
+    position: absolute;
+    top: 79px;
+    right: 20px;;
+    padding: 40px 77px 40px 77px;
+    gap: 10px;
+    border-radius: 30px;
+    opacity: 0px;
+    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    border: 1px solid rgba(61, 207, 182, 1);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px; 
+    color: #ffffff;
+}
+
+.link {
+    font-family: $base-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.62px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+

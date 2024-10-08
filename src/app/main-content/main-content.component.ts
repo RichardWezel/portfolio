@@ -8,12 +8,13 @@ import { ColleaguesVoicesComponent } from "./colleagues-voices/colleagues-voices
 import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from "./footer/footer.component";
 import { SharedModule } from '../shared/shared.module';
+import { MenuComponent } from "./menu/menu.component";
 
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule],
+  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })

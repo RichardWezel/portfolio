@@ -1,5 +1,19 @@
 @import './../../../styles.scss';
 
+app-nav-bar{
+    width: 100%;
+    position: absolute;
+    top: 48px;
+}
+
+@media(max-width: 840px) {
+    app-nav-bar{
+        width: 100%;
+        position: absolute;
+        top: 32px;
+    }
+}
+
 main {
     position: relative;
     height: 100vh;

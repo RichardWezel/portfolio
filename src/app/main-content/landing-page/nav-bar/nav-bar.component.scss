@@ -1,10 +1,8 @@
 @import './../../../../styles.scss';
 
 nav {
-    position: absolute;
-    top: 48px;
-    left: 96px;
-    margin-right: 96px;
+    position: relative;
+    padding: 48px 96px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -13,16 +11,18 @@ nav {
     font-weight: 400;
 }
 
-.menu {
+.navbar{
   height: 50px;
   display: flex;
   gap: 24px;
   align-items: center;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .language-switch-btn{
-  width: 84px;
+  width: 85px;
   height: 28px;
   position: relative;
 }
@@ -61,7 +61,7 @@ input[type="checkbox"].toggle + label {
 
 input[type="checkbox"].toggle + label::before{
   content: "";
-  width: 84px;
+  width: 85px;
   height: 28px;
   border-radius: 1em;
   border: #3DCFB6 solid 2px;
@@ -142,12 +142,10 @@ input[type="checkbox"].toggle:disabled + label::after{
 
 // links
 .nav-links {
-  position: absolute;
-  left: 108px;
-  top: 12px;
   display: flex;
   gap: 24px;
   width: max-content;
+  z-index: 1;
   
   a{
     text-decoration: none;
@@ -177,3 +175,15 @@ input[type="checkbox"].toggle:disabled + label::after{
   
 }
 
+.logo-RichardWezel{
+  z-index: 1;
+}
+
+.logo {
+  z-index: 1;
+  display: none;
+}
+
+.menu {
+  display: none;
+}
