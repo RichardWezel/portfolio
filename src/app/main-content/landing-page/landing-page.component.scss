@@ -114,6 +114,15 @@ main {
     &:hover{
         color: $base-color;
     }
+    svg {
+        display: none;
+        rotate: 90deg;
+        &:hover{
+            path{
+                fill: white;
+            }
+        }
+    }
 }
 
 .social-media {

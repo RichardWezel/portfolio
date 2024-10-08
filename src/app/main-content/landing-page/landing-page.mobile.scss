@@ -16,4 +16,31 @@
             text-align: left;
         }
     }
+    .mailadress {
+        height: 0;
+        margin-bottom: 0;
+        span {
+            display: none;
+        }
+        svg {
+            display: flex;
+            
+        }
+    }
+    .link-work-contact {
+        margin-top: 32px;
+    }
+    .arrowToContent {
+        left: 16px;
+    }
+    .social-media-mail {
+        right: 16px;
+    }
+}
+
+@media(max-width: 560px) {
+    .link-work-contact{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

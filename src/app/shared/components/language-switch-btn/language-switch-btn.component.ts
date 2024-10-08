@@ -22,6 +22,6 @@ export class LanguageSwitchBtnComponent implements OnInit{
     this.translate.use(newLang);
     localStorage.setItem('lang', newLang);
     this.isGerman = input.checked; // Aktualisiert den Zustand
-    window.location.reload(); // Seite neu laden
+    // window.location.reload(); // Seite neu laden
   }
 }
