@@ -8,7 +8,7 @@ import { SharedModule } from '../../shared/shared.module';
   standalone: true,
   imports: [NgStyle, ProjectsComponent, SharedModule],
   templateUrl: './featured-projects.component.html',
-  styleUrl: './featured-projects.component.scss'
+  styleUrls: ['./featured-projects.component.scss', './featured-projects.mobile.scss']
 })
 export class FeaturedProjectsComponent {
 

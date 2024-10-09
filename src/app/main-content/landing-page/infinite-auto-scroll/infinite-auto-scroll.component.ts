@@ -6,7 +6,7 @@ import { SharedModule } from '../../../shared/shared.module';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './infinite-auto-scroll.component.html',
-  styleUrl: './infinite-auto-scroll.component.scss'
+  styleUrls: ['./infinite-auto-scroll.component.scss', './infinite-auto-scroll.mobile.scss']
 })
 export class InfiniteAutoScrollComponent {
 

@@ -7,7 +7,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [SharedModule, RouterOutlet],
   templateUrl: './skill-set.component.html',
-  styleUrl: './skill-set.component.scss'
+  styleUrls: ['./skill-set.component.scss', './skill-set.mobile.scss']
 })
 export class SkillSetComponent {
 

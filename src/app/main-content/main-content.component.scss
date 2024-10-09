@@ -18,3 +18,9 @@ app-menu {
     z-index: 1000;
     display: none;
 }
+
+@media(max-width: 840px) {
+    main {
+        gap: 100px;
+    }
+}

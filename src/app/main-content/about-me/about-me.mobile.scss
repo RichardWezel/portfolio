@@ -1,0 +1,49 @@
+@import './../../../styles.scss';
+
+@media(max-width: 850px) {
+    main {
+        padding: 0 16px 0;
+        gap: 40px;
+    }
+
+    .box-theme {
+        width: 100%;
+    }
+
+    .box-label {
+        font-size: 18px
+    }
+
+    .box-header {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+
+    .box-article {
+        font-size: 16px;
+        line-height: 19.2px;
+        text-align: justify;
+        margin-bottom: 24px;
+    }
+
+    .row-article {
+        text-align: left;
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    .box-size {
+        width: 100%;
+    }
+
+    .picture {
+        svg{
+            top: 20px;
+            left: -20px;
+        }
+    }
+
+    .article-box {
+        padding-bottom: 27px;
+    }
+}

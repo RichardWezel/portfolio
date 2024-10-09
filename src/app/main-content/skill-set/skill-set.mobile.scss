@@ -1,0 +1,25 @@
+@media(max-width: 840px) {
+    main {
+        flex-direction: column;
+        padding: 0 16px 0;
+        gap: 40px;
+        section:first-of-type {
+            max-width: 520px;
+            .box-size {
+                max-width: 520px;
+                width: 100%;
+            }
+        }
+    }
+
+    .skill-icon-box {
+        margin-bottom: 0;
+    }
+
+    .skill-icon-box {
+        gap: inherit;
+        margin-bottom: 0px;
+        justify-content: start;
+        margin-top: 0px;        
+    }
+}

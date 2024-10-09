@@ -27,7 +27,7 @@ interface Project {
   standalone: true,
   imports: [SharedModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrls: ['./projects.component.scss', './projects.mobile.scss']
 })
 export class ProjectsComponent {
 

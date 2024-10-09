@@ -1,0 +1,37 @@
+@media(max-width: 840px) {
+    main {
+        height: 100%;
+        background-color: #1C1C1C;
+        font-family: "Fira Code";
+        color: white;
+        padding: 0 16px 0;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        p{
+            width: 100%;
+        }
+    }
+    
+    .box-article {
+        width: 100%;
+    }
+
+    .project-show {
+        display: none;
+    }
+
+    .striped-list-row{
+        flex-direction: column;
+        gap: 0px;
+        padding: 16px 0 16px 0;
+        justify-content: space-around;
+    }
+
+    #join {
+        top: unset;
+        display: none;
+        position: relative;
+    }
+}
+

@@ -7,7 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrls: ['./about-me.component.scss', './about-me.mobile.scss']
 })
 export class AboutMeComponent {
 
