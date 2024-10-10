@@ -77,7 +77,8 @@
           "placeholder": "youremail@email.com",
           "error": {
             "required": "Hoppla! your email is required",
-            "pattern": "Please enter a valid e-mail address."
+            "pattern": "Please enter a valid e-mail address.",
+            "bubble": "Please enter a valid e-mail address that consists of letters, numbers and the characters . _ % + -, contains an @ symbol and ends with a domain with at least two letters (e.g. name@domain.de).”"
           }
         },
         "message": {

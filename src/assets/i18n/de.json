@@ -78,7 +78,8 @@
           "placeholder": "IhreE-Mail@e-mail.com",
           "error": {
             "required": "Hoppla! Ihre E-Mail Adresse fehlt",
-            "pattern": "Bitte eine gültige E-Mail-Adresse eingeben."
+            "pattern": "Bitte eine gültige E-Mail-Adresse eingeben.",
+            "bubble": "Bitte geben Sie eine gültige E-Mail-Adresse ein, die aus Buchstaben, Zahlen und den Zeichen . _ % + - besteht, ein @-Symbol enthält und mit einer Domain mit mindestens zwei Buchstaben endet (z.B. name@domain.de)."
           }
         },
         "message": {

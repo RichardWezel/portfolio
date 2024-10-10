@@ -7,7 +7,7 @@ import { SharedModule } from '../../../shared/shared.module';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss', './carousel.mobile.scss']
 })
 export class CarouselComponent {
   currentIndex: number = 0;

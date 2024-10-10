@@ -5,10 +5,19 @@ main {
     background-color: #1C1C1C;
     font-family: 'Karla';
     color: white;
-    padding: 0 96px 0 96px;
+    padding: 0 96px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 32px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    svg{
+        margin-bottom: 32px;
+    }
 }
 
 .name {

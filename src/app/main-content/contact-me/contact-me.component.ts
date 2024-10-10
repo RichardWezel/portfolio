@@ -9,7 +9,7 @@ import { SharedModule } from '../../shared/shared.module';
   standalone: true,
   imports: [NgIf, FormsModule, SharedModule, NgClass],
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.scss']
+  styleUrls: ['./contact-me.component.scss', './contact-me.mobile.scss']
 })
 export class ContactMeComponent {
   isEmailHovered = false;
@@ -24,7 +24,7 @@ export class ContactMeComponent {
   }
 
   http = inject(HttpClient);
-
+  emailPattern: string = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
   mailTest = false;
 
   post = {

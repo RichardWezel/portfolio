@@ -1,0 +1,127 @@
+
+
+@media(max-width: 1300px){
+    .card {
+        width: 421px;
+    }
+
+    #item-1:checked ~ .cards #card-3, 
+    #item-2:checked ~ .cards #card-1, 
+    #item-3:checked ~ .cards #card-2 {
+      transform: translatex(-100%) scale(.89);
+      opacity: .4;
+      z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #card-2,
+    #item-2:checked ~ .cards #card-3, 
+    #item-3:checked ~ .cards #card-1 {
+      transform: translatex(100%) scale(.89);
+      opacity: .4;
+      z-index: 0;
+    }
+
+    .quotes {
+        top: -323px;
+        left: -160px;
+      }
+}
+
+@media(max-width: 1000px){
+    .card {
+        width: 360px;
+        height: 360px;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .cards {
+        height: 360px;
+    }
+
+    .shadow-right,
+    .shadow-left {
+        height: 100%;
+        width: 7%;
+        position: absolute;
+        z-index: 100;
+        background: linear-gradient(90deg, #1C1C1C, transparent);
+    }
+
+    .quotes {
+        top: -402px;
+        left: -128px;
+    }
+}
+
+@media(max-width: 500px){
+    .card {
+        width: 296px;
+        height: 306px;
+        padding: 40px;
+    }
+
+    .cards {
+        height: 360px;
+    }
+
+    .shadow-right,
+    .shadow-left {
+        height: 100%;
+        width: 7%;
+        position: absolute;
+        z-index: 100;
+        background: linear-gradient(90deg, #1C1C1C, transparent);
+    }
+
+    content {
+        font-size: 18px
+    }
+
+    .quotes {
+        top: -406px;
+        left: -96px;
+    }
+}
+
+@media(max-width: 400px){
+    .card {
+        width: 255px;
+        height: 244px;
+        padding: 20px;
+    }
+
+    .cards {
+        height: 360px;
+    }
+
+    .shadow-right,
+    .shadow-left {
+        height: 100%;
+        width: 7%;
+        position: absolute;
+        z-index: 100;
+        background: linear-gradient(90deg, #1C1C1C, transparent);
+    }
+
+    .content {
+        font-size: 18px
+    }
+
+    .author {
+        div{
+            font-size: 14px;
+        }
+       
+    }
+
+    .quotes {
+        top: -406px;
+        left: -60px;
+        svg{
+            width: 66.81px;
+            height: 48px;
+        }
+
+    }
+}

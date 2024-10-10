@@ -12,7 +12,7 @@ interface Card {
   selector: 'app-colleagues-voices',
   standalone: true,
   templateUrl: './colleagues-voices.component.html',
-  styleUrls: ['./colleagues-voices.component.scss'],
+  styleUrls: ['./colleagues-voices.component.scss', './colleagues-voices.mobile.scss'],
   imports: [CommonModule, CarouselComponent, SharedModule]
 })
 export class ColleaguesVoicesComponent {

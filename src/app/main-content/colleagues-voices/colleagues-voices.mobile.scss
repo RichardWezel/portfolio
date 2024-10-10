@@ -1,0 +1,73 @@
+@import './../../../styles.scss';
+
+@media(max-width: 1300px){
+   
+    main {
+        .header {
+            font-size: 24px;
+            line-height: 31.49px;
+            
+        }
+    }
+
+    app-carousel {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 1000px){
+   
+    main {
+        .header {
+            text-align: center;
+            padding: 0 16px 0 16px;
+            
+        }
+    }
+
+    app-carousel {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 500px){
+    main {
+        .header {
+            text-align: center;
+            padding: 0 16px 0 16px;
+            
+        }
+    }
+
+    app-carousel {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 477px){
+    main {
+        .header {
+            text-align: center;
+            padding: 0 16px 0 16px;
+            
+        }
+    }
+
+    app-carousel {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 400px){
+    main {
+        .header {
+            text-align: center;
+            padding: 0 16px 0 16px;
+            
+        }
+    }
+
+    app-carousel {
+        width: 100vw;
+    }
+}

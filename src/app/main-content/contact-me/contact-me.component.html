@@ -18,14 +18,11 @@
                     id="name" 
                     [(ngModel)]="contactData.name" 
                     #name="ngModel"
-                    [placeholder]="'CONTACT-ME.formular.name.placeholder' | translate" 
+                    [placeholder]="name.invalid && (name.touched || contactForm.submitted) ? ('CONTACT-ME.formular.name.error.required' | translate) : ('CONTACT-ME.formular.name.placeholder' | translate)"
                     autocomplete="name"
                     required
                     [ngClass]="{'input-error': name.invalid && (name.touched || contactForm.submitted)}"
                     >
-                    <div *ngIf="name.invalid && (name.touched || contactForm.submitted)" class="error-message">
-                        <span *ngIf="name.errors?.['required']">{{ 'CONTACT-ME.formular.name.error.required' | translate }}</span>
-                    </div>
                 </div> 
             </div>
 
@@ -43,16 +40,18 @@
                     id="email" 
                     [(ngModel)]="contactData.email" 
                     #email="ngModel"
-                    [placeholder]="'CONTACT-ME.formular.email.placeholder' | translate" 
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    [placeholder]="email.invalid && (email.touched || contactForm.submitted) ? 
+                        (email.errors?.['required'] ? ('CONTACT-ME.formular.email.error.required' | translate) : 
+                        (email.errors?.['pattern'] ? ('CONTACT-ME.formular.email.error.pattern' | translate) : 
+                        ('CONTACT-ME.formular.email.placeholder' | translate))) : 
+                        ('CONTACT-ME.formular.email.placeholder' | translate)" 
+                    [pattern]="emailPattern"
                     autocomplete="email"
                     required
                     [ngClass]="{'input-error': email.invalid && (email.touched || contactForm.submitted)}"
                     >
-                    <!-- Error message for E-Mail -->
-                    <div *ngIf="email.invalid && (email.touched || contactForm.submitted)" class="error-message">
-                        <span *ngIf="email.errors?.['required']">{{ 'CONTACT-ME.formular.email.error.required' | translate }}</span>
-                        <span *ngIf="email.errors?.['pattern']">{{ 'CONTACT-ME.formular.email.error.pattern' | translate }}</span>
+                    <div *ngIf="email.invalid && (email.touched || contactForm.submitted)" class="info-mail-input speech-bubble round">
+                        {{'CONTACT-ME.formular.email.error.bubble' | translate}}
                     </div>
                 </div>
             </div>
@@ -70,16 +69,12 @@
                     [(ngModel)]="contactData.message" 
                     #message="ngModel" 
                     minlength="4" 
-                    [placeholder]="'CONTACT-ME.formular.message.placeholder' | translate" 
+                    [placeholder]="message.invalid && (message.touched || contactForm.submitted) ? ('CONTACT-ME.formular.message.error.required' | translate) : ('CONTACT-ME.formular.message.placeholder' | translate)" 
                     autocomplete="off"
                     required
                     [ngClass]="{'input-error': message.invalid && (message.touched || contactForm.submitted)}"
                     >
-                    <!-- Fehlermeldung für Nachricht -->
-                    <div *ngIf="message.invalid && (message.touched || contactForm.submitted)" class="error-message">
-                        <span *ngIf="message.errors?.['required']">{{ 'CONTACT-ME.formular.message.error.required' | translate }}</span>
-                        <!-- <span *ngIf="message.errors['minlength']">{{ 'CONTACT-ME.formular.message.error.minlength' | translate }}</span> -->
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -101,9 +96,12 @@
                 <div class="request-to-check"> {{'CONTACT-ME.formular.privacy-policy.text-1' | translate}} <a>{{'CONTACT-ME.formular.privacy-policy.text-2' | translate}}</a> {{'CONTACT-ME.formular.privacy-policy.text-3' | translate}}</div>
             </div>
             <!-- Fehlermeldung für Checkbox -->
-            <div *ngIf="privacyPolicy.invalid && (privacyPolicy.touched || contactForm.submitted)" class="error-checkbox">
-                {{'CONTACT-ME.formular.privacy-policy.error' | translate}}
+            <div class="error-section-checkbox">
+               <div *ngIf="privacyPolicy.invalid && (privacyPolicy.touched || contactForm.submitted)" class="error-checkbox">
+                   {{'CONTACT-ME.formular.privacy-policy.error' | translate}}
+               </div>
             </div>
+            
 
             <div class="btn-send-hello-section">
                 <button href="submit" class="btn-send-hello">
