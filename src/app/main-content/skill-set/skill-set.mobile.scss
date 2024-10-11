@@ -1,15 +1,30 @@
-@media(max-width: 840px) {
+@media(max-width: 1212px) {
+    main {
+        flex-direction: column;
+        section:first-of-type{
+            max-width: unset; 
+            .box-size {
+                max-width: unset; 
+              
+            }
+        } 
+    }
+
+    .skill-icon-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+        margin-bottom: 40px;
+        justify-content: center;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 850px) {
     main {
         flex-direction: column;
         padding: 0 16px 0;
         gap: 40px;
-        section:first-of-type {
-            max-width: 520px;
-            .box-size {
-                max-width: 520px;
-                width: 100%;
-            }
-        }
     }
 
     .skill-icon-box {
@@ -19,7 +34,88 @@
     .skill-icon-box {
         gap: inherit;
         margin-bottom: 0px;
-        justify-content: start;
+      
         margin-top: 0px;        
     }
+
+    .article-box {
+
+        .box-header {
+            font-size: 56px;
+            line-height: 44.8px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+        .box-article {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: justify;
+        }
+    
+        .header2 {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+        }
+    
+        .promt-contact-me { 
+            font-size: 16px;
+            line-height: 19.2px;
+            text-align: left;
+        }
+    }
+
+    
+}
+
+@media(max-width: 450px) {
+    main {
+        flex-direction: column;
+        padding: 0 16px 0;
+        gap: 40px;
+    }
+
+    .skill-icon-box {
+        margin-bottom: 0;
+    }
+
+    .skill-icon-box {
+        gap: inherit;
+        margin-bottom: 0px;
+      
+        margin-top: 0px;        
+    }
+
+    .article-box {
+
+        .box-header {
+            font-size: 34px;
+            line-height: 44.8px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+        .box-article {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: justify;
+        }
+    
+        .header2 {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: left;
+        }
+    
+        .promt-contact-me { 
+            font-size: 16px;
+            line-height: 19.2px;
+            text-align: left;
+        }
+    }
+
+    
 }

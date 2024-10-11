@@ -1,3 +1,5 @@
+
+
 /* You can add global styles to this file, and also import other style files */
 *{
     margin: 0;
@@ -231,7 +233,7 @@ html, body {
   height: 568px;
 }
 
-@media(max-width: 840px) {
+@media(max-width: 850px) {
   .box-size {
     width: 358px;
     height: 358px;
@@ -255,36 +257,41 @@ html, body {
 }
 
 .article-box {
-padding: 32px;
-gap: 40px;
-border-radius: 30px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-background-color: #3DCFB61A;
-border: 1px solid $base-color;
-height: fit-content;
-}
-
-.box-header {
-  margin-bottom: 40px;
-  @include base-font();
-  color: $base-color;
-  font-family: $base-font;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 64px;
+  padding: 32px;
+  gap: 40px;
+  border-radius: 30px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #3DCFB61A;
+  border: 1px solid $base-color;
+  height: fit-content;
+  font-size: 56px;
+  line-height: 44.8px;
   letter-spacing: -0.03em;
   text-align: left;
+  .box-header {
+    margin-bottom: 40px;
+    @include base-font();
+    color: $base-color;
+    font-family: $base-font;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  
+  .box-article {
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: justify;
+    margin-bottom: 32px;
+  }
 }
 
-.box-article {
-  font-family: 'Karla';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: justify;
-  margin-bottom: 32px;
-}
+
 
 .striped-list-line {
   border-color: $base-color;

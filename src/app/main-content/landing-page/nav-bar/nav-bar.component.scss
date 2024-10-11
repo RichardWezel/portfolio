@@ -3,72 +3,98 @@
 main {
     position: relative;
     padding: 48px 96px;
-    height: 50px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-}
 
-.navbar{
-  height: 50px;
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+    .logo {
+      z-index: 1;
+      display: none;
+      position: absolute;
+      top: 32px;
+      left: 16px;
+    }
 
-// links
-.nav-links {
-  display: flex;
-  gap: 24px;
-  width: max-content;
-  z-index: 1;
-  
-  a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    svg {
-      circle {
-        fill:none;
+    .navbar{
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      position: relative;
+      align-items: center;
+      .navbar-box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 24px;
+        z-index: 1;
+        
+        app-language-switch-btn {
+          display: inline-block;
+          width: fit-content;
+          z-index: 1;
+          height: fit-content;
+        }
+
+        .nav-links {
+          display: flex;
+          gap: 24px;
+          width: 100%;
+          z-index: 1;
+          
+          a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            svg {
+              circle {
+                fill:none;
+              }
+            }
+          }
+        
+          a:hover svg {
+            circle {
+              fill: $base-color;
+              transition: all .4s ease-in-out;
+            }
+          }
+          
+          a svg {
+            display: flex; 
+          }
+          
+        }
       }
     }
-  }
 
-  a:hover svg {
-    circle {
-      fill: $base-color;
-      transition: all .4s ease-in-out;
+    .slide-box.active {
+      transform: translateX(0) !important;
+      opacity: 1 !important;
+      overflow-x: unset;
     }
-  }
-  
-  a svg {
-    display: flex; 
-  }
-  
+
+    .slide-box.active .navbar{
+      overflow-x: unset;
+    }
+
+    .logo-RichardWezel{
+      z-index: 1;
+    }
+
+    .menu {
+      display: none;
+    }
 }
 
-.logo-RichardWezel{
-  z-index: 1;
-}
 
-.logo {
-  z-index: 1;
-  display: none;
-  position: absolute;
-  top: 32px;
-  left: 16px;
-}
 
-.menu {
-  display: none;
-}
+
 

@@ -22,6 +22,11 @@ main {
 }
 
 .header2 {
+    font-family: $base-font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
     margin-bottom: 16px;
     span {
         color: $base-color;

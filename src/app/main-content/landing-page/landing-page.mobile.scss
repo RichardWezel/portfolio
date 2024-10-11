@@ -1,12 +1,44 @@
 @import './../../../styles.scss';
 
-@media(max-width: 1000px) {
+@media(max-width: 1300px) {
     .hero {
+        gap: 25px;
+        h3{
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+        h1 {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 62px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+    }
+    .line-white {
+        height: 96px;
+     
+    }
+
+    .line {
+        div{
+            height: 192px;
+        }
+        
+    }
+}
+
+@media(max-width: 1000px){
+    .hero {
+        
         h3{
             font-size: 24px;
             font-weight: 400;
             line-height: 24px;
             text-align: left;
+            margin-bottom: 0;
         }
         h1 {
             font-size: 62px;
@@ -28,7 +60,7 @@
         }
     }
     .link-work-contact {
-        margin-top: 32px;
+        margin-top: 0px;
     }
     .arrowToContent {
         left: 16px;
@@ -36,11 +68,51 @@
     .social-media-mail {
         right: 16px;
     }
+
+    .button {
+        font-size: 14px;
+    }
 }
 
-@media(max-width: 560px) {
+@media(max-width: 560px){
     .link-work-contact{
         flex-direction: column;
         gap: 20px;
     }
+
+    .hero {
+        gap: 8px;
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 62px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 12px;
+    }
+
 }
+
+@media(max-height: 700px){
+    .main {
+      .arrowToContent {
+        .line {
+          div {
+            height: 145px;
+          }
+        }
+      }
+    }
+  }
