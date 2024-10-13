@@ -12,6 +12,27 @@ main {
     p {
         width: 50%;
     }
+
+    .box-header {
+        margin-bottom: 40px;
+        @include base-font();
+        color: rgb(61, 207, 182);
+        font-family: 'Fira Code';
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.03em;
+        text-align: left;
+    }
+
+    .box-article {
+        font-family: 'Karla';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: justify;
+        margin-bottom: 32px;
+      }
 }
 
 .list-section {
