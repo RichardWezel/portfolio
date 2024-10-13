@@ -2,11 +2,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ImprintService } from './../../services/imprint.service'; // Passe den Pfad entsprechend an
 import { Subscription } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './imprint.component.html',
   styleUrls: ['./imprint.component.scss']
 })
