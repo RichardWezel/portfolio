@@ -263,7 +263,7 @@ html, body {
   border: 1px 0px 0px 0px;
   opacity: 0px;
   background-color: #3DCFB61A;
-  border: 1px solid $base-color;
+  border: 1px solid rgb(61, 207, 182);
   height: fit-content;
   font-size: 56px;
   line-height: 44.8px;
@@ -272,8 +272,8 @@ html, body {
   .box-header {
     margin-bottom: 40px;
     @include base-font();
-    color: $base-color;
-    font-family: $base-font;
+    color: rgb(61, 207, 182);
+    font-family: 'Fira Code';
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
