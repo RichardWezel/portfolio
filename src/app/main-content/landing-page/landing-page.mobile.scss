@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 
-@media(max-width: 1300px) {
+@media(max-width: 1300px){
     .hero {
         gap: 25px;
         h3{
@@ -74,6 +74,18 @@
     }
 }
 
+@media(max-height: 700px){
+    .main {
+      .arrowToContent {
+        .line {
+          div {
+            height: 145px;
+          }
+        }
+      }
+    }
+  }
+
 @media(max-width: 560px){
     .link-work-contact{
         flex-direction: column;
@@ -103,16 +115,24 @@
         padding: 12px;
     }
 
+    .line {
+        div{
+            height: 120px;
+        }
+    }
+
 }
 
-@media(max-height: 700px){
-    .main {
-      .arrowToContent {
-        .line {
-          div {
-            height: 145px;
-          }
+@media(max-width: 350px) {
+    .hero {
+        gap: 0px;
+        position: absolute;
+        top: 150px;
+        h3{
+            font-size: 16px;
         }
-      }
+        h1 {
+            font-size: 36px;
+        }
     }
-  }
+}

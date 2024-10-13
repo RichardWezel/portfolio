@@ -3,7 +3,34 @@
 @media(max-width: 840px) {
     .scroll {
         div {
-            font-size: 24px;
+            font-size: 20px;
         }
+    }
+}
+
+@media(max-width: 1300px) {
+    .scroll {
+        bottom: 38px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .scroll {
+        bottom: 26px;
+        div{
+            padding: 5px 0;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .scroll {
+        bottom: 20px;
+    }
+}
+
+@media(max-width: 450px) {
+    .scroll {
+        bottom: 13px;
     }
 }
