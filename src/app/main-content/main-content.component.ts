@@ -10,12 +10,13 @@ import { FooterComponent } from "./footer/footer.component";
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from "./menu/menu.component";
 import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyPolicyComponent } from "../privacy-policy/privacy-policy.component";
 
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent, ImprintComponent],
+  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent, ImprintComponent, PrivacyPolicyComponent],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })

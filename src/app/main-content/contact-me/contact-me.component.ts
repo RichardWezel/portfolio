@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
+import { ImprintService } from './../../services/imprint.service'
 
 @Component({
   selector: 'app-contact-me',
@@ -54,6 +55,14 @@ export class ContactMeComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
+  }
+
+  constructor(private imprintService: ImprintService) {}
+
+  // Methode zum Öffnen des Imprint
+  openPrivacyPolicy(event: Event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    this.imprintService.show();
   }
 }
 
