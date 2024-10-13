@@ -9,12 +9,13 @@ import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from "./footer/footer.component";
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from "./menu/menu.component";
+import { ImprintComponent } from './imprint/imprint.component';
 
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent],
+  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent, ImprintComponent],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })

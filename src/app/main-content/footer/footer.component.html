@@ -15,9 +15,26 @@
     <div class="name">Richard Wezel </div>
 
     <div class="links">
-        <a href="">Github</a>
-        <a href="">LinkedIn</a>
-        <a href="">E-mail</a>
-        <a href="">{{'FOOTER.right.imprint' | translate}}</a>
+        <a href="https://github.com/RichardWezel">
+            <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" fill="white"/>
+            </svg>  
+            Github</a>
+        <a href="https://www.linkedin.com/in/richard-wezel-b3575b294">
+            <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" fill="white"/>
+            </svg>  
+            LinkedIn</a>
+        <a href="mailto: richard.wezel@posteo.de">
+            <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" fill="white"/>
+            </svg>  
+            E-mail</a>
+        <a href="" (click)="openImprint($event)">
+            <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" fill="white"/>
+            </svg>  
+            {{'FOOTER.right.imprint' | translate}}</a>
     </div>
+    
 </main>

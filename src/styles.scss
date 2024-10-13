@@ -167,13 +167,17 @@ html, body {
   src: url('assets/fonts/karla-v31-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-  $base-color: rgb(61, 207, 182);
-  $base-color-dark: #08463B;
-  $base-background-color: #1C1C1C;
-  $base-font: 'Fira Code';
+html {
+  scroll-behavior: smooth;
+}
+
+$base-color: rgb(61, 207, 182);
+$base-color-dark: #08463B;
+$base-background-color: #1C1C1C;
+$base-font: 'Fira Code';
   
-  @mixin base-font() {
-    font-family: 'Fira Code';
+@mixin base-font(){
+  font-family: 'Fira Code';
 }
 
 @mixin dja(){
@@ -198,43 +202,40 @@ html, body {
   transition: all 0.2s ease-out;
   overflow: hidden;
   cursor: pointer;
-}
 
-.button:hover{
+  span::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 230%;
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover{
     color: $base-color;
     border: $base-color solid 1px;
   }
 
-.button span::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 230%;
-  width: 100%;
-  text-align: center;
-}
-
-.button:hover .button_inner {
-  animation: marqueeAnim 1.5s linear infinite;
-  animation-play-state: running;
-}
-
-/* Let's create animation */
-@keyframes marqueeAnim {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-230%);
+  &:hover .button_inner {
+    animation: marqueeAnim 1.5s linear infinite;
+    animation-play-state: running;
+  
+    @keyframes marqueeAnim{
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(-230%);
+      }
+    }
   }
 }
 
 .box-size {
   width: 568px;
   height: 568px;
-}
 
-@media(max-width: 850px) {
-  .box-size {
+  @media(max-width: 850px){
     width: 358px;
     height: 358px;
   }
@@ -254,13 +255,18 @@ html, body {
   font-size: 24px;
   font-family: 'Karla';
   color: #3DCFB6;
+
+  @media(max-width: 840px){
+    font-size: 18px;
+  }
+
 }
 
 .article-box {
   padding: 32px;
   gap: 40px;
   border-radius: 30px;
-  border: 1px 0px 0px 0px;
+  border: 1px;
   opacity: 0px;
   background-color: #3DCFB61A;
   border: 1px solid rgb(61, 207, 182);
@@ -269,6 +275,7 @@ html, body {
   line-height: 44.8px;
   letter-spacing: -0.03em;
   text-align: left;
+
   .box-header {
     margin-bottom: 40px;
     @include base-font();
@@ -279,6 +286,11 @@ html, body {
     line-height: 64px;
     letter-spacing: -0.03em;
     text-align: left;
+
+    @media(max-width: 840px){
+      font-size: 56px;
+      margin-bottom: 32px;
+    }
   }
   
   .box-article {
@@ -289,35 +301,30 @@ html, body {
     text-align: justify;
     margin-bottom: 32px;
   }
-}
 
+  .promt-contact-me {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
 
-
-.striped-list-line {
-  border-color: $base-color;
+  }
 }
 
 .striped-list {
   max-width: 880px;
   border-top: $base-color 1px solid;
   border-bottom: $base-color 1px solid;
-}
 
-.striped-list-row {
-  max-width: 880px;
-  height: 109px;
-  padding: 40px 32px 40px 32px;
-  justify-content: space-between;
-  display: flex;
-}
-
-@media(max-width: 840px) {
-  .box-header {
-    font-size: 56px;
-    margin-bottom: 32px;
+  .striped-list-row {
+    max-width: 880px;
+    height: 109px;
+    padding: 40px 32px 40px 32px;
+    justify-content: space-between;
+    display: flex;
   }
 
-  .box-label {
-    font-size: 18px;
+  .striped-list-line {
+    border-color: $base-color;
   }
 }

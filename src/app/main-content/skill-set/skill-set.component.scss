@@ -14,10 +14,16 @@ main {
         width: 100%;
         max-width: 520px;
         margin: 0 auto;
-        .box-size {
-            max-width: 520px;
-            width: 100%;
+        article {
+            .article-box {
+                max-width: 520px;
+                width: 100%;
+                a {
+                    padding: 0 24px 0;
+                }
+            }
         }
+        
     }
 }
 
@@ -35,6 +41,7 @@ main {
 
 .promt-contact-me {
     margin-bottom: 40px;
+
 }
 
 // section
