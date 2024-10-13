@@ -31,8 +31,28 @@ main {
     flex-direction: column;
     justify-self: start;
     a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         text-decoration: none;
         color:white;
         font-family: 'Karla';
+        svg {
+        
+            circle {
+              fill:none;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            color: $base-color;
+            svg {
+                transition: all .4s ease-in-out;
+                circle {
+                    fill: $base-color;
+                    
+                }
+            }
+        }
     }
 }

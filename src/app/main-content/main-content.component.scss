@@ -6,22 +6,23 @@ main {
     gap: 144px;
     background-color: $base-background-color;
     position: relative;
-}
 
-app-menu {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: none;
-}
+    app-menu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: none;
+    }
 
-@media(max-width: 1300px) {
-    main {
-        gap: 72px;
+
+    @media(max-width: 1300px){
+        gap: 72px; 
     }
 }
+
+
 
