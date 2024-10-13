@@ -1,0 +1,119 @@
+
+@import './../../styles.scss';
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        position: relative;
+        background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+        height: 90%;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 30px;
+        border: 1px solid $base-color;
+        font-family: 'Karla';
+        color: white;
+        padding: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: scroll;
+
+        .close-section {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            button {
+                background-color: unset;
+                border: unset;
+            }
+            
+        
+        }
+
+        .closeBox {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                svg {
+                    width: 25.38px;
+                    height: 25.38px;
+                    path {
+                        fill: $base-color;
+                    }
+                }
+            }
+        }
+
+        article {
+            padding: 24px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 24px;
+
+            a {
+                color: $base-color;
+            }
+
+            h1 {
+                font-family: $base-font;
+                font-size: 54px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.03em;
+                text-align: left;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            h1, h2 {
+                color: $base-color;
+            }
+
+            .quelle {
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        color: $base-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            @media(max-width: 600px) {
+                padding: 100px 16px;
+                h1 {
+                    font-family: $base-font;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    letter-spacing: -0.03em;
+                    text-align: left;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
