@@ -1,14 +1,14 @@
-/* src/app/imprint/imprint.component.scss */
+
 @import './../../../styles.scss';
 
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Stelle sicher, dass es über anderen Elementen liegt */
+    z-index: 1000;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Halbtransparente Hintergrundüberlagerung */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +23,19 @@
         border: 1px solid $base-color;
         font-family: 'Karla';
         color: white;
-        padding: 40px; /* Reduziere oder passe das Padding an */
+        padding: 40px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         .close-section {
             position: absolute;
             top: 24px;
             right: 24px;
+            button {
+                background-color: unset;
+                border: unset;
+            }
+            
+        
         }
 
         .closeBox {
