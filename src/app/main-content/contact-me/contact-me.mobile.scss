@@ -1,19 +1,31 @@
-@media(max-width: 1060px) {
-    main[_ngcontent-ng-c3262672022] {
-        
+
+@media(max-width: 1100px) {
+    main {
+        gap: 44px;
+    }
+ 
+}
+
+@media(max-width: 1060px){
+    main{
         padding: 0 32px 0;
         gap: 49px;
     }
 }
 
-@media(max-width: 840px) {
-    main[_ngcontent-ng-c3262672022] {
+
+
+@media(max-width: 850px){
+    main {
         flex-direction: column;
         padding: 0 16px 0;
-    }
-
-    .request-to-call {
-        max-width: 100%;
+        gap: 20px;
+        .request-to-call {
+            max-width: 100%;
+            .box-label {
+                margin-bottom: 8px;
+            }
+        }
     }
 
     .formular-label {
@@ -30,7 +42,58 @@
     }
 
     .box-header {
-        font-size: 42px;
+        font-size: 32px;
+        line-height: 43px;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media(max-width: 600px){
+    main {
+        flex-direction: column;
+        padding: 0 16px 0;
+        .request-to-call {
+            fon
+            .box-header{
+                font-size: 22px;
+                line-height: 37px;
+                letter-spacing: -0.02em;
+            }
+            .header {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        form {
+            .striped-list {
+                .formular-row {
+                    height: 84px;
+                    .formular-label {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                    .input-container {
+                        input {
+                            padding: 8px 16px 8px 0;
+                        }
+                    }
+                }
+            }
+            .confirmation-privacy {
+                .btn-text {
+                    .request-to-check {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-header {
+        font-size: 28px;
         line-height: 43px;
         letter-spacing: -0.02em;
     }

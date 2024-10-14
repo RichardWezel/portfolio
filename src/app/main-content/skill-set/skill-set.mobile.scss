@@ -1,25 +1,49 @@
-@media(max-width: 1212px) {
-    main {
-        flex-direction: column;
-        section:first-of-type{
-            max-width: unset; 
-            .box-size {
-                max-width: unset; 
-            }
-        } 
+@media(max-width: 1400px){
+    #skill-set {
+        gap: 70px;
     }
-
     .skill-icon-box {
         display: flex;
         flex-wrap: wrap;
-        gap: 72px;
-        margin-bottom: 40px;
-        justify-content: center;
+        gap: 22px;
+        margin-bottom: 0px;
+        justify-content: start;
         margin-top: 0px;
     }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 1200px) {
+    #skill-set {
+        flex-direction: column;
+        section:first-of-type{
+            max-width: unset; 
+            .box-theme {
+                .box-label {
+                    max-width: unset;
+                }
+            }
+            .box-size {
+                max-width: unset; 
+            }
+        } 
+        .skill-icon-box {
+            margin: 0 100px 0;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    #skill-set {
+        .skill-icon-box {
+            margin: 0;
+        }
+    }
+}
+
+
+
+@media(max-width: 850px){
     main {
         flex-direction: column;
         padding: 0 16px 0;
@@ -27,14 +51,15 @@
     }
 
     .skill-icon-box {
-        margin-bottom: 0;
-    }
-
-    .skill-icon-box {
-        gap: inherit;
         margin-bottom: 0px;
-      
-        margin-top: 0px;        
+        margin-top: 0px;    
+        gap: 20px;
+        div {
+            div {
+                font-size: 16px;
+            }
+            
+        }
     }
 
     .article-box {
@@ -69,6 +94,13 @@
     
 }
 
+@media(max-width: 657px){
+    .skill-icon-box {
+        margin-bottom: 0;
+        gap: 20px;
+    }
+}
+
 @media(max-width: 450px) {
     main {
         flex-direction: column;
@@ -77,14 +109,20 @@
     }
 
     .skill-icon-box {
-        margin-bottom: 0;
-    }
-
-    .skill-icon-box {
-        gap: inherit;
         margin-bottom: 0px;
-      
-        margin-top: 0px;        
+        margin-top: 0px; 
+        gap: 12px;   
+        div {
+            width: 97px;
+            svg {
+                height: 56px;
+                width: 56px;
+            }
+            div {
+                font-size: 12px;
+                height: 28px;
+            }
+        }    
     }
 
     .article-box {
