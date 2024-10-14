@@ -27,6 +27,11 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         overflow: scroll;
 
+        @media(max-width: 850px) {
+            width: 90%;
+            max-width: unset;
+        }
+
         .close-section {
             position: absolute;
             top: 24px;
@@ -64,6 +69,18 @@
             align-items: start;
             flex-direction: column;
             gap: 24px;
+
+            @media(max-width: 850px) {
+                padding: 0; 
+                align-items: start;
+                margin-top: 50px;
+            }
+
+            .header {
+                @media(max-width: 850px) {
+                    font-size: 44px;
+                }
+            }
 
             a {
                 color: $base-color;

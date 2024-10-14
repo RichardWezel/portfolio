@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
-import { ImprintService } from './../../services/imprint.service'
+import { PrivacyService } from './../../services/privacy.service'
 
 @Component({
   selector: 'app-contact-me',
@@ -57,12 +57,12 @@ export class ContactMeComponent {
     }
   }
 
-  constructor(private imprintService: ImprintService) {}
+  constructor(private privacyService: PrivacyService) {}
 
   // Methode zum Öffnen des Imprint
   openPrivacyPolicy(event: Event) {
     event.preventDefault(); // Verhindert das Standardverhalten des Links
-    this.imprintService.show();
+    this.privacyService.show();
   }
 }
 

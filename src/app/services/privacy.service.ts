@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -6,7 +5,10 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 
-export class ImprintService {
+export class PrivacyService {
+
+  constructor() { }
+
   private _isVisible = new BehaviorSubject<boolean>(false);
   isVisible$ = this._isVisible.asObservable();
 
@@ -18,3 +20,4 @@ export class ImprintService {
     this._isVisible.next(false);
   }
 }
+

@@ -10,18 +10,43 @@ main {
     align-items: start;
     padding: 0 112px 0;
     gap: 98px;
+
+    .request-to-call {
+      max-width: 50%;
+      width: 100%;
+      p, h3 {
+          margin-bottom: 20px;
+      }
+    }
+
     form{
-    width: 100%;
+      width: 100%;
+
+      .striped-list {
+        border-bottom: rgba(61, 207, 182, 0.5) solid 2px;
+        transition: border-bottom 0.3s; // Für eine sanfte Übergangsanimation
+        margin-bottom: 40px;
+
+        .striped-list-row {
+          padding: unset;
+          justify-content: center;
+          padding: 0 32px 0;
+        }
+      }
+  
+      .striped-list-hovered{
+          border-bottom: rgba(61, 207, 182, 1) solid 2px; // Helleres Border
+      }
+
+      .confirmation-privacy {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
     }
 }
 
-.request-to-call {
-    max-width: 50%;
-    width: 100%;
-    p, h3 {
-        margin-bottom: 20px;
-    }
-}
+
 
 .header {
     color: $base-color;
@@ -35,13 +60,16 @@ main {
     line-height: 28.8px;
     text-align: left;
     color: $base-color;
+    @media(max-width: 1200px) {
+      font-size: 20px;
+    }
 }
 
 .formular-row {
     display: flex; 
     flex-direction: column;
     padding: 32px;
-    width: fit-content;
+    width: 100%;
 }
 
 input{
@@ -85,15 +113,7 @@ input[type=email]{
     transition: opacity 0.3s;
 }
 
-.striped-list {
-    border-bottom: rgba(61, 207, 182, 0.5) solid 2px;
-    transition: border-bottom 0.3s; // Für eine sanfte Übergangsanimation
-    margin-bottom: 40px;
-}
 
-.striped-list-hovered{
-    border-bottom: rgba(61, 207, 182, 1) solid 2px; // Helleres Border
-}
 
 
 // Checkbox
@@ -153,12 +173,7 @@ input[type=email]{
     transform: rotate(45deg);
   }
   
-  .confirmation-privacy {
-    display: flex;
-   
-    flex-direction: column;
-    width: 100%;
-  }
+  
 
   .btn-text{
     display: flex;
@@ -229,7 +244,7 @@ input[type=email]{
 }
 
 // Fehlernachrichten
-.error-message {
+.error-message{
   position: absolute;
     top: 0; 
     left: 220px;

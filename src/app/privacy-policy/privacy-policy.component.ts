@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ImprintService } from './../services/imprint.service';
+import { PrivacyService } from './../services/privacy.service';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
@@ -15,10 +15,10 @@ export class PrivacyPolicyComponent implements OnInit, OnDestroy{
   isVisible = false; 
   private subscription!: Subscription;
 
-  constructor(private imprintService: ImprintService) {}
+  constructor(private privacyService: PrivacyService) {}
 
   ngOnInit() {
-    this.subscription = this.imprintService.isVisible$.subscribe(
+    this.subscription = this.privacyService.isVisible$.subscribe(
       visible => this.isVisible = visible
     );
   }
@@ -30,7 +30,7 @@ export class PrivacyPolicyComponent implements OnInit, OnDestroy{
   }
 
   closePrivacyPolicy() {
-    this.imprintService.hide();
+    this.privacyService.hide();
   }
 
   @HostListener('document:keydown.escape', ['$event'])

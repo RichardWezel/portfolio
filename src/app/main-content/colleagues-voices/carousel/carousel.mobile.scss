@@ -59,10 +59,14 @@
         width: 296px;
         height: 306px;
         padding: 40px;
+        .content {
+            hyphens: auto;
+            
+        } 
     }
 
     .cards {
-        height: 360px;
+        height: 310px;
     }
 
     .shadow-right,
@@ -79,7 +83,7 @@
     }
 
     .quotes {
-        top: -406px;
+        top: -357px;
         left: -96px;
     }
 }
@@ -92,7 +96,7 @@
     }
 
     .cards {
-        height: 360px;
+        height: 265px;
     }
 
     .shadow-right,
@@ -116,7 +120,7 @@
     }
 
     .quotes {
-        top: -406px;
+        top: -305px;
         left: -60px;
         svg{
             width: 66.81px;
