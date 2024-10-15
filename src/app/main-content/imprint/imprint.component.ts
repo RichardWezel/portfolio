@@ -4,13 +4,14 @@ import { ImprintService } from './../../services/imprint.service';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module'
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   templateUrl: './imprint.component.html',
-  styleUrls: ['./imprint.component.scss']
+  styleUrls: ['./imprint.component.scss', './imprint.mobile.scss']
 })
 export class ImprintComponent implements OnInit, OnDestroy {
   isVisible = false; 

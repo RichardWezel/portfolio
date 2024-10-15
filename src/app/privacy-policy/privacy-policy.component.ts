@@ -3,13 +3,14 @@ import { PrivacyService } from './../services/privacy.service';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrls: ['./privacy-policy.component.scss', './privacy-policy.mobile.scss']
 })
 export class PrivacyPolicyComponent implements OnInit, OnDestroy{
   isVisible = false; 

@@ -27,37 +27,28 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         overflow: scroll;
 
-        @media(max-width: 850px) {
-            width: 90%;
-            max-width: unset;
-        }
-
         .close-section {
             position: absolute;
             top: 24px;
             right: 24px;
-            button {
+            
+            .closeBox {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
                 background-color: unset;
                 border: unset;
-            }
-            
-        
-        }
-
-        .closeBox {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover {
-                svg {
-                    width: 25.38px;
-                    height: 25.38px;
-                    path {
-                        fill: $base-color;
+    
+                &:hover{
+                    svg {
+                        width: 25.38px;
+                        height: 25.38px;
+                        path {
+                            fill: $base-color;
+                        }
                     }
                 }
             }
@@ -68,23 +59,9 @@
             display: flex;
             align-items: start;
             flex-direction: column;
-            gap: 24px;
-
-            @media(max-width: 850px) {
-                padding: 0; 
-                align-items: start;
-                margin-top: 50px;
-            }
-
-            .header {
-                @media(max-width: 850px) {
-                    font-size: 44px;
-                }
-            }
-
-            a {
-                color: $base-color;
-            }
+            gap: 16px;
+            text-align: justify;
+            hyphens: auto;
 
             h1 {
                 font-family: $base-font;
@@ -95,10 +72,30 @@
                 text-align: left;
             }
 
-            div {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
+            h2 {
+                margin-block-start: 1.5em;
+            }
+
+            h3 {
+                margin-block-start: 1.5em;
+            }
+
+            h4 {
+                margin-block-start: 1.5em;
+            }
+
+            p {
+                text-align: justify;
+                word-spacing: 0.05em; /* Leichter Erhöhung des Wortabstands */
+                letter-spacing: 0.02em; /* Leichte Erhöhung des Buchstabenabstands */
+            }
+
+            h3 + h4 {
+                margin-block-start: 0em;
+            }
+
+            a {
+                color: $base-color;
             }
 
             h1, h2 {
@@ -114,21 +111,6 @@
                         color: $base-color;
                         cursor: pointer;
                     }
-                }
-            }
-
-            @media(max-width: 600px) {
-                padding: 100px 16px;
-                h1 {
-                    font-family: $base-font;
-                    font-size: 40px;
-                    font-weight: 700;
-                    line-height: 64px;
-                    letter-spacing: -0.03em;
-                    text-align: left;
-                }
-                p {
-                    font-size: 12px;
                 }
             }
         }
