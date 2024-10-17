@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LanguageSwitchBtnComponent } from './language-switch-btn.component';
 
 describe('LanguageSwitchBtnComponent', () => {

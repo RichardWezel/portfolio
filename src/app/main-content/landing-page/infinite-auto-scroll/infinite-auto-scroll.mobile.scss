@@ -1,6 +1,6 @@
 @import './../../../../styles.scss';
 
-@media(max-width: 840px) {
+@media(max-width: 840px){
     .scroll {
         div {
             font-size: 20px;
@@ -8,13 +8,13 @@
     }
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1300px){
     .scroll {
         bottom: 38px;
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1000px){
     .scroll {
         bottom: 26px;
         div{
@@ -23,13 +23,13 @@
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 700px){
     .scroll {
         bottom: 20px;
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 450px){
     .scroll {
         bottom: 13px;
     }

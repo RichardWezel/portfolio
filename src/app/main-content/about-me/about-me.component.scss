@@ -17,10 +17,10 @@ main {
     
     img {
         display: block;
-        width: 100%;  // Damit das Bild vollständig sichtbar ist
-        height: auto; // Das Verhältnis des Bildes bleibt erhalten
+        width: 100%;  
+        height: auto; 
         position: relative;
-        z-index: 1;   // Das Bild wird über dem SVG liegen
+        z-index: 1;
         border-radius: 30px;
     }
 
@@ -30,11 +30,9 @@ main {
         left: -46px;
         width: 100%;
         height: 100%;
-        z-index: 0;   // SVG liegt unter dem Bild
-        pointer-events: none;  // Das SVG ist nicht interaktiv
-        
+        z-index: 0;   
+        pointer-events: none;  
     }
-    
 }
 
 #aboutMeBox{
@@ -48,7 +46,6 @@ main {
     &:hover{
         color: rgb(255, 255, 255);
     }
-
 }
 
 .box-icon {
@@ -68,6 +65,3 @@ main {
     text-align: justify;
     display: flex;
 }
-
-
-

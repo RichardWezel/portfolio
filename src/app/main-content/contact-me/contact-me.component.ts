@@ -33,9 +33,9 @@ export class ContactMeComponent {
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'application/json', // Korrigierter Content-Type
+        'Content-Type': 'application/json', 
       },
-      responseType: 'text' as const, // Richtig positioniert
+      responseType: 'text' as const,
     },
   };
 
@@ -59,10 +59,8 @@ export class ContactMeComponent {
 
   constructor(private privacyService: PrivacyService) {}
 
-  // Methode zum Öffnen des Imprint
   openPrivacyPolicy(event: Event) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    event.preventDefault(); 
     this.privacyService.show();
   }
 }
-

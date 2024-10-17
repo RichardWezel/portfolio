@@ -38,7 +38,7 @@
         z-index: 1;
         transform: translateX(150%);
         transition: transform 350ms ease-out, opacity 350ms ease-out;
-        &.active {
+        &.active{
           display: flex;
         }
 
@@ -46,7 +46,6 @@
           flex-direction: column;
           width: 100%;
         }
-        
       }
     }
 
@@ -64,7 +63,7 @@
   }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 500px){
   main {
     .logo {
       display: flex;
@@ -83,4 +82,3 @@
     }
   }
 }
-

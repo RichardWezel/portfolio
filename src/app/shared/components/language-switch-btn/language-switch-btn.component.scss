@@ -63,8 +63,8 @@
   }
     
   input:checked ~ .EN {
-    z-index: 50; // Optional: Stellen Sie sicher, dass EN hinter DE liegt, wenn gecheckt
-    color: #3DCFB680; // Optional: Reduzieren Sie die Deckkraft von EN
+    z-index: 50; 
+    color: #3DCFB680; 
   }
 }
 

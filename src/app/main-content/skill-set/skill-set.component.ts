@@ -9,6 +9,4 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './skill-set.component.html',
   styleUrls: ['./skill-set.component.scss', './skill-set.mobile.scss']
 })
-export class SkillSetComponent {
-
-}
+export class SkillSetComponent {}

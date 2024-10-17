@@ -12,7 +12,6 @@ import { MenuComponent } from "./menu/menu.component";
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from "../privacy-policy/privacy-policy.component";
 
-
 @Component({
   selector: 'app-main-content',
   standalone: true,
@@ -20,6 +19,4 @@ import { PrivacyPolicyComponent } from "../privacy-policy/privacy-policy.compone
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })
-export class MainContentComponent {
-
-}
+export class MainContentComponent {}

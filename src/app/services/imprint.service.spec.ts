@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { ImprintService } from './imprint.service';
 
 describe('ImprintService', () => {

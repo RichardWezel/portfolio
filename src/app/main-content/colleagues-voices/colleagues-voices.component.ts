@@ -18,7 +18,6 @@ interface Card {
 export class ColleaguesVoicesComponent {
   @ViewChild(CarouselComponent) carousel!: CarouselComponent;
 
-  // Beispielhafte Zitate von Kollegen
   cards: Card[] = [
     {
       content: '„Deine Arbeit ist stets von höchster Qualität und du bist ein großartiger Teamplayer.“',
@@ -36,13 +35,9 @@ export class ColleaguesVoicesComponent {
       content: '„Eine Freude mit der Arbeit, immer positiv und proaktiv.“',
       author: 'Erika Beispiel'
     },
-    // Weitere Karten können hier hinzugefügt werden
   ];
 
   currentIndex: number = 0;
-
-  // Methoden zur Steuerung des Karussells
-
 
   onIndexChange(index: number): void {
     this.currentIndex = index;
