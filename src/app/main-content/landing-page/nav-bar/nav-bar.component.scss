@@ -37,6 +37,10 @@ main {
           width: fit-content;
           z-index: 1;
           height: fit-content;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         .nav-links {
@@ -53,10 +57,15 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             svg {
               circle {
                 fill:none;
               }
+            }
+
+            &:hover {
+              color: $base-color;
             }
           }
         

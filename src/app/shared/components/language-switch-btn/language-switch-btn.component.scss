@@ -7,6 +7,14 @@
   border: 1px solid #3DCFB6;
   margin: 0;
   border-radius: 12px / 50%;
+ 
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+  }
 }
 
 .language-switch-btn {
@@ -14,6 +22,7 @@
   width: 84px;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 
   .umschalter-knopf {
     background-color: #3DCFB6;
@@ -39,6 +48,10 @@
     line-height: 19.2px;
     text-align: left;
     pointer-events: none;
+
+    &:hover{
+      color: $base-color;
+    }
   }
   
   .DE {
@@ -52,7 +65,7 @@
     line-height: 19.2px;
     text-align: left;
     pointer-events: none;
-    z-index: 1; // Standardwert
+    z-index: 1;
     transition: z-index 0.3s ease, color 0.3s ease;
   }
 
