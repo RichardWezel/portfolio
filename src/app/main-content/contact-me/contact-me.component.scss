@@ -27,7 +27,7 @@ main {
 
       .striped-list {
         border-bottom: rgba(61, 207, 182, 0.5) solid 2px;
-        transition: border-bottom 0.3s; // Für eine sanfte Übergangsanimation
+        transition: border-bottom 0.3s; 
         margin-bottom: 40px;
 
         .striped-list-row {
@@ -38,7 +38,7 @@ main {
       }
   
       .striped-list-hovered{
-          border-bottom: rgba(61, 207, 182, 1) solid 2px; // Helleres Border
+          border-bottom: rgba(61, 207, 182, 1) solid 2px; 
       }
 
       .confirmation-privacy {
@@ -48,8 +48,6 @@ main {
       }
     }
 }
-
-
 
 .header {
     color: $base-color;
@@ -63,9 +61,6 @@ main {
     line-height: 28.8px;
     text-align: left;
     color: $base-color;
-    @media(max-width: 1200px) {
-      font-size: 20px;
-    }
 }
 
 .formular-row {
@@ -116,11 +111,6 @@ input[type=email]{
     transition: opacity 0.3s;
 }
 
-
-
-
-// Checkbox
-
 .custom-checkbox {
     display: flex;
     align-items: center;
@@ -136,7 +126,6 @@ input[type=email]{
       background-color: rgba(61, 207, 182, 0.3);
       border-radius: 10px;
     }
-    
   }
   
   .custom-checkbox input[type="checkbox"] {
@@ -145,7 +134,6 @@ input[type=email]{
     cursor: pointer;
     height: 0;
     width: 0;
-  
   }
   
   .custom-checkbox .checkmark {
@@ -156,8 +144,6 @@ input[type=email]{
     transition: background-color 0.3s, border-color 0.3s;
     display: flex;
   }
-  
-  
   
   .custom-checkbox .checkmark::after {
     content: "";
@@ -176,8 +162,6 @@ input[type=email]{
     transform: rotate(45deg);
   }
   
-  
-
   .btn-text{
     display: flex;
     width: 100%;
@@ -247,7 +231,6 @@ input[type=email]{
    margin-top: 16px;
 }
 
-// Fehlernachrichten
 .error-message{
   position: absolute;
     top: 0; 
@@ -256,17 +239,16 @@ input[type=email]{
     height: 100%;
     padding: 12px 16px;
     box-sizing: border-box;
-    color: rgba(236, 123, 123, 1); // Rote Farbe für den Text
+    color: rgba(236, 123, 123, 1); 
     display: flex;
     align-items: center;
-    pointer-events: none; // Damit die Fehlermeldung keine Interaktion mit dem Input blockiert
+    pointer-events: none; 
     z-index: 2;
     font-family: 'Karla', sans-serif;
     font-size: 14px;
     opacity: 0.9;
 }
 
-// Optional: Übergang für sanfte Änderungen
 input {
   transition: border 0.3s, background-color 0.3s;
   width: 100%;
@@ -276,7 +258,7 @@ input {
   border-radius: 4px;
   transition: border 0.3s, background-color 0.3s;
   position: relative;
-  z-index: 1; // Damit das Input über der Fehlermeldung liegt, wenn keine Fehlermeldung angezeigt wird
+  z-index: 1; 
   background-color: unset;
   border: unset;
   color: white;
@@ -285,13 +267,12 @@ input {
       color: rgba(255, 255, 255, 0.8);
       transition: color 0.3s;
   }
-  // Ändere die Placeholder-Farbe, wenn ein Fehler vorliegt
-  &.input-error::placeholder {
-    color: rgba(236, 123, 123, 1); // Rote Farbe für Fehlermeldungen
-}
+
+  &.input-error::placeholder{
+    color: rgba(236, 123, 123, 1);
+  }
 }
 
-// Fehlerzustand für Eingabefelder
 .input-error{
   border: 1px solid rgba(236, 123, 123, 1);
   background-color: rgba(255, 0, 0, 0.1);
@@ -445,29 +426,29 @@ input:-webkit-autofill:active{
   animation-name: float-down;
 }
 
-@keyframes pop {
+@keyframes pop{
   0% {transform: scale(0.8);}
   80% {transform: scale(1.1);}
   90% {transform: scale(0.9);}
   100% {transform: scale(1);}
 }
 
-@keyframes float-up {
+@keyframes float-up{
   0% {transform: translateY(0);}
   50% {transform: translateY(calc(-1 * var(--arrow-h)));}
 }
 
-@keyframes float-left {
+@keyframes float-left{
   0% {transform: translateX(0);}
   50% {transform: translateX(calc(-1 * var(--arrow-h)));}
 }
 
-@keyframes float-right {
+@keyframes float-right{
   0% {transform: translateX(0);}
   50% {transform: translateX(var(--arrow-h));}
 }
 
-@keyframes float-down {
+@keyframes float-down{
   0% {transform: translateY(0);}
   50% {transform: translateY(var(--arrow-h));}
 }

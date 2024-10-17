@@ -11,6 +11,4 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss', './landing-page.mobile.scss']
 })
-export class LandingPageComponent {
-
-}
+export class LandingPageComponent {}

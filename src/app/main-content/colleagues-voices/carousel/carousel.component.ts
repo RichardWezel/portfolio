@@ -11,7 +11,7 @@ import { SharedModule } from '../../../shared/shared.module';
 })
 export class CarouselComponent {
   currentIndex: number = 0;
-  cards: number = 3; // Anzahl der Karten
+  cards: number = 3; 
 
   previousCard() {
     console.log('previousCard clicked');

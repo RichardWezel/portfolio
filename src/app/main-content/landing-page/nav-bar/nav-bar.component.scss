@@ -75,7 +75,7 @@ main {
       }
     }
 
-    .slide-box.active {
+    .slide-box.active{
       transform: translateX(0) !important;
       opacity: 1 !important;
       overflow-x: unset;
@@ -93,8 +93,3 @@ main {
       display: none;
     }
 }
-
-
-
-
-

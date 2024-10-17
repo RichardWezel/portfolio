@@ -19,14 +19,12 @@
     }
     .line-white {
         height: 96px;
-     
     }
 
     .line {
         div{
             height: 192px;
         }
-        
     }
 }
 
@@ -123,7 +121,7 @@
 
 }
 
-@media(max-width: 350px) {
+@media(max-width: 350px){
     .hero {
         gap: 0px;
         position: absolute;

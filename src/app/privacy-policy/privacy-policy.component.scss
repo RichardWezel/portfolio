@@ -86,8 +86,8 @@
 
             p {
                 text-align: justify;
-                word-spacing: 0.05em; /* Leichter Erhöhung des Wortabstands */
-                letter-spacing: 0.02em; /* Leichte Erhöhung des Buchstabenabstands */
+                word-spacing: 0.05em; 
+                letter-spacing: 0.02em;
             }
 
             h3 + h4 {
@@ -107,7 +107,7 @@
                 a {
                     text-decoration: none;
                     color: white;
-                    &:hover {
+                    &:hover{
                         color: $base-color;
                         cursor: pointer;
                     }

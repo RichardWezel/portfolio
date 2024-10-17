@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { PrivacyService } from './privacy.service';
 
 describe('PrivacyService', () => {

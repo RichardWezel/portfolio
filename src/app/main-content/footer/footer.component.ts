@@ -13,11 +13,8 @@ export class FooterComponent {
 
   constructor(private imprintService: ImprintService) {}
 
-  // Methode zum Öffnen des Imprint
   openImprint(event: Event) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    event.preventDefault(); 
     this.imprintService.show();
   }
-
-
 }

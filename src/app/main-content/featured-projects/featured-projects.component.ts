@@ -13,10 +13,8 @@ import { SharedModule } from '../../shared/shared.module';
 export class FeaturedProjectsComponent {
 
   @ViewChild(ProjectsComponent) projectComponent?: ProjectsComponent;
-  
-  
 
- join = {
+  join = {
     display: 'none',
   };
 

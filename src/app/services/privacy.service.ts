@@ -20,4 +20,3 @@ export class PrivacyService {
     this._isVisible.next(false);
   }
 }
-

@@ -48,6 +48,4 @@ export class ProjectsComponent {
   nextProject(projectId: any) {
     this.projectId = projectId;
   }
-
 }
-    

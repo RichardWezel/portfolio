@@ -12,7 +12,7 @@ export class ArrowBtnComponent {
   @Output() clicked = new EventEmitter<void>();
 
   onClick(event: Event) {
-    event.stopPropagation(); // Optional: Verhindert, dass das Event weitergeleitet wird
+    event.stopPropagation();
     this.clicked.emit();
   }
 }

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { InfiniteAutoScrollComponent } from './infinite-auto-scroll.component';
 
 describe('InfiniteAutoScrollComponent', () => {

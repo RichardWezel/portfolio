@@ -171,13 +171,13 @@ main {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        transition: transform 150ms ease; /* Langsame Bewegung über 2 Sekunden */
+        transition: transform 150ms ease; 
     }
     a:hover {
         border: 1px solid $base-color;
         color: $base-color;
         .arrow {
-            transform: translate(4px, -4px); /* Bewegt den Pfeil nach oben rechts */
+            transform: translate(4px, -4px); 
         }
     }
 }
@@ -189,7 +189,7 @@ main {
     height: 40px;
     display: flex;
     align-items: center;
-    --arrow-left: 0; // Initialer Wert der CSS-Variable
+    --arrow-left: 0; 
 
     .nextP-text{
         padding: 9px 8px 9px 0;
@@ -203,13 +203,11 @@ main {
 
     &:hover{
         .nextP-text {
-          color: white;
-          cursor: pointer;
-          transition: color 150ms ease;
+            --arrow_left: 4px;
+            --arrow_stroke-width: 1;
+            color: white;
+            cursor: pointer;
+            transition: color 150ms ease;
         }
-    
-        --arrow_left: 4px;
-        --arrow_stroke-width: 1;
     }
-
 }
