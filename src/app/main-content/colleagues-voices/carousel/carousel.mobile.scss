@@ -33,6 +33,9 @@
         height: 360px;
         font-size: 18px;
         line-height: 21.6px;
+        .content {
+            font-size: 18px;
+        }
     }
 
     .cards {
@@ -61,7 +64,9 @@
         padding: 40px;
         .content {
             hyphens: auto;
-            
+            font-size: 16px;
+            margin-top: 5px;
+
         } 
     }
 
@@ -69,18 +74,9 @@
         height: 310px;
     }
 
-    .shadow-right,
-    .shadow-left {
-        height: 100%;
-        width: 7%;
-        position: absolute;
-        z-index: 100;
-        background: linear-gradient(90deg, #1C1C1C, transparent);
-    }
+    
 
-    content {
-        font-size: 18px
-    }
+  
 
     .quotes {
         top: -357px;
@@ -96,7 +92,8 @@
     }
 
     .cards {
-        height: 265px;
+        height: 261px;
+        margin-bottom: 0px;
     }
 
     .shadow-right,
@@ -120,12 +117,39 @@
     }
 
     .quotes {
-        top: -305px;
-        left: -60px;
+        top: -283px;
+        left: -66px;
         svg{
             width: 66.81px;
             height: 48px;
         }
 
     }
+}
+
+@media(max-width: 350px){
+    .cards {
+        height: 230px;
+        .card {
+            width: 202px;
+            height: 208px;
+            .content {
+                font-size: 12px;
+                line-height: 1.5;
+            }
+        }
+    }
+    
+   
+    .navigation {
+        .quotes{
+            top: -242px;
+            left: -33px;
+            svg {
+                width: 54.81px;
+                height: 37px;
+            }
+        }
+    }
+
 }
