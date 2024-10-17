@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedModule } from './shared/shared.module';
-import { CustomCursorComponent } from './shared/custom-cursor/custom-cursor.component';
 
 
 @Component({
