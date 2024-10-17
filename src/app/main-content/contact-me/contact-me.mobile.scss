@@ -15,7 +15,7 @@
 
 
 
-@media(max-width: 850px){
+@media(max-width: 1360px){
     main {
         flex-direction: column;
         padding: 0 16px 0;
@@ -40,12 +40,6 @@
         padding: 16px;
         width: 100%;
     }
-
-    .box-header {
-        font-size: 32px;
-        line-height: 43px;
-        letter-spacing: -0.02em;
-    }
 }
 
 @media(max-width: 600px){
@@ -53,12 +47,6 @@
         flex-direction: column;
         padding: 0 16px 0;
         .request-to-call {
-            fon
-            .box-header{
-                font-size: 22px;
-                line-height: 37px;
-                letter-spacing: -0.02em;
-            }
             .header {
                 font-size: 16px;
             }
@@ -91,10 +79,43 @@
             }
         }
     }
+}
 
-    .box-header {
-        font-size: 28px;
-        line-height: 43px;
-        letter-spacing: -0.02em;
+@media(max-width: 420px){
+    .input-container {
+        .info-mail-input {
+            top: -121px;
+            left: 0%;
+            font-size: 12px;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
+
+@media(max-width: 373px){
+    .input-container {
+        .info-mail-input {
+            top: -135px;
+        }
+    }
+}
+
+@media(max-width: 333px){
+    .input-container {
+        .info-mail-input {
+            position: absolute;
+            top: -150px;
+        }
+    }
+}
+
+@media(max-width: 301px){
+    .input-container {
+        .info-mail-input {
+            position: absolute;
+            top: -164px;
+        }
+    }
+}
+
