@@ -2,13 +2,14 @@
 
 main {
     height: 100%;
+    width: 100%;
+    max-width: 1440px;
     background-color: #1C1C1C;
     font-family: "Fira Code";
     color: white;
     padding: 0 112px 0;
     display: flex;
     justify-content: center;
-    width: 100%;
     gap: 96px;
 }
 

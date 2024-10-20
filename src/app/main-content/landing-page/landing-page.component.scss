@@ -10,6 +10,7 @@ main {
     position: relative;
     height: 100vh;
     width: 100%;
+    max-width: 1440px;
     background: linear-gradient(90deg, #1C1C1C ,$base-color-dark );
     @include dja();
     flex-direction: column;

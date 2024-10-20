@@ -7,6 +7,15 @@ main {
     background-color: $base-background-color;
     position: relative;
 
+    app-landing-page,
+    app-about-me,
+    app-skill-set,
+    app-featured-projects,
+    app-contact-me {
+        display: flex;
+        justify-content: center;
+    }
+
     app-menu {
         position: absolute;
         top: 0px;
