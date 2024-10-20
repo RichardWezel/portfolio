@@ -16,6 +16,10 @@ main {
         justify-content: center;
     }
 
+    app-landing-page {
+        background: linear-gradient(90deg, #1C1C1C ,$base-color-dark );
+    }
+
     app-menu {
         position: absolute;
         top: 0px;
