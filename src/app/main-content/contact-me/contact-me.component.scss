@@ -220,10 +220,16 @@ input[type=email]{
     transition: all 0.2s ease-out;
     overflow: hidden;
     cursor: pointer;
+
     &:hover{
         border: 1px solid rgba(255, 255, 255, 1);
         color: rgba(255, 255, 255, 1);
     }
+
+    &.active-border {
+      border: 1px solid rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 1);
+  }
 }
 
 .btn-send-hello-section {
