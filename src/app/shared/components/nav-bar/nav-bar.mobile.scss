@@ -1,0 +1,84 @@
+
+@media(max-width: 1000px){
+  .hero{
+      h1{
+          font-size: 62px;
+      }
+      h3{
+          font-size: 24px;
+      }
+  }
+}
+
+@media(max-width: 840px){
+
+  main {
+    .logo {
+      display: flex;
+      z-index: 1;
+    }
+
+    .navbar {
+
+      .navbar-box {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: -80px;
+        width: 238px;
+        height: 252px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 10px;
+        border-radius: 30px;
+        border: 1px;
+        background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+        border: 1px solid rgba(61, 207, 182, 1);
+        z-index: 1;
+        transform: translateX(150%);
+        transition: transform 350ms ease-out, opacity 350ms ease-out;
+        &.active{
+          display: flex;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+
+    .logo-RichardWezel {
+      display: none;
+    }
+    
+    .menu {
+      display: flex;
+      z-index: 1;
+      position: absolute;
+      top: 32px;
+      right: 16px;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  main {
+    .logo {
+      display: flex;
+      z-index: 1;
+    }
+
+    .navbar {
+
+      .navbar-box {
+        width: 187px;
+        height: 207px;
+        .nav-links {
+          gap: 8px;
+      }
+      }
+    }
+  }
+}
