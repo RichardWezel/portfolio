@@ -3,7 +3,6 @@
 main {
     height: 100%;
     width: 100%;
-    max-width: 1440px;
     background-color: #1C1C1C;
     font-family: 'Fira Code';
     color: white;
@@ -86,6 +85,7 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
 }
 
 .project {
@@ -115,16 +115,22 @@ main {
     top: -40px;
     display: none;
     position: absolute;
+    left: 33%;
+    transform: translateX(-50%);
 }
 
 #el-pollo-loco {
     top: 70px;
     display: none;
     position: absolute;
+    left: 33%;
+    transform: translateX(-50%);
 }
 
 #da-bubble {
     top: 180px;
     display: none;
     position: absolute;
+    left: 33%;
+    transform: translateX(-50%);
 }
