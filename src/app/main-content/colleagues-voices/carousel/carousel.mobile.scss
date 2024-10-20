@@ -1,3 +1,11 @@
+@media(max-width: 1680px){
+    .shadow-right,
+    .shadow-left {
+        height: 100%;
+        width: 20%;
+    }
+}
+
 @media(max-width: 1300px){
     .card {
         width: 421px;
@@ -44,9 +52,6 @@
     .shadow-left {
         height: 100%;
         width: 7%;
-        position: absolute;
-        z-index: 100;
-        background: linear-gradient(90deg, #1C1C1C, transparent);
     }
 
     .quotes {
@@ -94,9 +99,6 @@
     .shadow-left {
         height: 100%;
         width: 7%;
-        position: absolute;
-        z-index: 100;
-        background: linear-gradient(90deg, #1C1C1C, transparent);
     }
 
     .content {
