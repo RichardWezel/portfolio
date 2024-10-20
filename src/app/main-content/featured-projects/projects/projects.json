@@ -18,7 +18,7 @@
       }
     ],
     "next": 1,
-    "img": "assets/img/JOIN2.png",
+    "img": "assets/img/Join.svg",
     "links": {
       "github": "https://github.com/RichardWezel/JOIN",
       "live": "https://join.richard-wezel.de/"
@@ -43,7 +43,7 @@
       }
     ],
     "next": 2,
-    "img": "/assets/img/ElPolloLoco.png",
+    "img": "/assets/img/ElPolloLoco.svg",
     "links": {
       "github": "https://github.com/RichardWezel/El_Pollo_Loco",
       "live": "https://elpolloloco.richard-wezel.de/"
@@ -68,7 +68,7 @@
       }
     ],
     "next": 0,
-    "img": "/assets/img/DaBubble.png",
+    "img": "/assets/img/DaBubble.svg",
     "links": {
       "github": "",
       "live": ""

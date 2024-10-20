@@ -1,0 +1,106 @@
+@import './../../../../styles.scss';
+
+main {
+    position: relative;
+    padding: 48px 96px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    max-width: 1440px;
+
+    .logo {
+      z-index: 1;
+      display: none;
+      position: absolute;
+      top: 32px;
+      left: 16px;
+    }
+
+    .navbar{
+      width: 100%;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      position: relative;
+      align-items: center;
+      .navbar-box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 24px;
+        z-index: 1;
+        
+        app-language-switch-btn {
+          display: inline-block;
+          width: fit-content;
+          z-index: 1;
+          height: fit-content;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .nav-links {
+          display: flex;
+          gap: 24px;
+          width: 100%;
+          z-index: 1;
+          
+          a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            svg {
+              circle {
+                fill:none;
+              }
+            }
+
+            &:hover {
+              color: $base-color;
+            }
+          }
+        
+          a:hover svg {
+            circle {
+              fill: $base-color;
+              transition: all .4s ease-in-out;
+            }
+          }
+          
+          a svg {
+            display: flex; 
+          }
+          
+        }
+      }
+    }
+
+    .slide-box.active{
+      transform: translateX(0) !important;
+      opacity: 1 !important;
+      overflow-x: unset;
+    }
+
+    .slide-box.active .navbar{
+      overflow-x: unset;
+    }
+
+    .logo-RichardWezel{
+      z-index: 1;
+    }
+
+    .menu {
+      display: none;
+    }
+}
