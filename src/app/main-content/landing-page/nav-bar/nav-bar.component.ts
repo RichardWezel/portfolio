@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
 import { SharedModule } from '../../../../app/shared/shared.module';
 import { LanguageSwitchBtnComponent } from '../../../shared/components/language-switch-btn/language-switch-btn.component';
-import { NgClass, NgStyle, NgIf, CommonModule } from '@angular/common';
-
+import { NgClass, NgStyle } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -18,5 +17,11 @@ export class NavBarComponent {
 
   toggleSlide() {
     this.isActive = !this.isActive;
+  }
+
+  router = inject(Router)
+
+  toMain() {
+    this.router.navigate(['/'])
   }
 }
