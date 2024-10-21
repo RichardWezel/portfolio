@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavBarComponent } from "./landing-page/nav-bar/nav-bar.component";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillSetComponent } from "./skill-set/skill-set.component";
@@ -9,13 +8,11 @@ import { ContactMeComponent } from "./contact-me/contact-me.component";
 import { FooterComponent } from "./footer/footer.component";
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from "./menu/menu.component";
-import { ImprintComponent } from './imprint/imprint.component';
-import { PrivacyPolicyComponent } from "./../privacy-policy/privacy-policy.component";
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [NavBarComponent, LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent, ImprintComponent, PrivacyPolicyComponent],
+  imports: [LandingPageComponent, AboutMeComponent, SkillSetComponent, FeaturedProjectsComponent, ColleaguesVoicesComponent, ContactMeComponent, FooterComponent, SharedModule, MenuComponent],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })

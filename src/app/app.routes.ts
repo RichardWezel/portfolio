@@ -1,7 +1,7 @@
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { MainContentComponent } from './main-content/main-content.component';
-import { ImprintComponent } from './main-content/imprint/imprint.component';
+import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [

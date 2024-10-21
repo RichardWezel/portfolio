@@ -5,12 +5,14 @@ import { TranslateService } from '@ngx-translate/core';
 import { SharedModule } from './shared/shared.module';
 import { NavBarComponent } from "./main-content/landing-page/nav-bar/nav-bar.component";
 import { FooterComponent } from "./main-content/footer/footer.component";
+import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SharedModule, NavBarComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, SharedModule, NavBarComponent, FooterComponent, ImprintComponent, PrivacyPolicyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
