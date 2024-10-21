@@ -10,7 +10,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from "./menu/menu.component";
 import { ImprintComponent } from './imprint/imprint.component';
-import { PrivacyPolicyComponent } from "../privacy-policy/privacy-policy.component";
+import { PrivacyPolicyComponent } from "./../privacy-policy/privacy-policy.component";
 
 @Component({
   selector: 'app-main-content',
