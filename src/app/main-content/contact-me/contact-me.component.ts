@@ -4,6 +4,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
 import { PrivacyService } from './../../services/privacy.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
@@ -23,6 +24,8 @@ export class ContactMeComponent {
     message: "",
     privacyPolicyAccepted: false
   }
+
+  router = inject(Router)
 
   http = inject(HttpClient);
   emailPattern: string = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
@@ -57,10 +60,15 @@ export class ContactMeComponent {
     }
   }
 
-  constructor(private privacyService: PrivacyService) {}
+  constructor(private privacyService: PrivacyService) {
+  }
 
   openPrivacyPolicy(event: Event) {
     event.preventDefault(); 
     this.privacyService.show();
+  }
+
+  toPrivacy() {
+    this.router.navigate(['/privacy-policy'])
   }
 }

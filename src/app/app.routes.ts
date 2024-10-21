@@ -8,7 +8,7 @@ export const routes: Routes = [
    {path: '', component: MainContentComponent},
    {path: 'main', component: MainContentComponent},
    {path: 'imprint', component: ImprintComponent},
-   {path: 'privasy-policy', component: PrivacyPolicyComponent},
+   {path: 'privacy-policy', component: PrivacyPolicyComponent},
 ];
 
 const routerOptions: ExtraOptions = {
