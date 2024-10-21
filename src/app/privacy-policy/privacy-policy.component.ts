@@ -1,9 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { PrivacyService } from './../services/privacy.service';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -39,5 +40,11 @@ export class PrivacyPolicyComponent implements OnInit, OnDestroy{
     if (this.isVisible) {
       this.closePrivacyPolicy();
     }
+  }
+
+  router = inject(Router)
+
+  toMain() {
+    this.router.navigate(['/'])
   }
 }

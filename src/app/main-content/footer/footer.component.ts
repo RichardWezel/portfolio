@@ -12,7 +12,10 @@ import { Router } from '@angular/router';
 export class FooterComponent {
   router = inject(Router)
 
-  test() {
+  toImprint() {
     this.router.navigate(['/imprint'])
   }
+
+  
 }
+

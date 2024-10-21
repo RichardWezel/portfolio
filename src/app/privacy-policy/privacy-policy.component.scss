@@ -1,67 +1,32 @@
 
 @import './../../styles.scss';
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     main {
+        display: flex;
+        flex-direction: column;
         position: relative;
+        padding-top: 100px;
         background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-        height: 90%;
-        width: 80%;
-        max-width: 800px;
-        border-radius: 30px;
-        border: 1px solid $base-color;
         font-family: 'Karla';
         color: white;
-        padding: 40px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: scroll;
-
-        .close-section {
-            position: absolute;
-            top: 24px;
-            right: 24px;
-            
-            .closeBox {
-                width: 48px;
-                height: 48px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                background-color: unset;
-                border: unset;
     
-                &:hover{
-                    svg {
-                        width: 25.38px;
-                        height: 25.38px;
-                        path {
-                            fill: $base-color;
-                        }
-                    }
-                }
-            }
-        }
 
         article {
-            padding: 24px;
+            width: 100%;
+            max-width: 1440px;
+            padding: 96px;
             display: flex;
             align-items: start;
             flex-direction: column;
             gap: 16px;
             text-align: justify;
             hyphens: auto;
+
+            p, a {
+                overflow-wrap: break-word; /* Standardmethode zum Umbrechen */
+                word-break: break-word;    /* Fallback für ältere Browser */
+                hyphens: auto;             /* Optional: Automatisches Trennen von Wörtern */
+            }
 
             h1 {
                 font-family: $base-font;
@@ -113,6 +78,41 @@
                     }
                 }
             }
+
+            .back-section {
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                flex-direction: row;
+                align-items: center;
+                align-items: center;
+                --arrow-left: 0; 
+             
+                    .text{
+                        display: flex;
+                        padding: 9px 8px 9px 0;
+                        font-family: 'Karla';
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21.6px;
+                        text-align: left;
+                        color: $base-color;
+                    }
+                
+                    &:hover{
+                        .text {
+                            --arrow_left: 4px;
+                            --arrow_stroke-width: 1;
+                            color: white;
+                            cursor: pointer;
+                            transition: color 150ms ease;
+                        }
+                    }
+        
+                    .arrow-wrapper {
+                        display: flex;
+                    }
+            }
         }
     }
-}
+

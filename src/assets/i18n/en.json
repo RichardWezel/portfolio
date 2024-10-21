@@ -229,9 +229,9 @@
         },
         "ContactForm": {
           "title": "Contact form",
-          "contentn-1": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provide there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We will not pass on this data without your consent.",
-          "contentn-2": "This data is processed on the basis of Art. 6 para. 1 lit. b GDPR if your request is related to the performance of a contract or is necessary for the implementation of pre-contractual measures.In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked at any time.",
-          "contentn-3": "We will retain the data you provide on the contact form until you request its deletion, revoke your consent for its storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your request).Mandatory statutory provisions - in particular retention periods - remain unaffected."
+          "content-1": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provide there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We will not pass on this data without your consent.",
+          "content-2": "This data is processed on the basis of Art. 6 para. 1 lit. b GDPR if your request is related to the performance of a contract or is necessary for the implementation of pre-contractual measures.In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked at any time.",
+          "content-3": "We will retain the data you provide on the contact form until you request its deletion, revoke your consent for its storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your request).Mandatory statutory provisions - in particular retention periods - remain unaffected."
         },
         "Requests": {
           "title": "Request by e-mail, telephone or fax",
