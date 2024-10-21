@@ -20,15 +20,11 @@ export class AppComponent {
     translate.addLangs(['en', 'de']);
 
     const savedLang = localStorage.getItem('lang');
-
     const browserLang = translate.getBrowserLang();
-
     const isSupportedBrowserLang = browserLang && ['en', 'de'].includes(browserLang);
-
     const defaultLang: string = savedLang || (isSupportedBrowserLang ? browserLang : 'en');
 
     translate.setDefaultLang('en');
-
     translate.use(defaultLang);
   }
 }
