@@ -6,12 +6,14 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 
 export const routes: Routes = [
    {path: '', component: MainContentComponent},
+   {path: 'main', component: MainContentComponent},
    {path: 'imprint', component: ImprintComponent},
    {path: 'privasy-policy', component: PrivacyPolicyComponent},
 ];
 
 const routerOptions: ExtraOptions = {
    anchorScrolling: 'enabled',
+   scrollPositionRestoration: 'enabled', // Fügt diese Zeile hinzu
  };
 
  @NgModule({
