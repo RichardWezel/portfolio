@@ -1,55 +1,84 @@
 @import './../../styles.scss';
 
-@media(max-width: 600px){
-    .overlay
-        main {
-            article {
-                padding: 100px 16px;
-                div {
-                    h1 {
-                        font-size: 32px;
-                    }
-                    h2 {
-                        font-size: 24px;
+@media(max-width: 840px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        position: relative;
+        background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+        font-family: 'Karla';
+        color: white;
+        height: 100%;
+    
+        article {
+           padding: 0;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 24px;
+            margin-left: 16px;
+    
+            h1 {
+                font-family: $base-font;
+                font-size: 44px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.03em;
+                text-align: left;
+            }
+    
+            h1, h2 {
+                color: $base-color;
+            }
+    
+            .quelle {
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        color: $base-color;
+                        cursor: pointer;
                     }
                 }
-                
-                    h1 {
-                        font-size: 40px;
-                        line-height: 64px;
-                        letter-spacing: -0.03em;
-                        text-align: left;
-                    }
-                    p {
-                        font-size: 12px;
-                    }
             }
         }
+    
+        .back-section {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            align-items: center;
+            --arrow-left: 0; 
+         
+                .text{
+                    display: flex;
+                    padding: 9px 8px 9px 0;
+                    font-family: 'Karla';
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    text-align: left;
+                    color: $base-color;
+                }
+            
+                &:hover{
+                    .text {
+                        --arrow_left: 4px;
+                        --arrow_stroke-width: 1;
+                        color: white;
+                        cursor: pointer;
+                        transition: color 150ms ease;
+                    }
+                }
+    
+                .arrow-wrapper {
+                    display: flex;
+                }
+        }
+    }
 }
 
-@media(max-width: 450px){
-    .overlay
-        main {
-            article {
-                padding: 100px 16px;
-                div {
-                    h1 {
-                        font-size: 24px;
-                    }
-                    h2 {
-                        font-size: 16px;
-                    }
-                }
-                
-                    h1 {
-                        font-size: 40px;
-                        line-height: 64px;
-                        letter-spacing: -0.03em;
-                        text-align: left;
-                    }
-                    p {
-                        font-size: 12px;
-                    }
-            }
-        }
-}
