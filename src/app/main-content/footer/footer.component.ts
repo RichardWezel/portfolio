@@ -1,5 +1,6 @@
-import { Component} from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +9,10 @@ import { SharedModule } from '../../shared/shared.module';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss', './footer.mobile.scss']
 })
-export class FooterComponent {}
+export class FooterComponent {
+  router = inject(Router)
+
+  test() {
+    this.router.navigate(['/imprint'])
+  }
+}

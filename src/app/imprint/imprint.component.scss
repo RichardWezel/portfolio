@@ -1,59 +1,16 @@
 
-@import './../../../styles.scss';
+@import './../../styles.scss';
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
         position: relative;
         background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-        height: auto;
-        width: 80%;
-        max-width: 800px;
-        border-radius: 30px;
-        border: 1px solid $base-color;
         font-family: 'Karla';
         color: white;
-        padding: 40px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-        .close-section {
-            position: absolute;
-            top: 24px;
-            right: 24px;
-            button {
-                background-color: unset;
-                border: unset;
-            }
-        }
-
-        .closeBox {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover{
-                svg {
-                    width: 25.38px;
-                    height: 25.38px;
-                    path {
-                        fill: $base-color;
-                    }
-                }
-            }
-        }
+        height: 100%;
 
         article {
             padding: 24px;
@@ -61,6 +18,7 @@
             align-items: start;
             flex-direction: column;
             gap: 24px;
+            margin-left: 96px;
 
             h1 {
                 font-family: $base-font;
@@ -69,12 +27,6 @@
                 line-height: 64px;
                 letter-spacing: -0.03em;
                 text-align: left;
-            }
-
-            div {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
             }
 
             h1, h2 {
@@ -93,5 +45,39 @@
                 }
             }
         }
+
+        .back-section {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            align-items: center;
+            --arrow-left: 0; 
+         
+                .text{
+                    display: flex;
+                    padding: 9px 8px 9px 0;
+                    font-family: 'Karla';
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    text-align: left;
+                    color: $base-color;
+                }
+            
+                &:hover{
+                    .text {
+                        --arrow_left: 4px;
+                        --arrow_stroke-width: 1;
+                        color: white;
+                        cursor: pointer;
+                        transition: color 150ms ease;
+                    }
+                }
+
+                .arrow-wrapper {
+                    display: flex;
+                }
+        }
     }
-}
