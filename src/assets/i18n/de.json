@@ -115,7 +115,8 @@
         "phone": "Telefon: "
       },
       "editor": "Redaktionell verantwortlich",
-      "source": "Quelle: "
+      "source": "Quelle: ",
+      "back": "Zurück zur Startseite"
     },
     "PRIVACY-POLICY": {
       "header": "Datenschutzerklärung",
@@ -241,7 +242,8 @@
           "contentn-3": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt."
         }
       },
-      "source": "Quelle:"
+      "source": "Quelle:",
+      "back": "Zurück zur Startseite"
     }
   }
   
