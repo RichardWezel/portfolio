@@ -40,8 +40,16 @@
     }
 }
 
-@media(max-height: 800px) {
+@media(max-height: 800px){
     .left {
-        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        margin-bottom: 60px;
+        gap: 8px;
+
+        svg {
+            margin-bottom: 16px; 
+        }
     }
 }

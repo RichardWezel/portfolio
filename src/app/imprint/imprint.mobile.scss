@@ -18,7 +18,7 @@
             align-items: start;
             flex-direction: column;
             gap: 24px;
-            margin-left: 16px;
+            margin-left: 32px;
     
             h1 {
                 font-family: $base-font;
@@ -83,6 +83,30 @@
     }
 }
 
-@media(max-height: 800px) {
+@media(max-height: 750px){
+    main {
+        article {
+            gap: 12px;
+
+            h1 {
+                font-size: 32px !important;
+            }
+
+        }
+    }
+    
+}
+
+
+@media(max-height: 650px){
+    main {
+    
+        article {
+    
+            .quelle {
+                margin-top: 10px !important;
+            }
+        }
+    }
     
 }
