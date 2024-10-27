@@ -61,10 +61,12 @@ main {
     margin-top: 48px;
    // small box
     div {
+        flex: 0 1 calc((100% / 3) - (48px)); // Berechnet die Breite jedes Elements
+        max-width: calc((100% / 3) - (48px));
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 104px;
+        align-items: center;
         svg{
             height: 64px;
             width: 64px;
