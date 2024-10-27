@@ -1,99 +1,97 @@
 
-
-    <main (click)="$event.stopPropagation()">
-        <article>
-            <h1>{{'PRIVACY-POLICY.header' | translate}}</h1>
-
-            <h2>{{'PRIVACY-POLICY.1-section.header' | translate}}</h2>
-            <h3>{{'PRIVACY-POLICY.1-section.generalNotes.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.1-section.generalNotes.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.1-section.dataCollection.header' | translate}}</h3> 
-                <h4>{{'PRIVACY-POLICY.1-section.dataCollection.whoResponsible.title' | translate}}</h4> 
-                    <p>{{'PRIVACY-POLICY.1-section.dataCollection.whoResponsible.content' | translate}}</p> 
-                <h4>{{'PRIVACY-POLICY.1-section.howCollectData.title' | translate}}</h4> 
-                    <p>{{'PRIVACY-POLICY.1-section.howCollectData.content-1' | translate}}</p> 
-                    <p>{{'PRIVACY-POLICY.1-section.howCollectData.content-2' | translate}}</p> 
-                <h4>{{'PRIVACY-POLICY.1-section.forwhatCollectData.title' | translate}}</h4> 
-                    <p>{{'PRIVACY-POLICY.1-section.forwhatCollectData.content' | translate}}</p> 
-                <h4>{{'PRIVACY-POLICY.1-section.rights.title' | translate}}</h4> 
-                    <p>{{'PRIVACY-POLICY.1-section.rights.content' | translate}}</p>
-            
-            <h2>2. Hosting</h2>
-                <p>{{'PRIVACY-POLICY.2-section.content' | translate}}</p>
-            <h3>All-Inkl</h3> 
-                <p>{{'PRIVACY-POLICY.2-section.All-Inkl.content-1' | translate}}
-                    <a class="all-inkl" href="https://all-inkl.com/datenschutzinformationen/" target="_blank" rel="noopener noreferrer">https://all-inkl.com/datenschutzinformationen/</a>.
-                </p> 
-                <p>{{'PRIVACY-POLICY.2-section.All-Inkl.content-2' | translate}}</p>
+<main (click)="$event.stopPropagation()">
+    <app-navbar></app-navbar>
+    <article>
+        <h1>{{'PRIVACY-POLICY.header' | translate}}</h1>
+        <h2>{{'PRIVACY-POLICY.1-section.header' | translate}}</h2>
+        <h3>{{'PRIVACY-POLICY.1-section.generalNotes.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.1-section.generalNotes.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.1-section.dataCollection.header' | translate}}</h3> 
+            <h4>{{'PRIVACY-POLICY.1-section.dataCollection.whoResponsible.title' | translate}}</h4> 
+                <p>{{'PRIVACY-POLICY.1-section.dataCollection.whoResponsible.content' | translate}}</p> 
+            <h4>{{'PRIVACY-POLICY.1-section.howCollectData.title' | translate}}</h4> 
+                <p>{{'PRIVACY-POLICY.1-section.howCollectData.content-1' | translate}}</p> 
+                <p>{{'PRIVACY-POLICY.1-section.howCollectData.content-2' | translate}}</p> 
+            <h4>{{'PRIVACY-POLICY.1-section.forwhatCollectData.title' | translate}}</h4> 
+                <p>{{'PRIVACY-POLICY.1-section.forwhatCollectData.content' | translate}}</p> 
+            <h4>{{'PRIVACY-POLICY.1-section.rights.title' | translate}}</h4> 
+                <p>{{'PRIVACY-POLICY.1-section.rights.content' | translate}}</p>
         
-            <h2>{{'PRIVACY-POLICY.3-section.header' | translate}}</h2>
-            <h3>{{'PRIVACY-POLICY.3-section.data-privacy.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-1' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-2' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-3' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.content-1' | translate}}</p> 
-                <p>Richard Wezel<br />
-                Eschholzstra&szlig;e 74<br />
-                79115 Freiburg im Breisgau</p>
-                <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.phone' | translate}}: 017683140547<br />
-                E-Mail: kontakt&#x40;richard-wezel.de</p>
-                <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.content-2' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.StorageDuration.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.StorageDuration.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.generalNotesDataProcessingOnWeb.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.generalNotesDataProcessingOnWeb.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.RecipientsOfPersonalData.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.RecipientsOfPersonalData.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.Revocation.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.Revocation.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.content-1' | translate}}</p>
-                <p>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.content-2' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.RightToLodgeAComplaint.title' | translate}}</h3>
-                <p>{{'PRIVACY-POLICY.3-section.RightToLodgeAComplaint.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.RightToDataPortability.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.RightToDataPortability.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.InformationCorrectionDeletion.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.InformationCorrectionDeletion.content' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.content-1' | translate}}</p> 
-                    <ul>    
-                        <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-1' | translate}}</li> 
-                        <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-2' | translate}}</li> 
-                        <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-3' | translate}}</li> 
-                        <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-4' | translate}}</li> 
-                    </ul> 
-                <p>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.content-2' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.3-section.SSL.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.3-section.SSL.content-1' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.3-section.SSL.content-2' | translate}}</p>
-            
-            <h2>{{'PRIVACY-POLICY.4-section.header' | translate}}</h2>
-            <h3>Cookies</h3> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-1' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-2' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-3' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-4' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-5' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.cookies.content-6' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.4-section.ContactForm.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-1' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-2' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-3' | translate}}</p>
-            <h3>{{'PRIVACY-POLICY.4-section.Requests.title' | translate}}</h3> 
-                <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-1' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-2' | translate}}</p> 
-                <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-3' | translate}}</p>
-            <p class="quelle">{{'PRIVACY-POLICY.source' | translate}} <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
-            <div class="back-section" (click)="toMain()">
-              
-                <div class="text">{{'PRIVACY-POLICY.back' | translate}}</div>
-                <a  class="arrow-wrapper">
-                    <app-arrow-btn></app-arrow-btn>
-                </a>
-           
-            </div>
-        </article>
+        <h2>2. Hosting</h2>
+            <p>{{'PRIVACY-POLICY.2-section.content' | translate}}</p>
+        <h3>All-Inkl</h3> 
+            <p>{{'PRIVACY-POLICY.2-section.All-Inkl.content-1' | translate}}
+                <a class="all-inkl" href="https://all-inkl.com/datenschutzinformationen/" target="_blank" rel="noopener noreferrer">https://all-inkl.com/datenschutzinformationen/</a>.
+            </p> 
+            <p>{{'PRIVACY-POLICY.2-section.All-Inkl.content-2' | translate}}</p>
+    
+        <h2>{{'PRIVACY-POLICY.3-section.header' | translate}}</h2>
+        <h3>{{'PRIVACY-POLICY.3-section.data-privacy.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-1' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-2' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.3-section.data-privacy.content-3' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.content-1' | translate}}</p> 
+            <p>Richard Wezel<br />
+            Eschholzstra&szlig;e 74<br />
+            79115 Freiburg im Breisgau</p>
+            <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.phone' | translate}}: 017683140547<br />
+            E-Mail: kontakt&#x40;richard-wezel.de</p>
+            <p>{{'PRIVACY-POLICY.3-section.NoteResponsibleBody.content-2' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.StorageDuration.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.StorageDuration.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.generalNotesDataProcessingOnWeb.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.generalNotesDataProcessingOnWeb.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.RecipientsOfPersonalData.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.RecipientsOfPersonalData.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.Revocation.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.Revocation.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.content-1' | translate}}</p>
+            <p>{{'PRIVACY-POLICY.3-section.RightsInSpecialCases.content-2' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.RightToLodgeAComplaint.title' | translate}}</h3>
+            <p>{{'PRIVACY-POLICY.3-section.RightToLodgeAComplaint.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.RightToDataPortability.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.RightToDataPortability.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.InformationCorrectionDeletion.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.InformationCorrectionDeletion.content' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.content-1' | translate}}</p> 
+                <ul>    
+                    <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-1' | translate}}</li> 
+                    <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-2' | translate}}</li> 
+                    <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-3' | translate}}</li> 
+                    <li>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.list-4' | translate}}</li> 
+                </ul> 
+            <p>{{'PRIVACY-POLICY.3-section.RightRestrictionProcessing.content-2' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.3-section.SSL.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.3-section.SSL.content-1' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.3-section.SSL.content-2' | translate}}</p>
         
-    </main>
+        <h2>{{'PRIVACY-POLICY.4-section.header' | translate}}</h2>
+        <h3>Cookies</h3> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-1' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-2' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-3' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-4' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-5' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.cookies.content-6' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.4-section.ContactForm.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-1' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-2' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.ContactForm.content-3' | translate}}</p>
+        <h3>{{'PRIVACY-POLICY.4-section.Requests.title' | translate}}</h3> 
+            <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-1' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-2' | translate}}</p> 
+            <p>{{'PRIVACY-POLICY.4-section.Requests.contentn-3' | translate}}</p>
+        <p class="quelle">{{'PRIVACY-POLICY.source' | translate}} <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+        <div class="back-section" (click)="toMain()">
+          
+            <div class="text">{{'PRIVACY-POLICY.back' | translate}}</div>
+            <a  class="arrow-wrapper">
+                <app-arrow-btn></app-arrow-btn>
+            </a>
+        </div>
+    </article>
+    <app-footer></app-footer>
+</main>

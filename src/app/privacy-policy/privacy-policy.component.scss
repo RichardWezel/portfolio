@@ -1,16 +1,34 @@
 
 @import './../../styles.scss';
 
+
+
     main {
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: relative;
         padding-top: 100px;
         background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
         font-family: 'Karla';
         color: white;
     
-
+        app-navbar,
+        app-footer {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+    
+        app-navbar {
+            top: 0;
+            width: 100%;
+        }
+    
+        app-footer {
+            bottom: 0;
+            width: 100%;
+        }
         article {
             width: 100%;
             max-width: 1440px;
@@ -21,6 +39,7 @@
             gap: 16px;
             text-align: justify;
             hyphens: auto;
+            margin-bottom: 212px;
 
             p, a {
                 overflow-wrap: break-word; /* Standardmethode zum Umbrechen */

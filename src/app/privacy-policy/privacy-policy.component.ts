@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { Router } from '@angular/router';
+import { NavbarComponent } from "../main-content/navbar/navbar.component";
+import { FooterComponent } from "../main-content/footer/footer.component";
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, NavbarComponent, FooterComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrls: ['./privacy-policy.component.scss', './privacy-policy.mobile.scss']
 })
