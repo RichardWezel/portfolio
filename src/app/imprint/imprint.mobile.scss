@@ -10,6 +10,7 @@
         font-family: 'Karla';
         color: white;
         height: 100%;
+        padding-bottom: 231px;
     
         article {
            padding: 0;
@@ -82,3 +83,6 @@
     }
 }
 
+@media(max-height: 800px) {
+    
+}
