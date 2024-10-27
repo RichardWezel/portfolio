@@ -16,6 +16,9 @@ export class FooterComponent {
     this.router.navigate(['/imprint'])
   }
 
+  toMain() {
+    this.router.navigate(['/'])
+  }
   
 }
 

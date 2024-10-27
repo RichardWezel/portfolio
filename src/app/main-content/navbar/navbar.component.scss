@@ -15,9 +15,9 @@ main {
     .logo {
       z-index: 1;
       display: none;
-      position: absolute;
-      top: 32px;
-      left: 16px;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .navbar{
@@ -98,6 +98,9 @@ main {
 
     .logo-RichardWezel{
       z-index: 1;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .menu {
