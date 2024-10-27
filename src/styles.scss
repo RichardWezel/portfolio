@@ -14,26 +14,28 @@ html, body {
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #3dcfb6 #ffffff;
-  }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Alternativen: thin, auto, none */
+  scrollbar-color: #3dcfb6 #ffffff; /* Daumenfarbe und Schienenhintergrund */
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 16px; /* Breite der Scrollbar */
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #3dcfb6;
-    border-radius: 10px;
-    border: 3px solid #0d0c0c;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff; /* Hintergrund der Scrollbar-Schiene */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3dcfb6; /* Daumenfarbe */
+  border-radius: 10px; /* Abrundung des Daumens */
+  border: 3px solid #ffffff; /* Außenrand des Daumens */
+}
+
 
 /* fira-code-300 - latin */
 @font-face {
@@ -192,32 +194,6 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #3dcfb6 #08463B;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar{
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track{
-    background: #08463B;
-  }
-
-  *::-webkit-scrollbar-thumb{
-    background-color: #3dcfb6;
-    border-radius: 11px;
-    border: 20px solid #1c1c1c;
-  }
-
-  ::-webkit-scrollbar-thumb:hover{
-    background: #08463B; 
-  }
 
 $base-color: rgb(61, 207, 182);
 $base-color-dark: #08463B;
