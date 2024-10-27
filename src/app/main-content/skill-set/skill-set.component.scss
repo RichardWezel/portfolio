@@ -3,6 +3,8 @@
 main {
     background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     height: 100%;
+    max-width: 1440px;
+    width: 100%;
     background-color: #1C1C1C;
     font-family: $base-font;
     color: white;
@@ -15,7 +17,7 @@ main {
         max-width: 520px;
         margin: 0 auto;
         article {
-            @media(max-width: 1000px) {
+            @media(max-width: 1000px){
                 align-items: center;
             }
             align-items: center;
