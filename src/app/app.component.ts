@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedModule } from './shared/shared.module';
-import { NavBarComponent } from "./main-content/landing-page/nav-bar/nav-bar.component";
 import { FooterComponent } from "./main-content/footer/footer.component";
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ScrollService } from './services/scroll.service';
+import { NavbarComponent } from "./main-content/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SharedModule, NavBarComponent, FooterComponent, ImprintComponent, PrivacyPolicyComponent, RouterModule],
+  imports: [CommonModule, RouterOutlet, SharedModule, NavbarComponent, FooterComponent, ImprintComponent, PrivacyPolicyComponent, RouterModule, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
