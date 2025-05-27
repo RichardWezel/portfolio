@@ -70,8 +70,8 @@
     "next": 0,
     "img": "/assets/img/DaBubble.svg",
     "links": {
-      "github": "",
-      "live": ""
+      "github": "https://github.com/RichardWezel/DaBubble.git",
+      "live": "https://dabubble.richard-wezel.de/"
     }
   }
 ]  
