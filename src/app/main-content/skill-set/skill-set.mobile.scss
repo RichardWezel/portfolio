@@ -1,5 +1,5 @@
 @media(max-width: 1400px){
-    #skill-set {
+    main {
         gap: 70px;
     }
     .skill-icon-box {
@@ -13,13 +13,13 @@
 }
 
 @media(max-width: 1200px){
-    #skill-set {
+    main {
         flex-direction: column;
         section:first-of-type{
             max-width: unset; 
             .box-theme {
                 .box-label {
-                    max-width: unset;
+                    
                 }
             }
             .box-size {

@@ -3,7 +3,7 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 144px;
+    // gap: 144px;
     background-color: $base-background-color;
     position: relative;
 
@@ -15,7 +15,9 @@ main {
     app-footer {
         display: flex;
         justify-content: center;
+        padding-top: 144px;
     }
+
 
     app-landing-page {
         background: linear-gradient(90deg, #1C1C1C ,$base-color-dark );
@@ -34,7 +36,15 @@ main {
     }
 
     @media(max-width: 1400px){
-        gap: 56px; 
+        app-landing-page,
+    app-about-me,
+    app-skill-set,
+    app-featured-projects,
+    app-contact-me,
+    app-footer {
+       
+        padding-top: 56px;
+    }
     }
 }
 
