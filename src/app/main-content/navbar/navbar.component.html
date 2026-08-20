@@ -15,19 +15,19 @@
             <app-language-switch-btn></app-language-switch-btn>
 
             <div class="nav-links">
-                <a href="#about-me">
+                <a href="#about-me" (click)="scrollToSection($event, 'about-me')">
                     <div>{{ 'NAV.ABOUT_ME' | translate }}</div>
                     <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="4" cy="4" r="4" fill="white"/>
                     </svg>  
                  </a>
-                 <a href="#skill-set">
+                      <a href="#skill-set" (click)="scrollToSection($event, 'skill-set')">
                     <div>{{ 'NAV.SKILLS' | translate }}</div>
                     <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="4" cy="4" r="4" fill="white"/>
                     </svg>  
                  </a>
-                 <a href="#projects">
+                 <a href="#projects" (click)="scrollToSection($event, 'projects')">
                     <div>{{ 'NAV.PROJECTS' | translate }}</div>
                     <svg width="7" height="7" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="4" cy="4" r="4" fill="white"/>

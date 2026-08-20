@@ -23,4 +23,12 @@ export class NavbarComponent {
   toMain() {
     this.router.navigate(['/'])
   }
+
+  scrollToSection(event: Event, sectionId: string): void {
+    event.preventDefault();
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
 }
