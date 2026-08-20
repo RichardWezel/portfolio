@@ -8,22 +8,22 @@
     },
     "INFINITE-AUTO-SCROLL": {
       "based": "Sitz in Freiburg im Breisgau",
-      "profession": "Frontend Entwickler",
-      "learning": "Zur Zeit Weiterbildung in Backend",
-      "available": "Verfügbar für Mobiles Arbeiten"
+      "profession": "Frontend- & Backend-Entwickler",
+      "learning": "Backend-Abschlussprojekt in Arbeit",
+      "available": "Aktiv auf Jobsuche"
     },
     "ABOUT-ME": {
       "whoIAm": "Wer ich bin",
       "header": "Über mich",
-      "intro": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Freiburg. Motiviert durch die grenzenlosen Möglichkeiten in der IT, bin ich begeistert davon, visuell fesselnde und intuitive Webseiten und Anwendungen zu entwickeln.",
-      "location": "Ich bin flexibel, was das Arbeitsumfeld angeht, und kann sowohl vor Ort in München als auch aus der Ferne effektiv arbeiten.",
-      "mind": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um meine Kenntnisse und Fähigkeiten ständig zu verbessern.",
-      "profession": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz auf meine Fähigkeit, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+      "intro": "Hallo, ich bin Richard – Softwareentwickler mit einem ungewöhnlichen Fundament: erst Mechatroniker mit SPS-Programmierung, dann mehrere Jahre als Sozialarbeiter mit gerontologischer Weiterbildung, heute Frontend- und Backend-Entwicklung mit JavaScript, Angular und Python/Django. Jeder Abschnitt hat mir beigebracht, wie man Systeme baut, die für Menschen tatsächlich funktionieren.",
+      "location": "Ich bin in Freiburg im Breisgau zuhause und beim Arbeitsort flexibel: Remote ist mein Favorit, für Termine vor Ort bin ich ebenso offen.",
+      "mind": "Ich lerne gerne nebenbei weiter – drei Jahre Abendschule parallel zur ersten Ausbildung, zwei gerontologische Weiterbildungen parallel zum Job, jetzt der Wechsel in die Softwareentwicklung. Stillstand ist für mich keine Option.",
+      "profession": "Programmieren ist für mich angewandte Problemlösung, keine reine Fleißarbeit am Code. Aus meinen Jahren in der Sozialen Arbeit weiß ich außerdem, worauf es ankommt, wenn Software auch für Menschen funktionieren soll, die nicht mit Technik aufgewachsen sind."
     },
     "SKILL-SET": {
       "topic": "Technologien",
       "header": "Fähigkeiten",
-      "intro": "Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung vorne zu bleiben.",
+      "intro": "Auf meinem Weg vom Frontend ins Backend habe ich mit unterschiedlichen Technologien und Konzepten gearbeitet – von JavaScript und Angular bis zu Python, Django und REST-APIs. Ich bin offen für Neues und bilde mich laufend weiter, um in der sich schnell entwickelnden Webentwicklung mitzuhalten.",
       "question-1": "Sie interessieren sich für",
       "question-2": "weitere Fähigkeiten?",
       "answer": "Fühlen Sie sich frei mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
@@ -101,12 +101,15 @@
     },
     "FOOTER": {
       "left": {
-        "profession": "Web-Entwickler",
+        "profession": "Frontend- & Backend-Entwickler",
         "local": "Freiburg im Breisgau | Deutschland"
       },
       "right": {
         "imprint": "Impressum"
       }
+    },
+    "LANDING-PAGE": {
+      "role": "Frontend- & Backend-Entwickler"
     },
     "IMPRINT": {
       "header": "Impressum",

@@ -3,11 +3,6 @@ import { CommonModule } from '@angular/common';
 import { CarouselComponent } from "./carousel/carousel.component";
 import { SharedModule } from '../../shared/shared.module';
 
-interface Card {
-  content: string;
-  author: string;
-}
-
 @Component({
   selector: 'app-colleagues-voices',
   standalone: true,
@@ -17,25 +12,6 @@ interface Card {
 })
 export class ColleaguesVoicesComponent {
   @ViewChild(CarouselComponent) carousel!: CarouselComponent;
-
-  cards: Card[] = [
-    {
-      content: '„Deine Arbeit ist stets von höchster Qualität und du bist ein großartiger Teamplayer.“',
-      author: 'Hans Wurst'
-    },
-    {
-      content: '„Exzellente Arbeitsmoral und immer bereit, über das Erwartete hinauszugehen.“',
-      author: 'Maria Musterfrau'
-    },
-    {
-      content: '„Konsequent liefert du hochwertige Ergebnisse fristgerecht.“',
-      author: 'Max Mustermann'
-    },
-    {
-      content: '„Eine Freude mit der Arbeit, immer positiv und proaktiv.“',
-      author: 'Erika Beispiel'
-    },
-  ];
 
   currentIndex: number = 0;
 
