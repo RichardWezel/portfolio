@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
   router = inject(Router)
+  currentYear = new Date().getFullYear()
 
   toImprint() {
     this.router.navigate(['/imprint'])

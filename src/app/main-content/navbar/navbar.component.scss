@@ -27,6 +27,7 @@ main {
       align-items: center;
       position: relative;
       align-items: center;
+      cursor: pointer;
       .navbar-box {
         display: flex;
         width: 100%;
@@ -105,5 +106,6 @@ main {
 
     .menu {
       display: none;
+      cursor: pointer;
     }
 }
