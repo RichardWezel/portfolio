@@ -34,7 +34,7 @@ export class CvTimelineComponent implements AfterViewInit, OnDestroy {
 
   pathD = '';
   svgHeight = 0;
-  isDesktopLayout = true;
+  isDesktopLayout = window.innerWidth > DESKTOP_BREAKPOINT;
   dotPositions: PathPoint[] = [];
   navbarHasBackground = false;
 

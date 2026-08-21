@@ -19,9 +19,12 @@
       display: flex;
       z-index: 1;
     }
+    h2{
+      display: none;
+    }
 
     .navbar {
-      display: none;
+      display: flex;
       .navbar-box {
         display: none;
         position: absolute;

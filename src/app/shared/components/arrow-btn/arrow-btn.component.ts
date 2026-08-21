@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-arrow-btn',
@@ -8,6 +8,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./arrow-btn.component.scss']
 })
 export class ArrowBtnComponent {
+
+  @Input() ariaLabel = 'Zurück';
 
   @Output() clicked = new EventEmitter<void>();
 

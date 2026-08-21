@@ -12,6 +12,12 @@ app-navbar {
     background-color: transparent;
     transition: background-color 200ms ease;
 
+    main {
+        h2{
+            display: none!important;
+        }
+    }
+
     &.scrolled {
         background-color: #1C1C1C;
         height: 90px;
