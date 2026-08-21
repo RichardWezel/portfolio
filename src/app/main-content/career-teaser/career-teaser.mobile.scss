@@ -1,0 +1,32 @@
+@media(max-width: 850px){
+    main {
+        padding: 0 16px 0;
+    }
+
+    .article-box {
+        .box-header {
+            font-size: 56px;
+            line-height: 44.8px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+        .box-article {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: justify;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .article-box {
+        .box-header {
+            font-size: 34px;
+            line-height: 44.8px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+    }
+}

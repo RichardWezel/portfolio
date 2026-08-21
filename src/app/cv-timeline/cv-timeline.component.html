@@ -1,0 +1,33 @@
+<app-navbar [class.scrolled]="navbarHasBackground"></app-navbar>
+<main>
+    <article>
+        <h1>{{ 'CV-TIMELINE.header' | translate }}</h1>
+        <p class="intro">{{ 'CV-TIMELINE.intro' | translate }}</p>
+
+        <div class="stations" #stationsContainer>
+            <svg *ngIf="isDesktopLayout" class="stations-svg" [attr.height]="svgHeight" preserveAspectRatio="none">
+                <path [attr.d]="pathD" fill="none" stroke="rgba(61, 207, 182, 0.25)" stroke-width="1"></path>
+                <path #curvePath [attr.d]="pathD" fill="none" stroke="#3DCFB6" stroke-width="1"></path>
+            </svg>
+            <div class="station" *ngFor="let station of stations; let i = index" [ngClass]="[station.kategorie, i % 2 === 0 ? 'station-left' : 'station-right']">
+                <div class="dot"
+                     [style.top.px]="isDesktopLayout && dotPositions[i] ? dotPositions[i].y : null"
+                     [style.left.px]="isDesktopLayout && dotPositions[i] ? dotPositions[i].x : null"></div>
+                <div class="station-content" #stationContent>
+                    <div class="zeitraum">{{ 'CV-TIMELINE.stations.' + station.key + '.zeitraum' | translate }}</div>
+                    <h2 class="titel">{{ 'CV-TIMELINE.stations.' + station.key + '.titel' | translate }}</h2>
+                    <div class="ort">{{ 'CV-TIMELINE.stations.' + station.key + '.ort' | translate }}</div>
+                    <p class="beschreibung">{{ 'CV-TIMELINE.stations.' + station.key + '.beschreibung' | translate }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-section" (click)="toMain()">
+            <div class="text">{{ 'CV-TIMELINE.back' | translate }}</div>
+            <a class="arrow-wrapper">
+                <app-arrow-btn></app-arrow-btn>
+            </a>
+        </div>
+    </article>
+</main>
+<app-footer></app-footer>

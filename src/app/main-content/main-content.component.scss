@@ -9,6 +9,7 @@ main {
 
     app-landing-page,
     app-about-me,
+    app-career-teaser,
     app-skill-set,
     app-featured-projects,
     app-contact-me,
@@ -39,11 +40,12 @@ main {
     @media(max-width: 1400px){
         app-landing-page,
     app-about-me,
+    app-career-teaser,
     app-skill-set,
     app-featured-projects,
     app-contact-me,
     app-footer {
-       
+
         padding-top: 56px;
     }
     }

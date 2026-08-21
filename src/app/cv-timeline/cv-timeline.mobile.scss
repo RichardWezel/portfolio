@@ -1,0 +1,55 @@
+@media(max-width: 900px){
+    app-navbar {
+        height: 90px;
+    }
+
+    main {
+        article {
+            padding: 120px 16px 48px;
+
+            h1 {
+                font-size: 34px;
+                line-height: 40px;
+            }
+
+            .intro {
+                font-size: 16px;
+                line-height: 22.4px;
+            }
+        }
+    }
+
+    .stations {
+        gap: 32px;
+        padding-left: 32px;
+
+        &::before {
+            display: block;
+            left: 6px;
+            transform: none;
+        }
+    }
+
+    .station {
+        display: block;
+
+        .dot {
+            position: absolute;
+            left: -32px;
+            top: 6px;
+            transform: none;
+        }
+
+        .station-content,
+        &.station-right .station-content {
+            grid-column: unset;
+        }
+
+        position: relative;
+
+        .titel {
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+}

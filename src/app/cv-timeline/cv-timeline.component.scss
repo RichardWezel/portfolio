@@ -1,0 +1,198 @@
+@import './../../styles.scss';
+
+app-navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 145px;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 200ms ease;
+
+    &.scrolled {
+        background-color: #1C1C1C;
+    }
+}
+
+app-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1C1C1C;
+}
+
+app-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    font-family: 'Karla';
+    color: white;
+    min-height: 100vh;
+
+    article {
+        max-width: 1440px;
+        width: 100%;
+        padding: 144px 96px 96px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 24px;
+
+        h1 {
+            font-family: $base-font;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            color: $base-color;
+        }
+
+        .intro {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            text-align: left;
+            max-width: 720px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+    }
+}
+
+.stations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    margin: 24px 0 48px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 6px;
+        bottom: 6px;
+        width: 1px;
+        background-color: $base-color;
+        transform: translateX(-50%);
+        display: none;
+    }
+}
+
+.stations-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.station {
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr;
+    column-gap: 24px;
+
+    .dot {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $base-color;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .station-content {
+        position: relative;
+        z-index: 1;
+        grid-column: 1;
+    }
+
+    &.station-right .station-content {
+        grid-column: 3;
+    }
+
+    .zeitraum {
+        font-family: 'Fira Code';
+        font-size: 16px;
+        color: $base-color;
+        margin-bottom: 8px;
+    }
+
+    .titel {
+        font-family: $base-font;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        margin-bottom: 4px;
+        color: white;
+    }
+
+    .ort {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 12px;
+    }
+
+    .beschreibung {
+        font-size: 16px;
+        line-height: 21.6px;
+        text-align: left;
+        max-width: 720px;
+    }
+}
+
+.back-section {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    --arrow-left: 0;
+
+    .text {
+        display: flex;
+        padding: 9px 8px 9px 0;
+        font-family: 'Karla';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        color: $base-color;
+    }
+
+    &:hover {
+        .text {
+            --arrow_left: 4px;
+            --arrow_stroke-width: 1;
+            color: white;
+            cursor: pointer;
+            transition: color 150ms ease;
+        }
+    }
+
+    .arrow-wrapper {
+        display: flex;
+    }
+}

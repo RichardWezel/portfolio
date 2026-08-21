@@ -20,6 +20,12 @@
       "mind": "Ich lerne gerne nebenbei weiter – drei Jahre Abendschule parallel zur ersten Ausbildung, zwei gerontologische Weiterbildungen parallel zum Job, jetzt der Wechsel in die Softwareentwicklung. Stillstand ist für mich keine Option.",
       "profession": "Programmieren ist für mich angewandte Problemlösung, keine reine Fleißarbeit am Code. Aus meinen Jahren in der Sozialen Arbeit weiß ich außerdem, worauf es ankommt, wenn Software auch für Menschen funktionieren soll, die nicht mit Technik aufgewachsen sind."
     },
+    "CAREER-TEASER": {
+      "topic": "Werdegang",
+      "header": "Mein Weg",
+      "intro": "Mein Weg zur Softwareentwicklung ist kein Direktstudium – er führt über eine technische Ausbildung, mehrere Jahre Soziale Arbeit mit Gerontologie-Spezialisierung und eigene Selbstständigkeit. Jede Station hat etwas beigetragen, das ich heute noch nutze.",
+      "btn": "Werdegang ansehen"
+    },
     "SKILL-SET": {
       "topic": "Technologien",
       "header": "Fähigkeiten",
@@ -120,6 +126,61 @@
       "editor": "Redaktionell verantwortlich",
       "source": "Quelle: ",
       "back": "Zurück zur Startseite"
+    },
+    "CV-TIMELINE": {
+      "header": "Mein Werdegang",
+      "intro": "Vom Mechatroniker über Sozialarbeit mit Gerontologie-Spezialisierung bis zur Softwareentwicklung – hier sind die einzelnen Stationen im Detail, chronologisch von 2007 bis heute.",
+      "back": "Zurück zur Startseite",
+      "stations": {
+        "station-1": {
+          "zeitraum": "2007 – 2011",
+          "titel": "Mechatroniker-Ausbildung (IHK)",
+          "ort": "BVG Berlin",
+          "beschreibung": "Technisches Fundament: Wartung komplexer Systeme, SPS-Programmierung, Elektrotechnik."
+        },
+        "station-2": {
+          "zeitraum": "2012 – 2013",
+          "titel": "Fachhochschulreife & Abitur",
+          "ort": "Berlin",
+          "beschreibung": "Abendschule parallel zur Ausbildung, danach Abitur in einem Jahr Vollzeit – dazwischen vier Monate Sprachaufenthalt in Perugia in Italien mit B1 Abschluss."
+        },
+        "station-3": {
+          "zeitraum": "2013 – 2017",
+          "titel": "Erlebnispädagoge",
+          "ort": "EOS Erlebnispädagogik e.V., Freiburg",
+          "beschreibung": "Bundesfreiwilligendienst und Ausbildung (380 UE), Freizeiten und Ferienlager geleitet, Verantwortung für Gruppen bis 100 Personen."
+        },
+        "station-4": {
+          "zeitraum": "2014 – 2019",
+          "titel": "B.A. Soziale Arbeit, Note 2,0",
+          "ort": "Katholische Hochschule Freiburg",
+          "beschreibung": "Bachelorarbeit zu Emerging Adulthood & Drittem Alter, Note 1,5 – erste Verbindung von Jugend- und Alternsforschung."
+        },
+        "station-5": {
+          "zeitraum": "2020 – 2022",
+          "titel": "Sozialpädagogische Fachkraft, EU-Projekt „Teilhabe Älterer“",
+          "ort": "Caritasverband Landkreis Emmendingen",
+          "beschreibung": "ESF-gefördertes Projekt, Technikberatung für Senior:innen."
+        },
+        "station-6": {
+          "zeitraum": "2021 – 2023",
+          "titel": "Leitung Begegnungsstätte Heinrich-Hansjakob-Haus",
+          "ort": "Caritasverband Freiburg-Stadt",
+          "beschreibung": "Budgetverantwortung, Teamführung, Digitalisierung der Arbeitsabläufe."
+        },
+        "station-7": {
+          "zeitraum": "ab 2021",
+          "titel": "Zwei Weiterbildungen Angewandte Gerontologie (DAS)",
+          "ort": "Hochschule Mannheim / KH Freiburg",
+          "beschreibung": "Multidisziplinäre Interventionsgerontologie & Gerontopsychiatrie sowie Alter im Sozialraum – parallel zum Job abgeschlossen."
+        },
+        "station-8": {
+          "zeitraum": "heute",
+          "titel": "Umschulung Softwareentwicklung",
+          "ort": "Developer Akademie",
+          "beschreibung": "Frontend abgeschlossen (JavaScript, Angular), Backend-Abschlussprojekt (Python/Django) in Arbeit."
+        }
+      }
     },
     "PRIVACY-POLICY": {
       "header": "Datenschutzerklärung",
