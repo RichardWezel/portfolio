@@ -10,7 +10,7 @@
   }
 }
 
-@media(max-width: 840px){
+@media(max-width: 940px){
 
   main {
     padding: 16px;
@@ -21,7 +21,7 @@
     }
 
     .navbar {
-
+      display: none;
       .navbar-box {
         display: none;
         position: absolute;
@@ -61,6 +61,20 @@
       // position: absolute;
       // top: 32px;
       // right: 16px;
+    }
+
+    .header {
+      display: none;
+      position: relative;
+      font-family: "Fira Code";
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      color: rgb(61, 207, 182);
+      width: 100%;
+      justify-content: center;
     }
   }
 }

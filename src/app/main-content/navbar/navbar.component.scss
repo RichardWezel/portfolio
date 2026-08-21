@@ -34,6 +34,7 @@ main {
         align-items: center;
         gap: 24px;
         z-index: 1;
+        padding: 10px;
         
         app-language-switch-btn {
           display: inline-block;
@@ -48,7 +49,7 @@ main {
 
         .nav-links {
           display: flex;
-          gap: 24px;
+          gap: 10px;
           width: 100%;
           z-index: 1;
           
@@ -107,5 +108,17 @@ main {
     .menu {
       display: none;
       cursor: pointer;
+      border: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    .header {
+      display: none;
+
+      :host(.scrolled) & {
+        display: flex;
+      }
+
     }
 }
