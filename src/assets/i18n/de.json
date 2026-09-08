@@ -4,7 +4,7 @@
       "CAREER": "Mein Weg",
       "SKILLS": "Fähigkeiten",
       "PROJECTS": "Projekte",
-      "CONTACT": "Kontaktiere mich",
+      "CONTACT": "Kontakt",
       "CHECK_WORK": "Meine Projekte ansehen"
     },
     "INFINITE-AUTO-SCROLL": {
@@ -16,10 +16,10 @@
     "ABOUT-ME": {
       "whoIAm": "Wer ich bin",
       "header": "Über mich",
-      "intro": "Hallo, ich bin Richard – Softwareentwickler mit einem ungewöhnlichen Fundament: erst Mechatroniker mit SPS-Programmierung, dann mehrere Jahre als Sozialarbeiter mit gerontologischer Weiterbildung, heute Frontend- und Backend-Entwicklung mit JavaScript, Angular und Python/Django. Jeder Abschnitt hat mir beigebracht, wie man Systeme baut, die für Menschen tatsächlich funktionieren.",
-      "location": "Ich bin in Freiburg im Breisgau zuhause und beim Arbeitsort flexibel: Remote ist mein Favorit, für Termine vor Ort bin ich ebenso offen.",
-      "mind": "Ich lerne gerne nebenbei weiter – drei Jahre Abendschule parallel zur ersten Ausbildung, zwei gerontologische Weiterbildungen parallel zum Job, jetzt der Wechsel in die Softwareentwicklung. Stillstand ist für mich keine Option.",
-      "profession": "Programmieren ist für mich angewandte Problemlösung, keine reine Fleißarbeit am Code. Aus meinen Jahren in der Sozialen Arbeit weiß ich außerdem, worauf es ankommt, wenn Software auch für Menschen funktionieren soll, die nicht mit Technik aufgewachsen sind."
+      "lead": "Die meisten Entwickler lernen erst programmieren und dann die Fachlichkeit. Bei mir war es umgekehrt.",
+      "p1": "Ich habe mehrere Jahre als Sozialarbeiter gearbeitet, einen Master in Angewandter Gerontologie gemacht und in einer Begegnungsstätte die Arbeitsabläufe digitalisiert – mit allem, was dazugehört: Mitarbeitende überzeugen, Ehrenamtliche mitnehmen, Software an die Realität anpassen statt umgekehrt. Danach habe ich mir die Entwicklung selbst beigebracht: JavaScript, Angular, TypeScript, dann Python, Django und REST-APIs.",
+      "p2": "Davor: Mechatroniker. Und seit 2024 arbeite ich nebenbei im Einzelhandel – ein Alltag, in dem ich täglich erlebe, wie sehr Abläufe davon abhängen, ob die Software zu den Menschen passt, die mit ihr arbeiten.",
+      "p3": "Was ich mitbringe, ist deshalb nicht nur Code. Ich verstehe, warum eine Einrichtung etwas so macht, wie sie es macht, ich kann mit Fachkräften reden, ohne dass jemand übersetzen muss – und ich weiß, wie eine Oberfläche aussehen muss, damit sie auch für eine 82-Jährige oder eine Ehrenamtliche ohne IT-Erfahrung funktioniert."
     },
     "CAREER-TEASER": {
       "topic": "Werdegang",
@@ -64,25 +64,23 @@
     },
     "CONTACT-ME": {
       "invitation-to-contact-me": {
-        "topic": "Kontaktiere mich",
-        "header": "Lass uns zusammenarbeiten!",
-        "question-1": "Sie haben ein Problem zu lösen?",
-        "text": "Kontaktieren Sie mich über das Formular, Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-        "question-2": "Brauchen Sie einen Frontend-Entwickler?",
-        "letsTalk": "Lassen Sie uns reden!"
+        "topic": "Kontakt",
+        "header": "Sie suchen jemanden für Ihr Team?",
+        "text": "Ich suche kein Kundenprojekt, sondern ein Team: eine Festanstellung, in der ich Entwicklung und sozialwissenschaftliche Fachlichkeit verbinden kann – in Forschungsprojekten, bei Software-Herstellern für die Sozialwirtschaft oder bei Trägern, die ihre Prozesse digitalisieren.",
+        "textSecondary": "Ich lerne dabei gern weiter und arbeite lieber im Team als allein."
       },
       "formular":{
         "name": {
           "label": "Wie ist Ihr Name?",
-          "placeholder": "Hier tragen Sie Ihren Namen ein",
+          "placeholder": "Ihr Name",
           "error": {
             "required": "Oops! Es scheint, als ob Ihr Name fehlt",
             "pattern": ""
           }
         },
         "email": {
-          "label": "Ihre E-Mail Adresse?",
-          "placeholder": "IhreE-Mail@e-mail.com",
+          "label": "Ihre E-Mail-Adresse?",
+          "placeholder": "ihre.mail@beispiel.de",
           "error": {
             "required": "Hoppla! Ihre E-Mail Adresse fehlt",
             "pattern": "Bitte eine gültige E-Mail-Adresse eingeben.",
@@ -90,20 +88,20 @@
           }
         },
         "message": {
-          "label": "Wie kann ich Ihnen helfen?",
-          "placeholder": "Hallo Richard, Ich interessiere mich für ...",
+          "label": "Worum geht es?",
+          "placeholder": "Hallo Richard, wir suchen bei … jemanden für …",
           "error": {
-            "required": "Was möchten Sie vom Entwickler?",
+            "required": "Bitte schreiben Sie kurz, worum es geht.",
             "pattern": "Die Nachricht muss mindestens 4 Zeichen lang sein."
           }
         },
         "privacy-policy": {
           "text-1": "Ich habe die",
           "text-2": "Datenschutzerklärung",
-          "text-3": "gelesen und bin mit dem Umgang meiner Daten wie dargelegt einverstanden",
+          "text-3": "gelesen und bin mit dem Umgang meiner Daten wie dargelegt einverstanden.",
           "error": "Bitte akzeptieren Sie die Datenschutzrichtlinien."
         },
-        "button": "Sag Hallo"
+        "button": "Nachricht senden"
       }
     },
     "FOOTER": {
@@ -116,7 +114,33 @@
       }
     },
     "LANDING-PAGE": {
-      "role": "Frontend- & Backend-Entwickler"
+      "kicker": "Fullstack-Entwicklung & Angewandte Gerontologie",
+      "subline": "Ich entwickle Software für die Sozialwirtschaft – und für Nutzer, die von Technik oft übersehen werden.",
+      "ctaProjects": "Meine Projekte",
+      "ctaCv": "Mein Werdegang",
+      "status": {
+        "availability": "Offen für Festanstellung",
+        "location": "Freiburg & Remote",
+        "focus": "Sozialwirtschaft · Pflege · Forschung"
+      }
+    },
+    "SEO": {
+      "home": {
+        "title": "Richard Wezel – Fullstack-Entwickler & Gerontologe | Freiburg",
+        "description": "Ich entwickle Software für die Sozialwirtschaft – und für Nutzer, die von Technik oft übersehen werden."
+      },
+      "cv": {
+        "title": "Werdegang – Richard Wezel",
+        "description": "Vom Mechatroniker über die Sozialarbeit mit Master in Angewandter Gerontologie zur Fullstack-Entwicklung."
+      },
+      "imprint": {
+        "title": "Impressum – Richard Wezel",
+        "description": "Impressum und Kontaktangaben von Richard Wezel."
+      },
+      "privacy": {
+        "title": "Datenschutzerklärung – Richard Wezel",
+        "description": "Datenschutzerklärung der Website richard-wezel.de."
+      }
     },
     "IMPRINT": {
       "header": "Impressum",

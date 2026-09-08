@@ -3,23 +3,33 @@
 <main>
     
     <section class="hero">
-        <h3>{{ 'LANDING-PAGE.role' | translate }}</h3>
+        <h3>{{ 'LANDING-PAGE.kicker' | translate }}</h3>
         <h1>Richard Wezel</h1>
+        <p class="subline">{{ 'LANDING-PAGE.subline' | translate }}</p>
         <div class="link-work-contact">
 
             <a href="#projects" class="button" (click)="scrollToSection($event, 'projects')">
                 <div class="button_inner">
-                    <span [attr.data-text]="'NAV.CHECK_WORK' | translate">{{ 'NAV.CHECK_WORK' | translate }}</span>
+                    <span [attr.data-text]="'LANDING-PAGE.ctaProjects' | translate">{{ 'LANDING-PAGE.ctaProjects' | translate }}</span>
                 </div>
             </a>
 
-            <a href="#contact-me" class="button" (click)="scrollToSection($event, 'contact-me')">
+            <a routerLink="/lebenslauf" class="button">
                 <div class="button_inner">
-                    <span [attr.data-text]="'NAV.CONTACT' | translate">{{ 'NAV.CONTACT' | translate }}</span>
+                    <span [attr.data-text]="'LANDING-PAGE.ctaCv' | translate">{{ 'LANDING-PAGE.ctaCv' | translate }}</span>
                 </div>
             </a>
             
         </div>
+
+        <p class="status-line">
+            <span class="status-line__dot" aria-hidden="true"></span>
+            <span>{{ 'LANDING-PAGE.status.availability' | translate }}</span>
+            <span class="status-line__sep" aria-hidden="true">·</span>
+            <span>{{ 'LANDING-PAGE.status.location' | translate }}</span>
+            <span class="status-line__sep status-line__optional" aria-hidden="true">·</span>
+            <span class="status-line__optional">{{ 'LANDING-PAGE.status.focus' | translate }}</span>
+        </p>
     </section>
     
     <section class="arrowToContent">
@@ -56,7 +66,5 @@
             <div class="line-white"></div>
         </div>
     </section>
-
-    <app-infinite-auto-scroll></app-infinite-auto-scroll>
 
 </main>

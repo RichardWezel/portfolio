@@ -40,29 +40,8 @@ main {
    margin-top: 98px;
 }
 
-.box-row {
-    display: flex;
-    margin-bottom: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    &:hover{
-        color: rgb(255, 255, 255);
-    }
-}
-
-.box-icon {
-    display: flex;
-    margin-right: 24px;
-    width: 32px;
-    height: 32px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.row-article {
-    font-family: 'Karla';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: justify;
-    display: flex;
+.article-box .box-lead {
+    font-size: 22px;
+    line-height: 28px;
+    color: $base-color;
 }

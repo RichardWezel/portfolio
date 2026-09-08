@@ -2,9 +2,8 @@
     <section class="request-to-call">
      <div class="box-label">{{'CONTACT-ME.invitation-to-contact-me.topic' | translate}}</div>
      <h2 class="box-header">{{'CONTACT-ME.invitation-to-contact-me.header' | translate}}</h2>
-     <h3 class="header">{{'CONTACT-ME.invitation-to-contact-me.question-1' | translate}}</h3>
      <p>{{'CONTACT-ME.invitation-to-contact-me.text' | translate}}</p>
-     <p>{{'CONTACT-ME.invitation-to-contact-me.question-2' | translate}} <span>{{'CONTACT-ME.invitation-to-contact-me.letsTalk' | translate}}</span></p>
+     <p>{{'CONTACT-ME.invitation-to-contact-me.textSecondary' | translate}}</p>
     </section>
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <section class="striped-list" [class.striped-list-hovered]="isTextHovered">
@@ -108,9 +107,9 @@
             
 
             <div class="btn-send-hello-section">
-                <button href="submit" class="btn-send-hello" [ngClass]="{'active-border': contactForm.valid && contactData.privacyPolicyAccepted}">
+                <button type="submit" class="btn-send-hello" [ngClass]="{'active-border': contactForm.valid && contactData.privacyPolicyAccepted}">
                     <div class="button_inner">
-                      <span data-text="Say hello ;&#41;">{{'CONTACT-ME.formular.button' | translate}} ;&#41;</span>
+                      <span [attr.data-text]="'CONTACT-ME.formular.button' | translate">{{'CONTACT-ME.formular.button' | translate}}</span>
                     </div>
                 </button>
             </div>

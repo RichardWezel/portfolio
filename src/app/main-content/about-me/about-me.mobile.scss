@@ -16,6 +16,7 @@
         padding: 0 96px 0;
         #about-me-box {
             width: 100%;
+            max-width: 720px;
             .article-box {
                 width: 100%;
             }
@@ -33,7 +34,7 @@
     main {
         padding: 0 16px 0;
         gap: 40px;
-        .box-size {
+        .picture {
             width: 568px;
             height: 568px;
         }
@@ -56,17 +57,16 @@
                 .box-article {
                     font-size: 16px;
                     line-height: 19.2px;
-                    text-align: justify;
+                    text-align: left;
                     margin-bottom: 24px;
+                }
+
+                .box-lead {
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
         }
-    }
-
-    .row-article {
-        text-align: left;
-        font-size: 16px;
-        line-height: 19.2px;
     }
 
     .box-size {
@@ -115,8 +115,13 @@
                 .box-article {
                     font-size: 16px;
                     line-height: 19.2px;
-                    text-align: justify;
+                    text-align: left;
                     margin-bottom: 24px;
+                }
+
+                .box-lead {
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
         }

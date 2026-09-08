@@ -37,7 +37,7 @@
             align-items: start;
             flex-direction: column;
             gap: 16px;
-            text-align: justify;
+            text-align: left;
             hyphens: auto;
             margin-bottom: 212px;
 
@@ -69,7 +69,7 @@
             }
 
             p {
-                text-align: justify;
+                text-align: left;
                 word-spacing: 0.05em; 
                 letter-spacing: 0.02em;
             }

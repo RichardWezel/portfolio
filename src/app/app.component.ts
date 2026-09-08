@@ -7,6 +7,7 @@ import { FooterComponent } from "./main-content/footer/footer.component";
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ScrollService } from './services/scroll.service';
+import { SeoService } from './services/seo.service';
 import { NavbarComponent } from "./main-content/navbar/navbar.component";
 
 @Component({
@@ -23,7 +24,8 @@ export class AppComponent {
 
   constructor(
     private translate: TranslateService,
-    private scrollService: ScrollService) {
+    private scrollService: ScrollService,
+    private seoService: SeoService) {
 
     translate.addLangs(['en', 'de']);
 
@@ -31,6 +33,10 @@ export class AppComponent {
     const browserLang = translate.getBrowserLang();
     const isSupportedBrowserLang = browserLang && ['en', 'de'].includes(browserLang);
     const defaultLang: string = savedLang || (isSupportedBrowserLang ? browserLang : 'en');
+
+    translate.onLangChange.subscribe(event => {
+      document.documentElement.lang = event.lang;
+    });
 
     translate.setDefaultLang('en');
     translate.use(defaultLang);

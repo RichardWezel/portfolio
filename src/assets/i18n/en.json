@@ -4,7 +4,7 @@
       "CAREER": "My Path",
       "SKILLS": "Skills",
       "PROJECTS": "Projects",
-      "CONTACT": "Contact me",
+      "CONTACT": "Contact",
       "CHECK_WORK": "Check my work"
     },
     "INFINITE-AUTO-SCROLL": {
@@ -14,12 +14,12 @@
       "available": "Actively Job Hunting"
     },
     "ABOUT-ME": {
-      "whoIAm": "Who I Am",
+      "whoIAm": "Who I am",
       "header": "About me",
-      "intro": "Hi, I'm Richard – a software developer with an unusual foundation: first a mechatronics technician working with PLC programming, then several years as a social worker specializing in gerontology, and today frontend and backend development with JavaScript, Angular, and Python/Django. Every chapter taught me how to build systems that actually work for people.",
-      "location": "I'm based in Freiburg im Breisgau and flexible about where I work: remote is my favorite, but I'm just as open to on-site meetings.",
-      "mind": "I like to keep learning alongside my main job – three years of evening school parallel to my first apprenticeship, two gerontology qualifications parallel to my job, and now the switch into software development. Standing still isn't an option for me.",
-      "profession": "To me, programming is applied problem-solving, not just writing code. From my years in social work, I also know what matters when software has to work for people who didn't grow up with technology."
+      "lead": "Most developers learn to code first and the domain second. For me it was the other way round.",
+      "p1": "I spent several years as a social worker, earned a Master's in Applied Gerontology and digitised the workflows of a community centre – with everything that involves: convincing staff, bringing volunteers along, adapting the software to reality instead of the other way round. After that I taught myself development: JavaScript, Angular, TypeScript, then Python, Django and REST APIs.",
+      "p2": "Before that: mechatronics technician. And since 2024 I have been working in retail on the side – everyday work in which I see first-hand how much processes depend on whether the software fits the people using it.",
+      "p3": "So what I bring is not just code. I understand why an organisation does things the way it does, I can talk to practitioners without anyone having to translate – and I know what an interface has to look like so that it also works for an 82-year-old, or for a volunteer with no IT background."
     },
     "CAREER-TEASER": {
       "topic": "Career Path",
@@ -64,24 +64,22 @@
     },
     "CONTACT-ME": {
       "invitation-to-contact-me": {
-        "topic": "Contact me",
-        "header": "Let's work together!",
-        "question-1": "Got a problem to solve?",
-        "text": "Contact me through this formular, I am interessted in hearing from you, knowing your Ideas and contributing to your projects with my work.",
-        "question-2": "Need a Frontend developer?",
-        "letsTalk": "Let's talk!"
+        "topic": "Contact",
+        "header": "Looking for someone to join your team?",
+        "text": "I'm not looking for client projects but for a team: a permanent position where I can combine development with my background in the social sciences – in research projects, at software vendors for the social and care sector, or with organisations digitising their processes.",
+        "textSecondary": "I like to keep learning and would rather work in a team than on my own."
       },
       "formular":{
         "name": {
-          "label": "What's your name?",
-          "placeholder": "Your name goes here",
+          "label": "What is your name?",
+          "placeholder": "Your name",
           "error": {
             "required": "Oops! it seems your name is missing"
           }
         },
         "email": {
-          "label": "What's your email?",
-          "placeholder": "youremail@email.com",
+          "label": "Your email address?",
+          "placeholder": "your.mail@example.com",
           "error": {
             "required": "Hoppla! your email is required",
             "pattern": "Please enter a valid e-mail address.",
@@ -89,20 +87,20 @@
           }
         },
         "message": {
-          "label": "How can I help you?",
-          "placeholder": "Hallo Richard, I am interested in ...",
+          "label": "What is it about?",
+          "placeholder": "Hi Richard, we're looking for someone at … to …",
           "error": {
-            "required": "What do you need to develop?",
+            "required": "Please tell me briefly what it is about.",
             "pattern": "The message must be at least 4 characters long."
           }
         },
         "privacy-policy": {
-          "text-1": "I've read the",
+          "text-1": "I have read the",
           "text-2": "privacy policy",
-          "text-3": "and agree to the processing of my data as outlined",
+          "text-3": "and agree to my data being handled as described.",
           "error": "Please accept the privacy policy."
         },
-        "button": "Say Hello"
+        "button": "Send message"
       }
     },
     "FOOTER": {
@@ -115,7 +113,33 @@
       }
     },
     "LANDING-PAGE": {
-      "role": "Frontend & Backend Developer"
+      "kicker": "Full-Stack Development & Applied Gerontology",
+      "subline": "I build software for the social sector – and for the users technology tends to overlook.",
+      "ctaProjects": "My projects",
+      "ctaCv": "My background",
+      "status": {
+        "availability": "Open to full-time roles",
+        "location": "Freiburg & remote",
+        "focus": "Social sector · Care · Research"
+      }
+    },
+    "SEO": {
+      "home": {
+        "title": "Richard Wezel – Full-Stack Developer & Gerontologist | Freiburg",
+        "description": "I build software for the social sector – and for the users technology tends to overlook."
+      },
+      "cv": {
+        "title": "Background – Richard Wezel",
+        "description": "From mechatronics technician via social work and a Master's in Applied Gerontology to full-stack development."
+      },
+      "imprint": {
+        "title": "Imprint – Richard Wezel",
+        "description": "Imprint and contact details of Richard Wezel."
+      },
+      "privacy": {
+        "title": "Privacy policy – Richard Wezel",
+        "description": "Privacy policy of the website richard-wezel.de."
+      }
     },
     "IMPRINT": {
       "header": "Imprint",

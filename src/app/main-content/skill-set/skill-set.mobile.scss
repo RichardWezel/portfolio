@@ -16,18 +16,16 @@
     main {
         flex-direction: column;
         section:first-of-type{
-            max-width: unset; 
-            .box-theme {
-                .box-label {
-                    
-                }
-            }
-            .box-size {
-                max-width: unset; 
+            max-width: 720px;
+
+            article .article-box {
+                max-width: unset;
             }
         } 
         .skill-icon-box {
             margin: 0 0 0;
+            width: 100%;
+            max-width: 720px;
             justify-content: center;
             div {
                 flex: 0 1 calc((100% / 3) - (22px));
@@ -72,7 +70,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 19.2px;
-            text-align: justify;
+            text-align: left;
         }
     
         .header2 {
@@ -132,7 +130,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 19.2px;
-            text-align: justify;
+            text-align: left;
         }
     
         .header2 {

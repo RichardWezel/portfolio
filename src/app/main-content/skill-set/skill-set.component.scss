@@ -12,17 +12,19 @@ main {
     @include dja();
     gap: 96px;
     justify-content: space-between !important;
+    
     section:first-of-type {
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
+       width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+        
         article {
             @media(max-width: 1000px){
                 align-items: center;
             }
             align-items: center;
             .box-label {
-                max-width: 520px;
+                
                 width: 100%;
             }
             .article-box {
