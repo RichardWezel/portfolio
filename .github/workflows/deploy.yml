@@ -1,0 +1,30 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: Node 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install and build
+      run: |
+        npm i
+        npm run build
+
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.1
+      with:
+        server: w01f7b32.kasserver.com
+        protocol: ftp
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /richard-wezel.de/
+        local-dir: dist/
