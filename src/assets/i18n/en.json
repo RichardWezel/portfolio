@@ -105,7 +105,7 @@
     },
     "FOOTER": {
       "left": {
-        "profession": "Frontend & Backend Developer",
+        "profession": "Full-Stack Web Development & Applied Gerontology",
         "local": "Freiburg | Germany"
       },
       "right": {
@@ -113,7 +113,7 @@
       }
     },
     "LANDING-PAGE": {
-      "kicker": "Full-Stack Development & Applied Gerontology",
+      "kicker": "Full-Stack Web Development & Applied Gerontology",
       "subline": "I build software for the social sector – and for the users technology tends to overlook.",
       "ctaProjects": "My projects",
       "ctaCv": "My background",
@@ -125,12 +125,12 @@
     },
     "SEO": {
       "home": {
-        "title": "Richard Wezel – Full-Stack Developer & Gerontologist | Freiburg",
-        "description": "I build software for the social sector – and for the users technology tends to overlook."
+        "title": "Richard Wezel – Full-Stack Web Developer & Gerontologist",
+        "description": "I build software for the social sector – and for the users technology tends to overlook. Looking for a permanent role, Freiburg & remote."
       },
       "cv": {
         "title": "Background – Richard Wezel",
-        "description": "From mechatronics technician via social work and a Master's in Applied Gerontology to full-stack development."
+        "description": "From mechatronics technician via social work and a Master's in Applied Gerontology to full-stack web development."
       },
       "imprint": {
         "title": "Imprint – Richard Wezel",

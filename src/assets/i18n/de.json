@@ -106,7 +106,7 @@
     },
     "FOOTER": {
       "left": {
-        "profession": "Frontend- & Backend-Entwickler",
+        "profession": "Fullstack-Webentwicklung & Angewandte Gerontologie",
         "local": "Freiburg im Breisgau | Deutschland"
       },
       "right": {
@@ -114,7 +114,7 @@
       }
     },
     "LANDING-PAGE": {
-      "kicker": "Fullstack-Entwicklung & Angewandte Gerontologie",
+      "kicker": "Fullstack-Webentwicklung & Angewandte Gerontologie",
       "subline": "Ich entwickle Software für die Sozialwirtschaft – und für Nutzer, die von Technik oft übersehen werden.",
       "ctaProjects": "Meine Projekte",
       "ctaCv": "Mein Werdegang",
@@ -126,12 +126,12 @@
     },
     "SEO": {
       "home": {
-        "title": "Richard Wezel – Fullstack-Entwickler & Gerontologe | Freiburg",
-        "description": "Ich entwickle Software für die Sozialwirtschaft – und für Nutzer, die von Technik oft übersehen werden."
+        "title": "Richard Wezel – Fullstack-Webentwickler & Gerontologe",
+        "description": "Ich entwickle Software für die Sozialwirtschaft – und für Nutzer, die von Technik oft übersehen werden. Festanstellung gesucht, Freiburg & Remote."
       },
       "cv": {
         "title": "Werdegang – Richard Wezel",
-        "description": "Vom Mechatroniker über die Sozialarbeit mit Master in Angewandter Gerontologie zur Fullstack-Entwicklung."
+        "description": "Vom Mechatroniker über die Sozialarbeit mit Master in Angewandter Gerontologie zur Fullstack-Webentwicklung."
       },
       "imprint": {
         "title": "Impressum – Richard Wezel",

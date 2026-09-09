@@ -159,3 +159,22 @@
         }
     }
 }
+
+/* Auf Telefonen kleben Pfeil- und Social-Spalte absolut am unteren Rand.
+   Der Hero-Inhalt wird darin zentriert und braucht deshalb einen reservierten
+   Streifen, sonst laeuft die Statuszeile unter die Icons. */
+@media(max-width: 650px){
+    main {
+        padding-bottom: 224px;
+    }
+
+    .line {
+        div {
+            height: 96px;
+        }
+    }
+
+    .line-white {
+        height: 64px;
+    }
+}
