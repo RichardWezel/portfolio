@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 import { MenuComponent } from './menu.component';
 
 describe('MenuComponent', () => {
@@ -7,7 +9,8 @@ describe('MenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MenuComponent]
+      imports: [MenuComponent, TranslateModule.forRoot()],
+      providers: [provideHttpClient()]
     })
     .compileComponents();
     

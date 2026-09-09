@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 import { PrivacyPolicyComponent } from './privacy-policy.component';
 
 describe('PrivacyPolicyComponent', () => {
@@ -7,7 +9,8 @@ describe('PrivacyPolicyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrivacyPolicyComponent]
+      imports: [PrivacyPolicyComponent, TranslateModule.forRoot()],
+      providers: [provideHttpClient()]
     })
     .compileComponents();
     

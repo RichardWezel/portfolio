@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 import { ColleaguesVoicesComponent } from './colleagues-voices.component';
 
 describe('ColleaguesVoicesComponent', () => {
@@ -7,7 +9,8 @@ describe('ColleaguesVoicesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ColleaguesVoicesComponent]
+      imports: [ColleaguesVoicesComponent, TranslateModule.forRoot()],
+      providers: [provideHttpClient()]
     })
     .compileComponents();
     
