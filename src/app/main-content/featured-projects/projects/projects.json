@@ -67,11 +67,48 @@
         "iconPath": "/assets/icons/icon-typescript_green.svg"
       }
     ],
-    "next": 0,
+    "next": 3,
     "img": "/assets/img/DaBubble.svg",
     "links": {
       "github": "https://github.com/RichardWezel/DaBubble.git",
       "live": "https://dabubble.richard-wezel.de/"
+    }
+  },
+  {  
+    "number": "04",
+    "title": "Videoflix",
+    "description": "Videoflix is a Netflix-style video streaming backend built with Django and the Django REST Framework. It handles user registration with email activation, JWT-based login, password reset, and video metadata for a dashboard. It is designed to run fully containerized with Docker, PostgreSQL and Redis, and uses Django RQ for background jobs. This project was built as the final backend project of the Developer Akademie training and follows a predefined Definition of Done checklist.",
+    "skills": [
+      {
+        "name": "Django",
+        "iconPath": "/assets/icons/icon-django_green.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "iconPath": "/assets/icons/icon-postgresql_green.svg"
+      },
+      {
+        "name": "Redis",
+        "iconPath": "/assets/icons/icon-redis_green.svg"
+      },
+      {
+        "name": "Docker",
+        "iconPath": "/assets/icons/icon-docker_green.svg"
+      },
+      {
+        "name": "Python",
+        "iconPath": "/assets/icons/icon-python_green.svg"
+      },
+      {
+        "name": "REST",
+        "iconPath": "/assets/icons/icon-django-rest-framework_green.svg"
+      }
+    ],
+    "next": 0,
+    "img": "/assets/img/videoflix.png",
+    "links": {
+      "github": "https://github.com/RichardWezel/Videoflix.git",
+      "live": "https://videoflix.richard-wezel.de/"
     }
   }
 ]  

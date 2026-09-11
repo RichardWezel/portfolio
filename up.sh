@@ -7,7 +7,7 @@ if [ $# -eq 0 ]; then
 fi
 
 git pull
-ng build
+npm run build
 git add .
 git commit -m "$*" || echo "Nothing to commit, continuing..."
 git push

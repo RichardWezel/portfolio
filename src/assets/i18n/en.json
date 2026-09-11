@@ -44,7 +44,8 @@
         "next-btn": "Next project",
         "description-project-1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "description-project-2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "description-project-3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+        "description-project-3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+        "description-project-4": "Netflix-like video streaming backend built with Django and Django REST Framework. User registration with email activation, JWT login, password reset and video management – fully containerized with Docker, PostgreSQL and Redis."
       }
     },
     "COLLEAGUES-VOICES": {

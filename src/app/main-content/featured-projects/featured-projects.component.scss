@@ -111,6 +111,8 @@ main {
         width: 296px;
         height: 192px;
         position: absolute;
+        border-radius: 16px;
+        object-fit: cover;
     }
 
     svg {
@@ -142,6 +144,14 @@ main {
 
 #da-bubble {
     top: 180px;
+    display: none;
+    position: absolute;
+    left: 33%;
+    transform: translateX(-50%);
+}
+
+#videoflix {
+    top: 290px;
     display: none;
     position: absolute;
     left: 33%;
