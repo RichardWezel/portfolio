@@ -17,9 +17,9 @@
       "whoIAm": "Wer ich bin",
       "header": "Über mich",
       "lead": "Die meisten Entwickler lernen erst programmieren und dann die Fachlichkeit. Bei mir war es umgekehrt.",
-      "p1": "Ich habe mehrere Jahre als Sozialarbeiter gearbeitet, einen Master in Angewandter Gerontologie gemacht und in einer Begegnungsstätte die Arbeitsabläufe digitalisiert – mit allem, was dazugehört: Mitarbeitende überzeugen, Ehrenamtliche mitnehmen, Software an die Realität anpassen statt umgekehrt. Danach habe ich mir die Entwicklung selbst beigebracht: JavaScript, Angular, TypeScript, dann Python, Django und REST-APIs.",
-      "p2": "Davor: Mechatroniker. Und seit 2024 arbeite ich nebenbei im Einzelhandel – ein Alltag, in dem ich täglich erlebe, wie sehr Abläufe davon abhängen, ob die Software zu den Menschen passt, die mit ihr arbeiten.",
-      "p3": "Was ich mitbringe, ist deshalb nicht nur Code. Ich verstehe, warum eine Einrichtung etwas so macht, wie sie es macht, ich kann mit Fachkräften reden, ohne dass jemand übersetzen muss – und ich weiß, wie eine Oberfläche aussehen muss, damit sie auch für eine 82-Jährige oder eine Ehrenamtliche ohne IT-Erfahrung funktioniert."
+      "p1": "Was Sie davon haben: Ich kann mit Ihren Fachkräften sprechen, ohne dass jemand übersetzen muss. Ich verstehe, warum eine Einrichtung Dinge so macht, wie sie sie macht, und ich weiß, wie eine Oberfläche aussehen muss, damit sie auch für eine 82-Jährige oder eine Ehrenamtliche ohne IT-Erfahrung funktioniert. Anforderungen muss mir niemand in fertige Tickets übersetzen.",
+      "p2": "Das kommt daher, dass ich es andersherum gelernt habe. Mehrere Jahre als Sozialarbeiter, zwei wissenschaftliche Weiterbildungen in Angewandter Gerontologie, und in einer Begegnungsstätte habe ich die Arbeitsabläufe digitalisiert: Raum- und Belegungsplanung von Papier auf digital, mit allem, was dazugehört. Mitarbeitende überzeugen, Ehrenamtliche mitnehmen, Software an die Realität anpassen statt umgekehrt. Danach habe ich mir die Entwicklung beigebracht: JavaScript, Angular, TypeScript, dann Python, Django und REST-APIs.",
+      "p3": "Davor Mechatroniker, seit 2024 nebenbei im Einzelhandel. Ein Alltag, in dem ich täglich sehe, wie sehr Abläufe davon abhängen, ob die Software zu den Menschen passt, die mit ihr arbeiten."
     },
     "CAREER-TEASER": {
       "topic": "Werdegang",

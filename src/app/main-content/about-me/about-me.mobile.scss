@@ -1,15 +1,13 @@
 @import './../../../styles.scss';
 
-@media(max-width: 1500px){
+
+@media (max-width: 1400px){
     .picture {
         svg {
             top: 23px;
             left: -23px;
         }
     }
-}
-
-@media (max-width: 1400px){
     main {
         flex-direction: column;
         align-items: center;
@@ -17,6 +15,7 @@
         #about-me-box {
             width: 100%;
             max-width: 720px;
+            min-width: 538px;
             .article-box {
                 width: 100%;
             }
@@ -25,9 +24,14 @@
 }
 
 @media(max-width: 1300px){
-    #aboutMeBox{
-        margin-top: 72pxpx;
+    main {
+        #about-me-box {
+            
+            min-width: 100%;
+          
+        }
     }
+    
 }
 
 @media(max-width: 850px){
@@ -38,7 +42,7 @@
             width: 568px;
             height: 568px;
         }
-        #aboutMeBox{
+        #about-me-box{
             width: 100%;
             margin-top: 72px;
             .box-label {
@@ -90,7 +94,7 @@
                display: none;
             }
         }
-        #aboutMeBox{
+        #about-me-box{
             width: 100%;
             margin-top: 24px;
         }
@@ -104,7 +108,7 @@
 
 @media(max-width: 500px){
     main {
-        #aboutMeBox{
+        #about-me-box{
             .article-box {
 
                 .box-header {
