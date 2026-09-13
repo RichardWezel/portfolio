@@ -14,6 +14,15 @@ main {
     overflow: hidden;
 }
 
+.name {
+    font-family: $base-font;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.62);
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
 .hero {
     @include dja();
     flex-direction: column;
@@ -24,19 +33,20 @@ main {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.02em;
-        margin-bottom: 4px;
+        margin-bottom: 32px;
         color: $base-color;
     }
 
     h1.claim {
         font-family: 'Karla';
-        font-size: clamp(28px, 3vw, 44px);
+        font-size: clamp(20px, 2.5vw, 44px);
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.01em;
         color: #ffffff;
-        text-align: left;
+        text-align: center;
         max-width: 1200px;
+        margin-bottom: 64px;
 
         span {
             display: block;
@@ -44,14 +54,7 @@ main {
     }
 }
 
-.name {
-    font-family: 'Karla';
-    font-size: 22px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.62);
-    margin-top: 20px;
-    margin-bottom: 32px;
-}
+
 
 .status-line {
     display: flex;

@@ -114,9 +114,10 @@
       }
     },
     "LANDING-PAGE": {
-      "kicker": "Full-Stack Web Development & Applied Gerontology",
-      "claimLine1": "Ten years in the social sector. Now full-stack development.",
-      "claimLine2": "I bring both together.",
+      "kicker": "Social Science & Software Development",
+      "claimLine1": "10 years in the social sector.",
+      "claimLine2": "Now full-stack development.",
+      "claimLine3": "I bring both together",
       "ctaProjects": "My projects",
       "ctaCv": "My background",
       "status": {

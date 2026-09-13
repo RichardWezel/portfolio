@@ -115,9 +115,10 @@
       }
     },
     "LANDING-PAGE": {
-      "kicker": "Fullstack-Webentwicklung & Angewandte Gerontologie",
-      "claimLine1": "Zehn Jahre Sozialwirtschaft. Jetzt Fullstack-Entwicklung.",
-      "claimLine2": "Ich bringe beides zusammen.",
+      "kicker": "Sozialwissenschaft & Softwareentwicklung",
+      "claimLine1": "10 Jahre Sozialwirtschaft.",
+      "claimLine2": "Jetzt Fullstack-Entwicklung.",
+      "claimLine3": "Ich bringe beides zusammen",
       "ctaProjects": "Meine Projekte",
       "ctaCv": "Mein Werdegang",
       "status": {
