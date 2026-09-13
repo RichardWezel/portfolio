@@ -18,7 +18,7 @@ main {
     @include dja();
     flex-direction: column;
     text-align: center;
-  
+
     h3{
         font-weight: 400;
         font-size: 24px;
@@ -28,24 +28,28 @@ main {
         color: $base-color;
     }
 
-    h1 {
+    h1.claim {
         font-family: 'Karla';
-        font-size: 128px;
+        font-size: clamp(28px, 3vw, 44px);
         font-weight: 700;
-        line-height: 128px;
-        letter-spacing: -0.02em;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: #ffffff;
         text-align: left;
+        max-width: 1200px;
+
+        span {
+            display: block;
+        }
     }
 }
 
-.subline {
+.name {
     font-family: 'Karla';
     font-size: 22px;
-    font-weight: 400;
-    line-height: 32px;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.62);
-    max-width: 680px;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 32px;
 }
 

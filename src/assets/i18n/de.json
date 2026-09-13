@@ -116,7 +116,8 @@
     },
     "LANDING-PAGE": {
       "kicker": "Fullstack-Webentwicklung & Angewandte Gerontologie",
-      "subline": "Ich entwickle Software für die Sozialwirtschaft – und habe vorher zehn Jahre selbst darin gearbeitet.",
+      "claimLine1": "Zehn Jahre Sozialwirtschaft. Jetzt Fullstack-Entwicklung.",
+      "claimLine2": "Ich bringe beides zusammen.",
       "ctaProjects": "Meine Projekte",
       "ctaCv": "Mein Werdegang",
       "status": {
@@ -128,7 +129,7 @@
     "SEO": {
       "home": {
         "title": "Richard Wezel – Fullstack-Webentwickler & Gerontologe",
-        "description": "Ich entwickle Software für die Sozialwirtschaft – und habe vorher zehn Jahre selbst darin gearbeitet. Festanstellung gesucht, Freiburg & Remote."
+        "description": "Zehn Jahre Sozialwirtschaft, jetzt Fullstack-Entwicklung – ich bringe beides zusammen. Festanstellung gesucht, Freiburg & Remote."
       },
       "cv": {
         "title": "Werdegang – Richard Wezel",
