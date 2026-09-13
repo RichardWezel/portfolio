@@ -24,16 +24,16 @@
     "CAREER-TEASER": {
       "topic": "Werdegang",
       "header": "Mein Weg",
-      "intro": "Mein Weg zur Softwareentwicklung ist kein Direktstudium – er führt über eine technische Ausbildung, mehrere Jahre Soziale Arbeit mit Gerontologie-Spezialisierung und eigene Selbstständigkeit. Jede Station hat etwas beigetragen, das ich heute noch nutze.",
+      "intro": "Vier Stationen, die man selten in einer Person findet: Mechatronik, Sozialarbeit, Gerontologie, Softwareentwicklung. Jede hat etwas beigetragen, das ich heute noch täglich nutze.",
       "btn": "Werdegang ansehen"
     },
     "SKILL-SET": {
       "topic": "Technologien",
       "header": "Fähigkeiten",
-      "intro": "Auf meinem Weg vom Frontend ins Backend habe ich mit unterschiedlichen Technologien und Konzepten gearbeitet – von JavaScript und Angular bis zu Python, Django und REST-APIs. Ich bin offen für Neues und bilde mich laufend weiter, um in der sich schnell entwickelnden Webentwicklung mitzuhalten.",
-      "question-1": "Sie interessieren sich für",
+      "intro": "Vom Frontend ins Backend: JavaScript und Angular, dann Python, Django und REST-APIs. Ich habe meine Projekte selbst auf einem eigenen Server aufgesetzt und deployed, statt mich auf einen Hosting-Dienst zu verlassen. Ich will wissen, was unter dem Framework liegt.",
+      "question-1": "Sie suchen etwas, das hier nicht steht?",
       "question-2": "weitere Fähigkeiten?",
-      "answer": "Fühlen Sie sich frei mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+      "answer": "Schreiben Sie mir gerne. Ich arbeite mich schnell in neue Stacks ein.",
       "btn": "Schreiben Sie mir"
     },
     "PROJECTS": {
@@ -68,7 +68,7 @@
         "topic": "Kontakt",
         "header": "Sie suchen jemanden für Ihr Team?",
         "text": "Ich suche kein Kundenprojekt, sondern ein Team: eine Festanstellung, in der ich Entwicklung und sozialwissenschaftliche Fachlichkeit verbinden kann – in Forschungsprojekten, bei Software-Herstellern für die Sozialwirtschaft oder bei Trägern, die ihre Prozesse digitalisieren.",
-        "textSecondary": "Ich lerne dabei gern weiter und arbeite lieber im Team als allein."
+        "textSecondary": "Ich arbeite lieber im Team als allein und bringe Erfahrung darin mit, zwischen Fachbereich und Technik zu vermitteln. Standort Freiburg, remote oder hybrid ist ebenso möglich."
       },
       "formular":{
         "name": {

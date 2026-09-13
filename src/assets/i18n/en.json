@@ -17,23 +17,23 @@
       "whoIAm": "Who I am",
       "header": "About me",
       "lead": "Most developers learn to code first and the domain second. For me it was the other way round.",
-      "p1": "I spent several years as a social worker, earned a Master's in Applied Gerontology and digitised the workflows of a community centre – with everything that involves: convincing staff, bringing volunteers along, adapting the software to reality instead of the other way round. After that I taught myself development: JavaScript, Angular, TypeScript, then Python, Django and REST APIs.",
-      "p2": "Before that: mechatronics technician. And since 2024 I have been working in retail on the side – everyday work in which I see first-hand how much processes depend on whether the software fits the people using it.",
-      "p3": "So what I bring is not just code. I understand why an organisation does things the way it does, I can talk to practitioners without anyone having to translate – and I know what an interface has to look like so that it also works for an 82-year-old, or for a volunteer with no IT background."
+      "p1": "What that means for you: I can talk to your specialists without anyone needing to translate. I understand why an organisation does things the way it does, and I know what an interface has to look like so that it also works for an 82-year-old or a volunteer with no IT experience. Nobody has to translate requirements into ready-made tickets for me.",
+      "p2": "That's because I learned it the other way round. Several years as a social worker, two academic further-education programmes in Applied Gerontology, and at a community centre I digitised the workflows: room and booking scheduling, moving from paper to digital, with everything that involves. Convincing staff, bringing volunteers along, adapting the software to reality instead of the other way round. After that I taught myself development: JavaScript, Angular, TypeScript, then Python, Django and REST APIs.",
+      "p3": "Before that: mechatronics technician. And since 2024 I've been working in retail on the side – everyday work in which I see first-hand how much processes depend on whether the software fits the people using it."
     },
     "CAREER-TEASER": {
       "topic": "Career Path",
       "header": "My Path",
-      "intro": "My path into software development wasn't a straight line – it runs through a technical apprenticeship, several years in social work with a gerontology specialization, and running my own small business. Every stop taught me something I still use today.",
+      "intro": "Four stops rarely found in one person: mechatronics, social work, gerontology, software development. Each one contributed something I still use every day.",
       "btn": "View my career path"
     },
     "SKILL-SET": {
       "topic": "Technologies",
       "header": "Skill Set",
-      "intro": "On my way from frontend into backend, I've worked with a range of technologies and concepts – from JavaScript and Angular to Python, Django, and REST APIs. I stay open to new tools and keep learning to stay current in the fast-moving world of web development.",
-      "question-1": "You need",
-      "question-2": "another skill?",
-      "answer": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+      "intro": "From frontend into backend: JavaScript and Angular, then Python, Django and REST APIs. I set up and deployed my projects on my own server myself instead of relying on a hosting service – I want to know what's underneath the framework.",
+      "question-1": "Looking for something you don't see here?",
+      "question-2": "more skills?",
+      "answer": "Feel free to write to me. I get up to speed on new stacks quickly.",
       "btn": "Let's talk"
     },
     "PROJECTS": {
@@ -68,14 +68,15 @@
         "topic": "Contact",
         "header": "Looking for someone to join your team?",
         "text": "I'm not looking for client projects but for a team: a permanent position where I can combine development with my background in the social sciences – in research projects, at software vendors for the social and care sector, or with organisations digitising their processes.",
-        "textSecondary": "I like to keep learning and would rather work in a team than on my own."
+        "textSecondary": "I'd rather work in a team than on my own, and bring experience bridging domain expertise and technology. Based in Freiburg – remote or hybrid works just as well."
       },
       "formular":{
         "name": {
           "label": "What is your name?",
           "placeholder": "Your name",
           "error": {
-            "required": "Oops! it seems your name is missing"
+            "required": "Oops! it seems your name is missing",
+            "pattern": ""
           }
         },
         "email": {
