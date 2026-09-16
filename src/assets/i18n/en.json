@@ -10,7 +10,7 @@
     "INFINITE-AUTO-SCROLL": {
       "based": "Based in Freiburg im Breisgau",
       "profession": "Frontend & Backend Developer",
-      "learning": "Finishing Backend Capstone Project",
+      "learning": "Software Development Retraining Completed",
       "available": "Actively Job Hunting"
     },
     "ABOUT-ME": {
@@ -203,10 +203,10 @@
           "beschreibung": "Multidisciplinary intervention gerontology & geriatric psychiatry, plus aging in social environments – completed alongside full-time work."
         },
         "station-8": {
-          "zeitraum": "today",
+          "zeitraum": "2023 – 2026",
           "titel": "Software Development Retraining",
           "ort": "Developer Akademie",
-          "beschreibung": "Frontend completed (JavaScript, Angular), backend capstone project (Python/Django) in progress."
+          "beschreibung": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed. Capstone project: Videoflix, a containerized video streaming backend."
         }
       }
     },

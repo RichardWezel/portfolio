@@ -10,7 +10,7 @@
     "INFINITE-AUTO-SCROLL": {
       "based": "Sitz in Freiburg im Breisgau",
       "profession": "Frontend- & Backend-Entwickler",
-      "learning": "Backend-Abschlussprojekt in Arbeit",
+      "learning": "Umschulung Softwareentwicklung abgeschlossen",
       "available": "Aktiv auf Jobsuche"
     },
     "ABOUT-ME": {
@@ -203,10 +203,10 @@
           "beschreibung": "Multidisziplinäre Interventionsgerontologie & Gerontopsychiatrie sowie Alter im Sozialraum – parallel zum Job abgeschlossen."
         },
         "station-8": {
-          "zeitraum": "heute",
+          "zeitraum": "2023 – 2026",
           "titel": "Umschulung Softwareentwicklung",
           "ort": "Developer Akademie",
-          "beschreibung": "Frontend abgeschlossen (JavaScript, Angular), Backend-Abschlussprojekt (Python/Django) in Arbeit."
+          "beschreibung": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen. Abschlussprojekt: Videoflix, ein containerisiertes Video-Streaming-Backend."
         }
       }
     },
