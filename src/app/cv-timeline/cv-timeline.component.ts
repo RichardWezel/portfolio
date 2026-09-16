@@ -1,5 +1,5 @@
-import { Component, inject, ElementRef, ViewChild, ViewChildren, QueryList, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject, ElementRef, ViewChild, ViewChildren, QueryList, AfterViewInit, OnDestroy, HostListener, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { Router } from '@angular/router';
 import { NavbarComponent } from '../main-content/navbar/navbar.component';
@@ -20,11 +20,18 @@ const CURVE_AMPLITUDE = 90;
   standalone: true,
   imports: [CommonModule, SharedModule, NavbarComponent, FooterComponent, MenuComponent],
   templateUrl: './cv-timeline.component.html',
-  styleUrls: ['./cv-timeline.component.scss', './cv-timeline.mobile.scss']
+  styleUrls: ['./cv-timeline.component.scss', './cv-timeline.mobile.scss'],
+  // Prerendert wird im Mobile-Layout (kein window.innerWidth), am Desktop
+  // weicht die DOM-Struktur ab – Hydration würde daran scheitern.
+  host: { ngSkipHydration: 'true' }
 })
 export class CvTimelineComponent implements AfterViewInit, OnDestroy {
 
   router = inject(Router)
+
+  // Beim Prerendern gibt es kein window/document; die Kurve wird dann erst
+  // im Browser berechnet und die Seite zunächst im Mobile-Layout ausgegeben.
+  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   stations = cvStations;
 
@@ -34,7 +41,7 @@ export class CvTimelineComponent implements AfterViewInit, OnDestroy {
 
   pathD = '';
   svgHeight = 0;
-  isDesktopLayout = window.innerWidth > DESKTOP_BREAKPOINT;
+  isDesktopLayout = this.isBrowser && window.innerWidth > DESKTOP_BREAKPOINT;
   dotPositions: PathPoint[] = [];
   navbarHasBackground = false;
 
@@ -56,6 +63,9 @@ export class CvTimelineComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
+    if (!this.isBrowser) {
+      return;
+    }
     // Force a clean scroll position on entry. Without this, a scroll position
     // carried over from the previous route (the body/window scroll split
     // described below makes Angular's own scroll restoration unreliable here)
@@ -69,6 +79,9 @@ export class CvTimelineComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    if (!this.isBrowser) {
+      return;
+    }
     document.body.removeEventListener('scroll', this.onBodyScroll);
     clearTimeout(this.resizeTimeout);
   }

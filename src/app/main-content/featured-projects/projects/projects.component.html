@@ -21,7 +21,7 @@
                         <div class="skills">
                                 @for (skill of projects[projectId].skills; track skill.name) {
                                     <div class="skill-section">
-                                        <img class="icon" src={{skill.iconPath}} alt="">
+                                        <img class="icon" [src]="skill.iconPath" [alt]="skill.name + ' Icon'">
                                         <div class="skill">{{skill.name}}</div>
                                     </div>
                                 }
@@ -50,7 +50,7 @@
                         </a>
                     </div>
                 </div>
-                <img class="project-screenshot" src={{projects[projectId].img}} alt="">
+                <img class="project-screenshot" [src]="projects[projectId].img" [alt]="'Screenshot des Projekts ' + projects[projectId].title">
             </div>
 
             <!-- link to the next project -->

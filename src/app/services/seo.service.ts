@@ -1,13 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 
+const SITE_URL = 'https://richard-wezel.de';
+
 @Injectable({
   providedIn: 'root'
 })
 export class SeoService {
+  // Injiziert statt globalem document, damit der Service auch beim
+  // Prerendern (ohne Browser) funktioniert.
+  private document = inject(DOCUMENT);
+
   constructor(
     private router: Router,
     private title: Title,
@@ -57,8 +64,8 @@ export class SeoService {
   private canonicalUrl(): string {
     const path = this.path(this.router.url);
     return path === '' || path === 'main'
-      ? `${window.location.origin}/`
-      : `${window.location.origin}/${path}`;
+      ? `${SITE_URL}/`
+      : `${SITE_URL}/${path}`;
   }
 
   private path(url: string): string {
@@ -70,11 +77,11 @@ export class SeoService {
   }
 
   private setCanonical(url: string): void {
-    let link = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    let link = this.document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!link) {
-      link = document.createElement('link');
+      link = this.document.createElement('link');
       link.setAttribute('rel', 'canonical');
-      document.head.appendChild(link);
+      this.document.head.appendChild(link);
     }
     link.setAttribute('href', url);
   }

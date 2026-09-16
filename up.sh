@@ -11,4 +11,4 @@ npm run build
 git add .
 git commit -m "$*" || echo "Nothing to commit, continuing..."
 git push
-git ftp push --syncroot dist/ --remote-root /richard-wezel.de/
+git ftp push --syncroot dist/browser/ --remote-root /richard-wezel.de/

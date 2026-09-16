@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedModule } from './shared/shared.module';
@@ -29,11 +29,18 @@ export class AppComponent {
 
     translate.addLangs(['en', 'de']);
 
-    const savedLang = localStorage.getItem('lang');
+    // Beim Prerendern gibt es weder localStorage noch Browsersprache; die
+    // statischen Seiten werden auf Deutsch erzeugt (passend zu lang="de"
+    // und og:locale in index.html).
+    const isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
+    const savedLang = isBrowser ? localStorage.getItem('lang') : null;
     const browserLang = translate.getBrowserLang();
     const isSupportedBrowserLang = browserLang && ['en', 'de'].includes(browserLang);
-    const defaultLang: string = savedLang || (isSupportedBrowserLang ? browserLang : 'en');
+    const defaultLang: string = isBrowser
+      ? savedLang || (isSupportedBrowserLang ? browserLang : 'en')
+      : 'de';
 
+    const document = inject(DOCUMENT);
     translate.onLangChange.subscribe(event => {
       document.documentElement.lang = event.lang;
     });
