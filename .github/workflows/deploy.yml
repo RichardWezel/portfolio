@@ -30,4 +30,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /richard-wezel.de/
-        local-dir: dist/
+        local-dir: dist/browser/
