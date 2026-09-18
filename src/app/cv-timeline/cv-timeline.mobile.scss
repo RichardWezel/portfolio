@@ -1,4 +1,7 @@
-@media(max-width: 900px){
+@import './../../styles.scss';
+
+// Unterhalb der Desktop-Breite: eine Spalte, Linie links, Jahr über den Karten.
+@media (max-width: 900px) {
     app-navbar {
         height: 90px;
     }
@@ -6,50 +9,140 @@
     main {
         article {
             padding: 120px 16px 48px;
-
-            h1 {
-                font-size: 34px;
-                line-height: 40px;
-            }
-
-            .intro {
-                font-size: 16px;
-                line-height: 22.4px;
-            }
         }
     }
 
-    .stations {
-        gap: 32px;
-        padding-left: 32px;
+    h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
 
-        &::before {
-            display: block;
-            left: 6px;
-            transform: none;
+    .intro {
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .cv-filter {
+        gap: 8px;
+        padding: 16px 0;
+    }
+
+    .chip {
+        padding: 7px 11px;
+        font-size: 11px;
+    }
+
+    .timeline {
+        padding: 32px 0 48px;
+    }
+
+    .rows {
+        gap: 40px;
+    }
+
+    .row {
+        grid-template-columns: 32px minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        row-gap: 12px;
+
+        // Chronologisch von oben nach unten: Parallelstationen (neuere) über der Hauptstation
+        &.side-l,
+        &.side-r {
+            .side-col { grid-column: 2; grid-row: 2; align-items: stretch; }
+            .main-col { grid-column: 2; grid-row: 3; align-items: stretch; }
+        }
+
+        .side-col:not(.has-para) {
+            display: none;
         }
     }
 
-    .station {
-        display: block;
+    .para-label {
+        display: none;
+    }
 
-        .dot {
-            position: absolute;
-            left: -32px;
-            top: 6px;
-            transform: none;
+    .card-para-badge {
+        display: inline;
+    }
+
+    // Jahr bleibt einzeilig, die Kategorie darf umbrechen
+    .card-year {
+        white-space: nowrap;
+    }
+
+    .card-cat {
+        white-space: normal;
+        text-align: right;
+    }
+
+    .year {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        padding-top: 0;
+        border-left: none;
+        padding-left: 0;
+        display: flex;
+        gap: 6px;
+
+        br {
+            display: none;
         }
+    }
 
-        .station-content,
-        &.station-right .station-content {
-            grid-column: unset;
-        }
+    .side-col.has-para {
+        padding-top: 0;
+    }
 
-        position: relative;
+    .card-slot,
+    .card-slot-para {
+        max-width: none;
+    }
 
-        .titel {
-            font-size: 22px;
-            line-height: 27px;
-        }
+    .card {
+        padding: 16px 16px 14px;
+    }
+
+    .card-para {
+        padding: 14px 14px 12px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .cv-summary {
+        gap: 24px 32px;
+        padding-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    .summary-value {
+        font-size: 28px;
+    }
+
+    .dialog-backdrop {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .dialog {
+        max-width: none;
+        min-height: 100%;
+        border-left: none;
+        border-right: none;
+    }
+
+    .dialog-head {
+        padding: 22px 18px 16px;
+    }
+
+    .dialog-title {
+        font-size: 22px;
+    }
+
+    .dialog-body {
+        padding: 20px 18px 28px;
+        gap: 22px;
     }
 }

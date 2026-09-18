@@ -1,25 +1,113 @@
 <app-navbar [class.scrolled]="navbarHasBackground"></app-navbar>
 <main>
     <article>
-        <h1>{{ 'CV-TIMELINE.header' | translate }}</h1>
-        <p class="intro">{{ 'CV-TIMELINE.intro' | translate }}</p>
+        <header class="cv-head">
+            <div class="cv-label">{{ 'CV-TIMELINE.label' | translate }}</div>
+            <h1>{{ 'CV-TIMELINE.header' | translate }}</h1>
+            <p class="intro">{{ 'CV-TIMELINE.intro' | translate }}</p>
+        </header>
 
-        <div class="stations" #stationsContainer>
-            <svg *ngIf="isDesktopLayout" class="stations-svg" [attr.height]="svgHeight" preserveAspectRatio="none">
-                <path [attr.d]="pathD" fill="none" stroke="rgba(61, 207, 182, 0.25)" stroke-width="1"></path>
-                <path #curvePath [attr.d]="pathD" fill="none" stroke="#3DCFB6" stroke-width="1"></path>
-            </svg>
-            <div class="station" *ngFor="let station of stations; let i = index" [ngClass]="[station.kategorie, i % 2 === 0 ? 'station-left' : 'station-right']">
-                <div class="dot"
-                     [style.top.px]="isDesktopLayout && dotPositions[i] ? dotPositions[i].y : null"
-                     [style.left.px]="isDesktopLayout && dotPositions[i] ? dotPositions[i].x : null"></div>
-                <div class="station-content" #stationContent>
-                    <div class="zeitraum">{{ 'CV-TIMELINE.stations.' + station.key + '.zeitraum' | translate }}</div>
-                    <h2 class="titel">{{ 'CV-TIMELINE.stations.' + station.key + '.titel' | translate }}</h2>
-                    <div class="ort">{{ 'CV-TIMELINE.stations.' + station.key + '.ort' | translate }}</div>
-                    <p class="beschreibung">{{ 'CV-TIMELINE.stations.' + station.key + '.beschreibung' | translate }}</p>
-                </div>
+        <!-- Filter nach Kategorie -->
+        <div class="cv-filter">
+            <span class="cv-filter-label">{{ 'CV-TIMELINE.filter' | translate }}</span>
+            @for (chip of chips; track chip.label) {
+                <button type="button" class="chip" [class.is-on]="isChipActive(chip)"
+                        [style.--chip-color]="chip.color" (click)="onChip(chip)">
+                    {{ chip.label }}<span class="chip-count">{{ chip.count }}</span>
+                </button>
+            }
+        </div>
+
+        @if (activeSkill) {
+            <div class="cv-skill-banner">
+                <span>{{ 'CV-TIMELINE.skillHighlight' | translate }} <strong>{{ activeSkill }}</strong> – {{ skillCount }} {{ 'CV-TIMELINE.stationsCount' | translate }}</span>
+                <button type="button" class="cv-reset" (click)="clearSkill()">{{ 'CV-TIMELINE.reset' | translate }} ✕</button>
             </div>
+        }
+
+        <!-- Zeitstrahl -->
+        <div class="timeline" #wrap>
+            <svg #svg class="timeline-svg" preserveAspectRatio="none" aria-hidden="true">
+                <path [attr.d]="pathD" fill="none" stroke="rgba(61, 207, 182, 0.22)" stroke-width="1"></path>
+                @for (tick of ticks; track $index) {
+                    <path [attr.d]="tick" fill="none" stroke="rgba(61, 207, 182, 0.42)" stroke-width="1"></path>
+                }
+                <path #spine [attr.d]="pathD" fill="none" stroke="#3DCFB6" stroke-width="1.5"></path>
+                @for (dot of dots; track $index) {
+                    <circle [attr.cx]="dot.x" [attr.cy]="dot.y" r="5.5" fill="#3DCFB6"></circle>
+                }
+            </svg>
+
+            <div class="rows">
+                @for (row of rows; track $index) {
+                    <div class="row" [class.side-l]="row.side === 'l'" [class.side-r]="row.side === 'r'" #rowEl>
+
+                        <div class="year" [style.border-color]="row.markerColor">
+                            {{ row.yearTop }}<br><span class="year-bot">{{ row.yearBot }}</span>
+                        </div>
+
+                        <div class="main-col">
+                            @for (st of row.main; track trackById($index, st)) {
+                                <div class="card-slot">
+                                    <div class="reveal" [class.is-pending]="revealPending" data-reveal data-main-card>
+                                        <div class="card card-main"
+                                             [class.is-dim]="isDim(st)" [class.is-hot]="isHot(st)"
+                                             [style.--card-color]="st.color"
+                                             (click)="openStation(st.id)" role="button" tabindex="0"
+                                             (keydown.enter)="openStation(st.id)">
+                                            <div class="card-meta">
+                                                <span class="card-year">{{ st.y }}</span>
+                                                <span class="card-cat">{{ st.catLabel }}</span>
+                                            </div>
+                                            <h3 class="card-title">{{ st.t }}</h3>
+                                            <div class="card-org">{{ st.o }}</div>
+                                            <p class="card-text">{{ st.m }}</p>
+                                            <span class="card-more">{{ 'CV-TIMELINE.details' | translate }} →</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="side-col" [class.has-para]="row.para.length > 0">
+                            @if (row.para.length > 0) {
+                                <div class="para-label"><span class="para-dash"></span>{{ 'CV-TIMELINE.parallel' | translate }}</div>
+                            }
+                            @for (st of row.para; track trackById($index, st)) {
+                                <div class="card-slot card-slot-para">
+                                    <div class="reveal" [class.is-pending]="revealPending" data-reveal>
+                                        <div class="card card-para"
+                                             [class.is-dim]="isDim(st)" [class.is-hot]="isHot(st)"
+                                             [style.--card-color]="st.color"
+                                             (click)="openStation(st.id)" role="button" tabindex="0"
+                                             (keydown.enter)="openStation(st.id)">
+                                            <div class="card-meta">
+                                                <span class="card-year">{{ st.y }}</span>
+                                                <span class="card-cat"><span class="card-para-badge">{{ 'CV-TIMELINE.parallel' | translate }} · </span>{{ st.catLabel }}</span>
+                                            </div>
+                                            <h4 class="card-title">{{ st.t }}</h4>
+                                            <div class="card-org">{{ st.o }}</div>
+                                            <p class="card-text">{{ st.m }}</p>
+                                            <span class="card-more">{{ 'CV-TIMELINE.details' | translate }} →</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Zusammenfassung -->
+        <div class="cv-summary">
+            @for (s of summary; track s.labelKey) {
+                <div class="summary-item">
+                    <div class="summary-value" [style.color]="s.color">{{ s.value }}</div>
+                    <div class="summary-label">{{ 'CV-TIMELINE.summary.' + s.labelKey | translate }}</div>
+                </div>
+            }
         </div>
 
         <div class="back-section" (click)="toMain()">
@@ -31,3 +119,94 @@
     </article>
 </main>
 <app-footer></app-footer>
+
+<!-- Detail-Dialog -->
+@if (open; as det) {
+    <div class="dialog-backdrop" (click)="closeDialog()">
+        <div class="dialog" [style.--card-color]="det.color" (click)="$event.stopPropagation()"
+             role="dialog" aria-modal="true" [attr.aria-label]="det.t">
+
+            <div class="dialog-head">
+                <div>
+                    <div class="dialog-meta">
+                        <span class="dialog-cat">{{ det.catLabel }}</span>
+                        <span class="dialog-year">{{ det.y }}</span>
+                        <span class="dialog-dur">{{ det.dur }}</span>
+                    </div>
+                    <h2 class="dialog-title">{{ det.t }}</h2>
+                    <div class="dialog-org">{{ det.o }}</div>
+                </div>
+                <button type="button" class="dialog-close" (click)="closeDialog()" [attr.aria-label]="'CV-TIMELINE.close' | translate">✕</button>
+            </div>
+
+            <div class="dialog-body">
+                <p class="dialog-lead">{{ det.lead }}</p>
+
+                @if (det.ab) {
+                    <div class="dialog-degree">
+                        <div class="section-label accent">{{ 'CV-TIMELINE.degree' | translate }}</div>
+                        <div class="dialog-degree-text">{{ det.ab }}</div>
+                    </div>
+                }
+
+                @if (det.px?.length) {
+                    <div>
+                        <div class="section-label ruled">{{ 'CV-TIMELINE.examples' | translate }}</div>
+                        <div class="dialog-examples">
+                            @for (p of det.px; track $index) {
+                                <div class="example"><span class="example-bullet">▸</span><span>{{ p }}</span></div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @if (det.zg) {
+                    <div class="dialog-quote">
+                        <div class="section-label">{{ 'CV-TIMELINE.certificate' | translate }}</div>
+                        <div class="dialog-quote-text">„{{ det.zg }}“</div>
+                        <div class="dialog-quote-src">— {{ det.zgSrc }}</div>
+                    </div>
+                }
+
+                <div>
+                    <div class="section-label ruled split">
+                        <span>{{ 'CV-TIMELINE.skills' | translate }}</span>
+                        <span class="section-hint">{{ 'CV-TIMELINE.skillsHint' | translate }}</span>
+                    </div>
+                    <div class="dialog-skills">
+                        @for (sk of det.sk; track sk) {
+                            <button type="button" class="skill-btn" (click)="selectSkill(sk)">
+                                {{ sk }}<span class="skill-n">{{ skillUses(sk) }}</span>
+                            </button>
+                        }
+                    </div>
+                </div>
+
+                @if (det.pr.length) {
+                    <div>
+                        <div class="section-label ruled">{{ 'CV-TIMELINE.processes' | translate }}</div>
+                        <div class="dialog-processes">
+                            @for (p of det.pr; track p) {
+                                <span class="process">{{ p }}</span>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @if (openParallel.length) {
+                    <div class="dialog-parallel">
+                        <div class="section-label accent">{{ 'CV-TIMELINE.parallelTitle' | translate }}</div>
+                        <div class="dialog-parallel-list">
+                            @for (p of openParallel; track p.id) {
+                                <button type="button" class="parallel-btn" (click)="openStation(p.id)">
+                                    <span class="parallel-year">{{ p.y }}</span>
+                                    <span class="parallel-title">{{ p.t }}</span>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}

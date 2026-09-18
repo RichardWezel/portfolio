@@ -11,6 +11,13 @@ main {
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
+    transition: padding 200ms ease;
+
+    // Kompakte Variante, wenn die Seite (z. B. Werdegang) die Navbar als feste Leiste nutzt
+    :host(.scrolled) & {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     .logo {
       z-index: 1;
@@ -49,7 +56,7 @@ main {
 
         .nav-links {
           display: flex;
-          gap: 10px;
+          gap: 32px;
           width: 100%;
           z-index: 1;
           
@@ -61,6 +68,8 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 4px;
+            padding: 4px 6px;
             cursor: pointer;
             svg {
               circle {

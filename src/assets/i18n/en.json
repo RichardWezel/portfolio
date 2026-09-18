@@ -156,57 +156,766 @@
       "back": "Back to Homepage"
     },
     "CV-TIMELINE": {
-      "header": "My Career Path",
-      "intro": "From mechatronics to social work with a gerontology specialization to software development – here are the individual stations in detail, chronologically from 2007 to today.",
-      "back": "Back to Homepage",
+      "label": "My Path",
+      "header": "My Background",
+      "intro": "From the software development retraining back to the mechatronics apprenticeship in 2007. A lot ran in parallel – apprenticeship and evening school, degree and second certificate, a management role and two advanced studies programmes. The line shows the main path; the offset cards next to it show what ran alongside.",
+      "filter": "Filter",
+      "all": "All",
+      "skillHighlight": "Skill highlighted:",
+      "stationsCount": "stations",
+      "reset": "reset",
+      "details": "Details",
+      "parallel": "parallel",
+      "close": "Close",
+      "degree": "Qualification & grade",
+      "examples": "Formative examples from practice",
+      "certificate": "From the reference",
+      "skills": "Skills",
+      "skillsHint": "click to see related stations",
+      "processes": "Processes & sectors",
+      "parallelTitle": "Ran in parallel",
+      "back": "Back to home",
+      "categories": {
+        "ar": "Work",
+        "au": "Education",
+        "we": "Training",
+        "en": "Volunteering"
+      },
+      "summary": {
+        "stations": "stations between 2007 and today",
+        "parallel": "ran in parallel to a main station",
+        "trainings": "advanced trainings & certificates",
+        "years": "years of career"
+      },
       "stations": {
-        "station-1": {
-          "zeitraum": "2007 – 2011",
-          "titel": "Mechatronics Apprenticeship (IHK)",
-          "ort": "BVG Berlin",
-          "beschreibung": "Technical foundation: maintaining complex systems, PLC programming, electrical engineering."
+        "mecha": {
+          "y": "2007 – 2011",
+          "dur": "3.5 years",
+          "t": "Mechatronics Technician (IHK)",
+          "o": "BVG Berlin · Georg-Schlesinger-Schule",
+          "m": "Dual apprenticeship at one of Germany's largest public transport operators – theory at vocational school, practice in-house.",
+          "lead": "The combination of vocational school and solid hands-on training in the company proved its worth: broadly skilled across the whole trade, with plenty of craft instead of pure theory.",
+          "ab": "IHK final examination overall result \"good\" (82 points). Company project very good (97 points), work planning good (84), economics and social studies good (83). Vocational school average 2.6.",
+          "px": [
+            "Company project with 97 out of 100 points – the strongest single result of the exam.",
+            "Automated subsystems: commissioning and systematic troubleshooting on real installations.",
+            "PLC programming and pneumatics as the first encounter with logic and control – the same way of thinking that carries programming today."
+          ],
+          "sk": [
+            "Electrical engineering",
+            "PLC programming",
+            "Troubleshooting",
+            "Technical understanding",
+            "Work planning"
+          ],
+          "pr": [
+            "Maintenance",
+            "Automation technology",
+            "Dual apprenticeship",
+            "Public transport"
+          ]
         },
-        "station-2": {
-          "zeitraum": "2012 – 2013",
-          "titel": "University Entrance Qualification (Abitur)",
-          "ort": "Berlin",
-          "beschreibung": "Evening school alongside the apprenticeship, then Abitur in one year full-time – in between, four months studying in Perugia, Italy."
+        "fhr": {
+          "y": "2009 – 2012",
+          "dur": "3 years, evening school",
+          "t": "Advanced Technical College Entrance Qualification",
+          "o": "Georg-Schlesinger-Schule, Berlin",
+          "m": "Three years of evening school Thursday to Saturday – every week, alongside the full-time apprenticeship.",
+          "lead": "Three years back at school in parallel to a full-time apprenticeship: Thursday to Saturday, every week. What stands out is less the subject matter than the perseverance.",
+          "px": [
+            "Three years of uninterrupted Thu–Sat classes on top of the training company.",
+            "The qualification was the ticket for everything that followed – without it no Abitur, no degree."
+          ],
+          "sk": [
+            "Self-discipline",
+            "Stamina",
+            "Time management"
+          ],
+          "pr": [
+            "Second-chance education"
+          ]
         },
-        "station-3": {
-          "zeitraum": "2013 – 2017",
-          "titel": "Outdoor & Experiential Educator",
-          "ort": "EOS Erlebnispädagogik e.V., Freiburg",
-          "beschreibung": "Federal volunteer service and certification (380 hrs), led camps and school trips, responsible for groups of up to 100 people."
+        "fokolar": {
+          "y": "2009 – 2014",
+          "dur": "several years",
+          "t": "Volunteer Youth Work",
+          "o": "Focolare Movement, Berlin",
+          "m": "Looked after children's and youth groups aged 8 to 18, organised camps, accompanied international meetings.",
+          "lead": "Years of accompanying children's and youth groups – from regular afternoons and weekends to trips abroad in Europe. This laid the foundation for the later educational work.",
+          "px": [
+            "Co-organised camps and weekends for groups of 8- to 18-year-olds independently.",
+            "Accompanied trips to international meetings across Europe.",
+            "The movement provided the contact that later made the language stay in Perugia possible."
+          ],
+          "zg": "The commitment predestines him for a career choice and a degree in the educational field.",
+          "zgSrc": "Volunteer work reference, Berlin 2014",
+          "sk": [
+            "Group leadership",
+            "Organising camps",
+            "Intercultural competence",
+            "Empathy",
+            "Reliability"
+          ],
+          "pr": [
+            "Youth work",
+            "Volunteering",
+            "International meetings"
+          ]
         },
-        "station-4": {
-          "zeitraum": "2014 – 2019",
-          "titel": "B.A. Social Work, grade 2.0",
-          "ort": "Katholische Hochschule Freiburg",
-          "beschreibung": "Thesis on emerging adulthood and aging parents, grade 1.5 – first link between youth and aging research."
+        "bvg": {
+          "y": "2011 – 2012",
+          "dur": "1 year",
+          "t": "Mechatronics Technician, Underground Trains",
+          "o": "BVG, Vehicles Department (large profile)",
+          "m": "Inspection, maintenance and repair of underground trains – working to schedule and on piece rate.",
+          "lead": "A year of responsibility on large-profile vehicles: running inspections, finding defects, repairing components. Understanding the entire maintenance process was particularly appealing – knowing when what needs to be done on a train.",
+          "px": [
+            "Repair of defective components on large-profile vehicles under piece-rate conditions.",
+            "Regular inspections and quality control according to a fixed maintenance schedule.",
+            "Early shift from 6 a.m. for a whole year – the experience that triggered the deliberate change of direction."
+          ],
+          "zg": "Solid specialist knowledge, found his way in new situations and grasped complicated relationships. Commitment and initiative, even under heavy workload. Conduct impeccable.",
+          "zgSrc": "Employment reference BVG, 17 Feb 2012",
+          "sk": [
+            "Maintenance",
+            "Troubleshooting",
+            "Quality control",
+            "Shift work",
+            "Initiative",
+            "Reliability"
+          ],
+          "pr": [
+            "Vehicle technology",
+            "Maintenance processes",
+            "Quality control",
+            "Public transport"
+          ]
         },
-        "station-5": {
-          "zeitraum": "2020 – 2022",
-          "titel": "Social Work Specialist, EU Project \"Participation of Older Adults\"",
-          "ort": "Caritasverband Landkreis Emmendingen",
-          "beschreibung": "ESF-funded project, technology coaching for senior citizens."
+        "ims": {
+          "y": "2012",
+          "dur": "6 weeks",
+          "t": "Electrical Installation (Assembly Work)",
+          "o": "IMS Personal GmbH – Bielefeld, Dassel, Schwäbisch Gmünd",
+          "m": "Changing industrial assignments: wired a substation, cabled a university building, converted hall lighting to LED.",
+          "lead": "Six weeks of assembly work at three locations: each time a new hall, new team, new task. A tough school in flexibility and independent travel organisation.",
+          "px": [
+            "Wiring of a large substation for a smelting plant.",
+            "High-voltage installation in a university building.",
+            "Lighting conversion in a ZF hall: remove halogen, adapt wiring, mount LED – from the lifting platform."
+          ],
+          "sk": [
+            "Electrical installation",
+            "Working on lifting platforms",
+            "Flexibility",
+            "Independent travel organisation"
+          ],
+          "pr": [
+            "Industrial assembly",
+            "Temporary work",
+            "High-voltage installation"
+          ]
         },
-        "station-6": {
-          "zeitraum": "2021 – 2023",
-          "titel": "Head of Heinrich-Hansjakob-Haus Community Center",
-          "ort": "Caritasverband Freiburg-Stadt",
-          "beschreibung": "Budget responsibility, team leadership, digitalization of workflows."
+        "perugia": {
+          "y": "2012",
+          "dur": "4 months",
+          "t": "Italian B1",
+          "o": "Università per Stranieri di Perugia",
+          "m": "Four months of language course A2 → B1 in Italy, in an Italian-speaking flat share instead of a fallback language.",
+          "lead": "Four months in Perugia: language course from A2 to B1, plus a flat share with two Italians who barely spoke English. Exactly this immersion made the difference – after four months it was enough for everyday conversations.",
+          "ab": "Attestato di Conoscenza della Lingua Italiana, Corso Intermedio di Primo Livello (B1 CEFR), grade 23/30, Università per Stranieri di Perugia, 4 July 2012.",
+          "px": [
+            "Enrolment and de-registration at the Italian university organised entirely on my own – without support from home.",
+            "Researched independently which requirements (4 months, 120 teaching units) were needed for recognition towards the general university entrance qualification.",
+            "Flat share without a shared third language – Italian was the only way."
+          ],
+          "sk": [
+            "Italian B1",
+            "Language learning",
+            "Self-organisation abroad",
+            "Intercultural competence"
+          ],
+          "pr": [
+            "University language course",
+            "Stay abroad"
+          ]
         },
-        "station-7": {
-          "zeitraum": "since 2021",
-          "titel": "Two Postgraduate Certificates in Applied Gerontology",
-          "ort": "Hochschule Mannheim / KH Freiburg",
-          "beschreibung": "Multidisciplinary intervention gerontology & geriatric psychiatry, plus aging in social environments – completed alongside full-time work."
+        "abi": {
+          "y": "2012 – 2013",
+          "dur": "1 year full-time",
+          "t": "General University Entrance Qualification (Abitur)",
+          "o": "Berufsoberschule, Georg-Schlesinger-Schule Berlin",
+          "m": "One year of full-time Abitur via second-chance education – with Italian as second foreign language.",
+          "lead": "After apprenticeship, job and evening school, another year of full-time school: mathematics beyond tenth-grade level, metal technology with CAD design, politics and history. All classmates were there voluntarily – that shaped the atmosphere.",
+          "ab": "General University Entrance Qualification, average 2.2 (7 June 2013). Research paper \"Commons as a future trend?\". Final grades incl. politics/history 13, German 11, chemistry 11, technology 11 points. Entitles to study all degree programmes.",
+          "px": [
+            "CAD design drawings that could theoretically be executed directly on a machining centre.",
+            "Research paper on commons as a future trend – the first own longer academic paper.",
+            "The decisive thing in hindsight: adding the Abitur on top of apprenticeship and job and seeing it through."
+          ],
+          "sk": [
+            "Mathematics",
+            "CAD design",
+            "Academic writing",
+            "Self-discipline"
+          ],
+          "pr": [
+            "Second-chance education",
+            "Metal technology"
+          ]
         },
-        "station-8": {
-          "zeitraum": "2023 – 2026",
-          "titel": "Software Development Retraining",
-          "ort": "Developer Akademie",
-          "beschreibung": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed. Capstone project: Videoflix, a containerized video streaming backend."
+        "dgbschul": {
+          "y": "2013",
+          "dur": "6 days",
+          "t": "Youth Group Leader Training",
+          "o": "DGB Education Centre, Flecken-Zechlin",
+          "m": "Group psychology, methods of youth education work, legal basics, own practical assignment.",
+          "lead": "Six days of compact qualification: self-image as a group leader, group processes, conflict resolution, communication basics and the legal side from youth protection to duty of supervision.",
+          "ab": "Certificate of attendance from the DGB youth education centre Kirschallee, Flecken Zechlin, 5 July 2013 – successful participation confirmed.",
+          "px": [
+            "Planning, organisation and delivery of an own practical assignment as examination performance.",
+            "Gender-differentiated approaches in youth work – a perspective that later helped in seminar work."
+          ],
+          "sk": [
+            "Group pedagogy",
+            "Conflict resolution",
+            "Communication",
+            "Youth protection law",
+            "Teamwork"
+          ],
+          "pr": [
+            "Youth education work",
+            "Trade union education"
+          ]
+        },
+        "eosbfd": {
+          "y": "2013 – 2014",
+          "dur": "10.5 months",
+          "t": "Federal Volunteer Service",
+          "o": "EOS Erlebnispädagogik e.V., Villa Mez Freiburg",
+          "m": "Marketing, materials management and driving services – at times solely responsible for an entire department.",
+          "lead": "The move to Freiburg and the entry into the social sector. After the department head left, temporarily solely responsible for marketing, then assistance in pedagogy and, from the second half, driving services to holiday camps and school trips.",
+          "px": [
+            "Helped build a new management system for outdoor education materials: several lockable chambers, one chamber per event with a fixed, always identically restocked material set – concept, setup and ongoing maintenance.",
+            "Filtered mailing logistics in Excel: which letters go via the regional service provider and which via regular post – separated by postcode.",
+            "Obtained a driving licence during the volunteer service from own savings and, from the first day after the test, independently drove people and materials on vehicles with very different mechanics."
+          ],
+          "zg": "Good learning and work motivation, quick to grasp, coped well even with difficult tasks. Communication and organisational skills significantly expanded. Very good interpersonal skills, always ready to cooperate.",
+          "zgSrc": "Reference EOS volunteer services, 30 Sep 2014",
+          "sk": [
+            "Materials management",
+            "Administrative organisation",
+            "Excel",
+            "Marketing mailing logistics",
+            "Flexibility",
+            "Passenger transport"
+          ],
+          "pr": [
+            "Outdoor education",
+            "Facility management",
+            "Marketing",
+            "Volunteer services"
+          ]
+        },
+        "eoscert": {
+          "y": "2013 – 2014",
+          "dur": "1 year, 380 units",
+          "t": "Certified Outdoor Educator EOS",
+          "o": "EOS Erlebnispädagogik e.V., course \"Spirit 2\"",
+          "m": "Nine themed weekends, three hard skills, two placements and an own holiday camp as final project.",
+          "lead": "A year of part-time certification alongside the volunteer service, 380 teaching units. The core: learning how to create memorable experiences for children and young people – and discovering the ability to stand confidently in front of large groups.",
+          "ab": "Certificate \"Certified Outdoor Educator EOS\", course Spirit 2, successfully completed on 19 Oct 2014, 380 units. Final project: holiday camp \"Robin Hood\".",
+          "px": [
+            "Final project holiday camp \"Robin Hood\" – one week, as leader on own responsibility.",
+            "Daily routine following the \"head, heart, hand\" concept: waking with guitar and songs, shared breakfast, workshops, evening ritual.",
+            "Organised and led night hikes with torches, campfires and singing.",
+            "Cooked for 40 to 100 people in the kitchen team – one of the surprisingly most formative experiences.",
+            "Hard skills: mobile rope courses, cooperative adventure games, archery – plus slackline, fire making and shelter building."
+          ],
+          "sk": [
+            "Leading groups",
+            "Holiday camp leadership",
+            "Workshop facilitation",
+            "Large-group catering",
+            "Team role allocation",
+            "Self-reflection"
+          ],
+          "pr": [
+            "Outdoor education",
+            "Holiday camps & school trips",
+            "Outdoor safety"
+          ]
+        },
+        "dgbarbeit": {
+          "y": "2013 – 2017",
+          "dur": "individual days & weeks",
+          "t": "Youth Group Leader / Outdoor Educator",
+          "o": "DGB Youth Education Centre, Flecken-Zechlin",
+          "m": "Assignments spread over four years: seminars for school classes and for trainee educators.",
+          "lead": "Not a continuous employment, but sporadic assignments over almost four years – from single days to whole weeks, as needed. Exactly this on-call form combined well with studies and other activities.",
+          "px": [
+            "Designed and delivered seminars for school classes.",
+            "Seminar work with trainee educators – a target group with professional self-interest."
+          ],
+          "sk": [
+            "Seminar design",
+            "Group leadership",
+            "Flexible availability"
+          ],
+          "pr": [
+            "Youth education work",
+            "Trade union education"
+          ]
+        },
+        "ba": {
+          "y": "2014 – 2019",
+          "dur": "210 ECTS",
+          "t": "B.A. Social Work",
+          "o": "Catholic University of Applied Sciences Freiburg",
+          "m": "State-recognised social worker – with a gerontological focus already in the bachelor's thesis.",
+          "lead": "Five years of study with a clear gain: understanding how people act and why, social legislation and the welfare system, professional approaches in case management, solving social problems on different levels. A particular enthusiasm for sociology.",
+          "ab": "Bachelor of Arts, overall grade \"good\" (2.0), completed 3 Sep 2019. Bachelor's thesis \"The view from the life phase of emerging adulthood onto the third age. Prospective ideas of students on shaping relationships with their ageing parents compared to today's forms\" – grade 1.5 (very good). Individual grades incl. professional ethics 1.0, project work 1.0, media in social work 1.3.",
+          "px": [
+            "Met voluntarily in free time with the sociology professor and around six other students to discuss sociological topics.",
+            "Practical and creative study elements: theatre course, exercises on leading youth groups, video review seminar.",
+            "The bachelor's thesis combined youth and ageing research – and thus laid the trail to the later specialisation."
+          ],
+          "sk": [
+            "Academic work",
+            "Research methods",
+            "Counselling & communication",
+            "Case management",
+            "Social law",
+            "Project management",
+            "Media education"
+          ],
+          "pr": [
+            "Social work",
+            "Welfare system",
+            "University studies"
+          ]
+        },
+        "isag": {
+          "y": "2016 – 2020",
+          "dur": "39 ECTS",
+          "t": "ISAG Applied Gerontology",
+          "o": "Catholic & Protestant University of Applied Sciences Freiburg",
+          "m": "Interdisciplinary additional programme alongside the bachelor's – 39 ECTS on top of the compulsory curriculum.",
+          "lead": "A complete additional programme in parallel to the regular bachelor's: own term papers, extra seminars, a compulsory placement in the gerontological field and a gerontology-oriented bachelor's thesis. The professional core of the later specialisation.",
+          "ab": "Certificate \"Interdisciplinary Focus Applied Gerontology\", Freiburg 29 Jan 2020, after a one-hour final colloquium. Additional module \"Complex care and support processes\" (9 ECTS, case examination) with grade 1.3.",
+          "px": [
+            "Final colloquium of over an hour: 30 minutes compulsory area plus three elective fields of action of 10 minutes each.",
+            "Single event \"The geriatric patient – an interprofessional challenge\" at the Centre for Geriatrics and Gerontology of Freiburg University Hospital.",
+            "Elective area compiled independently: diagnostics/counselling, networking/planning, leadership/management."
+          ],
+          "sk": [
+            "Social gerontology",
+            "Intervention gerontology",
+            "Gerontological care",
+            "Diagnostics & counselling",
+            "Networking & planning",
+            "Leadership & management"
+          ],
+          "pr": [
+            "Gerontology",
+            "Demographic change",
+            "Interdisciplinary teaching"
+          ]
+        },
+        "eosfrei": {
+          "y": "2014 – 2016",
+          "dur": "approx. 2 years",
+          "t": "Outdoor Educator (freelance)",
+          "o": "EOS Erlebnispädagogik e.V., Freiburg",
+          "m": "Continued on a fee basis after the volunteer service: school trips and holiday camps during the first semesters.",
+          "lead": "Translated the certification directly into paid assignments: led school trips and holiday camps on own responsibility during the first two to three semesters – as a freelancer, alongside studies.",
+          "px": [
+            "Independent leadership of entire school trip and holiday camp weeks.",
+            "First experience with fee invoicing and independent acceptance of assignments."
+          ],
+          "sk": [
+            "Group leadership",
+            "Freelance work",
+            "Personal responsibility"
+          ],
+          "pr": [
+            "Outdoor education",
+            "Freelance activity"
+          ]
+        },
+        "casino": {
+          "y": "2014 – 2015",
+          "dur": "7 months",
+          "t": "Service Staff",
+          "o": "Casino Silvermine Red Devil GmbH, Freiburg",
+          "m": "Service, cash settlement, youth protection and ordering – and the impetus for the first academic term paper.",
+          "lead": "A side job that offered intellectually far more than expected: service and cash responsibility in a slot machine business, plus direct insights into gambling addiction dynamics – which flowed straight into the first term paper of the degree.",
+          "px": [
+            "Wrote the first term paper of the degree on gambling addiction – developed directly from observation in the business.",
+            "Attended a mandatory seminar on addiction issues at a law firm.",
+            "Independent cash settlement and the ordering of drinks, food and prevention forms.",
+            "Entrance control and youth protection, camera surveillance, anti-manipulation checks – and opening and locking up the premises."
+          ],
+          "zg": "Completed the tasks with commitment and to our satisfaction; conduct was impeccable.",
+          "zgSrc": "Employment reference Red Devil GmbH, 12 July 2015",
+          "sk": [
+            "Cash settlement",
+            "Cash handling",
+            "Security awareness",
+            "Customer service under pressure",
+            "Understanding of addiction",
+            "Ethical reflection",
+            "Multitasking"
+          ],
+          "pr": [
+            "Prevention & youth protection",
+            "Ordering",
+            "Cash management"
+          ]
+        },
+        "fahrgast": {
+          "y": "2015 – 2016",
+          "dur": "2 assignments, approx. 5 months",
+          "t": "Passenger Surveyor / Data Collection",
+          "o": "SNC-Lavalin Rail & Transit · PTV Transport Consult",
+          "m": "Transport market research with app-based data collection on buses and trains.",
+          "lead": "Two project-based assignments in transport market research: surveying passengers, digitally recording boarding and alighting stops and ticket types. The real training lay in approaching completely unprepared people.",
+          "px": [
+            "Survey entirely on a smartphone survey device – a new technology at the time, mastered confidently in a short time.",
+            "Learned to win over even reluctant people and to deal with rejection objectively.",
+            "Accuracy under time pressure: incorrectly recorded stops render entire data sets worthless."
+          ],
+          "sk": [
+            "Data collection",
+            "Systematic work",
+            "Persuasiveness",
+            "Handling rejection",
+            "Patience"
+          ],
+          "pr": [
+            "Market research",
+            "Transport planning",
+            "Statistics basics"
+          ]
+        },
+        "offenburg": {
+          "y": "2016",
+          "dur": "100 attendance days",
+          "t": "Practical Semester in Community Work",
+          "o": "City of Offenburg, District & Family Centre Oststadt",
+          "m": "Activating survey of an entire district – from flyer to residents' meeting, with a real outcome.",
+          "lead": "The professional highlight of the degree: a complete community work process in Offenburg's Oststadt, accompanied by an experienced graduate social worker. From the first flyer distribution to the residents' meeting in which residents themselves set priorities.",
+          "ab": "Compulsory placement in the B.A. Social Work, 100 attendance days full-time, completed with placement assessment. Remuneration €600 – above average for a university placement.",
+          "px": [
+            "Developed and conducted an activating survey myself: designed and distributed flyers, interviewed district experts, held one-on-one conversations with residents, evaluated the survey.",
+            "Organised and moderated a residents' meeting and presented the results – problems were prioritised participatively and solutions developed together.",
+            "High-rise project: supported residents in standing up against grievances – empowerment with a visible result.",
+            "Walked the district physically to develop a feel for why things are the way they are there.",
+            "Weekly café for older people as a low-threshold offer – first contact with the later target group."
+          ],
+          "sk": [
+            "Activating survey",
+            "Moderation",
+            "Community work",
+            "Participatory methods",
+            "District analysis",
+            "Stakeholder engagement",
+            "Empowerment",
+            "Event organisation"
+          ],
+          "pr": [
+            "Community work",
+            "Neighbourhood development",
+            "Public service",
+            "Citizen participation"
+          ]
+        },
+        "diakonie": {
+          "y": "2016 – 2017",
+          "dur": "7 months",
+          "t": "Outdoor Educator, Volunteer Year Seminars",
+          "o": "Diakonisches Werk Württemberg (fee basis)",
+          "m": "Designed and delivered 25 mandatory seminar days for a volunteer-year group in a team of three.",
+          "lead": "A clearly defined fee-based assignment: accompanying 25 mandatory seminar days for a volunteer-year group together with two other outdoor educators. Facilitating exercises turned out to be my own, clearly recognisable strength.",
+          "px": [
+            "Organised a wheelchair experience in the city – a change of perspective that made inclusion physically tangible.",
+            "Conducted a sailing trip as a team spirit experience.",
+            "Designed and held application training for the volunteer-year participants.",
+            "Designed morning energisers and openers, accompanied reflections on challenges at the volunteer placements."
+          ],
+          "sk": [
+            "Facilitating exercises",
+            "Seminar design",
+            "Application training",
+            "Inclusion awareness",
+            "Teamwork",
+            "Reflection guidance"
+          ],
+          "pr": [
+            "Outdoor education",
+            "Volunteer services",
+            "Diaconal organisations"
+          ]
+        },
+        "richiclean": {
+          "y": "2017 – 2020",
+          "dur": "3 years",
+          "t": "Richi Clean – Self-Employed",
+          "o": "Own business, Freiburg & surroundings",
+          "m": "Built a small business with up to 12 clients out of a mini job – entirely through referrals.",
+          "lead": "Three years of real self-employment: from a single mini job, a client base of up to twelve private and office clients grew through word of mouth. Invoicing, taxes, scheduling and material procurement were entirely in my own hands – and financed the degree.",
+          "px": [
+            "Recognised the issue of false self-employment myself, proactively sought advice and correctly registered the business with the tax office.",
+            "Calendar planning for twelve clients without overlaps – all appointments kept, no client losses, only growth.",
+            "Built invoicing and tax overview from scratch.",
+            "Financed the degree with it – along with the self-confidence that grew from it."
+          ],
+          "sk": [
+            "Entrepreneurship",
+            "Invoicing",
+            "Financial management",
+            "Client management",
+            "Scheduling",
+            "Quality awareness",
+            "Reliability"
+          ],
+          "pr": [
+            "Self-employment",
+            "Business registration",
+            "Taxes & bookkeeping",
+            "Services"
+          ]
+        },
+        "ordinariat": {
+          "y": "2019 – 2020",
+          "dur": "7 months",
+          "t": "Central Payroll Accounting",
+          "o": "Archdiocesan Ordinariate Freiburg, Main Department 7",
+          "m": "Full-time in payroll accounting for an employer with over 27,000 employees.",
+          "lead": "Seven months full-time in central payroll accounting: checking and recording time supplements, creating new personnel cases in the HR management system, reconciling payment lists, checking master sheets. Structured office work with regular hours – and an excellent reference.",
+          "px": [
+            "Creation of new personnel cases in the HR management system (PMS) of an employer with over 27,000 employees.",
+            "Reconciliation of payment lists and checking of salary master sheets – areas where accuracy counts directly.",
+            "Fully understood the entire payroll process including wage tax and social insurance."
+          ],
+          "zg": "Particularly well-founded expertise and precise analytical skills, grasped even difficult situations. Exemplary initiative, reliable and resilient, found good solutions without exception – to our full recognition. We regret losing a good employee.",
+          "zgSrc": "Service reference Archdiocesan Ordinariate Freiburg",
+          "sk": [
+            "Payroll accounting",
+            "HR administration",
+            "HR management system",
+            "Excel",
+            "Accuracy & diligence",
+            "Analytical skills",
+            "Initiative"
+          ],
+          "pr": [
+            "Human resources",
+            "Wage tax & social insurance",
+            "Church service",
+            "Data protection"
+          ]
+        },
+        "kurier": {
+          "y": "2020",
+          "dur": "1 month",
+          "t": "Courier / Sample Driver",
+          "o": "Institute of Pathology, Freiburg",
+          "m": "Holiday cover by bicycle: tissue samples from clinics and practices to the laboratory.",
+          "lead": "A clearly limited holiday cover, cleanly done: collecting tissue samples from hospitals and practices, bringing them to the laboratory, filling in accompanying forms, helping out in the sorting office.",
+          "px": [
+            "Took over the complete sample logistics of a cover – the employer was satisfied without reservation.",
+            "Time-critical medical materials by bicycle, across Freiburg and the region."
+          ],
+          "sk": [
+            "Reliability & punctuality",
+            "Independence",
+            "Medical sample logistics",
+            "Administrative handling"
+          ],
+          "pr": [
+            "Courier services",
+            "Pathology laboratory",
+            "Healthcare"
+          ]
+        },
+        "emmendingen": {
+          "y": "2020 – 2022",
+          "dur": "approx. 2 years",
+          "t": "Social Pedagogue, ESF Project \"Participation of Older People\"",
+          "o": "Caritas Association for the District of Emmendingen",
+          "m": "First job after the degree: EU-funded project with budget responsibility, network building and senior education.",
+          "lead": "The entry into the profession – and straight into my own specialisation: a European Social Fund project for the employment promotion of older people. Funding administration and funding guidelines on one side, real encounters and counselling on the other.",
+          "px": [
+            "Managed the funds of an ESF project and was responsible for compliance with the funding guidelines.",
+            "Built a network with the employment agency, care homes and companies and acquired employers.",
+            "Conducted smartphone and technology consultations for seniors – talks and educational work that measurably helped.",
+            "Completed a care placement and thereby gained deep insights into the work of care staff.",
+            "Initiated a neighbourhood help scheme and later handed it over to a colleague in a structured way."
+          ],
+          "zg": "Very positive employment reference (31 Aug 2021), plus confirmation of the ESF activity.",
+          "zgSrc": "Employment reference Caritas Association Emmendingen",
+          "sk": [
+            "Project management",
+            "Funding administration",
+            "Funding guidelines & compliance",
+            "Network building",
+            "Counselling",
+            "Senior education",
+            "Care competence",
+            "Flexibility"
+          ],
+          "pr": [
+            "European Social Fund",
+            "Employment promotion",
+            "Care for the elderly",
+            "Welfare association"
+          ]
+        },
+        "hhh": {
+          "y": "2021 – 2023",
+          "dur": "2 years 6 months",
+          "t": "Social Worker / Facility Manager",
+          "o": "Heinrich-Hansjakob-Haus · Caritas Association Freiburg-Stadt",
+          "m": "Overall responsibility for a community centre: programme, budget, team, volunteers, digitalisation.",
+          "lead": "The fast rise: in the second job after the degree, overall responsibility for a community centre for older people – programme design, finances, staff management, volunteer coordination and external representation. And succeeding a predecessor who had shaped the house for 30 years.",
+          "px": [
+            "Mastered change management: succeeding a manager after 30 years in office – without the house losing its character.",
+            "Converted room organisation and rental from a paper calendar to a digital system.",
+            "Built up smartphone and computer consultations for seniors – the help whose effect was most immediately visible.",
+            "Responsible for the programme with lunch table, singing groups, painting courses, instrument meetings, excursions and celebrations – including baking and pitching in myself.",
+            "Other facility managers regularly asked for my assessment – recognition from outside.",
+            "Responsible for data protection, fire safety and occupational safety for the house."
+          ],
+          "zg": "Employment reference dated 18 Dec 2023.",
+          "zgSrc": "Caritas Association Freiburg-Stadt",
+          "sk": [
+            "Facility management",
+            "Staff management",
+            "Budget responsibility",
+            "Volunteer management",
+            "Programme design",
+            "Digitalisation of processes",
+            "Compliance",
+            "Counselling",
+            "Change management",
+            "Event organisation"
+          ],
+          "pr": [
+            "Non-profit financial management",
+            "Volunteer coordination",
+            "Care for the elderly",
+            "Compliance",
+            "Welfare association"
+          ]
+        },
+        "dasfr": {
+          "y": "2021 – 2023",
+          "dur": "30 ECTS",
+          "t": "DAS Ageing in the Social Space and Neighbourhood",
+          "o": "IWW, Catholic University of Applied Sciences Freiburg",
+          "m": "Part-time academic advanced training – module 1 of the joint master's in Applied Gerontology.",
+          "lead": "Academic advanced training in parallel to the management role: structural, political and legal foundations of ageing in the neighbourhood, education and social network work, plus an own teaching-research project.",
+          "ab": "Completed with a Diploma of Advanced Studies (DAS), 2 semesters plus final semester, 30 ECTS. The final thesis was at bachelor's thesis level. Module 1 of 2 for the M.A. joint master's in Applied Gerontology.",
+          "px": [
+            "Conducted an own teaching-research project with learning support.",
+            "The content on municipal counselling and networking flowed directly back into the network work of the management role."
+          ],
+          "sk": [
+            "Social space orientation",
+            "Neighbourhood development",
+            "Municipal counselling",
+            "Social network work",
+            "Teaching-research project"
+          ],
+          "pr": [
+            "Academic advanced training",
+            "Gerontology",
+            "Local politics"
+          ]
+        },
+        "dasma": {
+          "y": "2021 – 2024",
+          "dur": "30 ECTS",
+          "t": "DAS Intervention Gerontology & Geriatric Psychiatry",
+          "o": "Mannheim University of Applied Sciences",
+          "m": "Second academic advanced training – module 2 of the joint master's, also part-time.",
+          "lead": "The second pillar of the specialisation: general gerontology, geriatric psychiatry, intervention gerontology and research methods – with an academic project paper at bachelor's thesis level.",
+          "ab": "Completed with a Diploma of Advanced Studies (DAS), 30 ECTS. Originally planned as a CAS; since both advanced trainings require an academic paper at bachelor's thesis level, the classification was harmonised. Module 2 of 2 for the M.A. joint master's in Applied Gerontology.",
+          "px": [
+            "Academic project paper with own research question and methodology.",
+            "Geriatric psychiatry content met the everyday work in the community centre directly."
+          ],
+          "sk": [
+            "Intervention gerontology",
+            "Geriatric psychiatry",
+            "Research methods",
+            "Academic project work"
+          ],
+          "pr": [
+            "Academic advanced training",
+            "Geriatric psychiatry",
+            "Gerontology"
+          ]
+        },
+        "brand": {
+          "y": "2024 – 2025",
+          "dur": "1 year",
+          "t": "Full-Time Retail, Focus Wine Department",
+          "o": "Brand Daniel e.K., Freiburg",
+          "m": "Sole responsibility for the wine department – product presentation, stock, customer advice, sales rep appointments.",
+          "lead": "A year of full-time work in premium retail with a clearly own responsibility: the wine department. Product presentation, stock management, table island management, customer advice and sales rep appointments were entirely in my hands – it could be relied upon, and that was reflected back.",
+          "px": [
+            "Sole responsibility for the entire wine department – the point of greatest pride.",
+            "Customer advice based on genuine wine expertise from my own hobby.",
+            "Guiding apprentices in day-to-day business.",
+            "Colleagues regularly asked for advice – a trusted person in the team, with praise from management.",
+            "Completed and applied training in occupational safety, hygiene standards and data protection."
+          ],
+          "sk": [
+            "Customer advice",
+            "Wine expertise",
+            "Stock management",
+            "Product presentation",
+            "Guiding apprentices",
+            "Quality thinking",
+            "Stress resistance",
+            "Personal responsibility"
+          ],
+          "pr": [
+            "Retail",
+            "Product knowledge",
+            "Quality management",
+            "Hygiene & data protection"
+          ]
+        },
+        "umschulung": {
+          "y": "Nov 2023 – 2026",
+          "dur": "2.5 years",
+          "t": "Software Development Retraining",
+          "o": "Developer Akademie",
+          "m": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed – capstone project Videoflix.",
+          "lead": "Since November 2023 the current step: turning the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. The wine department ran in parallel for one year of it.",
+          "ab": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed. Capstone project Videoflix: a containerised video streaming backend with Django REST Framework, PostgreSQL, Redis and Docker.",
+          "px": [
+            "Built this portfolio myself as an Angular application – including this timeline.",
+            "Join, El Pollo Loco and DaBubble as frontend projects: from vanilla JavaScript to Angular with Firebase.",
+            "Videoflix as backend capstone project: registration with email activation, JWT login, video management, Django RQ – fully containerised."
+          ],
+          "sk": [
+            "JavaScript",
+            "Angular",
+            "TypeScript",
+            "Python",
+            "Django",
+            "REST APIs",
+            "Docker",
+            "Frontend development",
+            "Process optimisation"
+          ],
+          "pr": [
+            "Software development",
+            "Full-stack web development"
+          ]
         }
       }
     },

@@ -156,57 +156,766 @@
       "back": "Zurück zur Startseite"
     },
     "CV-TIMELINE": {
+      "label": "Mein Weg",
       "header": "Mein Werdegang",
-      "intro": "Vom Mechatroniker über Sozialarbeit mit Gerontologie-Spezialisierung bis zur Softwareentwicklung – hier sind die einzelnen Stationen im Detail, chronologisch von 2007 bis heute.",
+      "intro": "Von der Umschulung zur Softwareentwicklung zurück bis zur Mechatroniker-Ausbildung 2007. Vieles lief gleichzeitig – Ausbildung und Abendschule, Studium und Zweitzertifikat, Leitungsstelle und zwei Weiterbildungen. Die Linie zeigt den Hauptweg, die versetzten Karten daneben das Parallele.",
+      "filter": "Filter",
+      "all": "Alle",
+      "skillHighlight": "Fähigkeit hervorgehoben:",
+      "stationsCount": "Stationen",
+      "reset": "zurücksetzen",
+      "details": "Details",
+      "parallel": "parallel",
+      "close": "Schließen",
+      "degree": "Abschluss & Note",
+      "examples": "Prägende Beispiele aus der Praxis",
+      "certificate": "Aus dem Zeugnis",
+      "skills": "Fähigkeiten",
+      "skillsHint": "anklicken, um verwandte Stationen zu sehen",
+      "processes": "Prozesse & Branchen",
+      "parallelTitle": "Lief gleichzeitig",
       "back": "Zurück zur Startseite",
+      "categories": {
+        "ar": "Arbeit",
+        "au": "Ausbildung",
+        "we": "Weiterbildung",
+        "en": "Engagement"
+      },
+      "summary": {
+        "stations": "Stationen zwischen 2007 und heute",
+        "parallel": "liefen parallel zu einer Hauptstation",
+        "trainings": "Weiterbildungen & Zertifikate",
+        "years": "Jahre Werdegang"
+      },
       "stations": {
-        "station-1": {
-          "zeitraum": "2007 – 2011",
-          "titel": "Mechatroniker-Ausbildung (IHK)",
-          "ort": "BVG Berlin",
-          "beschreibung": "Technisches Fundament: Wartung komplexer Systeme, SPS-Programmierung, Elektrotechnik."
+        "mecha": {
+          "y": "2007 – 2011",
+          "dur": "3,5 Jahre",
+          "t": "Mechatroniker (IHK)",
+          "o": "BVG Berlin · Georg-Schlesinger-Schule",
+          "m": "Duale Ausbildung bei einem der größten ÖPNV-Betriebe Deutschlands – Theorie in der Berufsschule, Praxis im eigenen Betrieb.",
+          "lead": "Die Kombination aus Berufsschule und fundierter Praxisausbildung im Betrieb hat sich bewährt: breit aufgestellt im gesamten Berufsfeld, mit viel Handwerk statt reiner Theorie.",
+          "ab": "IHK-Abschlussprüfung Gesamtergebnis „gut“ (82 Punkte). Betrieblicher Auftrag sehr gut (97 Punkte), Arbeitsplanung gut (84), Wirtschafts- und Sozialkunde gut (83). Berufsschule Ø 2,6.",
+          "px": [
+            "Betrieblicher Auftrag mit 97 von 100 Punkten – die stärkste Einzelleistung der Prüfung.",
+            "Automatisierte Teilsysteme: Inbetriebnahme und systematische Fehlersuche an realen Anlagen.",
+            "SPS-Programmierung und Pneumatik als erste Begegnung mit Logik und Steuerung – dieselbe Denkweise, die heute beim Programmieren trägt."
+          ],
+          "sk": [
+            "Elektrotechnik",
+            "SPS-Programmierung",
+            "Fehlersuche",
+            "Technisches Verständnis",
+            "Arbeitsplanung"
+          ],
+          "pr": [
+            "Instandhaltung",
+            "Automatisierungstechnik",
+            "Duale Ausbildung",
+            "ÖPNV"
+          ]
         },
-        "station-2": {
-          "zeitraum": "2012 – 2013",
-          "titel": "Fachhochschulreife & Abitur",
-          "ort": "Berlin",
-          "beschreibung": "Abendschule parallel zur Ausbildung, danach Abitur in einem Jahr Vollzeit – dazwischen vier Monate Sprachaufenthalt in Perugia in Italien mit B1 Abschluss."
+        "fhr": {
+          "y": "2009 – 2012",
+          "dur": "3 Jahre, Abendschule",
+          "t": "Fachhochschulreife",
+          "o": "Georg-Schlesinger-Schule, Berlin",
+          "m": "Drei Jahre Abendschule Donnerstag bis Samstag – jede Woche, parallel zur Vollzeit-Ausbildung.",
+          "lead": "Parallel zur Vollzeit-Ausbildung über drei Jahre die Schulbank gedrückt: Donnerstag bis Samstag, jede Woche. Das Bemerkenswerte daran ist weniger der Stoff als das Durchhalten.",
+          "px": [
+            "Drei Jahre ohne Unterbrechung Do–Sa Unterricht zusätzlich zum Ausbildungsbetrieb.",
+            "Der Abschluss war die Eintrittskarte für alles Folgende – ohne ihn kein Abitur, kein Studium."
+          ],
+          "sk": [
+            "Selbstdisziplin",
+            "Ausdauer",
+            "Zeitmanagement"
+          ],
+          "pr": [
+            "Zweiter Bildungsweg"
+          ]
         },
-        "station-3": {
-          "zeitraum": "2013 – 2017",
-          "titel": "Erlebnispädagoge",
-          "ort": "EOS Erlebnispädagogik e.V., Freiburg",
-          "beschreibung": "Bundesfreiwilligendienst und Ausbildung (380 UE), Freizeiten und Ferienlager geleitet, Verantwortung für Gruppen bis 100 Personen."
+        "fokolar": {
+          "y": "2009 – 2014",
+          "dur": "mehrjährig",
+          "t": "Ehrenamtliche Jugendarbeit",
+          "o": "Fokolar-Bewegung, Berlin",
+          "m": "Kinder- und Jugendgruppen von 8 bis 18 Jahren betreut, Freizeiten organisiert, internationale Begegnungen begleitet.",
+          "lead": "Über Jahre Kinder- und Jugendgruppen begleitet – von den regelmäßigen Nachmittagen über Wochenenden bis zu Fahrten ins europäische Ausland. Hier wurde der Grundstein für die späteren pädagogischen Tätigkeiten gelegt.",
+          "px": [
+            "Freizeiten und Wochenenden für Gruppen von 8- bis 18-Jährigen eigenständig mitorganisiert.",
+            "Fahrten zu internationalen Begegnungen im europäischen Raum begleitet.",
+            "Über die Bewegung entstand der Kontakt, der später den Sprachaufenthalt in Perugia möglich machte."
+          ],
+          "zg": "Das Engagement prädestiniert für eine Berufswahl und ein Studium im pädagogischen Bereich.",
+          "zgSrc": "Zeugnis über ehrenamtliche Tätigkeit, Berlin 2014",
+          "sk": [
+            "Gruppenanleitung",
+            "Organisation von Freizeiten",
+            "Interkulturelle Kompetenz",
+            "Empathie",
+            "Verlässlichkeit"
+          ],
+          "pr": [
+            "Jugendarbeit",
+            "Ehrenamt",
+            "Internationale Begegnungen"
+          ]
         },
-        "station-4": {
-          "zeitraum": "2014 – 2019",
-          "titel": "B.A. Soziale Arbeit, Note 2,0",
-          "ort": "Katholische Hochschule Freiburg",
-          "beschreibung": "Bachelorarbeit zu Emerging Adulthood & Drittem Alter, Note 1,5 – erste Verbindung von Jugend- und Alternsforschung."
+        "bvg": {
+          "y": "2011 – 2012",
+          "dur": "1 Jahr",
+          "t": "Mechatroniker U-Bahn",
+          "o": "BVG, Abteilung Fahrzeuge (Großprofil)",
+          "m": "Inspektion, Wartung und Instandsetzung an U-Bahnfahrzeugen – Arbeiten nach Plan und im Akkord.",
+          "lead": "Ein Jahr Verantwortung an Großprofil-Fahrzeugen: Inspektionen fahren, Defekte finden, Komponenten instand setzen. Besonders reizvoll war, den gesamten Wartungsprozess zu verstehen – zu wissen, wann an einem Zug was gemacht werden muss.",
+          "px": [
+            "Instandsetzung defekter Komponenten an Großprofil-Fahrzeugen unter Akkord-Bedingungen.",
+            "Regelmäßige Inspektionen und Qualitätskontrolle nach festem Wartungsplan.",
+            "Frühschicht ab 6 Uhr über ein Jahr – die Erfahrung, die die bewusste Neuorientierung ausgelöst hat."
+          ],
+          "zg": "Solide Fachkenntnisse, fand sich in neuen Situationen zurecht und erfasste komplizierte Zusammenhänge. Einsatzbereitschaft und Eigeninitiative, auch bei großem Arbeitsanfall. Verhalten einwandfrei.",
+          "zgSrc": "Arbeitszeugnis BVG, 17.02.2012",
+          "sk": [
+            "Instandhaltung",
+            "Fehlersuche",
+            "Qualitätskontrolle",
+            "Schichtarbeit",
+            "Eigeninitiative",
+            "Zuverlässigkeit"
+          ],
+          "pr": [
+            "Fahrzeugtechnik",
+            "Wartungsprozesse",
+            "Qualitätskontrolle",
+            "ÖPNV"
+          ]
         },
-        "station-5": {
-          "zeitraum": "2020 – 2022",
-          "titel": "Sozialpädagogische Fachkraft, EU-Projekt „Teilhabe Älterer“",
-          "ort": "Caritasverband Landkreis Emmendingen",
-          "beschreibung": "ESF-gefördertes Projekt, Technikberatung für Senior:innen."
+        "ims": {
+          "y": "2012",
+          "dur": "6 Wochen",
+          "t": "Elektromontage (Montagearbeit)",
+          "o": "IMS Personal GmbH – Bielefeld, Dassel, Schwäbisch Gmünd",
+          "m": "Wechselnde Industrieeinsätze: Umspannwerk verdrahtet, Universitätsgebäude verkabelt, Hallenbeleuchtung auf LED umgebaut.",
+          "lead": "Sechs Wochen Montagearbeit an drei Orten: jedes Mal neue Halle, neues Team, neue Aufgabe. Eine harte Schule in Flexibilität und eigenständiger Reiseorganisation.",
+          "px": [
+            "Verdrahtung eines großen Umspannwerks für eine Schmelzanlage.",
+            "Starkstrominstallation in einem Universitätsgebäude.",
+            "Beleuchtungsumbau in einer ZF-Halle: Halogen abbauen, Verdrahtung anpassen, LED montieren – von der Hebebühne aus."
+          ],
+          "sk": [
+            "Elektromontage",
+            "Arbeiten mit Hebebühne",
+            "Flexibilität",
+            "Selbstständige Reiseorganisation"
+          ],
+          "pr": [
+            "Industriemontage",
+            "Zeitarbeit",
+            "Starkstrominstallation"
+          ]
         },
-        "station-6": {
-          "zeitraum": "2021 – 2023",
-          "titel": "Leitung Begegnungsstätte Heinrich-Hansjakob-Haus",
-          "ort": "Caritasverband Freiburg-Stadt",
-          "beschreibung": "Budgetverantwortung, Teamführung, Digitalisierung der Arbeitsabläufe."
+        "perugia": {
+          "y": "2012",
+          "dur": "4 Monate",
+          "t": "Italienisch B1",
+          "o": "Università per Stranieri di Perugia",
+          "m": "Vier Monate Sprachkurs A2 → B1 in Italien, mit italienischsprachiger Wohngemeinschaft statt Ausweichsprache.",
+          "lead": "Vier Monate Perugia: Sprachkurs von A2 auf B1, dazu eine Wohngemeinschaft mit zwei Italienern, die kaum Englisch sprachen. Genau diese Immersion machte den Unterschied – nach vier Monaten reichte es für Alltagsgespräche.",
+          "ab": "Attestato di Conoscenza della Lingua Italiana, Corso Intermedio di Primo Livello (B1 GER), Note 23/30, Università per Stranieri di Perugia, 04.07.2012.",
+          "px": [
+            "An- und Abmeldung an der italienischen Hochschule vollständig selbst organisiert – ohne Unterstützung von zu Hause.",
+            "Eigenständig recherchiert, welche Anforderungen (4 Monate, 120 Unterrichtseinheiten) für die Anerkennung der allgemeinen Hochschulreife nötig waren.",
+            "Wohngemeinschaft ohne gemeinsame Drittsprache – Italienisch war der einzige Weg."
+          ],
+          "sk": [
+            "Italienisch B1",
+            "Sprachenlernen",
+            "Selbstorganisation im Ausland",
+            "Interkulturelle Kompetenz"
+          ],
+          "pr": [
+            "Hochschulsprachkurs",
+            "Auslandsaufenthalt"
+          ]
         },
-        "station-7": {
-          "zeitraum": "ab 2021",
-          "titel": "Zwei Weiterbildungen Angewandte Gerontologie (DAS)",
-          "ort": "Hochschule Mannheim / KH Freiburg",
-          "beschreibung": "Multidisziplinäre Interventionsgerontologie & Gerontopsychiatrie sowie Alter im Sozialraum – parallel zum Job abgeschlossen."
+        "abi": {
+          "y": "2012 – 2013",
+          "dur": "1 Jahr Vollzeit",
+          "t": "Allgemeine Hochschulreife",
+          "o": "Berufsoberschule, Georg-Schlesinger-Schule Berlin",
+          "m": "Ein Jahr Vollzeit-Abitur auf dem zweiten Bildungsweg – mit Italienisch als zweiter Fremdsprache.",
+          "lead": "Nach Ausbildung, Beruf und Abendschule noch ein Jahr Vollzeitschule: Mathematik über Zehntklass-Niveau hinaus, Metalltechnik mit CAD-Konstruktion, Politik und Geschichte. Alle Mitschüler waren freiwillig da – das prägte die Atmosphäre.",
+          "ab": "Zeugnis der Allgemeinen Hochschulreife, Ø 2,2 (07.06.2013). Facharbeit „Commons as a future trend?“. Endnoten u.a. Politik/Geschichte 13, Deutsch 11, Chemie 11, Technik 11 Punkte. Berechtigt zum Studium aller Studiengänge.",
+          "px": [
+            "CAD-Konstruktionszeichnungen, die theoretisch direkt an einer Zerspanungsmaschine umsetzbar waren.",
+            "Facharbeit über Commons als Zukunftstrend – die erste eigene längere wissenschaftliche Arbeit.",
+            "Das Entscheidende im Rückblick: zusätzlich zu Ausbildung und Job noch das Abitur drangehängt und durchgezogen zu haben."
+          ],
+          "sk": [
+            "Mathematik",
+            "CAD-Konstruktion",
+            "Wissenschaftliches Schreiben",
+            "Selbstdisziplin"
+          ],
+          "pr": [
+            "Zweiter Bildungsweg",
+            "Metalltechnik"
+          ]
         },
-        "station-8": {
-          "zeitraum": "2023 – 2026",
-          "titel": "Umschulung Softwareentwicklung",
-          "ort": "Developer Akademie",
-          "beschreibung": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen. Abschlussprojekt: Videoflix, ein containerisiertes Video-Streaming-Backend."
+        "dgbschul": {
+          "y": "2013",
+          "dur": "6 Tage",
+          "t": "Jugendgruppenleiterschulung",
+          "o": "DGB Bildungszentrum, Flecken-Zechlin",
+          "m": "Gruppenpsychologie, Methoden der Jugendbildungsarbeit, rechtliche Grundlagen, eigene Praxisaufgabe.",
+          "lead": "Sechs Tage kompakte Qualifizierung: Selbstverständnis als Gruppenleiter, Gruppenprozesse, Konfliktlösung, Kommunikationsgrundlagen und die rechtliche Seite von Jugendschutz bis Aufsichtspflicht.",
+          "ab": "Teilnahmebestätigung der DGB-Jugendbildungsstätte Kirschallee, Flecken Zechlin, 05.07.2013 – erfolgreiche Teilnahme bestätigt.",
+          "px": [
+            "Planung, Organisation und Durchführung einer eigenen Praxisaufgabe als Prüfungsleistung.",
+            "Geschlechterdifferenzierte Ansätze in der Jugendarbeit – ein Blickwinkel, der später in der Seminararbeit half."
+          ],
+          "sk": [
+            "Gruppenpädagogik",
+            "Konfliktlösung",
+            "Kommunikation",
+            "Jugendschutzrecht",
+            "Teamarbeit"
+          ],
+          "pr": [
+            "Jugendbildungsarbeit",
+            "Gewerkschaftliche Bildung"
+          ]
+        },
+        "eosbfd": {
+          "y": "2013 – 2014",
+          "dur": "10,5 Monate",
+          "t": "Bundesfreiwilligendienst",
+          "o": "EOS Erlebnispädagogik e.V., Villa Mez Freiburg",
+          "m": "Marketing, Materialverwaltung und Fahrdienste – zeitweise allein verantwortlich für eine ganze Abteilung.",
+          "lead": "Der Umzug nach Freiburg und der Einstieg ins Soziale. Nach dem Weggang der Abteilungsleitung zeitweise allein für das Marketing zuständig, danach Assistenz in der Pädagogik und ab der zweiten Hälfte Fahrdienste zu Ferienlagern und Klassenfahrten.",
+          "px": [
+            "Ein neues Verwaltungssystem für Erlebnispädagogik-Material mitaufgebaut: mehrere abschließbare Kammern, je Veranstaltung eine Kammer mit fest zugeordnetem, immer gleich aufgefülltem Materialset – Konzept, Aufbau und laufende Pflege.",
+            "Postversand-Logistik in Excel gefiltert: welche Briefe über den regionalen Dienstleister und welche über die normale Post gehen – nach Postleitzahl getrennt.",
+            "Führerschein während des BFD aus eigenen Ersparnissen nachgeholt und ab dem ersten Tag nach der Prüfung selbstständig Personen und Material gefahren, auf Fahrzeugen mit sehr unterschiedlicher Mechanik."
+          ],
+          "zg": "Gute Lern- und Arbeitsmotivation, gute Auffassungsgabe, kam auch mit schwierigen Aufgaben gut zurecht. Fähigkeiten in Kommunikation und Organisation deutlich erweitert. Sehr gutes Kontaktvermögen, jederzeit kooperationsbereit.",
+          "zgSrc": "Zeugnis EOS Freiwilligendienste, 30.09.2014",
+          "sk": [
+            "Materialmanagement",
+            "Verwaltungsorganisation",
+            "Excel",
+            "Marketing-Versandlogistik",
+            "Flexibilität",
+            "Personentransport"
+          ],
+          "pr": [
+            "Erlebnispädagogik",
+            "Facility Management",
+            "Marketing",
+            "Freiwilligendienste"
+          ]
+        },
+        "eoscert": {
+          "y": "2013 – 2014",
+          "dur": "1 Jahr, 380 UE",
+          "t": "Geprüfter Erlebnispädagoge EOS",
+          "o": "EOS Erlebnispädagogik e.V., Lehrgang „Spirit 2“",
+          "m": "Neun Themenwochenenden, drei Hard Skills, zwei Praktikumseinsätze und ein eigenes Ferienlager als Abschlussprojekt.",
+          "lead": "Ein Jahr berufsbegleitende Zertifizierung parallel zum Freiwilligendienst, 380 Unterrichtseinheiten. Der Kern: lernen, wie man schöne Erlebnisse für Kinder und Jugendliche gestaltet – und feststellen, dass man sehr gut vor großen Gruppen stehen kann.",
+          "ab": "Zertifikat „Geprüfter Erlebnispädagoge EOS“, Lehrgang Spirit 2, erfolgreich abgeschlossen am 19.10.2014, 380 UE. Abschlussprojekt: Ferienlager „Robin Hood“.",
+          "px": [
+            "Abschlussprojekt Ferienlager „Robin Hood“ – eine Woche, in Eigenverantwortung als Leiter.",
+            "Tagesablauf nach dem Konzept „Kopf, Herz, Hand“: Wecken mit Gitarre und Liedern, gemeinsames Frühstück, Workshops, Abendritual.",
+            "Nachtwanderungen mit Fackeln, Lagerfeuer und Gesang organisiert und durchgeführt.",
+            "Im Küchenteam für 40 bis 100 Personen gekocht – eine der überraschend prägendsten Erfahrungen.",
+            "Hard Skills: Mobile Seilaufbauten, Kooperative Abenteuerspiele, Bogenschießen – dazu Slackline, Feuermachen und Shelterbau."
+          ],
+          "sk": [
+            "Gruppen anleiten",
+            "Ferienlagerleitung",
+            "Workshop-Anleitung",
+            "Großgruppenverpflegung",
+            "Rollenverteilung im Team",
+            "Selbstreflexion"
+          ],
+          "pr": [
+            "Erlebnispädagogik",
+            "Ferienlager & Klassenfahrten",
+            "Outdoor-Sicherheit"
+          ]
+        },
+        "dgbarbeit": {
+          "y": "2013 – 2017",
+          "dur": "einzelne Tage & Wochen",
+          "t": "Jugendgruppenleiter / Erlebnispädagoge",
+          "o": "DGB Jugendbildungszentrum, Flecken-Zechlin",
+          "m": "Über vier Jahre verteilte Einsätze: Seminare für Schulklassen und für angehende Erzieher*innen.",
+          "lead": "Kein durchgehendes Anstellungsverhältnis, sondern sporadische Einsätze über knapp vier Jahre – von einzelnen Tagen bis zu ganzen Wochen, je nach Bedarf. Genau diese Form von Abrufbarkeit ließ sich gut mit Studium und anderen Tätigkeiten verbinden.",
+          "px": [
+            "Seminare für Schulklassen konzipiert und durchgeführt.",
+            "Seminararbeit mit angehenden Erzieher*innen – Zielgruppe mit fachlichem Eigeninteresse."
+          ],
+          "sk": [
+            "Seminargestaltung",
+            "Gruppenanleitung",
+            "Flexible Einsatzbereitschaft"
+          ],
+          "pr": [
+            "Jugendbildungsarbeit",
+            "Gewerkschaftliche Bildung"
+          ]
+        },
+        "ba": {
+          "y": "2014 – 2019",
+          "dur": "210 ECTS",
+          "t": "B.A. Soziale Arbeit",
+          "o": "Katholische Hochschule Freiburg",
+          "m": "Staatlich anerkannter Sozialarbeiter – mit gerontologischem Schwerpunkt schon in der Bachelorarbeit.",
+          "lead": "Fünf Jahre Studium mit klarem Gewinn: verstehen, wie Menschen handeln und warum, Sozialgesetzgebung und Wohlfahrtssystem, professionelle Vorgehensweisen im Fallmanagement, soziale Probleme auf verschiedenen Ebenen lösen. Besondere Begeisterung galt der Soziologie.",
+          "ab": "Bachelor of Arts, Gesamtnote „gut“ (2,0), abgeschlossen 03.09.2019. Bachelorarbeit „Der Blick von der Lebensphase Emerging Adulthood auf das Dritte Alter. Prospektive Vorstellungen Studierender zur Beziehungsgestaltung mit ihren alternden Eltern im Vergleich zu heutigen Gestaltungsformen“ – Note 1,5 (sehr gut). Einzelnoten u.a. Professionsethik 1,0, Projektarbeit 1,0, Medien in der Sozialen Arbeit 1,3.",
+          "px": [
+            "Traf sich freiwillig in der Freizeit mit dem Soziologieprofessor und rund sechs weiteren Studierenden, um soziologische Themen zu besprechen.",
+            "Praktische und kreative Studienelemente: Theaterkurs, Übungen zur Anleitung von Jugendgruppen, Videobesprechungsseminar.",
+            "Die Bachelorarbeit verband Jugend- und Alternsforschung – und legte damit die Spur zur späteren Spezialisierung."
+          ],
+          "sk": [
+            "Wissenschaftliches Arbeiten",
+            "Forschungsmethoden",
+            "Beratung & Kommunikation",
+            "Fallmanagement",
+            "Sozialrecht",
+            "Projektmanagement",
+            "Medienpädagogik"
+          ],
+          "pr": [
+            "Soziale Arbeit",
+            "Wohlfahrtssystem",
+            "Hochschulstudium"
+          ]
+        },
+        "isag": {
+          "y": "2016 – 2020",
+          "dur": "39 ECTS",
+          "t": "ISAG Angewandte Gerontologie",
+          "o": "Katholische & Evangelische Hochschule Freiburg",
+          "m": "Interdisziplinäres Zusatzlehrprogramm neben dem Bachelor – 39 ECTS zusätzlich zum Pflichtcurriculum.",
+          "lead": "Ein komplettes Zusatzprogramm parallel zum regulären Bachelor: eigene Hausarbeiten, Extra-Seminare, ein Pflichtpraktikum im gerontologischen Feld und eine gerontologisch ausgerichtete Bachelorarbeit. Der fachliche Kern der späteren Spezialisierung.",
+          "ab": "Zertifikat „Interdisziplinärer Schwerpunkt Angewandte Gerontologie“, Freiburg 29.01.2020, nach einstündigem Abschlusskolloquium. Zusatzmodul „Komplexe Pflege- und Versorgungsabläufe“ (9 ECTS, Fallprüfung) mit Note 1,3.",
+          "px": [
+            "Abschlusskolloquium über eine Stunde: 30 Minuten Pflichtbereich plus drei Wahlpflicht-Handlungsfelder à 10 Minuten.",
+            "Einzelveranstaltung „Der geriatrische Patient – eine interprofessionelle Herausforderung“ am Zentrum für Geriatrie und Gerontologie des Uniklinikums Freiburg.",
+            "Wahlpflichtbereich selbst zusammengestellt: Diagnostik/Beratung, Vernetzung/Planung, Führung/Leitung."
+          ],
+          "sk": [
+            "Soziale Gerontologie",
+            "Interventionsgerontologie",
+            "Gerontologische Pflege",
+            "Diagnostik & Beratung",
+            "Vernetzung & Planung",
+            "Führung & Leitung"
+          ],
+          "pr": [
+            "Gerontologie",
+            "Demografischer Wandel",
+            "Interdisziplinäre Lehre"
+          ]
+        },
+        "eosfrei": {
+          "y": "2014 – 2016",
+          "dur": "ca. 2 Jahre",
+          "t": "Erlebnispädagoge (freiberuflich)",
+          "o": "EOS Erlebnispädagogik e.V., Freiburg",
+          "m": "Nach dem Freiwilligendienst weiter auf Honorarbasis: Klassenfahrten und Ferienlager in den ersten Studiensemestern.",
+          "lead": "Die Zertifizierung direkt in bezahlte Einsätze übersetzt: in den ersten zwei bis drei Studiensemestern eigenverantwortlich Klassenfahrten und Ferienlager geleitet – als Selbstständiger, neben dem Studium.",
+          "px": [
+            "Eigenverantwortliche Leitung ganzer Klassenfahrt- und Ferienlagerwochen.",
+            "Erste Erfahrung mit Honorarabrechnung und selbstständiger Auftragsannahme."
+          ],
+          "sk": [
+            "Gruppenleitung",
+            "Honorartätigkeit",
+            "Eigenverantwortung"
+          ],
+          "pr": [
+            "Erlebnispädagogik",
+            "Freiberufliche Tätigkeit"
+          ]
+        },
+        "casino": {
+          "y": "2014 – 2015",
+          "dur": "7 Monate",
+          "t": "Servicekraft",
+          "o": "Casino Silvermine Red Devil GmbH, Freiburg",
+          "m": "Service, Kassenabrechnung, Jugendschutz und Bestellwesen – und der Anstoß zur ersten wissenschaftlichen Hausarbeit.",
+          "lead": "Ein Nebenjob, der intellektuell weit mehr hergab als erwartet: Service und Kassenverantwortung im Spielautomaten-Betrieb, dazu unmittelbare Einblicke in Spielsucht-Dynamiken – die direkt in die erste Hausarbeit des Studiums flossen.",
+          "px": [
+            "Erste Hausarbeit im Studium über Spielsucht geschrieben – direkt aus der Beobachtung im Betrieb entwickelt.",
+            "Pflicht-Seminar zu Suchtproblematiken bei einer Anwaltskanzlei besucht.",
+            "Eigenverantwortliche Kassenabrechnung und das Bestellwesen für Getränke, Lebensmittel und Präventionsformulare.",
+            "Einlasskontrolle und Jugendschutz, Kameraüberwachung, Anti-Manipulations-Checks – und das Auf- und Abschließen des Betriebs."
+          ],
+          "zg": "Erledigte die Aufgaben mit Engagement und zu unserer Zufriedenheit, das Verhalten war einwandfrei.",
+          "zgSrc": "Arbeitszeugnis Red Devil GmbH, 12.07.2015",
+          "sk": [
+            "Kassenabrechnung",
+            "Geldhandling",
+            "Sicherheitsbewusstsein",
+            "Kundenservice unter Druck",
+            "Suchtverständnis",
+            "Ethische Reflexion",
+            "Multitasking"
+          ],
+          "pr": [
+            "Prävention & Jugendschutz",
+            "Bestellwesen",
+            "Kassenführung"
+          ]
+        },
+        "fahrgast": {
+          "y": "2015 – 2016",
+          "dur": "2 Aufträge, ca. 5 Monate",
+          "t": "Fahrgastbefrager / Datenerfassung",
+          "o": "SNC-Lavalin Rail & Transit · PTV Transport Consult",
+          "m": "Verkehrsmarktforschung mit App-gestützter Datenerfassung in Bus und Bahn.",
+          "lead": "Zwei projektbasierte Aufträge in der Verkehrsmarktforschung: Fahrgäste befragen, Ein- und Ausstiegshaltestellen und Fahrscheintypen digital erfassen. Das eigentliche Training lag in der Ansprache völlig unvorbereiteter Menschen.",
+          "px": [
+            "Erhebung komplett auf einem Smartphone-Erhebungsgerät – eine damals neue Technologie, in kurzer Zeit sicher beherrscht.",
+            "Gelernt, auch widerwillige Menschen zu gewinnen und mit Ablehnung sachlich umzugehen.",
+            "Genauigkeit unter Zeitdruck: falsch erfasste Haltestellen machen ganze Datensätze wertlos."
+          ],
+          "sk": [
+            "Datenerfassung",
+            "Systematisches Arbeiten",
+            "Überzeugungsfähigkeit",
+            "Umgang mit Ablehnung",
+            "Geduld"
+          ],
+          "pr": [
+            "Marktforschung",
+            "Verkehrsplanung",
+            "Statistik-Grundlagen"
+          ]
+        },
+        "offenburg": {
+          "y": "2016",
+          "dur": "100 Präsenztage",
+          "t": "Praxissemester Gemeinwesenarbeit",
+          "o": "Stadt Offenburg, Stadtteil- & Familienzentrum Oststadt",
+          "m": "Aktivierende Befragung eines ganzen Stadtteils – von Flyer bis Bürgerversammlung, mit echtem Ergebnis.",
+          "lead": "Das fachliche Highlight des Studiums: ein vollständiger Gemeinwesenarbeits-Prozess in der Offenburger Oststadt, begleitet von einem erfahrenen Diplom-Sozialarbeiter. Von der ersten Flyerverteilung bis zur Bürgerversammlung, in der Bewohner*innen selbst Prioritäten setzten.",
+          "ab": "Pflichtpraktikum im B.A. Soziale Arbeit, 100 Präsenztage Vollzeit, mit Praktikumsbeurteilung abgeschlossen. Vergütung 600 € – überdurchschnittlich für ein Hochschulpraktikum.",
+          "px": [
+            "Aktivierende Befragung selbst erarbeitet und durchgeführt: Flyer entworfen und verteilt, Stadtteilexperten interviewt, Einzelgespräche mit Bewohner*innen geführt, Umfrage ausgewertet.",
+            "Bürgerversammlung organisiert, moderiert und die Ergebnisse präsentiert – Probleme wurden partizipativ priorisiert und Lösungen gemeinsam erarbeitet.",
+            "Hochhaus-Projekt: Bewohner*innen dabei unterstützt, sich gegen Missstände zu wehren – Empowerment mit sichtbarem Ergebnis.",
+            "Den Stadtteil physisch begangen, um ein Gefühl dafür zu entwickeln, warum die Dinge dort so sind, wie sie sind.",
+            "Wöchentliches Café für Ältere als niedrigschwelliges Angebot – erste Berührung mit der späteren Zielgruppe."
+          ],
+          "sk": [
+            "Aktivierende Befragung",
+            "Moderation",
+            "Gemeinwesenarbeit",
+            "Partizipative Methoden",
+            "Stadtteilanalyse",
+            "Stakeholder-Engagement",
+            "Empowerment",
+            "Veranstaltungsorganisation"
+          ],
+          "pr": [
+            "Gemeinwesenarbeit",
+            "Quartiersentwicklung",
+            "Öffentlicher Dienst",
+            "Bürgerbeteiligung"
+          ]
+        },
+        "diakonie": {
+          "y": "2016 – 2017",
+          "dur": "7 Monate",
+          "t": "Erlebnispädagoge FSJ-Seminare",
+          "o": "Diakonisches Werk Württemberg (Honorar)",
+          "m": "Im Dreierteam 25 Pflichtseminartage für eine FSJ-Gruppe konzipiert und durchgeführt.",
+          "lead": "Ein klar umrissener Honorarauftrag: mit zwei weiteren Erlebnispädagogen 25 Pflichtseminartage für eine FSJ-Gruppe begleiten. Die Anleitung von Übungen erwies sich dabei als die eigene, deutlich erkennbare Stärke.",
+          "px": [
+            "Rollstuhl-Erlebnis in der Stadt organisiert – ein Perspektivwechsel, der Inklusion körperlich erfahrbar machte.",
+            "Segeltour als Teamgeist-Erfahrung durchgeführt.",
+            "Bewerbungstraining für die FSJ-Teilnehmenden konzipiert und gehalten.",
+            "Morgenenergizer und Einstiege gestaltet, Reflexionen zu Herausforderungen an den FSJ-Stellen begleitet."
+          ],
+          "sk": [
+            "Anleitung von Übungen",
+            "Seminarkonzeption",
+            "Bewerbungstraining",
+            "Inklusions-Sensibilisierung",
+            "Teamarbeit",
+            "Reflexionsbegleitung"
+          ],
+          "pr": [
+            "Erlebnispädagogik",
+            "Freiwilligendienste",
+            "Diakonische Träger"
+          ]
+        },
+        "richiclean": {
+          "y": "2017 – 2020",
+          "dur": "3 Jahre",
+          "t": "Richi Clean – Selbstständig",
+          "o": "Eigenes Unternehmen, Freiburg & Umgebung",
+          "m": "Aus einem Minijob ein Kleinunternehmen mit bis zu 12 Kunden aufgebaut – komplett über Weiterempfehlung.",
+          "lead": "Drei Jahre echte Selbstständigkeit: aus einem einzelnen Minijob wuchs über Mund-zu-Mund-Propaganda ein Kundenstamm von bis zu zwölf Privat- und Büroauftraggebern. Rechnungen, Steuern, Terminplanung und Materialbeschaffung lagen vollständig in eigener Hand – und finanzierten das Studium.",
+          "px": [
+            "Die Scheinselbstständigkeits-Problematik selbst erkannt, proaktiv Beratung geholt und das Gewerbe korrekt beim Finanzamt angemeldet.",
+            "Kalenderplanung für zwölf Kunden ohne Überschneidungen – alle Termine eingehalten, keine Kundenabgänge, nur Zuwachs.",
+            "Rechnungslegung und Steuerüberblick von Null aufgebaut.",
+            "Das Studium damit selbst finanziert – samt des Selbstbewusstseins, das daraus entstand."
+          ],
+          "sk": [
+            "Unternehmertum",
+            "Rechnungslegung",
+            "Finanzmanagement",
+            "Kundenverwaltung",
+            "Terminplanung",
+            "Qualitätsbewusstsein",
+            "Zuverlässigkeit"
+          ],
+          "pr": [
+            "Selbstständigkeit",
+            "Gewerbeanmeldung",
+            "Steuern & Buchhaltung",
+            "Dienstleistung"
+          ]
+        },
+        "ordinariat": {
+          "y": "2019 – 2020",
+          "dur": "7 Monate",
+          "t": "Zentrale Gehaltsabrechnung",
+          "o": "Erzbischöfliches Ordinariat Freiburg, Hauptabteilung 7",
+          "m": "Vollzeit in der Gehaltsabrechnung eines Arbeitgebers mit über 27.000 Beschäftigten.",
+          "lead": "Sieben Monate Vollzeit in der zentralen Gehaltsabrechnung: Zeitzuschläge prüfen und erfassen, Personalfälle im Personalmanagementsystem neu anlegen, Zahllisten abgleichen, Stammblätter kontrollieren. Strukturierte Büroarbeit mit geregelten Zeiten – und ein ausgezeichnetes Zeugnis.",
+          "px": [
+            "Neuanlage von Personalfällen im Personalmanagementsystem (PMS) eines Arbeitgebers mit über 27.000 Beschäftigten.",
+            "Abgleich von Zahllisten und Kontrolle der Gehaltsstammblätter – Bereiche, in denen Genauigkeit unmittelbar zählt.",
+            "Der komplette Prozess der Gehaltsabrechnung inklusive Lohnsteuer und Sozialversicherung fachlich durchdrungen."
+          ],
+          "zg": "Besonders fundiertes Fachwissen und genaue Analysefähigkeit, erfasste auch schwierige Situationen. Vorbildliche Eigeninitiative, zuverlässig und belastbar, fand ausnahmslos gute Lösungen – zu unserer vollen Anerkennung. Wir bedauern, einen guten Mitarbeiter zu verlieren.",
+          "zgSrc": "Dienstzeugnis Erzbischöfliches Ordinariat Freiburg",
+          "sk": [
+            "Gehaltsabrechnung",
+            "Personalverwaltung",
+            "Personalmanagementsystem",
+            "Excel",
+            "Genauigkeit & Sorgfalt",
+            "Analytische Fähigkeiten",
+            "Eigeninitiative"
+          ],
+          "pr": [
+            "Personalwesen",
+            "Lohnsteuer & Sozialversicherung",
+            "Kirchlicher Dienst",
+            "Datenschutz"
+          ]
+        },
+        "kurier": {
+          "y": "2020",
+          "dur": "1 Monat",
+          "t": "Kurier / Probenfahrer",
+          "o": "Pathologisches Institut, Freiburg",
+          "m": "Urlaubsvertretung per Fahrrad: Gewebeproben aus Kliniken und Praxen ins Labor.",
+          "lead": "Eine klar begrenzte Urlaubsvertretung, sauber erledigt: Gewebeproben bei Krankenhäusern und Praxen abholen, ins Labor bringen, Begleitscheine ausfüllen, im Sortierbüro zur Hand gehen.",
+          "px": [
+            "Vollständige Probenlogistik einer Vertretung übernommen – der Arbeitgeber war ohne Einschränkung zufrieden.",
+            "Termingebundene medizinische Materialien mit dem Fahrrad, quer durch Freiburg und Region."
+          ],
+          "sk": [
+            "Zuverlässigkeit & Pünktlichkeit",
+            "Selbstständigkeit",
+            "Medizinische Probenlogistik",
+            "Administratives Handling"
+          ],
+          "pr": [
+            "Kurierwesen",
+            "Pathologisches Labor",
+            "Gesundheitswesen"
+          ]
+        },
+        "emmendingen": {
+          "y": "2020 – 2022",
+          "dur": "ca. 2 Jahre",
+          "t": "Sozialpädagogische Fachkraft, ESF-Projekt „Teilhabe Älterer“",
+          "o": "Caritasverband für den Landkreis Emmendingen e.V.",
+          "m": "Erster Job nach dem Studium: EU-gefördertes Projekt mit Budgetverantwortung, Netzwerkaufbau und Seniorenbildung.",
+          "lead": "Der Einstieg in den Beruf – und direkt mit der eigenen Spezialisierung: ein Projekt des Europäischen Sozialfonds zur Arbeitsförderung Älterer. Fördermittelverwaltung und Förderrichtlinien auf der einen, echte Begegnungen und Beratung auf der anderen Seite.",
+          "px": [
+            "Fördergelder eines ESF-Projekts verwaltet und die Einhaltung der Förderrichtlinien verantwortet.",
+            "Netzwerk mit Arbeitsagentur, Pflegeheimen und Betrieben aufgebaut und Arbeitgeber akquiriert.",
+            "Smartphone- und Technikberatungen für Senior*innen durchgeführt – Vorträge und Bildungsarbeit, die messbar geholfen haben.",
+            "Ein Pflegepraktikum absolviert und dadurch tiefe Einblicke in die Arbeit von Pflegekräften gewonnen.",
+            "Eine Nachbarschaftshilfe initiiert und später strukturiert an eine Kollegin übergeben."
+          ],
+          "zg": "Sehr positives Arbeitszeugnis (31.08.2021), zusätzlich Bestätigung der ESF-Tätigkeit.",
+          "zgSrc": "Arbeitszeugnis Caritasverband Emmendingen",
+          "sk": [
+            "Projektmanagement",
+            "Fördermittelverwaltung",
+            "Förderrichtlinien & Compliance",
+            "Netzwerkaufbau",
+            "Beratung",
+            "Seniorenbildung",
+            "Pflegekompetenz",
+            "Flexibilität"
+          ],
+          "pr": [
+            "Europäischer Sozialfonds",
+            "Arbeitsförderung",
+            "Altenhilfe",
+            "Wohlfahrtsverband"
+          ]
+        },
+        "hhh": {
+          "y": "2021 – 2023",
+          "dur": "2 Jahre 6 Monate",
+          "t": "Sozialarbeiter / Einrichtungsleitung",
+          "o": "Heinrich-Hansjakob-Haus · Caritasverband Freiburg-Stadt e.V.",
+          "m": "Gesamtverantwortung für eine Begegnungsstätte: Programm, Budget, Team, Ehrenamt, Digitalisierung.",
+          "lead": "Der schnelle Aufstieg: Im zweiten Job nach dem Studium die Gesamtverantwortung für eine Begegnungsstätte für Ältere – Programmgestaltung, Finanzen, Mitarbeiterführung, Ehrenamtskoordination und Außenvertretung. Und die Nachfolge einer Vorgängerin, die das Haus 30 Jahre geprägt hatte.",
+          "px": [
+            "Change Management gemeistert: Nachfolge einer Leitung nach 30 Jahren im Amt – ohne dass das Haus seinen Charakter verlor.",
+            "Raumorganisation und -vermietung vom Papierkalender auf ein digitales System umgestellt.",
+            "Smartphone- und Computerberatungen für Senior*innen aufgebaut – die Hilfe, deren Wirkung am unmittelbarsten sichtbar war.",
+            "Programm mit Mittagstisch, Singtreffen, Malkursen, Instrumententreffen, Ausflügen und Festen verantwortet – inklusive selbst backen und mit anpacken.",
+            "Andere Einrichtungsleitungen fragten regelmäßig nach der eigenen Einschätzung – Anerkennung von außen.",
+            "Datenschutz, Brandschutz und Arbeitsschutz für das Haus verantwortet."
+          ],
+          "zg": "Arbeitszeugnis vom 18.12.2023.",
+          "zgSrc": "Caritasverband Freiburg-Stadt e.V.",
+          "sk": [
+            "Einrichtungsleitung",
+            "Mitarbeiterführung",
+            "Budgetverantwortung",
+            "Ehrenamtsmanagement",
+            "Programmgestaltung",
+            "Digitalisierung von Prozessen",
+            "Compliance",
+            "Beratung",
+            "Change Management",
+            "Veranstaltungsorganisation"
+          ],
+          "pr": [
+            "Nonprofit-Finanzmanagement",
+            "Ehrenamtskoordination",
+            "Altenhilfe",
+            "Compliance",
+            "Wohlfahrtsverband"
+          ]
+        },
+        "dasfr": {
+          "y": "2021 – 2023",
+          "dur": "30 ECTS",
+          "t": "DAS Altern im Sozialraum und Quartier",
+          "o": "IWW, Katholische Hochschule Freiburg",
+          "m": "Berufsbegleitende wissenschaftliche Weiterbildung – Baustein 1 des Verbundmasters Angewandte Gerontologie.",
+          "lead": "Wissenschaftliche Weiterbildung parallel zur Leitungsstelle: strukturelle, politische und rechtliche Grundlagen des Alterns im Quartier, Bildung und soziale Netzwerkarbeit, dazu ein eigenes Lehr-Forschungsprojekt.",
+          "ab": "Abgeschlossen mit Diploma of Advanced Studies (DAS), 2 Semester plus Abschlusssemester, 30 ECTS. Die Abschlussarbeit lag auf Bachelorarbeit-Niveau. Baustein 1 von 2 für den M.A. Verbundmaster Angewandte Gerontologie.",
+          "px": [
+            "Eigenes Lehr-Forschungsprojekt mit Lernbegleitung durchgeführt.",
+            "Die Inhalte zur kommunalen Beratung und Vernetzung flossen direkt in die Netzwerkarbeit der Leitungsstelle zurück."
+          ],
+          "sk": [
+            "Sozialraumorientierung",
+            "Quartiersentwicklung",
+            "Kommunale Beratung",
+            "Soziale Netzwerkarbeit",
+            "Lehr-Forschungsprojekt"
+          ],
+          "pr": [
+            "Wissenschaftliche Weiterbildung",
+            "Gerontologie",
+            "Kommunalpolitik"
+          ]
+        },
+        "dasma": {
+          "y": "2021 – 2024",
+          "dur": "30 ECTS",
+          "t": "DAS Interventionsgerontologie & Gerontopsychiatrie",
+          "o": "Technische Hochschule Mannheim",
+          "m": "Zweite wissenschaftliche Weiterbildung – Baustein 2 des Verbundmasters, ebenfalls berufsbegleitend.",
+          "lead": "Die zweite Säule der Spezialisierung: allgemeine Gerontologie, Gerontopsychiatrie, Interventionsgerontologie und Forschungsmethoden – mit einer wissenschaftlichen Projektarbeit auf Bachelorarbeit-Niveau.",
+          "ab": "Abgeschlossen mit Diploma of Advanced Studies (DAS), 30 ECTS. Ursprünglich als CAS vorgesehen; da beide Weiterbildungen eine wissenschaftliche Arbeit auf Bachelorarbeit-Niveau verlangen, wurde die Einstufung vereinheitlicht. Baustein 2 von 2 für den M.A. Verbundmaster Angewandte Gerontologie.",
+          "px": [
+            "Wissenschaftliche Projektarbeit mit eigener Fragestellung und Methodik.",
+            "Gerontopsychiatrische Inhalte trafen direkt auf den Arbeitsalltag in der Begegnungsstätte."
+          ],
+          "sk": [
+            "Interventionsgerontologie",
+            "Gerontopsychiatrie",
+            "Forschungsmethoden",
+            "Wissenschaftliche Projektarbeit"
+          ],
+          "pr": [
+            "Wissenschaftliche Weiterbildung",
+            "Gerontopsychiatrie",
+            "Gerontologie"
+          ]
+        },
+        "brand": {
+          "y": "2024 – 2025",
+          "dur": "1 Jahr",
+          "t": "Vollzeitkraft Einzelhandel, Schwerpunkt Weinabteilung",
+          "o": "Brand Daniel e.K., Freiburg",
+          "m": "Alleinverantwortung für die Weinabteilung – Warenpräsentation, Bestand, Kundenberatung, Vertretertermine.",
+          "lead": "Ein Jahr Vollzeit im Premium-Einzelhandel mit einer klar eigenen Zuständigkeit: die Weinabteilung. Warenpräsentation, Bestandsverwaltung, Tischinsel-Management, Kundenberatung und Vertretertermine lagen vollständig in eigener Hand – darauf war Verlass, und das wurde auch so gespiegelt.",
+          "px": [
+            "Alleinverantwortung für die komplette Weinabteilung – der Punkt, auf den der größte Stolz entfiel.",
+            "Kundenberatung auf Basis echter Weinexpertise aus dem eigenen Hobby.",
+            "Anleitung von Auszubildenden im Tagesgeschäft.",
+            "Kolleg*innen fragten regelmäßig nach – Vertrauensperson im Team, mit Lob von den Führungskräften.",
+            "Schulungen in Arbeitssicherheit, Hygiene-Standards und Datenschutz absolviert und angewendet."
+          ],
+          "sk": [
+            "Kundenberatung",
+            "Weinexpertise",
+            "Bestandsverwaltung",
+            "Warenpräsentation",
+            "Anleitung von Azubis",
+            "Qualitätsdenken",
+            "Stressresistenz",
+            "Eigenverantwortung"
+          ],
+          "pr": [
+            "Einzelhandel",
+            "Warenkunde",
+            "Qualitätsmanagement",
+            "Hygiene & Datenschutz"
+          ]
+        },
+        "umschulung": {
+          "y": "Nov 2023 – 2026",
+          "dur": "2,5 Jahre",
+          "t": "Umschulung Softwareentwicklung",
+          "o": "Developer Akademie",
+          "m": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen – Abschlussprojekt Videoflix.",
+          "lead": "Seit November 2023 der aktuelle Schritt: die Neigung zu Struktur, Logik und Prozessoptimierung, die sich von der SPS-Programmierung über Excel-Filterungen bis zur Digitalisierung der Raumverwaltung durchzieht, in ein Berufsbild überführen. Die Weinabteilung lief ein Jahr davon parallel.",
+          "ab": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen. Abschlussprojekt Videoflix: ein containerisiertes Video-Streaming-Backend mit Django REST Framework, PostgreSQL, Redis und Docker.",
+          "px": [
+            "Dieses Portfolio selbst als Angular-Anwendung gebaut – inklusive dieser Zeitachse.",
+            "Join, El Pollo Loco und DaBubble als Frontend-Projekte: von Vanilla JavaScript bis Angular mit Firebase.",
+            "Videoflix als Backend-Abschlussprojekt: Registrierung mit E-Mail-Aktivierung, JWT-Login, Videoverwaltung, Django RQ – vollständig containerisiert."
+          ],
+          "sk": [
+            "JavaScript",
+            "Angular",
+            "TypeScript",
+            "Python",
+            "Django",
+            "REST-APIs",
+            "Docker",
+            "Frontend-Entwicklung",
+            "Prozessoptimierung"
+          ],
+          "pr": [
+            "Softwareentwicklung",
+            "Fullstack-Webentwicklung"
+          ]
         }
       }
     },
