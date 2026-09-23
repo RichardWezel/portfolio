@@ -116,18 +116,25 @@
                 .project-details {
                     max-width: 100%;
     
+                    .project-heading {
+                        display: flex;
+                        align-items: baseline;
+                        gap: 16px;
+                        margin-bottom: 24px;
+                    }
+
                     .project-number {
                         font-size: 48px;
                         line-height: 48px;
                         letter-spacing: -0.02em;
-                        margin-bottom: 16px;
+                        margin-bottom: 0;
                     }
     
                     .project-title {
                         font-size: 40px;
                         line-height: 40px;
                         letter-spacing: -0.03em;
-                        margin-bottom: 24px;
+                        margin-bottom: 0;
                     }
 
                     .project-header {
@@ -142,7 +149,7 @@
                 }
     
                 .project-screenshot {
-                    width: 60%;
+                    width: 90%;
                     height: auto;
                 }
 

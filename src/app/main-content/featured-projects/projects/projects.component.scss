@@ -108,6 +108,11 @@ main {
     max-width: 50%;;
 }
 
+// Desktop: Nummer und Titel untereinander wie bisher; mobil nebeneinander
+.project-heading {
+    display: contents;
+}
+
 .project-number {
     font-family: 'Karla';
     font-size: 128px;
