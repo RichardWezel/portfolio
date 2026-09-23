@@ -18,12 +18,22 @@ main {
     min-height: min(656px, calc(100dvh - 64px));
     max-height: calc(100vh - 64px);
     max-height: calc(100dvh - 64px);
-    overflow-y: auto;
+    overflow: hidden;
     border-radius: 30px;
     border: 1px solid $base-color;
     background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-    padding: 56px 80px 40px;
+    padding: 30px 0;      // hält die Scrollbar von den abgerundeten Ecken fern (auch iOS)
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+// scrollt statt der Box, damit die Scrollbar innerhalb des Box-Paddings bleibt
+.scroll-inner {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 26px 80px 10px;
     display: flex;
     flex-direction: column;
 
@@ -38,7 +48,6 @@ main {
         width: 8px;
     }
     &::-webkit-scrollbar-track {
-        margin-block: 30px;   // Abstand oben und unten, passend zum border-radius
         background: transparent;
     }
     &::-webkit-scrollbar-thumb {

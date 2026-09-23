@@ -2,6 +2,7 @@
 @if (projectVisible) {
     <main (click)="hideProject()">
         <div class="project-box" (click)="$event.stopPropagation()">
+            <div class="scroll-inner">
             <div class="close-section">
                 <div class="closeBox" (click)="hideProject()">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            
+            </div>
         </div>
      </main>
 }

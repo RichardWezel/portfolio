@@ -12,10 +12,12 @@
         border-radius: 30px;
         border: 1px solid rgb(61, 207, 182);
         background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-        padding: 32px 40px;
         position: relative;
         display: flex;
         flex-direction: column;
+        .scroll-inner {
+            padding: 2px 40px;
+        }
         .box-content {
             display: flex;
             align-items: center;
@@ -41,10 +43,12 @@
         border-radius: 30px;
         border: 1px solid rgb(61, 207, 182);
         background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-        padding: 32px 40px;
         position: relative;
         display: flex;
         flex-direction: column;
+        .scroll-inner {
+            padding: 2px 40px;
+        }
         .project-header {
             font-size: 16px;
         }
@@ -73,12 +77,14 @@
             border-radius: 30px;
             border: 1px solid rgb(61, 207, 182);
             background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-            padding: 16px;
             position: relative;
             display: flex;
-            align-items: center;
             flex-direction: column;
-            overflow-y: auto;
+
+            .scroll-inner {
+                padding: 0 16px;
+                align-items: center;
+            }
             
             .close-section {
                 position: sticky;
