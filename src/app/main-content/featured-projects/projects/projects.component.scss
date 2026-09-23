@@ -16,6 +16,7 @@ main {
     width: 100%;
     min-height: 656px;
     max-height: calc(100vh - 64px);
+    max-height: calc(100dvh - 64px);
     overflow-y: auto;
     border-radius: 30px;
     border: 1px solid $base-color;
