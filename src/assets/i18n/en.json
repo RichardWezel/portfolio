@@ -10,7 +10,7 @@
     "INFINITE-AUTO-SCROLL": {
       "based": "Based in Freiburg im Breisgau",
       "profession": "Frontend & Backend Developer",
-      "learning": "Software Development Retraining Completed",
+      "learning": "Software Developer Training Completed",
       "available": "Actively Job Hunting"
     },
     "ABOUT-ME": {
@@ -158,7 +158,7 @@
     "CV-TIMELINE": {
       "label": "My Path",
       "header": "My Background",
-      "intro": "From the software development retraining back to the mechatronics apprenticeship in 2007. A lot ran in parallel – apprenticeship and evening school, degree and second certificate, a management role and two advanced studies programmes. The line shows the main path; the offset cards next to it show what ran alongside.",
+      "intro": "From the software developer training back to the mechatronics apprenticeship in 2007. A lot ran in parallel – apprenticeship and evening school, degree and second certificate, a management role and two advanced studies programmes. The line shows the main path; the offset cards next to it show what ran alongside.",
       "filter": "Filter",
       "all": "All",
       "skillHighlight": "Skill highlighted:",
@@ -889,17 +889,18 @@
           ]
         },
         "umschulung": {
-          "y": "Nov 2023 – 2026",
-          "dur": "2.5 years",
-          "t": "Software Development Retraining",
+          "y": "Oct 2023 – Oct 2026",
+          "dur": "almost 3 years",
+          "t": "Software Development Training (Career Change)",
           "o": "Developer Akademie",
-          "m": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed – capstone project Videoflix.",
-          "lead": "Since November 2023 the current step: turning the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. The wine department ran in parallel for one year of it.",
-          "ab": "Frontend (JavaScript, Angular) and backend (Python/Django, REST) completed. Capstone project Videoflix: a containerised video streaming backend with Django REST Framework, PostgreSQL, Redis and Docker.",
+          "m": "Two certificates: front-end (JavaScript, TypeScript, Angular) and back-end (Python, Django, REST) – 31 modules, capstone project Videoflix.",
+          "lead": "From October 2023 to October 2026, the step in which I turned the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. It was done online at Developer Akademie GmbH (AZAV-approved). The wine department ran in parallel for one year of it.",
+          "ab": "Qualification as a web application software developer with two completion certificates: front-end (2 June 2025, 18 modules, over 12 projects) and back-end (6 October 2026, 13 modules, 4 capstone projects). Capstone project Videoflix: a containerised video streaming backend with Django REST Framework, PostgreSQL, Redis, FFmpeg/HLS and Docker.",
           "px": [
             "Built this portfolio myself as an Angular application – including this timeline.",
             "Join, El Pollo Loco and DaBubble as frontend projects: from vanilla JavaScript to Angular with Firebase.",
-            "Videoflix as backend capstone project: registration with email activation, JWT login, video management, Django RQ – fully containerised."
+            "Videoflix as backend capstone project: registration with email activation, JWT login, video management, Django RQ, HLS streaming – fully containerised.",
+            "Further back-end capstones: KanMind, Coderr and Quizly (running on a server of my own)."
           ],
           "sk": [
             "JavaScript",
@@ -908,8 +909,13 @@
             "Python",
             "Django",
             "REST APIs",
+            "PostgreSQL",
+            "Redis",
             "Docker",
-            "Frontend development",
+            "Linux",
+            "CI/CD",
+            "Git & Scrum",
+            "HTML & CSS",
             "Process optimisation"
           ],
           "pr": [

@@ -10,7 +10,7 @@
     "INFINITE-AUTO-SCROLL": {
       "based": "Sitz in Freiburg im Breisgau",
       "profession": "Frontend- & Backend-Entwickler",
-      "learning": "Umschulung Softwareentwicklung abgeschlossen",
+      "learning": "Weiterbildung zum Softwareentwickler abgeschlossen",
       "available": "Aktiv auf Jobsuche"
     },
     "ABOUT-ME": {
@@ -158,7 +158,7 @@
     "CV-TIMELINE": {
       "label": "Mein Weg",
       "header": "Mein Werdegang",
-      "intro": "Von der Umschulung zur Softwareentwicklung zurück bis zur Mechatroniker-Ausbildung 2007. Vieles lief gleichzeitig – Ausbildung und Abendschule, Studium und Zweitzertifikat, Leitungsstelle und zwei Weiterbildungen. Die Linie zeigt den Hauptweg, die versetzten Karten daneben das Parallele.",
+      "intro": "Von der Weiterbildung zum Softwareentwickler zurück bis zur Mechatroniker-Ausbildung 2007. Vieles lief gleichzeitig – Ausbildung und Abendschule, Studium und Zweitzertifikat, Leitungsstelle und zwei Weiterbildungen. Die Linie zeigt den Hauptweg, die versetzten Karten daneben das Parallele.",
       "filter": "Filter",
       "all": "Alle",
       "skillHighlight": "Fähigkeit hervorgehoben:",
@@ -889,17 +889,18 @@
           ]
         },
         "umschulung": {
-          "y": "Nov 2023 – 2026",
-          "dur": "2,5 Jahre",
-          "t": "Umschulung Softwareentwicklung",
+          "y": "Okt 2023 – Okt 2026",
+          "dur": "knapp 3 Jahre",
+          "t": "Weiterbildung Softwareentwicklung (Quereinstieg)",
           "o": "Developer Akademie",
-          "m": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen – Abschlussprojekt Videoflix.",
-          "lead": "Seit November 2023 der aktuelle Schritt: die Neigung zu Struktur, Logik und Prozessoptimierung, die sich von der SPS-Programmierung über Excel-Filterungen bis zur Digitalisierung der Raumverwaltung durchzieht, in ein Berufsbild überführen. Die Weinabteilung lief ein Jahr davon parallel.",
-          "ab": "Frontend (JavaScript, Angular) und Backend (Python/Django, REST) abgeschlossen. Abschlussprojekt Videoflix: ein containerisiertes Video-Streaming-Backend mit Django REST Framework, PostgreSQL, Redis und Docker.",
+          "m": "Zwei Zertifikate: Front-End (JavaScript, TypeScript, Angular) und Back-End (Python, Django, REST) – 31 Module, Abschlussprojekt Videoflix.",
+          "lead": "Von Oktober 2023 bis Oktober 2026 der Schritt, mit dem ich die Neigung zu Struktur, Logik und Prozessoptimierung, die sich von der SPS-Programmierung über Excel-Filterungen bis zur Digitalisierung der Raumverwaltung durchzieht, in ein Berufsbild überführt habe – online bei der Developer Akademie GmbH (AZAV-zugelassen). Die Weinabteilung lief ein Jahr davon parallel.",
+          "ab": "Qualifikation zum Softwareentwickler für Web-Anwendungen mit zwei Abschlusszertifikaten: Front-End (02.06.2025, 18 Module, über 12 Projekte) und Back-End (06.10.2026, 13 Module, 4 Capstone-Projekte). Abschlussprojekt Videoflix: ein containerisiertes Video-Streaming-Backend mit Django REST Framework, PostgreSQL, Redis, FFmpeg/HLS und Docker.",
           "px": [
             "Dieses Portfolio selbst als Angular-Anwendung gebaut – inklusive dieser Zeitachse.",
             "Join, El Pollo Loco und DaBubble als Frontend-Projekte: von Vanilla JavaScript bis Angular mit Firebase.",
-            "Videoflix als Backend-Abschlussprojekt: Registrierung mit E-Mail-Aktivierung, JWT-Login, Videoverwaltung, Django RQ – vollständig containerisiert."
+            "Videoflix als Backend-Abschlussprojekt: Registrierung mit E-Mail-Aktivierung, JWT-Login, Videoverwaltung, Django RQ, HLS-Streaming – vollständig containerisiert.",
+            "Weitere Back-End-Capstones: KanMind, Coderr und Quizly (läuft auf einem eigenen Server)."
           ],
           "sk": [
             "JavaScript",
@@ -908,8 +909,13 @@
             "Python",
             "Django",
             "REST-APIs",
+            "PostgreSQL",
+            "Redis",
             "Docker",
-            "Frontend-Entwicklung",
+            "Linux",
+            "CI/CD",
+            "Git & Scrum",
+            "HTML & CSS",
             "Prozessoptimierung"
           ],
           "pr": [

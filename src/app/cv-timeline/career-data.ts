@@ -47,7 +47,7 @@ export const cvStations: CvStationMeta[] = [
   { id: 'dasfr', cat: 'we' },
   { id: 'dasma', cat: 'we' },
   { id: 'brand', cat: 'ar' },
-  { id: 'umschulung', cat: 'au' },
+  { id: 'umschulung', cat: 'we' },
 ];
 
 export interface CvRowMeta {
@@ -85,6 +85,6 @@ export interface CvSummaryMeta {
 export const cvSummary: CvSummaryMeta[] = [
   { value: '27', labelKey: 'stations', color: '#3DCFB6' },
   { value: '14', labelKey: 'parallel', color: '#5FD0E8' },
-  { value: '5', labelKey: 'trainings', color: '#79DF9B' },
+  { value: '6', labelKey: 'trainings', color: '#79DF9B' },
   { value: '19', labelKey: 'years', color: '#B79FE8' },
 ];
