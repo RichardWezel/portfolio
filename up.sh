@@ -1,4 +1,5 @@
 #!/bin/bash
+# ./up.sh "style: unify fonts in skill-set section"
 set -euo pipefail
 
 if [ $# -eq 0 ]; then
