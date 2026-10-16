@@ -782,7 +782,9 @@
             "Mastered change management: succeeding a manager after 30 years in office – without the house losing its character.",
             "Converted room organisation and rental from a paper calendar to a digital system.",
             "Built up smartphone and computer consultations for seniors – the help whose effect was most immediately visible.",
-            "Responsible for the programme with lunch table, singing groups, painting courses, instrument meetings, excursions and celebrations – including baking and pitching in myself.",
+            "Responsible for the programme with lunch table, singing groups, painting courses, instrument meetings and celebrations – including baking and pitching in myself.",
+            "Personnel responsibility for five people: guided and supported three volunteers in the voluntary social year (FSJ) and two university interns.",
+            "Coordinated, by agreement, the volunteers who run courses and groups. Organised excursions myself and partly carried them out together with the volunteers.",
             "Other facility managers regularly asked for my assessment – recognition from outside.",
             "Responsible for data protection, fire safety and occupational safety for the house."
           ],
@@ -791,6 +793,7 @@
           "sk": [
             "Facility management",
             "Staff management",
+            "Guiding FSJ volunteers and interns",
             "Budget responsibility",
             "Volunteer management",
             "Programme design",
@@ -809,22 +812,28 @@
           ]
         },
         "dasfr": {
-          "y": "2021 – 2023",
+          "y": "Apr 2021 – Jun 2022",
           "dur": "30 ECTS",
-          "t": "DAS Ageing in the Social Space and Neighbourhood",
+          "t": "CAS Ageing in the Social Space and Neighbourhood",
           "o": "IWW, Catholic University of Applied Sciences Freiburg",
-          "m": "Part-time academic advanced training – module 1 of the joint master's in Applied Gerontology.",
-          "lead": "Academic advanced training in parallel to the management role: structural, political and legal foundations of ageing in the neighbourhood, education and social network work, plus an own teaching-research project.",
-          "ab": "Completed with a Diploma of Advanced Studies (DAS), 2 semesters plus final semester, 30 ECTS. The final thesis was at bachelor's thesis level. Module 1 of 2 for the M.A. joint master's in Applied Gerontology.",
+          "m": "Part-time academic advanced training (30 ECTS, grade 2.3) – module 1 of the joint master's in Applied Gerontology.",
+          "lead": "Academic advanced training in parallel to the management role: ageing theory, municipal social planning and policy advice, education and social network work in the neighbourhood – plus an own empirical teaching-research project.",
+          "ab": "Certificate of Advanced Studies (CAS) with the title “Gerontologist CAS”, April 2021 to June 2022. Five modules, 30 ECTS (900 hours of work), overall grade 2.3. The assessed work was a graded final thesis (research report, 42 pages, submitted on 20 June 2022, supervised by Prof. Dr. Ines Himmelsbach). Module 1 of 2 for the M.A. joint master's in Applied Gerontology (90 ECTS).",
           "px": [
-            "Conducted an own teaching-research project with learning support.",
+            "Final thesis: qualitative survey of eight managers of Freiburg senior community centres run by different providers on the effects of the Corona pandemic from 2020 to early 2022 – on the centres, their visitors and how they dealt with the challenges.",
+            "Method: guided interviews (via Zoom or on site), AI-assisted transcription, summarising content analysis after Mayring with inductively formed categories.",
+            "Result: besides burdens and restrictions there were also innovations; community centres are needed in the neighbourhood. Open questions: funding, digitalisation, and gender and diversity in open elderly care.",
+            "Modules on social planning, working with political bodies, lobbying and social network work; electives on assistive technology, ethics, age diversity and architecture in the neighbourhood.",
             "The content on municipal counselling and networking flowed directly back into the network work of the management role."
           ],
           "sk": [
             "Social space orientation",
             "Neighbourhood development",
+            "Social planning & needs assessment",
             "Municipal counselling",
+            "Policy advice & lobbying",
             "Social network work",
+            "Qualitative social research (Mayring)",
             "Teaching-research project"
           ],
           "pr": [
@@ -834,22 +843,27 @@
           ]
         },
         "dasma": {
-          "y": "2021 – 2024",
+          "y": "Nov 2020 – Feb 2022",
           "dur": "30 ECTS",
           "t": "DAS Intervention Gerontology & Geriatric Psychiatry",
-          "o": "Mannheim University of Applied Sciences",
-          "m": "Second academic advanced training – module 2 of the joint master's, also part-time.",
-          "lead": "The second pillar of the specialisation: general gerontology, geriatric psychiatry, intervention gerontology and research methods – with an academic project paper at bachelor's thesis level.",
-          "ab": "Completed with a Diploma of Advanced Studies (DAS), 30 ECTS. Originally planned as a CAS; since both advanced trainings require an academic paper at bachelor's thesis level, the classification was harmonised. Module 2 of 2 for the M.A. joint master's in Applied Gerontology.",
+          "o": "Mannheim University of Applied Sciences, Faculty of Social Work",
+          "m": "Contact study programme Applied Gerontology (KONTAGE), part-time – module 2 of the joint master's.",
+          "lead": "The second pillar of the specialisation: three modules on general gerontology, geriatric psychiatry and multidisciplinary intervention gerontology, plus an ongoing accompanying seminar on academic work – and an own final thesis related to professional practice.",
+          "ab": "Diploma of Advanced Studies (DAS), title “Gerontologist DAS – Multidisciplinary Intervention Gerontology and Geriatric Psychiatry”, awarded on 2 April 2022. Participation from November 2020 to February 2022, three modules, 30 ECTS. Module 2 of 2 for the M.A. joint master's in Applied Gerontology.",
           "px": [
-            "Academic project paper with own research question and methodology.",
+            "Final thesis “Hindering factors for integrating the profession of social work into residential care homes for older people” (submitted 25 March 2022, assessors Prof. Dr. Martina Schäufele and Ingrid Hendlmeier): qualitative survey of managers of residential care homes in Baden-Württemberg.",
+            "Method: semi-structured expert interviews with a guide derived from the literature, qualitative content analysis after Mayring. Preparatory work was a systematic literature review on the marginal position of social work in residential elderly care.",
+            "Conclusion for own practice: social work should engage more in lobbying for its own profession and know the funding and legal foundations of its field.",
             "Geriatric psychiatry content met the everyday work in the community centre directly."
           ],
           "sk": [
             "Intervention gerontology",
             "Geriatric psychiatry",
             "Research methods",
-            "Academic project work"
+            "Academic project work",
+            "Expert interviews",
+            "Systematic literature review",
+            "Qualitative content analysis (Mayring)"
           ],
           "pr": [
             "Academic advanced training",
@@ -863,12 +877,12 @@
           "t": "Full-Time Retail, Focus Wine Department",
           "o": "Brand Daniel e.K., Freiburg",
           "m": "Sole responsibility for the wine department – product presentation, stock, customer advice, sales rep appointments.",
-          "lead": "Full-time in premium retail since April 2024 with a clearly own responsibility: the wine department. Product presentation, stock management, table island management, customer advice and sales rep appointments were entirely in my hands – it could be relied upon, and that was reflected back.",
+          "lead": "Full-time in premium retail since April 2024 with a clearly own responsibility: the wine department. Product presentation, stock management, table island management, customer advice and sales rep appointments are entirely in my hands – it can be relied upon, and that is reflected back.",
           "px": [
             "Sole responsibility for the entire wine department – the point of greatest pride.",
             "Customer advice based on genuine wine expertise from my own hobby.",
             "Guiding apprentices in day-to-day business.",
-            "Colleagues regularly asked for advice – a trusted person in the team, with praise from management.",
+            "Colleagues regularly ask for advice – a trusted person in the team, with praise from management.",
             "Completed and applied training in occupational safety, hygiene standards and data protection."
           ],
           "sk": [
@@ -894,13 +908,13 @@
           "t": "Software Development Training (Career Change)",
           "o": "Developer Akademie",
           "m": "Two certificates: front-end (JavaScript, TypeScript, Angular) and back-end (Python, Django, REST) – 31 modules, capstone project Videoflix.",
-          "lead": "From October 2023 to October 2026, the step in which I turned the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. It was done online at Developer Akademie GmbH (AZAV-approved). The wine department continues to run in parallel.",
+          "lead": "From October 2023 to October 2026, the step in which I turned the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. It was done online at Developer Akademie GmbH (AZAV-approved).",
           "ab": "Qualification as a web application software developer with two completion certificates: front-end (2 June 2025, 18 modules, over 12 projects) and back-end (6 October 2026, 13 modules, 4 capstone projects). Capstone project Videoflix: a containerised video streaming backend with Django REST Framework, PostgreSQL, Redis, FFmpeg/HLS and Docker.",
           "px": [
             "Built this portfolio myself as an Angular application – including this timeline.",
             "Join, El Pollo Loco and DaBubble as frontend projects: from vanilla JavaScript to Angular with Firebase.",
             "Videoflix as backend capstone project: registration with email activation, JWT login, video management, Django RQ, HLS streaming – fully containerised.",
-            "Further back-end capstones: KanMind, Coderr and Quizly (running on a server of my own)."
+            "Further completed back-end capstones: KanMind, Coderr and Quizly. They are not deployed online; the code is on GitHub."
           ],
           "sk": [
             "JavaScript",
@@ -914,7 +928,7 @@
             "Docker",
             "Linux",
             "CI/CD",
-            "Git & Scrum",
+            "Git, GitHub & Scrum",
             "HTML & CSS",
             "Process optimisation"
           ],

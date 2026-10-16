@@ -121,16 +121,25 @@
         font-size: 28px;
     }
 
+    // Dialog füllt den Bildschirm: deckender Hintergrund statt Blur, sonst
+    // schimmern Zeitachse und Linien der scrollenden Seite (iOS) durch.
     .dialog-backdrop {
         padding: 0;
-        align-items: stretch;
+        align-items: flex-start;   // Dialog wächst mit dem Inhalt, statt auf Bildschirmhöhe gedeckelt zu sein
+        background: #0E2A25;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
     }
 
     .dialog {
         max-width: none;
         min-height: 100%;
-        border-left: none;
-        border-right: none;
+        flex: none;
+        border: none;   // der Rahmen lief sonst als Linie mitten durch den Text
+        box-shadow: none;
+        animation: cvFade 180ms ease both;   // kein transform-Layer, vermeidet Nähte auf iOS
     }
 
     .dialog-head {

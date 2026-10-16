@@ -27,7 +27,7 @@
 
         <!-- Zeitstrahl -->
         <div class="timeline" #wrap>
-            <svg #svg class="timeline-svg" preserveAspectRatio="none" aria-hidden="true">
+            <svg #svg class="timeline-svg" [class.is-hidden]="!!open" preserveAspectRatio="none" aria-hidden="true">
                 <path [attr.d]="pathD" fill="none" stroke="rgba(61, 207, 182, 0.22)" stroke-width="1"></path>
                 @for (tick of ticks; track $index) {
                     <path [attr.d]="tick" fill="none" stroke="rgba(61, 207, 182, 0.42)" stroke-width="1"></path>

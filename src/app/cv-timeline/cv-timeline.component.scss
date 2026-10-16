@@ -193,6 +193,11 @@ h1 {
     pointer-events: none;
     overflow: visible;
     z-index: 0;
+
+    // bei offenem Dialog ausblenden: Linien der Zeitachse schimmerten sonst durch
+    &.is-hidden {
+        visibility: hidden;
+    }
 }
 
 .rows {

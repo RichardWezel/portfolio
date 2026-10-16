@@ -782,7 +782,9 @@
             "Change Management gemeistert: Nachfolge einer Leitung nach 30 Jahren im Amt – ohne dass das Haus seinen Charakter verlor.",
             "Raumorganisation und -vermietung vom Papierkalender auf ein digitales System umgestellt.",
             "Smartphone- und Computerberatungen für Senior*innen aufgebaut – die Hilfe, deren Wirkung am unmittelbarsten sichtbar war.",
-            "Programm mit Mittagstisch, Singtreffen, Malkursen, Instrumententreffen, Ausflügen und Festen verantwortet – inklusive selbst backen und mit anpacken.",
+            "Programm mit Mittagstisch, Singtreffen, Malkursen, Instrumententreffen und Festen verantwortet – inklusive selbst backen und mit anpacken.",
+            "Personalverantwortung für fünf Personen: drei FSJler und zwei Hochschulpraktikant*innen angeleitet und begleitet.",
+            "Ehrenamtliche, die Kurse und Gruppen leiten, per Absprache koordiniert. Ausflüge selbst organisiert und teils gemeinsam mit den Ehrenamtlichen durchgeführt.",
             "Andere Einrichtungsleitungen fragten regelmäßig nach der eigenen Einschätzung – Anerkennung von außen.",
             "Datenschutz, Brandschutz und Arbeitsschutz für das Haus verantwortet."
           ],
@@ -791,6 +793,7 @@
           "sk": [
             "Einrichtungsleitung",
             "Mitarbeiterführung",
+            "Anleitung von FSJ und Praktikant*innen",
             "Budgetverantwortung",
             "Ehrenamtsmanagement",
             "Programmgestaltung",
@@ -809,22 +812,28 @@
           ]
         },
         "dasfr": {
-          "y": "2021 – 2023",
+          "y": "Apr 2021 – Jun 2022",
           "dur": "30 ECTS",
-          "t": "DAS Altern im Sozialraum und Quartier",
+          "t": "CAS Altern im Sozialraum und Quartier",
           "o": "IWW, Katholische Hochschule Freiburg",
-          "m": "Berufsbegleitende wissenschaftliche Weiterbildung – Baustein 1 des Verbundmasters Angewandte Gerontologie.",
-          "lead": "Wissenschaftliche Weiterbildung parallel zur Leitungsstelle: strukturelle, politische und rechtliche Grundlagen des Alterns im Quartier, Bildung und soziale Netzwerkarbeit, dazu ein eigenes Lehr-Forschungsprojekt.",
-          "ab": "Abgeschlossen mit Diploma of Advanced Studies (DAS), 2 Semester plus Abschlusssemester, 30 ECTS. Die Abschlussarbeit lag auf Bachelorarbeit-Niveau. Baustein 1 von 2 für den M.A. Verbundmaster Angewandte Gerontologie.",
+          "m": "Berufsbegleitende wissenschaftliche Weiterbildung (30 ECTS, Note 2,3) – Baustein 1 des Verbundmasters Angewandte Gerontologie.",
+          "lead": "Wissenschaftliche Weiterbildung parallel zur Leitungsstelle: Alternstheorie, kommunale Sozialplanung und Politikberatung, Bildung und soziale Netzwerkarbeit im Quartier – dazu ein eigenes empirisches Lehr-Forschungsprojekt.",
+          "ab": "Certificate of Advanced Studies (CAS) mit dem Titel „Gerontologe CAS“, April 2021 bis Juni 2022. Fünf Module, 30 ECTS (900 Arbeitsstunden), Gesamtnote 2,3. Prüfungsleistung war eine benotete Abschlussarbeit (Forschungsbericht, 42 Seiten, abgegeben am 20.06.2022, betreut von Prof. Dr. Ines Himmelsbach). Baustein 1 von 2 für den M.A. Verbundmaster Angewandte Gerontologie (90 ECTS).",
           "px": [
-            "Eigenes Lehr-Forschungsprojekt mit Lernbegleitung durchgeführt.",
+            "Abschlussarbeit: qualitative Befragung von acht Leitungen Freiburger Seniorenbegegnungsstätten verschiedener Träger zu den Auswirkungen der Corona-Pandemie 2020 bis Anfang 2022 – auf die Einrichtungen, ihre Besucher*innen und den Umgang mit den Herausforderungen.",
+            "Methodik: Leitfadeninterviews (per Zoom oder vor Ort), KI-gestützte Transkription, zusammenfassende Inhaltsanalyse nach Mayring mit induktiv gebildeten Kategorien.",
+            "Ergebnis: Neben Belastungen und Einschränkungen entstanden auch Innovationen; Begegnungsstätten werden im Quartier gebraucht. Offene Fragen: Finanzierung, Digitalisierung sowie Gender und Diversity in der offenen Altenhilfe.",
+            "Module zu Sozialplanung, Arbeit mit politischen Gremien, Lobbyarbeit und sozialer Netzwerkarbeit; Vertiefungen zu assistiver Technik, Ethik, Age Diversity und Architektur im Sozialraum.",
             "Die Inhalte zur kommunalen Beratung und Vernetzung flossen direkt in die Netzwerkarbeit der Leitungsstelle zurück."
           ],
           "sk": [
             "Sozialraumorientierung",
             "Quartiersentwicklung",
+            "Sozialplanung & Bedarfsanalyse",
             "Kommunale Beratung",
+            "Politikberatung & Lobbyarbeit",
             "Soziale Netzwerkarbeit",
+            "Qualitative Sozialforschung (Mayring)",
             "Lehr-Forschungsprojekt"
           ],
           "pr": [
@@ -834,22 +843,27 @@
           ]
         },
         "dasma": {
-          "y": "2021 – 2024",
+          "y": "Nov 2020 – Feb 2022",
           "dur": "30 ECTS",
           "t": "DAS Interventionsgerontologie & Gerontopsychiatrie",
-          "o": "Technische Hochschule Mannheim",
-          "m": "Zweite wissenschaftliche Weiterbildung – Baustein 2 des Verbundmasters, ebenfalls berufsbegleitend.",
-          "lead": "Die zweite Säule der Spezialisierung: allgemeine Gerontologie, Gerontopsychiatrie, Interventionsgerontologie und Forschungsmethoden – mit einer wissenschaftlichen Projektarbeit auf Bachelorarbeit-Niveau.",
-          "ab": "Abgeschlossen mit Diploma of Advanced Studies (DAS), 30 ECTS. Ursprünglich als CAS vorgesehen; da beide Weiterbildungen eine wissenschaftliche Arbeit auf Bachelorarbeit-Niveau verlangen, wurde die Einstufung vereinheitlicht. Baustein 2 von 2 für den M.A. Verbundmaster Angewandte Gerontologie.",
+          "o": "Hochschule Mannheim, Fakultät für Sozialwesen",
+          "m": "Kontaktstudium Angewandte Gerontologie (KONTAGE), berufsbegleitend – Baustein 2 des Verbundmasters.",
+          "lead": "Die zweite Säule der Spezialisierung: drei Module zu Allgemeiner Gerontologie, Gerontopsychiatrie und multidisziplinärer Interventionsgerontologie, dazu ein fortlaufendes Begleitseminar zum wissenschaftlichen Arbeiten – und eine eigene Abschlussarbeit mit Bezug zur Berufspraxis.",
+          "ab": "Diploma of Advanced Studies (DAS), Titel „Gerontologe DAS – Multidisziplinäre Interventionsgerontologie und Gerontopsychiatrie“, verliehen am 02.04.2022. Teilnahme von November 2020 bis Februar 2022, drei Module, 30 ECTS. Baustein 2 von 2 für den M.A. Verbundmaster Angewandte Gerontologie.",
           "px": [
-            "Wissenschaftliche Projektarbeit mit eigener Fragestellung und Methodik.",
+            "Abschlussarbeit „Hinderliche Faktoren für eine Einbindung der Profession Soziale Arbeit in stationäre Altenpflegeeinrichtungen“ (vorgelegt am 25.03.2022, Gutachterinnen Prof. Dr. Martina Schäufele und Ingrid Hendlmeier): qualitative Befragung von Leitungen stationärer Altenpflegeeinrichtungen in Baden-Württemberg.",
+            "Methodik: halbstandardisierte Experteninterviews mit einem aus der Literatur hergeleiteten Leitfaden, qualitative Inhaltsanalyse nach Mayring. Vorarbeit war eine systematische Literaturrecherche zur Randstellung der Sozialen Arbeit in der stationären Altenhilfe.",
+            "Schlussfolgerung für die eigene Praxis: Soziale Arbeit sollte sich stärker in die Lobbyarbeit der eigenen Profession einbringen und die Finanzierungs- und Rechtsgrundlagen ihres Handlungsfeldes kennen.",
             "Gerontopsychiatrische Inhalte trafen direkt auf den Arbeitsalltag in der Begegnungsstätte."
           ],
           "sk": [
             "Interventionsgerontologie",
             "Gerontopsychiatrie",
             "Forschungsmethoden",
-            "Wissenschaftliche Projektarbeit"
+            "Wissenschaftliche Projektarbeit",
+            "Experteninterviews",
+            "Systematische Literaturrecherche",
+            "Qualitative Inhaltsanalyse (Mayring)"
           ],
           "pr": [
             "Wissenschaftliche Weiterbildung",
@@ -863,12 +877,12 @@
           "t": "Vollzeitkraft Einzelhandel, Schwerpunkt Weinabteilung",
           "o": "Brand Daniel e.K., Freiburg",
           "m": "Alleinverantwortung für die Weinabteilung – Warenpräsentation, Bestand, Kundenberatung, Vertretertermine.",
-          "lead": "Seit April 2024 Vollzeit im Premium-Einzelhandel mit einer klar eigenen Zuständigkeit: die Weinabteilung. Warenpräsentation, Bestandsverwaltung, Tischinsel-Management, Kundenberatung und Vertretertermine lagen vollständig in eigener Hand – darauf war Verlass, und das wurde auch so gespiegelt.",
+          "lead": "Seit April 2024 Vollzeit im Premium-Einzelhandel mit einer klar eigenen Zuständigkeit: die Weinabteilung. Warenpräsentation, Bestandsverwaltung, Tischinsel-Management, Kundenberatung und Vertretertermine liegen vollständig in eigener Hand – darauf ist Verlass, und das wird auch so gespiegelt.",
           "px": [
-            "Alleinverantwortung für die komplette Weinabteilung – der Punkt, auf den der größte Stolz entfiel.",
+            "Alleinverantwortung für die komplette Weinabteilung – der Punkt, auf den der größte Stolz entfällt.",
             "Kundenberatung auf Basis echter Weinexpertise aus dem eigenen Hobby.",
             "Anleitung von Auszubildenden im Tagesgeschäft.",
-            "Kolleg*innen fragten regelmäßig nach – Vertrauensperson im Team, mit Lob von den Führungskräften.",
+            "Kolleg*innen fragen regelmäßig nach – Vertrauensperson im Team, mit Lob von den Führungskräften.",
             "Schulungen in Arbeitssicherheit, Hygiene-Standards und Datenschutz absolviert und angewendet."
           ],
           "sk": [
@@ -894,13 +908,13 @@
           "t": "Weiterbildung Softwareentwicklung (Quereinstieg)",
           "o": "Developer Akademie",
           "m": "Zwei Zertifikate: Front-End (JavaScript, TypeScript, Angular) und Back-End (Python, Django, REST) – 31 Module, Abschlussprojekt Videoflix.",
-          "lead": "Von Oktober 2023 bis Oktober 2026 der Schritt, mit dem ich die Neigung zu Struktur, Logik und Prozessoptimierung, die sich von der SPS-Programmierung über Excel-Filterungen bis zur Digitalisierung der Raumverwaltung durchzieht, in ein Berufsbild überführt habe – online bei der Developer Akademie GmbH (AZAV-zugelassen). Die Weinabteilung läuft bis heute parallel.",
+          "lead": "Von Oktober 2023 bis Oktober 2026 der Schritt, mit dem ich die Neigung zu Struktur, Logik und Prozessoptimierung, die sich von der SPS-Programmierung über Excel-Filterungen bis zur Digitalisierung der Raumverwaltung durchzieht, in ein Berufsbild überführt habe – online bei der Developer Akademie GmbH (AZAV-zugelassen).",
           "ab": "Qualifikation zum Softwareentwickler für Web-Anwendungen mit zwei Abschlusszertifikaten: Front-End (02.06.2025, 18 Module, über 12 Projekte) und Back-End (06.10.2026, 13 Module, 4 Capstone-Projekte). Abschlussprojekt Videoflix: ein containerisiertes Video-Streaming-Backend mit Django REST Framework, PostgreSQL, Redis, FFmpeg/HLS und Docker.",
           "px": [
             "Dieses Portfolio selbst als Angular-Anwendung gebaut – inklusive dieser Zeitachse.",
             "Join, El Pollo Loco und DaBubble als Frontend-Projekte: von Vanilla JavaScript bis Angular mit Firebase.",
             "Videoflix als Backend-Abschlussprojekt: Registrierung mit E-Mail-Aktivierung, JWT-Login, Videoverwaltung, Django RQ, HLS-Streaming – vollständig containerisiert.",
-            "Weitere Back-End-Capstones: KanMind, Coderr und Quizly (läuft auf einem eigenen Server)."
+            "Weitere abgeschlossene Back-End-Capstones: KanMind, Coderr und Quizly. Sie sind nicht online gestellt, der Code liegt auf GitHub."
           ],
           "sk": [
             "JavaScript",
@@ -914,7 +928,7 @@
             "Docker",
             "Linux",
             "CI/CD",
-            "Git & Scrum",
+            "Git, GitHub & Scrum",
             "HTML & CSS",
             "Prozessoptimierung"
           ],
