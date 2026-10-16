@@ -858,12 +858,12 @@
           ]
         },
         "brand": {
-          "y": "2024 – 2025",
-          "dur": "1 year",
+          "y": "since Apr 2024",
+          "dur": "over 2 years",
           "t": "Full-Time Retail, Focus Wine Department",
           "o": "Brand Daniel e.K., Freiburg",
           "m": "Sole responsibility for the wine department – product presentation, stock, customer advice, sales rep appointments.",
-          "lead": "A year of full-time work in premium retail with a clearly own responsibility: the wine department. Product presentation, stock management, table island management, customer advice and sales rep appointments were entirely in my hands – it could be relied upon, and that was reflected back.",
+          "lead": "Full-time in premium retail since April 2024 with a clearly own responsibility: the wine department. Product presentation, stock management, table island management, customer advice and sales rep appointments were entirely in my hands – it could be relied upon, and that was reflected back.",
           "px": [
             "Sole responsibility for the entire wine department – the point of greatest pride.",
             "Customer advice based on genuine wine expertise from my own hobby.",
@@ -894,7 +894,7 @@
           "t": "Software Development Training (Career Change)",
           "o": "Developer Akademie",
           "m": "Two certificates: front-end (JavaScript, TypeScript, Angular) and back-end (Python, Django, REST) – 31 modules, capstone project Videoflix.",
-          "lead": "From October 2023 to October 2026, the step in which I turned the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. It was done online at Developer Akademie GmbH (AZAV-approved). The wine department ran in parallel for one year of it.",
+          "lead": "From October 2023 to October 2026, the step in which I turned the inclination towards structure, logic and process optimisation – which runs from PLC programming through Excel filtering to digitalising room management – into a profession. It was done online at Developer Akademie GmbH (AZAV-approved). The wine department continues to run in parallel.",
           "ab": "Qualification as a web application software developer with two completion certificates: front-end (2 June 2025, 18 modules, over 12 projects) and back-end (6 October 2026, 13 modules, 4 capstone projects). Capstone project Videoflix: a containerised video streaming backend with Django REST Framework, PostgreSQL, Redis, FFmpeg/HLS and Docker.",
           "px": [
             "Built this portfolio myself as an Angular application – including this timeline.",
