@@ -75,7 +75,7 @@
           "label": "What is your name?",
           "placeholder": "Your name",
           "error": {
-            "required": "Oops! it seems your name is missing",
+            "required": "Oops! It seems your name is missing",
             "pattern": ""
           }
         },
@@ -1065,6 +1065,20 @@
       },
       "source": "Source:",
       "back": "Back to Homepage"
+    },
+    "A11Y": {
+        "home": "To the start page",
+        "menuOpen": "Open navigation menu",
+        "menuClose": "Close navigation menu",
+        "back": "Back to the start page",
+        "prevVoice": "Previous voice",
+        "nextVoice": "Next voice",
+        "nextProject": "Next project",
+        "portrait": "Portrait of Richard Wezel",
+        "career": "My career",
+        "liveTest": "Live test",
+        "github": "GitHub profile",
+        "linkedin": "LinkedIn profile"
     }
-  }
+}
   

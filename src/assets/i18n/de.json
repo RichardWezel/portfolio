@@ -1065,7 +1065,21 @@
       },
       "source": "Quelle:",
       "back": "Zurück zur Startseite"
+    },
+    "A11Y": {
+        "home": "Zur Startseite",
+        "menuOpen": "Navigationsmenü öffnen",
+        "menuClose": "Navigationsmenü schließen",
+        "back": "Zurück zur Startseite",
+        "prevVoice": "Vorherige Stimme",
+        "nextVoice": "Nächste Stimme",
+        "nextProject": "Nächstes Projekt",
+        "portrait": "Porträt von Richard Wezel",
+        "career": "Mein Werdegang",
+        "liveTest": "Live Test",
+        "github": "GitHub-Profil",
+        "linkedin": "LinkedIn-Profil"
     }
-  }
+}
   
 
