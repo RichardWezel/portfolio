@@ -46,7 +46,7 @@
         <section class="project-show">
             @for (preview of projectPreviews; track preview.id) {
                 <div class="project" [id]="preview.id" [ngStyle]="preview">
-                    <img [src]="preview.img" [alt]="preview.id">
+                    <img [src]="preview.img" width="296" height="192" decoding="async" [alt]="preview.id">
                 </div>
             }
         </section>

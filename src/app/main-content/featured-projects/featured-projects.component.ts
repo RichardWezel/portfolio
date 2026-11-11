@@ -15,10 +15,10 @@ export class FeaturedProjectsComponent {
   @ViewChild(ProjectsComponent) projectComponent?: ProjectsComponent;
 
   projectPreviews = [
-    { id: 'join', img: 'assets/img/Join.svg', display: 'none' },
-    { id: 'el-pollo-loco', img: 'assets/img/ElPolloLoco.svg', display: 'none' },
-    { id: 'da-bubble', img: 'assets/img/DaBubble.svg', display: 'none' },
-    { id: 'videoflix', img: 'assets/img/videoflix.png', display: 'none' }
+    { id: 'join', img: 'assets/img/Join.webp', display: 'none' },
+    { id: 'el-pollo-loco', img: 'assets/img/ElPolloLoco.webp', display: 'none' },
+    { id: 'da-bubble', img: 'assets/img/DaBubble.webp', display: 'none' },
+    { id: 'videoflix', img: 'assets/img/videoflix.webp', display: 'none' }
   ];
 
   hoverIn(styleObj: any): void {

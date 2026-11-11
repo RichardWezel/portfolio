@@ -18,7 +18,7 @@
       }
     ],
     "next": 1,
-    "img": "assets/img/Join.svg",
+    "img": "assets/img/Join.webp",
     "links": {
       "github": "https://github.com/RichardWezel/JOIN",
       "live": "https://join.richard-wezel.de/"
@@ -43,7 +43,7 @@
       }
     ],
     "next": 2,
-    "img": "/assets/img/ElPolloLoco.svg",
+    "img": "/assets/img/ElPolloLoco.webp",
     "links": {
       "github": "https://github.com/RichardWezel/El_Pollo_Loco",
       "live": "https://elpolloloco.richard-wezel.de/"
@@ -68,7 +68,7 @@
       }
     ],
     "next": 3,
-    "img": "/assets/img/DaBubble.svg",
+    "img": "/assets/img/DaBubble.webp",
     "links": {
       "github": "https://github.com/RichardWezel/DaBubble.git",
       "live": "https://dabubble.richard-wezel.de/"
@@ -105,7 +105,7 @@
       }
     ],
     "next": 0,
-    "img": "/assets/img/videoflix.png",
+    "img": "/assets/img/videoflix.webp",
     "links": {
       "github": "https://github.com/RichardWezel/Videoflix.git",
       "live": "https://videoflix.richard-wezel.de/"
